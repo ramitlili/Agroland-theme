@@ -8,7 +8,7 @@
  *
  */
 
-// Block direct access
+// Prevent direct access
 if( !defined( 'ABSPATH' ) ){
     exit;
 }
@@ -18,7 +18,12 @@ if( !defined( 'ABSPATH' ) ){
 
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-	    <p  class="nof-desc"><?php echo sprintf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'quanto' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+            <p class="nof-desc">
+                <?php
+                /* translators: %1$s: New post admin URL */
+                printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'quanto' ), esc_url( admin_url( 'post-new.php' ) ) );
+                ?>
+            </p>
 
 	<?php elseif ( is_search() ) : ?>
 

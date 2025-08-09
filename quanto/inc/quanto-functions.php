@@ -9,7 +9,7 @@
  */
 
 
-// Block direct access
+// Prevent direct access
 if( ! defined( 'ABSPATH' ) ){
     exit;
 }
@@ -239,8 +239,11 @@ function quanto_comment_callback( $comment, $args, $depth ) {
             <div class="comment-content">
                 <h6 class="name"><?php echo esc_html( ucwords( get_comment_author() ) ); ?></h6>
 
-                <span class="commented-on"> 
-                    <?php printf( esc_html__('%1$s | %2$s', 'quanto'), get_comment_date(), get_comment_time() ); ?> 
+                <span class="commented-on">
+                    <?php
+                    /* translators: 1: Comment date, 2: Comment time */
+                    printf( esc_html__('%1$s | %2$s', 'quanto'), get_comment_date(), get_comment_time() );
+                    ?>
                 </span>
 
                 <?php comment_text(); ?>

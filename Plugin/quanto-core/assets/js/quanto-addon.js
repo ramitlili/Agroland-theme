@@ -105,7 +105,7 @@
         }); 
 
 
-        // header sub menu class no-boder js /////
+        // Apply no-border class to submenu links
         document.querySelectorAll(".sub-menu li.menu-item-has-children > a").forEach(function (menuItem) {
             menuItem.classList.add("no-border");
         });

@@ -1,2923 +1,2935 @@
-#, fuzzy
+# Copyright (C) 2025 Mirror
+# This file is distributed under the GPL2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Quanto Core\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 10:18+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Project-Id-Version: Quanto Core 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/quanto-core\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.3; wp-6.1.1\n"
-"X-Domain: quanto"
+"POT-Creation-Date: 2025-08-09T10:57:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: quanto\n"
 
-#. 1: Plugin name 2: Elementor
-#: addons/addons.php:148
+#. Plugin Name of the plugin
+#: quanto-core.php
+#: addons/addons.php:160
+#: addons/addons.php:184
+#: addons/addons.php:209
+msgid "Quanto Core"
+msgstr ""
+
+#. Description of the plugin
+#: quanto-core.php
+msgid "This is a helper plugin of quanto theme"
+msgstr ""
+
+#. Author of the plugin
+#: quanto-core.php
+msgid "Mirror"
+msgstr ""
+
+#. translators: 1: Plugin name 2: Elementor
+#: addons/addons.php:159
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
 msgstr ""
 
-#. 1: Plugin name 2: Elementor 3: Required Elementor version
-#. 1: Plugin name 2: PHP 3: Required PHP version
-#: addons/addons.php:172 addons/addons.php:197
+#: addons/addons.php:161
+#: addons/addons.php:185
+msgid "Elementor"
+msgstr ""
+
+#. translators: 1: Plugin name 2: Elementor 3: Required Elementor version
+#. translators: 1: Plugin name 2: PHP 3: Required PHP version
+#: addons/addons.php:183
+#: addons/addons.php:208
 #, php-format
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
-#: addons/header/quanto-mobile-menu.php:57
-#: addons/widgets/quanto-event.php:166
-#: addons/widgets/quanto-project-filter.php:109
-#: addons/widgets/quanto-project-slider.php:95
-#: addons/widgets/quanto-service-box.php:105
-#: addons/widgets/quanto-service-slider.php:104
-#: addons/widgets/quanto-testimonial-area.php:101
-msgid "#"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:69
-#: addons/widgets/quanto-pricing-table.php:59
-#: addons/widgets/quanto-pricing-table.php:123
-msgid "$27.99"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:127
-msgid "$37.99"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:131
-msgid "$47.99"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:123
-msgid "$54"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:135
-msgid "$97.99"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:126
-msgid "$99"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:78
-msgid "/Month"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:68
-msgid "/monthly"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:86
-#: addons/widgets/quanto-service-slider.php:86
-#: addons/widgets/quanto-work-process.php:90
-msgid "01"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:129
-#: addons/widgets/quanto-image-box.php:140
-msgid "100+"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:108
-msgid "105 Jobs Done"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:112
-msgid "1259 Jobs Done"
-msgstr ""
-
-#: addons/widgets/blog-post.php:77
-msgid "15"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:80
-msgid "170+"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:84
-msgid "21 Feb 2022"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:77
-#: addons/widgets/quanto-tab-builder.php:100
-msgid "259 Jobs Done"
-msgstr ""
-
-#: addons/widgets/blog-post.php:59 addons/widgets/blog-post.php:68
-msgid "4"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:104
-msgid "403 Jobs Done"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:19
-#: addons/widgets/quanto-about-us.php:35
-msgid "About Us"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:124
-msgid "About Us Style"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:191 addons/widgets/quanto-faq.php:116
-msgid "Accordion Box Background"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:212
-msgid "Active Author Box Background Color"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:345
-msgid "Active Client Name Color"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:205
-msgid "Adam Helen"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:30
-msgid "Add About Me Widget"
-msgstr ""
-
-#: inc/widgets/about-us-widget.php:29
-msgid "Add About Us Widget"
-msgstr ""
-
-#: inc/widgets/contact-info-widget.php:24
-msgid "Add Contact Info"
-msgstr ""
-
-#: inc/widgets/gallery-widget.php:30
-msgid "Add Gallery Widget"
-msgstr ""
-
-#: inc/widgets/footer-map.php:24
-msgid "Add Map"
-msgstr ""
-
-#: inc/builder/builder.php:140 inc/builder/builder.php:172
-#: inc/builder/builder.php:204
-msgid "Add New"
-msgstr ""
-
-#: inc/builder/builder.php:141
-msgid "Add New Footer"
-msgstr ""
-
-#: inc/builder/builder.php:173
-msgid "Add New Header"
-msgstr ""
-
-#: inc/builder/builder.php:205
-msgid "Add New Tab Builder"
-msgstr ""
-
-#: inc/widgets/newsletter-widget.php:24
-msgid "Add Newsletter"
-msgstr ""
-
-#: inc/widgets/latest-post-slider.php:30 inc/widgets/recent-post-widget.php:30
-msgid "Add Recent Posts Widget"
-msgstr ""
-
-#: inc/widgets/social-widget.php:24
-msgid "Add Social Icon"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:168
-msgid "Add Social link from "
-msgstr ""
-
-#: inc/widgets/contact-info-widget.php:119
-msgid "Address:"
-msgstr ""
-
-#: addons/widgets/google-map.php:36
-msgid "Addresss"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:171
-msgid "Affiliat Marketing"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:138
-#: addons/widgets/quanto-projects-filter.php:96
-msgid "Affiliate"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:65
-#: addons/widgets/quanto-project-filter.php:139
-msgid "Agency"
-msgstr ""
-
-#: addons/widgets/button.php:91 addons/widgets/image.php:71
-#: addons/widgets/section-title.php:126
-msgid "Alignment"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:345
-msgid "All"
-msgstr ""
-
-#: inc/builder/builder.php:145
-msgid "All Footer"
-msgstr ""
-
-#: inc/builder/builder.php:177
-msgid "All Header"
-msgstr ""
-
-#: inc/builder/builder.php:209
-msgid "All Tab Builder"
-msgstr ""
-
-#: inc/quantoajax.php:59
-msgid "Apikey Or Listid Missing."
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:125
-#: addons/widgets/quanto-projects-filter.php:83
-#: addons/widgets/quanto-service-slider.php:134
-msgid "App Development"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:113
-#: addons/widgets/quanto-project-slider.php:126
-#: addons/widgets/quanto-projects-filter.php:71
-#: addons/widgets/quanto-projects-filter.php:84
-msgid "App Solution"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:190
-msgid "Arrows"
-msgstr ""
-
-#: addons/widgets/blog-post.php:87
-msgid "ASC"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:118
-#: addons/widgets/quanto-faq-area.php:131
-#: addons/widgets/quanto-faq-area.php:135
-#: addons/widgets/quanto-faq-area.php:139
-#: addons/widgets/quanto-faq-area.php:143 addons/widgets/quanto-faq.php:70
-#: addons/widgets/quanto-faq.php:83 addons/widgets/quanto-faq.php:87
-#: addons/widgets/quanto-faq.php:91 addons/widgets/quanto-faq.php:95
-msgid ""
-"Assertively conceptualize cooperative potentialities with process centric "
-"internal or \"organic\" sources. Authoritatively pontificate B2C metrics via "
-"one-to-one synergy."
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:180
-msgid "Assistant Dev"
-msgstr ""
-
-#: addons/widgets/blog-post.php:101
-msgid "Author"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:243
-#: addons/widgets/testimonial-slider.php:224
-msgid "Author Box Background Color"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:160
-msgid "Author Designation:"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:64
-msgid "Author Name"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:156
-msgid "Author Name:"
-msgstr ""
-
-#: addons/widgets/quanto-image-slider.php:141
-msgid "Autoplay"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:127
-msgid "Award Numbers"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:149
-msgid "Award Text"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:151
-msgid "Awards we won"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:199
-#: addons/widgets/quanto-projects-filter.php:117
-#: addons/widgets/quanto-service-box.php:168
-#: addons/widgets/quanto-service-slider.php:193
-#: addons/widgets/testimonial-slider.php:237
-msgid "Background"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:43
-msgid "Background Image"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:125
-msgid "Bar Bg Color"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:55
-#: addons/widgets/quanto-skill-about.php:52
-msgid "Bar Width"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:50
-msgid "Basic"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:124
-msgid "Basic Plan"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:82
-msgid "Best Company of the year Awarded"
-msgstr ""
-
-#: addons/widgets/blog-post.php:18 addons/widgets/blog-post.php:34
-msgid "Blog Post"
-msgstr ""
-
-#: addons/widgets/blog-post.php:42
-msgid "Blog Style"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:73 addons/widgets/quanto-event.php:157
-msgid "Book Seat"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:195
-#: addons/header/quanto-megamenu.php:175
-#: addons/header/quanto-new-header.php:244 addons/widgets/button.php:197
-#: addons/widgets/section-title.php:245 addons/widgets/quanto-about-us.php:189
-#: addons/widgets/quanto-pricing-box.php:288
-#: addons/widgets/quanto-pricing-table.php:328
-msgid "Border"
-msgstr ""
-
-#: addons/widgets/image.php:216
-msgid "Border Radius"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:144
-msgid "Box Bg Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:290
-#: addons/widgets/button.php:249 addons/widgets/quanto-pricing-box.php:342
-#: addons/widgets/quanto-pricing-table.php:382
-#: addons/widgets/testimonial-slider.php:248
-msgid "Box Shadow"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:120
-#: addons/widgets/quanto-testimonial-area.php:145
-msgid "Brand Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:108
-msgid "Brand Title"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:46
-#: addons/widgets/quanto-project-filter.php:59
-msgid "Business"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:119
-msgid "business"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:86
-msgid "BUSINESS INOVATION"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:48
-#: addons/widgets/quanto-progress-bar.php:80
-msgid "BUSINESS SECURITY"
-msgstr ""
-
-#: addons/widgets/button.php:19 addons/widgets/button.php:36
-msgid "Button"
-msgstr ""
-
-#: addons/widgets/button.php:150 addons/widgets/button.php:161
-#: addons/widgets/quanto-pricing-box.php:266
-#: addons/widgets/quanto-pricing-table.php:306
-msgid "Button Background Color"
-msgstr ""
-
-#: addons/widgets/button.php:172 addons/widgets/button.php:184
-#: addons/widgets/quanto-pricing-box.php:276
-#: addons/widgets/quanto-pricing-table.php:316
-msgid "Button Background Hover Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:277
-#: addons/widgets/button.php:237 addons/widgets/quanto-pricing-box.php:329
-#: addons/widgets/quanto-pricing-table.php:369
-msgid "Button Border Radius"
-msgstr ""
-
-#: addons/widgets/blog-post.php:152
-msgid "Button Class"
-msgstr ""
-
-#: addons/widgets/blog-post.php:296 addons/widgets/button.php:128
-#: addons/widgets/quanto-newsletter.php:152
-#: addons/widgets/quanto-pricing-box.php:243
-#: addons/widgets/quanto-pricing-table.php:283
-msgid "Button Color"
-msgstr ""
-
-#: addons/widgets/button.php:139 addons/widgets/quanto-pricing-box.php:255
-#: addons/widgets/quanto-pricing-table.php:295
-msgid "Button Color Hover"
-msgstr ""
-
-#: addons/widgets/button.php:66 addons/widgets/quanto-pricing-box.php:94
-#: addons/widgets/quanto-pricing-table.php:94
-msgid "Button Icon Class"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:255
-#: addons/widgets/button.php:214 addons/widgets/quanto-pricing-box.php:305
-#: addons/widgets/quanto-pricing-table.php:345
-msgid "Button Margin"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:266
-#: addons/widgets/button.php:226 addons/widgets/quanto-pricing-box.php:317
-#: addons/widgets/quanto-pricing-table.php:357
-msgid "Button Padding"
-msgstr ""
-
-#: addons/widgets/button.php:44 addons/widgets/button.php:120
-msgid "Button Style"
-msgstr ""
-
-#: addons/widgets/button.php:57 addons/widgets/button.php:59
-#: addons/widgets/quanto-about-us.php:98
-#: addons/widgets/quanto-about-us.php:100
-#: addons/widgets/quanto-pricing-box.php:85
-#: addons/widgets/quanto-pricing-table.php:85
-#: addons/widgets/quanto-project-slider.php:148
-#: addons/widgets/quanto-service-box.php:121
-#: addons/widgets/quanto-service-slider.php:120
-#: addons/widgets/quanto-testimonial-area.php:90
-#: inc/widgets/about-us-widget.php:106
-msgid "Button Text"
-msgstr ""
-
-#: addons/widgets/blog-post.php:308 addons/widgets/button.php:206
-#: addons/widgets/quanto-newsletter.php:163
-#: addons/widgets/quanto-pricing-box.php:297
-#: addons/widgets/quanto-pricing-table.php:337
-msgid "Button Typography"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:99
-msgid "Button Url"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:83
-msgid "CAREER DEVELOPMENT"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:70
-#: addons/header/quanto-new-header.php:139 addons/widgets/button.php:99
-#: addons/widgets/image.php:79 addons/widgets/section-title.php:134
-#: addons/widgets/quanto-service-box.php:138
-msgid "Center"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:153
-msgid "Change Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:174
-#: addons/widgets/testimonial-slider.php:111
-msgid "Chef Leader"
-msgstr ""
-
-#: addons/widgets/image.php:48 addons/widgets/quanto-counter.php:56
-#: addons/widgets/quanto-image-box.php:67
-#: addons/widgets/quanto-image-box.php:81
-#: addons/widgets/quanto-image-box.php:96
-msgid "Choose Image"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:92
-msgid "Client Big Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:172
-#: addons/widgets/testimonial-slider.php:109
-msgid "Client Designation"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:383
-#: addons/widgets/testimonial-slider.php:454
-msgid "Client Designation Color"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:403
-#: addons/widgets/testimonial-slider.php:474
-msgid "Client Designation Margin"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:415
-#: addons/widgets/testimonial-slider.php:486
-msgid "Client Designation Padding"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:395
-#: addons/widgets/testimonial-slider.php:466
-msgid "Client Designation Typography"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:321
-#: addons/widgets/testimonial-slider.php:125
-#: addons/widgets/testimonial-slider.php:392
-msgid "Client Feedback"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:329
-#: addons/widgets/testimonial-slider.php:400
-msgid "Client Feedback Color"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:349
-#: addons/widgets/testimonial-slider.php:420
-msgid "Client Feedback Margin"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:361
-#: addons/widgets/testimonial-slider.php:432
-msgid "Client Feedback Padding"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:180
-#: addons/widgets/testimonial-slider.php:117
-msgid "Client Feedback Title"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:341
-#: addons/widgets/testimonial-slider.php:412
-msgid "Client Feedback Typography"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:154
-#: addons/widgets/testimonial-slider.php:82
-msgid "Client Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:164
-#: addons/widgets/quanto-testimonial-area.php:267
-#: addons/widgets/testimonial-slider.php:101
-#: addons/widgets/testimonial-slider.php:326
-msgid "Client Name"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:275
-#: addons/widgets/testimonial-slider.php:334
-msgid "Client Name Color"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:295
-#: addons/widgets/testimonial-slider.php:366
-msgid "Client Name Margin"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:307
-#: addons/widgets/testimonial-slider.php:378
-msgid "Client Name Padding"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:287
-#: addons/widgets/testimonial-slider.php:358
-msgid "Client Name Typography"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:47
-msgid "Clients"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:114
-#: addons/widgets/quanto-service-slider.php:113
-msgid ""
-"Completely implement via highly efficient process improvements. engage high "
-"value before progressive data."
-msgstr ""
-
-#: addons/widgets/quanto-event.php:148
-msgid "Consultant"
-msgstr ""
-
-#: inc/widgets/contact-info-widget.php:85
-msgid "Contect Us"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:127
-#: addons/widgets/testimonial-slider.php:141
-#: addons/widgets/testimonial-slider.php:146
-#: addons/widgets/testimonial-slider.php:151
-msgid ""
-"Contrary to popular belief, Lorem Ipsum is not simply random text over 2000 "
-"years old. Richard McClintock"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:18 addons/widgets/quanto-counter.php:35
-msgid "Counter"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:106
-msgid "Counter Bg Color"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:68
-msgid "Counter Icon Class"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:78
-msgid "Counter Number"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:117
-#: addons/widgets/quanto-counter.php:137
-msgid "Counter Number Color"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:98
-msgid "Counter Number Style"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:129
-msgid "Counter Number Typography"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:43
-msgid "Counter Style"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:87
-msgid "Counter Text"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:149
-msgid "Counter Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:138 addons/widgets/quanto-faq.php:90
-msgid "Creation timelines for the standard lorem passage"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:150
-msgid "Customer"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:65
-msgid "Customer Testimonial"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:71
-msgid "CUSTOMER’S FEEDBACK"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:134
-#: addons/widgets/quanto-projects-filter.php:92
-msgid "Cyber Security"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:133
-#: addons/widgets/quanto-projects-filter.php:91
-msgid "Database checkup"
-msgstr ""
-
-#: addons/widgets/blog-post.php:103 addons/widgets/quanto-event.php:46
-msgid "Date"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:200
-msgid "David Smith"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:59
-#: addons/widgets/quanto-pricing-table.php:77
-msgid "Default description"
-msgstr ""
-
-#: addons/widgets/blog-post.php:88
-msgid "DESC"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:57
-#: addons/widgets/quanto-pricing-table.php:75
-msgid "Description"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:196
-msgid "Description Color"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:214
-msgid "Description Margin"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:225
-msgid "Description Padding"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:207
-msgid "Description Typography"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:164
-msgid "Description:"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:375
-#: addons/widgets/testimonial-slider.php:446
-msgid "Designation"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:104
-#: addons/widgets/quanto-projects-filter.php:62
-msgid "Development Projects"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:96
-#: addons/widgets/quanto-service-slider.php:95
-msgid "Development Services"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:137
-#: addons/widgets/quanto-projects-filter.php:95
-#: addons/widgets/quanto-tab-builder.php:68
-#: addons/widgets/quanto-tab-builder.php:99
-msgid "Digital Marketing"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:172
-#: addons/widgets/quanto-project-filter.php:183
-msgid "Digital Research"
-msgstr ""
-
-#: inc/builder/builder.php:143
-msgid "Edit Footer"
-msgstr ""
-
-#: inc/builder/builder.php:175
-msgid "Edit Header"
-msgstr ""
-
-#: inc/builder/builder.php:207
-msgid "Edit Tab Builder"
-msgstr ""
-
-#: addons/addons.php:150 addons/addons.php:174
-msgid "Elementor"
-msgstr ""
-
-#: inc/widgets/contact-info-widget.php:127
-msgid "Email :"
-msgstr ""
-
-#: inc/builder/builder.php:74
-msgid "Enable Footer?"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:184 addons/widgets/quanto-event.php:187
-msgid "Energy Saving Solutions"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:91
-msgid "Enter Your Email"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:109
-#: addons/widgets/quanto-faq-area.php:130 addons/widgets/quanto-faq.php:61
-#: addons/widgets/quanto-faq.php:82
-msgid "Ethical testing rather than ethical interfaces?"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:20 addons/widgets/quanto-event.php:36
-#: addons/widgets/quanto-event.php:173
-msgid "Event"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:146
-msgid "Event Author Designation"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:123
-msgid "Event Author Image"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:137
-msgid "Event Author Name"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:62
-msgid "Event Author Text"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:71
-msgid "Event Booking Text"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:155
-msgid "Event Button Text"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:164
-msgid "Event Button Url?"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:82
-msgid "Event Date"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:44
-msgid "Event Date Text"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:340
-msgid "Event Designation Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:352
-msgid "Event Designation Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:105
-msgid "Event Title"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:199
-msgid "Event Title Style"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:55 addons/widgets/quanto-event.php:114
-msgid "Event Topic"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:91
-msgid "Event Topic Image"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:53
-msgid "Event Topic Text"
-msgstr ""
-
-#: addons/widgets/blog-post.php:75
-msgid "Excerpt Length"
-msgstr ""
-
-#: addons/widgets/blog-post.php:113
-msgid "Exclude Categories"
-msgstr ""
-
-#: addons/widgets/blog-post.php:133
-msgid "Exclude Post"
-msgstr ""
-
-#: addons/widgets/blog-post.php:123
-msgid "Exclude Tags"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:100
-#: addons/widgets/quanto-project-filter.php:164
-msgid "Expert Opinion"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:108
-msgid ""
-"Extensible for web iterate process before meta services impact with "
-"olisticly enable client."
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:45
-msgid "Fade Bg Text"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:54
-msgid "Fade Bg Text Two"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:36
-#: addons/widgets/quanto-faq-area.php:125 addons/widgets/quanto-faq.php:20
-#: addons/widgets/quanto-faq.php:36 addons/widgets/quanto-faq.php:77
-msgid "Faq"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:116 addons/widgets/quanto-faq.php:68
-msgid "Faq Answer"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:246 addons/widgets/quanto-faq.php:171
-msgid "Faq Answer Color"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:267 addons/widgets/quanto-faq.php:192
-msgid "Faq Answer Margin"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:279 addons/widgets/quanto-faq.php:204
-msgid "Faq Answer Padding"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:259 addons/widgets/quanto-faq.php:184
-msgid "Faq Answer Typography"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:20
-msgid "Faq Area"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:107 addons/widgets/quanto-faq.php:59
-msgid "Faq Question"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:202 addons/widgets/quanto-faq.php:127
-msgid "Faq Question Color"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:222 addons/widgets/quanto-faq.php:147
-msgid "Faq Question Margin"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:234 addons/widgets/quanto-faq.php:159
-msgid "Faq Question Padding"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:155 addons/widgets/quanto-faq.php:107
-msgid "Faq Question Style"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:214 addons/widgets/quanto-faq.php:139
-msgid "Faq Question Typography"
-msgstr ""
-
-#: addons/widgets/quanto-faq.php:44
-msgid "FAQ Style"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:96
-msgid "far fa-arrow-right"
-msgstr ""
-
-#: addons/widgets/quanto-counter.php:70
-msgid "far fa-headset"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:96
-msgid "far fa-long-arrow-right"
-msgstr ""
-
-#: addons/widgets/section-title.php:57
-msgid "fas fa-bring-forward"
-msgstr ""
-
-#: addons/widgets/button.php:68
-msgid "fas fa-chevron-right"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:56
-msgid "Feedback"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:62
-msgid "Finance"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:129
-msgid "finance"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:44
-msgid "First Image"
-msgstr ""
-
-#: inc/builder/builder.php:202
-msgid "Foodelio Tab Builder"
-msgstr ""
-
-#: inc/builder/builder.php:136 inc/builder/builder.php:137
-#: inc/builder/builder.php:139
-msgid "Footer"
-msgstr ""
-
-#: inc/builder/builder.php:89 inc/builder/builder.php:121
-#: inc/builder/builder.php:121
-msgid "Footer Builder"
-msgstr ""
-
-#: inc/builder/builder.php:98
-msgid "Footer Name"
-msgstr ""
-
-#: inc/builder/builder.php:67
-msgid "Footer Option"
-msgstr ""
-
-#: inc/builder/builder.php:85
-msgid "Footer Style"
-msgstr ""
-
-#: addons/widgets/team-member.php:115
-msgid "Founder"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:182
-#: addons/widgets/testimonial-slider.php:119
-msgid ""
-"From its medieval origins to the digital era, learn everything about passage"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:176
-msgid "Future Develope"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:19
-#: addons/footer-widgets/quanto-gallery.php:38
-#: addons/footer-widgets/quanto-gallery.php:59
-msgid "Gallery Image"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:86
-msgid "Gallery Images"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:48
-msgid "Gallery Posts"
-msgstr ""
-
-#: addons/widgets/team-member.php:297
-#: addons/widgets/quanto-testimonial-area.php:224
-#: addons/widgets/testimonial-slider.php:204
-msgid "General"
-msgstr ""
-
-#: inc/widgets/footer-map.php:55
-msgid "Get Direction"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:87
-#: addons/widgets/quanto-pricing-table.php:87
-msgid "Get Started"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:132
-msgid "Gold Plan"
-msgstr ""
-
-#: addons/widgets/google-map.php:17
-msgid "Google Map"
-msgstr ""
-
-#: addons/widgets/team-member.php:52
-msgid "Grid"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:45
-msgid "Growing Business"
-msgstr ""
-
-#: addons/header/quanto-language-switcher.php:20
-#: addons/header/quanto-language-switcher.php:36
-msgid "Gtranslate"
-msgstr ""
-
-#: inc/widgets/social-widget.php:57
-msgid "Have Inquiry? Just Call"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:36
-#: addons/header/quanto-new-header.php:36 inc/builder/builder.php:168
-#: inc/builder/builder.php:169 inc/builder/builder.php:171
-msgid "Header"
-msgstr ""
-
-#: inc/builder/builder.php:45 inc/builder/builder.php:122
-#: inc/builder/builder.php:122
-msgid "Header Builder"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:20
-msgid "Header Menu"
-msgstr ""
-
-#: inc/builder/builder.php:54
-msgid "Header Name"
-msgstr ""
-
-#: inc/builder/builder.php:32 inc/builder/builder.php:41
-msgid "Header Option"
-msgstr ""
-
-#: addons/header/quanto-search.php:36
-msgid "Header Search"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:168
-msgid "Here"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:98
-msgid "HOW CAN WE HELP YOU?"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:72
-#: addons/header/quanto-new-header.php:60
-#: addons/header/quanto-new-header.php:84
-#: addons/header/quanto-new-header.php:108 addons/widgets/button.php:77
-#: addons/widgets/image.php:100 addons/widgets/team-member.php:101
-#: addons/widgets/team-member.php:135 addons/widgets/team-member.php:160
-#: addons/widgets/team-member.php:185 addons/widgets/team-member.php:210
-#: addons/widgets/team-member.php:235 addons/widgets/quanto-about-us.php:109
-#: addons/widgets/quanto-faq-area.php:74
-#: addons/widgets/quanto-image-box.php:113
-#: addons/widgets/quanto-image-slider.php:71
-#: addons/widgets/quanto-pricing-box.php:105
-#: addons/widgets/quanto-pricing-table.php:105
-msgid "https://your-link.com"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:66
-msgid "Icon Background Color"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:77
-msgid "Icon Background Hover Color"
-msgstr ""
-
-#: addons/widgets/section-title.php:55
-msgid "Icon Class"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:44
-msgid "Icon Color"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:55
-msgid "Icon Hover Color"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:62
-msgid "Icon Image"
-msgstr ""
-
-#: addons/widgets/blog-post.php:100
-msgid "ID"
-msgstr ""
-
-#: addons/widgets/image.php:21 addons/widgets/image.php:40
-#: addons/widgets/quanto-image-slider.php:58
-msgid "Image"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:21
-#: addons/widgets/quanto-image-box.php:40
-msgid "Image Box"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:48
-msgid "Image Box Style"
-msgstr ""
-
-#: addons/widgets/image.php:120
-msgid "Image Class"
-msgstr ""
-
-#: addons/widgets/quanto-image-slider.php:19
-#: addons/widgets/quanto-image-slider.php:35
-msgid "Image Slider"
-msgstr ""
-
-#: addons/widgets/quanto-image-slider.php:85
-msgid "Image Sliders"
-msgstr ""
-
-#: addons/widgets/image.php:130 addons/widgets/quanto-image-box.php:163
-#: addons/widgets/quanto-image-slider.php:43
-msgid "Image Style"
-msgstr ""
-
-#: inc/widgets/about-us-widget.php:110
-msgid "Image URL:"
-msgstr ""
-
-#: addons/widgets/image.php:113
-msgid "Image Wrapper Class"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:181
-msgid "Information Consultancy"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:175
-msgid "IOS App Design"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:142
-msgid "IT Consultant"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:138
-msgid "IT Solution"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:67
-#: addons/widgets/quanto-pricing-table.php:57
-msgid "Item Price"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:76
-#: addons/widgets/quanto-pricing-table.php:66
-msgid "Item Price Time"
-msgstr ""
-
-#: addons/widgets/quanto-image-slider.php:121
-msgid "Items To Show"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:139
-msgid "Jamica Deo"
-msgstr ""
-
-#: addons/widgets/team-member.php:92
-msgid "John Steven"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:134 addons/widgets/quanto-faq.php:86
-msgid "Latin derived from Cicero's 1st-century BC text De"
-msgstr ""
-
-#: addons/widgets/google-map.php:44
-msgid "Latitude"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:66
-#: addons/header/quanto-new-header.php:135 addons/widgets/button.php:95
-#: addons/widgets/image.php:75 addons/widgets/section-title.php:130
-#: addons/widgets/quanto-service-box.php:134
-msgid "Left"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:163
-msgid "Left Bg Image"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:57
-msgid "Left Side Image"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:70
-#: addons/header/quanto-mobile-menu.php:55 addons/widgets/button.php:75
-#: addons/widgets/image.php:98 addons/widgets/quanto-about-us.php:107
-#: addons/widgets/quanto-image-slider.php:69
-#: addons/widgets/quanto-pricing-box.php:103
-#: addons/widgets/quanto-pricing-table.php:103
-msgid "Link"
-msgstr ""
-
-#: addons/widgets/blog-post.php:154
-msgid "link-btn"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:75
-msgid "Login"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:73
-msgid "Login text"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:82
-msgid "Login Text Link"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:44
-msgid "Logo Image"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:58
-msgid "Logo Link"
-msgstr ""
-
-#: addons/widgets/google-map.php:53
-msgid "longitude"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:142 addons/widgets/quanto-faq.php:94
-msgid "Lorem ipsum was purposefully designed to have"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:107
-msgid "Machine Learning"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:179
-msgid "Managment Team"
-msgstr ""
-
-#: addons/widgets/google-map.php:82
-msgid "Marker"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:140
-msgid "Marko Polo"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:167
-msgid "Master Planing"
-msgstr ""
-
-#: addons/widgets/image.php:173
-msgid "Max Width"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:99
-msgid "Medicine Help"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:62
-#: addons/header/quanto-new-header.php:131
-msgid "Menu Alignment"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:110
-#: addons/header/quanto-mobile-menu.php:65
-#: addons/header/quanto-new-header.php:179
-msgid "Menu Background Color"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:88
-#: addons/header/quanto-new-header.php:157
-msgid "Menu Color"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:121
-#: addons/header/quanto-new-header.php:190
-msgid "Menu Hover Background Color"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:99
-#: addons/header/quanto-new-header.php:168
-msgid "Menu Hover Color"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:150
-#: addons/header/quanto-new-header.php:219
-msgid "Menu Margin"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:162
-#: addons/header/quanto-new-header.php:231
-msgid "Menu Padding"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:133
-#: addons/header/quanto-new-header.php:202
-msgid "Menu Typography"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:142
-#: addons/header/quanto-new-header.php:211
-msgid "Menu Typography Hover"
-msgstr ""
-
-#: addons/widgets/blog-post.php:256
-msgid "Meta"
-msgstr ""
-
-#: addons/widgets/blog-post.php:264
-msgid "Meta Color"
-msgstr ""
-
-#: addons/widgets/blog-post.php:275
-msgid "Meta Hover Color"
-msgstr ""
-
-#: addons/widgets/blog-post.php:287
-msgid "Meta Typography"
-msgstr ""
-
-#: inc/widgets/contact-info-widget.php:135
-msgid "Mobile :"
-msgstr ""
-
-#: addons/header/quanto-mobile-menu.php:44
-msgid "Mobile Logo"
-msgstr ""
-
-#: addons/header/quanto-mobile-menu.php:20
-#: addons/header/quanto-mobile-menu.php:36
-msgid "Mobile Menu"
-msgstr ""
-
-#: inc/builder/builder.php:142
-msgid "New Footer"
-msgstr ""
-
-#: inc/builder/builder.php:174
-msgid "New Header"
-msgstr ""
-
-#: inc/builder/builder.php:206
-msgid "New Tab Builder"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:19
-#: addons/widgets/quanto-newsletter.php:20
-#: addons/widgets/quanto-newsletter.php:39
-msgid "Newsletter"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:163
-msgid "Newsletter Background Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:173
-msgid "Newsletter Border Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:225
-msgid "Newsletter Button Background Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:236
-msgid "Newsletter Button Background Color Hover"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:203
-msgid "Newsletter Button Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:214
-msgid "Newsletter Button Color Hover"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:97
-msgid "Newsletter Button Text"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:248
-msgid "Newsletter Button Typography"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:153
-msgid "Newsletter Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:38
-msgid "Newsletter Options"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:145
-msgid "Newsletter Other Options"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:183
-msgid "Newsletter Placeholder Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:71
-#: addons/footer-widgets/newsletter-widget.php:73
-#: addons/widgets/quanto-newsletter.php:89
-msgid "Newsletter Placeholder Text"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:46
-#: addons/footer-widgets/newsletter-widget.php:90
-#: addons/widgets/quanto-newsletter.php:47
-#: addons/widgets/quanto-newsletter.php:108
-msgid "Newsletter Style"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:80
-msgid "Newsletter Submit Button Text"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:61
-msgid "Newsletter Title"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:105
-msgid "Newsletter Title Color"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:123
-msgid "Newsletter Title Margin"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:97
-msgid "Newsletter Title Options"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:134
-msgid "Newsletter Title Padding"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:116
-msgid "Newsletter Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:275
-#: addons/widgets/quanto-testimonial-area.php:477
-msgid "Next"
-msgstr ""
-
-#: addons/widgets/quanto-image-slider.php:144
-#: addons/widgets/testimonial-slider.php:193 inc/builder/builder.php:77
-msgid "No"
-msgstr ""
-
-#: inc/builder/builder.php:149
-msgid "No Footer found in Trash."
-msgstr ""
-
-#: inc/builder/builder.php:148
-msgid "No Footer found."
-msgstr ""
-
-#: inc/builder/builder.php:181
-msgid "No Header found in Trash."
-msgstr ""
-
-#: inc/builder/builder.php:180
-msgid "No Header found."
-msgstr ""
-
-#: addons/widgets/blog-post.php:57
-msgid "No of Post to show"
-msgstr ""
-
-#: inc/builder/builder.php:213
-msgid "No Tab Builder found in Trash."
-msgstr ""
-
-#: inc/builder/builder.php:212
-msgid "No Tab Builder found."
-msgstr ""
-
-#: inc/widgets/latest-post-slider.php:137
-#: inc/widgets/recent-post-widget.php:118
-msgid "Number of Posts to show:"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:20
-#: addons/header/quanto-offcanvas.php:36
-msgid "Offcanvas"
-msgstr ""
-
-#: addons/header/quanto-offcanvas.php:88
-msgid "Offcanvas Background Color"
-msgstr ""
-
-#: addons/widgets/quanto-about-us.php:73
-msgid "One Of The Best Business Consulting Agency..."
-msgstr ""
-
-#: addons/widgets/quanto-event.php:107 addons/widgets/quanto-event.php:178
-msgid "Online Business Growth"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:116
-msgid "Online Topic, Business"
-msgstr ""
-
-#: addons/widgets/blog-post.php:84
-msgid "Order"
-msgstr ""
-
-#: addons/widgets/blog-post.php:97
-msgid "Order By"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:68
-msgid "Others"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:149
-msgid "others"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:62
-msgid "OUR BEST REVIEW’S"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:110
-msgid "Our Brands"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:62
-msgid "OUR LATEST PROJECTS"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:72
-msgid "Our Successful Projects"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:48
-msgid "Package Discount Text"
-msgstr ""
-
-#: inc/builder/builder.php:147
-msgid "Parent Footer:"
-msgstr ""
-
-#: inc/builder/builder.php:179
-msgid "Parent Header:"
-msgstr ""
-
-#: inc/builder/builder.php:211
-msgid "Parent Tab Builder:"
-msgstr ""
-
-#: addons/widgets/team-member.php:113
-msgid "Person Designation"
-msgstr ""
-
-#: addons/widgets/team-member.php:399
-msgid "Person Designation Color"
-msgstr ""
-
-#: addons/widgets/team-member.php:417
-msgid "Person Designation Margin"
-msgstr ""
-
-#: addons/widgets/team-member.php:428
-msgid "Person Designation Padding"
-msgstr ""
-
-#: addons/widgets/team-member.php:410
-msgid "Person Designation Typography"
-msgstr ""
-
-#: addons/widgets/team-member.php:99
-msgid "Person Details Url"
-msgstr ""
-
-#: addons/widgets/team-member.php:90
-msgid "Person Name"
-msgstr ""
-
-#: addons/widgets/team-member.php:348
-msgid "Person Name Color"
-msgstr ""
-
-#: addons/widgets/team-member.php:358
-msgid "Person Name Color Hover"
-msgstr ""
-
-#: addons/widgets/team-member.php:376
-msgid "Person Name Margin"
-msgstr ""
-
-#: addons/widgets/team-member.php:387
-msgid "Person Name Padding"
-msgstr ""
-
-#: addons/widgets/team-member.php:369
-msgid "Person Name Typography"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:138
-msgid "Phone Numbers"
-msgstr ""
-
-#: addons/addons.php:199
+#: addons/addons.php:210
 msgid "PHP"
 msgstr ""
 
-#: inc/widgets/newsletter-widget.php:88
-msgid "Placeholder:"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:222
-#: addons/widgets/quanto-pricing-table.php:262
-msgid "Plan List Color"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:235
-#: addons/widgets/quanto-pricing-table.php:275
-msgid "Plan List Typography"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:202
-#: addons/widgets/quanto-pricing-table.php:242
-msgid "Plan Price Color"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:214
-#: addons/widgets/quanto-pricing-table.php:254
-msgid "Plan Price Typography"
-msgstr ""
-
-#: addons/header/quanto-language-switcher.php:43
-msgid "Please Select Your Style From Gtranslate"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:129
-#: addons/widgets/quanto-projects-filter.php:87
-msgid "Portfolio Design"
-msgstr ""
-
-#: inc/builder/builder.php:44 inc/builder/builder.php:88
-msgid "Pre Built"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:274
-#: addons/widgets/quanto-testimonial-area.php:476
-msgid "Prev"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:21
-#: addons/widgets/quanto-pricing-box.php:38
-msgid "Pricing Box"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:138
-msgid "Pricing Box Style"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:48
-msgid "Pricing Plan Name"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:21
-#: addons/widgets/quanto-pricing-table.php:38
-msgid "Pricing Table"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:178
-msgid "Pricing Table Style"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:157
-#: addons/widgets/quanto-pricing-table.php:197
-msgid "Pricing Title Color"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:177
-#: addons/widgets/quanto-pricing-table.php:217
-msgid "Pricing Title Margin"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:189
-#: addons/widgets/quanto-pricing-table.php:229
-msgid "Pricing Title Padding"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:169
-#: addons/widgets/quanto-pricing-table.php:209
-msgid "Pricing Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-work-process.php:88
-msgid "Process Number"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:168
-msgid "Professinal"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:20
-#: addons/widgets/quanto-progress-bar.php:36
-#: addons/widgets/quanto-progress-bar.php:75
-msgid "Progress Bar"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:46
-msgid "Progress Bar Title"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:98
-msgid "Progress Bar Title Style"
-msgstr ""
-
-#: addons/widgets/quanto-progress-bar.php:117
-msgid "Progress Bar Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:280
-msgid "Project Background Color"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:146
-#: addons/widgets/quanto-pricing-table.php:186
-msgid "Project Bg Image"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:107
-msgid "Project Details Url?"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:35
-#: addons/widgets/quanto-projects-filter.php:20
-#: addons/widgets/quanto-projects-filter.php:39
-msgid "Project Filter"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:19
-msgid "Project Filter Two"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:79
-#: addons/widgets/quanto-project-slider.php:82
-#: addons/widgets/quanto-projects-filter.php:49
-msgid "Project Image"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:20
-#: addons/widgets/quanto-project-slider.php:39
-msgid "Project Slider"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:158
-msgid "Project Slides"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:272
-#: addons/widgets/quanto-project-slider.php:47
-#: addons/widgets/quanto-project-slider.php:190
-#: addons/widgets/quanto-projects-filter.php:108
-msgid "Project Style"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:60
-msgid "Project SubTitle"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:98
-#: addons/widgets/quanto-project-slider.php:111
-#: addons/widgets/quanto-projects-filter.php:69
-msgid "Project Subtitle"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:311
-msgid "Project SubTitle Color"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:228
-#: addons/widgets/quanto-projects-filter.php:146
-msgid "Project Subtitle Color"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:323
-msgid "Project SubTitle Typography"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:240
-#: addons/widgets/quanto-projects-filter.php:158
-msgid "Project Subtitle Typography"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:89
-#: addons/widgets/quanto-project-slider.php:70
-#: addons/widgets/quanto-project-slider.php:102
-#: addons/widgets/quanto-projects-filter.php:60
-msgid "Project Title"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:291
-#: addons/widgets/quanto-project-slider.php:208
-#: addons/widgets/quanto-projects-filter.php:126
-msgid "Project Title Color"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:303
-#: addons/widgets/quanto-project-slider.php:220
-#: addons/widgets/quanto-projects-filter.php:138
-msgid "Project Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:93
-msgid "Project Url"
-msgstr ""
-
-#: addons/widgets/blog-post.php:104
-msgid "Random"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:507
-msgid "Rating"
-msgstr ""
-
-#: addons/widgets/blog-post.php:145 addons/widgets/quanto-service-box.php:123
-#: addons/widgets/quanto-service-slider.php:122
-msgid "Read More"
-msgstr ""
-
-#: addons/widgets/blog-post.php:143
-msgid "Read More Text"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:99
-msgid "Register"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:97
-msgid "Register text"
-msgstr ""
-
-#: addons/header/quanto-new-header.php:106
-msgid "Register Text Link"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:74
-#: addons/header/quanto-new-header.php:143 addons/widgets/button.php:103
-#: addons/widgets/image.php:83 addons/widgets/section-title.php:138
-#: addons/widgets/quanto-service-box.php:142
-msgid "Right"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:177
-msgid "Right Bg Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:166
-#: addons/widgets/testimonial-slider.php:103
-msgid "Rubaida Kanom"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:50
-msgid "Save 20%"
-msgstr ""
-
-#: addons/header/quanto-search.php:62
-msgid "Search Background Color"
-msgstr ""
-
-#: inc/builder/builder.php:146
-msgid "Search Footer"
-msgstr ""
-
-#: addons/header/quanto-search.php:20
-msgid "Search Form"
-msgstr ""
-
-#: inc/builder/builder.php:178
-msgid "Search Header"
-msgstr ""
-
-#: addons/header/quanto-search.php:45
-msgid "Search Here..."
-msgstr ""
-
-#: inc/builder/builder.php:210
-msgid "Search Tab Builder"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:58
-msgid "Second Image"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:232
-msgid "Section Bg Image"
-msgstr ""
-
-#: addons/widgets/section-title.php:117 addons/widgets/section-title.php:119
-#: addons/widgets/quanto-about-us.php:89
-#: addons/widgets/quanto-about-us.php:91
-#: addons/widgets/quanto-testimonial-area.php:81
-#: addons/widgets/quanto-testimonial-area.php:83
-msgid "Section Description"
-msgstr ""
-
-#: addons/widgets/section-title.php:297
-msgid "Section Description Color"
-msgstr ""
-
-#: addons/widgets/section-title.php:323
-msgid "Section Description Margin"
-msgstr ""
-
-#: addons/widgets/section-title.php:312
-msgid "Section Description Typography"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:87
-msgid "Section SubTitle"
-msgstr ""
-
-#: addons/widgets/section-title.php:89 addons/widgets/section-title.php:91
-#: addons/widgets/quanto-about-us.php:80
-#: addons/widgets/quanto-newsletter.php:81
-#: addons/widgets/quanto-testimonial-area.php:63
-#: addons/widgets/testimonial-slider.php:60
-msgid "Section Subtitle"
-msgstr ""
-
-#: addons/widgets/section-title.php:257 addons/widgets/quanto-about-us.php:201
-msgid "Section Subtitle Color"
-msgstr ""
-
-#: addons/widgets/section-title.php:283 addons/widgets/quanto-about-us.php:227
-msgid "Section Subtitle Margin"
-msgstr ""
-
-#: addons/widgets/section-title.php:272 addons/widgets/quanto-about-us.php:216
-msgid "Section Subtitle Typography"
-msgstr ""
-
-#: addons/footer-widgets/quanto-gallery.php:46
-#: addons/widgets/section-title.php:19 addons/widgets/section-title.php:35
-#: addons/widgets/section-title.php:64 addons/widgets/section-title.php:66
-#: addons/widgets/quanto-about-us.php:71
-#: addons/widgets/quanto-faq-area.php:96
-#: addons/widgets/quanto-newsletter.php:73
-#: addons/widgets/quanto-testimonial-area.php:72
-#: addons/widgets/testimonial-slider.php:69
-msgid "Section Title"
-msgstr ""
-
-#: addons/widgets/section-title.php:188 addons/widgets/quanto-about-us.php:132
-msgid "Section Title Color"
-msgstr ""
-
-#: addons/widgets/section-title.php:214 addons/widgets/quanto-about-us.php:158
-msgid "Section Title Margin"
-msgstr ""
-
-#: addons/widgets/section-title.php:229 addons/widgets/quanto-about-us.php:173
-msgid "Section Title Padding"
-msgstr ""
-
-#: addons/widgets/section-title.php:155
-msgid "Section Title Style"
-msgstr ""
-
-#: addons/widgets/section-title.php:203 addons/widgets/quanto-about-us.php:147
-msgid "Section Title Typography"
-msgstr ""
-
-#: addons/widgets/section-title.php:163
-msgid "Section Wrapper Margin"
-msgstr ""
-
-#: addons/widgets/section-title.php:175
-msgid "Section Wrapper Padding"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:135
-#: addons/widgets/quanto-service-slider.php:139
-#: addons/widgets/quanto-service-slider.php:143
-msgid ""
-"Seize magnetic before visa alignment network wireless whereas frictionless"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:84
-msgid "Select Data"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:130
-msgid "Service Alignment"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:72
-#: addons/widgets/quanto-service-slider.php:73
-msgid "Service Bg Image"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:19
-#: addons/widgets/quanto-service-box.php:38
-msgid "Service Box"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:159
-msgid "Service Box Number Style"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:209
-msgid "Service Box Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:197
-#: addons/widgets/quanto-service-slider.php:222
-msgid "Service Desc Color"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:112
-#: addons/widgets/quanto-service-slider.php:111
-msgid "Service Description"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:61
-#: addons/widgets/quanto-service-slider.php:62
-msgid "Service Image"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:84
-#: addons/widgets/quanto-service-slider.php:84
-msgid "Service Number"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:20
-#: addons/widgets/quanto-service-slider.php:36
-msgid "Service Slider"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:184
-msgid "Service Slider Number Style"
-msgstr ""
-
-#: addons/widgets/quanto-service-slider.php:234
-msgid "Service Slider Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:46
-#: addons/widgets/quanto-service-slider.php:44
-msgid "Service Style"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:94
-#: addons/widgets/quanto-service-slider.php:93
-msgid "Service Title"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:177
-#: addons/widgets/quanto-service-slider.php:202
-msgid "Service Title Color"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:189
-#: addons/widgets/quanto-service-slider.php:214
-msgid "Service Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-service-box.php:103
-#: addons/widgets/quanto-service-slider.php:102
-msgid "Service Url"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:62
-msgid "Set Image"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:44
-msgid "Set Your Style From Style Tab"
-msgstr ""
-
-#: inc/widgets/newsletter-widget.php:45
-msgid "Sign Up Now &amp; Get 10% Off."
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:128
-msgid "Silver Plan"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:18
-#: addons/widgets/quanto-skill-about.php:35
-msgid "Skill About"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:91
-msgid "Skill About Number Color"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:103
-msgid "Skill About Number Typography"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:83
-msgid "Skill About Style"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:131
-msgid "Skill About SubTitle Color"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:143
-msgid "Skill About SubTitle Typography"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:111
-msgid "Skill About Title Color"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:123
-msgid "Skill About Title Typography"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:72
-msgid "Skill Subtitle Text"
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:43
-msgid "Skill Title text"
-msgstr ""
-
-#: addons/widgets/blog-post.php:170 addons/widgets/team-member.php:276
-#: addons/widgets/quanto-pricing-table.php:156
-#: addons/widgets/quanto-project-slider.php:168
-#: addons/widgets/quanto-service-slider.php:163
-#: addons/widgets/testimonial-slider.php:171
-msgid "Slide To Show"
-msgstr ""
-
-#: addons/widgets/team-member.php:51
-msgid "Slider"
-msgstr ""
-
-#: addons/widgets/blog-post.php:163 addons/widgets/team-member.php:268
-#: addons/widgets/quanto-image-slider.php:113
-#: addons/widgets/quanto-pricing-table.php:148
-#: addons/widgets/quanto-project-slider.php:160
-#: addons/widgets/quanto-service-slider.php:155
-#: addons/widgets/testimonial-slider.php:164
-msgid "Slider Control"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:118
-#: addons/widgets/quanto-pricing-table.php:118
-#: addons/widgets/quanto-project-filter.php:54
-#: addons/widgets/quanto-project-slider.php:120
-#: addons/widgets/quanto-projects-filter.php:78
-#: addons/widgets/quanto-service-slider.php:129
-#: addons/widgets/quanto-testimonial-area.php:131
-#: addons/widgets/quanto-testimonial-area.php:190
-#: addons/widgets/testimonial-slider.php:135
-msgid "Slides"
-msgstr ""
-
-#: addons/widgets/team-member.php:327
-msgid "Social Icon Bg Color"
-msgstr ""
-
-#: addons/widgets/team-member.php:305
-msgid "Social Icon Color"
-msgstr ""
-
-#: addons/widgets/team-member.php:222
-msgid "Social Icon Five"
-msgstr ""
-
-#: addons/widgets/team-member.php:197
-msgid "Social Icon Four"
-msgstr ""
-
-#: addons/widgets/team-member.php:316
-msgid "Social Icon Hover Color"
-msgstr ""
-
-#: addons/widgets/team-member.php:233
-msgid "Social Icon Link Five"
-msgstr ""
-
-#: addons/widgets/team-member.php:208
-msgid "Social Icon Link Four"
-msgstr ""
-
-#: addons/widgets/team-member.php:133
-msgid "Social Icon Link One"
-msgstr ""
-
-#: addons/widgets/team-member.php:183
-msgid "Social Icon Link Three"
-msgstr ""
-
-#: addons/widgets/team-member.php:158
-msgid "Social Icon Link Two"
-msgstr ""
-
-#: addons/widgets/team-member.php:122
-msgid "Social Icon One"
-msgstr ""
-
-#: addons/widgets/team-member.php:172
-msgid "Social Icon Three"
-msgstr ""
-
-#: addons/widgets/team-member.php:147
-msgid "Social Icon Two"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:111
-msgid "Software Services"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:210
-msgid "Soily Kamens"
-msgstr ""
-
-#: inc/quantoajax.php:56
-msgid "Sorry something went wrong."
-msgstr ""
-
-#: addons/header/quanto-search.php:54 addons/widgets/team-member.php:60
-msgid "Style"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:59
-msgid "Style Eight"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:56
-#: addons/widgets/quanto-service-slider.php:52
-msgid "Style Five"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:53
-#: addons/widgets/blog-post.php:48 addons/widgets/team-member.php:67
-#: addons/widgets/quanto-image-box.php:55
-#: addons/widgets/quanto-newsletter.php:54
-#: addons/widgets/quanto-service-box.php:53
-#: addons/widgets/quanto-service-slider.php:51
-#: addons/widgets/testimonial-slider.php:53
-msgid "Style Four"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:50
-#: addons/widgets/blog-post.php:45 addons/widgets/button.php:48
-#: addons/widgets/section-title.php:47 addons/widgets/team-member.php:64
-#: addons/widgets/quanto-counter.php:47 addons/widgets/quanto-faq.php:47
-#: addons/widgets/quanto-image-box.php:52
-#: addons/widgets/quanto-image-slider.php:47
-#: addons/widgets/quanto-newsletter.php:51
-#: addons/widgets/quanto-project-slider.php:51
-#: addons/widgets/quanto-service-box.php:50
-#: addons/widgets/quanto-service-slider.php:48
-#: addons/widgets/quanto-tab-builder.php:43
-#: addons/widgets/quanto-work-process.php:51
-#: addons/widgets/testimonial-slider.php:50
-msgid "Style One"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:58
-msgid "Style Seven"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:57
-msgid "Style Six"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:52
-#: addons/widgets/blog-post.php:47 addons/widgets/team-member.php:66
-#: addons/widgets/quanto-image-box.php:54
-#: addons/widgets/quanto-newsletter.php:53
-#: addons/widgets/quanto-service-box.php:52
-#: addons/widgets/quanto-service-slider.php:50
-#: addons/widgets/testimonial-slider.php:52
-msgid "Style Three"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:51
-#: addons/widgets/blog-post.php:46 addons/widgets/button.php:49
-#: addons/widgets/section-title.php:48 addons/widgets/team-member.php:65
-#: addons/widgets/quanto-counter.php:48 addons/widgets/quanto-faq.php:48
-#: addons/widgets/quanto-image-box.php:53
-#: addons/widgets/quanto-image-slider.php:48
-#: addons/widgets/quanto-newsletter.php:52
-#: addons/widgets/quanto-project-slider.php:52
-#: addons/widgets/quanto-service-box.php:51
-#: addons/widgets/quanto-service-slider.php:49
-#: addons/widgets/quanto-tab-builder.php:44
-#: addons/widgets/quanto-work-process.php:52
-#: addons/widgets/testimonial-slider.php:51
-msgid "Style Two"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:134
-msgid "Sub Title Color"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:145
-msgid "Sub Title Typography"
-msgstr ""
-
-#: addons/widgets/section-title.php:98
-msgid "Subitle Tag"
-msgstr ""
-
-#: addons/footer-widgets/newsletter-widget.php:63
-#: addons/footer-widgets/newsletter-widget.php:82
-#: addons/widgets/quanto-newsletter.php:99
-#: inc/widgets/newsletter-widget.php:52
-msgid "Subscribe"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:75
-msgid "SUBSCRIBE TO NEWSLETTER"
-msgstr ""
-
-#: inc/widgets/newsletter-widget.php:65
-msgid "Subscribe Us"
-msgstr ""
-
-#: addons/widgets/quanto-newsletter.php:83
-msgid "Subtitle Text"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:184
-msgid "Support Team"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:94
-msgid "Tab"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:204
-msgid "Tab Background Color"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:20
-#: addons/widgets/quanto-tab-builder.php:32 inc/builder/builder.php:123
-#: inc/builder/builder.php:123 inc/builder/builder.php:200
-#: inc/builder/builder.php:201 inc/builder/builder.php:203
-msgid "Tab Builder"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:55
-msgid "Tab Builder Image"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:75
-msgid "Tab Builder SubTitle"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:66
-msgid "Tab Builder Title"
-msgstr ""
-
-#: addons/widgets/quanto-tab-builder.php:40
-msgid "Tab Button Style"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:215
-msgid "Tab Color"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:226
-msgid "Tab Color Hover"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:246
-msgid "Tab Margin"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:258
-msgid "Tab Padding"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:196
-msgid "Tab Style"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:44
-msgid "Tab Text"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:238
-msgid "Tab Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:238
-msgid "Table Content Background Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:249
-msgid "Table Date Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:261
-msgid "Table Date Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:320
-msgid "Table Event Author Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:332
-msgid "Table Event Author Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:269
-msgid "Table Event Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:280
-msgid "Table Event Text Hover Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:292
-msgid "Table Event Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:300
-msgid "Table Event Topic Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:312
-msgid "Table Event Topic Text Typography"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:207
-msgid "Table Head Background Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:218
-msgid "Table Head Text Color"
-msgstr ""
-
-#: addons/widgets/quanto-event.php:230
-msgid "Table Head Typography"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:89
-msgid "TALK ABOUT SOMETHING"
-msgstr ""
-
-#: addons/widgets/team-member.php:22 addons/widgets/team-member.php:39
-#: addons/widgets/team-member.php:248
-msgid "Team Member"
-msgstr ""
-
-#: addons/widgets/team-member.php:77
-msgid "Team Member Image"
-msgstr ""
-
-#: addons/widgets/team-member.php:340
-msgid "Team Member Style"
-msgstr ""
-
-#: addons/widgets/team-member.php:47
-msgid "Team Style"
-msgstr ""
-
-#: addons/addons.php:310
+#: addons/addons.php:345
 msgid "Quanto"
 msgstr ""
 
-#. Widget name will appear in UI
-#: inc/widgets/about-me-widget.php:24
-msgid "Quanto :: About Me"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/about-us-widget.php:24
-msgid "Quanto :: About Us Widget"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/contact-info-widget.php:21
-msgid "Quanto :: Contact Info"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/gallery-widget.php:24
-msgid "Quanto :: Gallery"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/footer-map.php:21
-msgid "Quanto :: Map"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/newsletter-widget.php:21
-msgid "Quanto :: Newsletter"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/recent-post-widget.php:24
-msgid "Quanto :: Recent Posts"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/latest-post-slider.php:24
-msgid "Quanto :: Recent Posts Slider"
-msgstr ""
-
-#. Widget name will appear in UI
-#: inc/widgets/social-widget.php:21
-msgid "Quanto :: Social Icon"
-msgstr ""
-
-#: inc/builder/builder.php:112 inc/builder/builder.php:113
-msgid "Quanto Builder"
-msgstr ""
-
-#. Name of the plugin
-#: addons/addons.php:149 addons/addons.php:173 addons/addons.php:198
-msgid "Quanto Core"
-msgstr ""
-
-#: inc/builder/builder.php:138
-msgid "Quanto Footer Builder"
-msgstr ""
-
-#: addons/addons.php:317
+#: addons/addons.php:352
 msgid "Quanto Footer Elements"
 msgstr ""
 
-#: addons/header/quanto-new-header.php:20
-msgid "Quanto Header"
-msgstr ""
-
-#: inc/builder/builder.php:170
-msgid "Quanto Header Builder"
-msgstr ""
-
-#: addons/addons.php:325
+#: addons/addons.php:359
 msgid "Quanto Header Elements"
 msgstr ""
 
-#: addons/header/quanto-search.php:43
-msgid "Quanto Placeholder Text"
+#: addons/dynamic-widgets/feature-image.php:46
+msgid "Featured Image"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:22
-#: addons/widgets/quanto-testimonial-area.php:38
-msgid "Testimonial Area"
+#: addons/dynamic-widgets/feature-image.php:101
+#: addons/dynamic-widgets/feature-image.php:159
+#: addons/widgets/animation-image.php:46
+#: addons/widgets/blog-post.php:165
+#: addons/widgets/project-slider.php:163
+#: addons/widgets/project.php:189
+#: addons/widgets/scroll-down.php:58
+#: addons/widgets/service.php:74
+#: addons/widgets/service.php:84
+#: addons/widgets/testimonial.php:330
+msgid "Image"
 msgstr ""
 
-#: addons/widgets/testimonial-slider.php:301
-msgid "Testimonial Arrow Background Color"
+#: addons/dynamic-widgets/feature-image.php:107
+#: addons/dynamic-widgets/feature-image.php:437
+#: addons/dynamic-widgets/heading.php:164
+msgid "Alignment"
 msgstr ""
 
-#: addons/widgets/testimonial-slider.php:279
-msgid "Testimonial Arrow Color"
+#: addons/dynamic-widgets/feature-image.php:111
+#: addons/dynamic-widgets/feature-image.php:441
+#: addons/dynamic-widgets/heading.php:168
+#: addons/header/header-menu.php:69
+#: addons/header/logo.php:88
+#: addons/header/main-menu.php:94
+#: addons/widgets/service.php:175
+msgid "Left"
 msgstr ""
 
-#: addons/widgets/testimonial-slider.php:312
-msgid "Testimonial Arrow Hover Background Color"
+#: addons/dynamic-widgets/feature-image.php:115
+#: addons/dynamic-widgets/feature-image.php:445
+#: addons/dynamic-widgets/heading.php:172
+#: addons/header/header-menu.php:73
+#: addons/header/main-menu.php:98
+msgid "Center"
 msgstr ""
 
-#: addons/widgets/testimonial-slider.php:290
-msgid "Testimonial Arrow Hover Color"
+#: addons/dynamic-widgets/feature-image.php:119
+#: addons/dynamic-widgets/feature-image.php:449
+#: addons/dynamic-widgets/heading.php:176
+#: addons/header/header-menu.php:77
+#: addons/header/logo.php:96
+#: addons/header/main-menu.php:102
+#: addons/widgets/service.php:174
+msgid "Right"
 msgstr ""
 
-#: addons/widgets/testimonial-slider.php:257
-msgid "Testimonial Icon Color"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:22
-#: addons/widgets/testimonial-slider.php:38
-msgid "Testimonial Slider"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:254
-#: addons/widgets/testimonial-slider.php:268
-msgid "Testimonial Star Color"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:46
-msgid "Testimonial Style"
-msgstr ""
-
-#: inc/quantoajax.php:51
-msgid "Thank you, you have been added to our mailing list."
-msgstr ""
-
-#: addons/widgets/quanto-skill-about.php:74
-msgid ""
-"The startup phase is the riskiest stage of a business, but there are ways to "
-"break..."
-msgstr ""
-
-#: inc/quantoajax.php:54
-msgid "This Email address is already exists."
-msgstr ""
-
-#. Description of the plugin
-msgid "This is a helper plugin of quanto theme"
-msgstr ""
-
-#: addons/widgets/blog-post.php:102 addons/widgets/blog-post.php:191
-msgid "Title"
-msgstr ""
-
-#: addons/widgets/blog-post.php:199 addons/widgets/quanto-newsletter.php:116
-#: addons/widgets/quanto-progress-bar.php:105
-#: addons/widgets/quanto-work-process.php:155
-msgid "Title Color"
-msgstr ""
-
-#: addons/widgets/blog-post.php:210
-msgid "Title Color Hover"
-msgstr ""
-
-#: addons/widgets/blog-post.php:66
-msgid "Title Length"
-msgstr ""
-
-#: addons/widgets/blog-post.php:230 addons/widgets/quanto-work-process.php:173
-msgid "Title Margin"
-msgstr ""
-
-#: addons/widgets/blog-post.php:242 addons/widgets/quanto-work-process.php:184
-msgid "Title Padding"
-msgstr ""
-
-#: addons/widgets/section-title.php:43
-msgid "Title Style"
-msgstr ""
-
-#: addons/widgets/section-title.php:72
-msgid "Title Tag"
-msgstr ""
-
-#: addons/widgets/blog-post.php:222 addons/widgets/quanto-newsletter.php:127
-#: addons/widgets/quanto-work-process.php:166
-msgid "Title Typography"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:144 inc/widgets/about-us-widget.php:101
-#: inc/widgets/contact-info-widget.php:111 inc/widgets/footer-map.php:63
-#: inc/widgets/gallery-widget.php:80 inc/widgets/latest-post-slider.php:133
-#: inc/widgets/newsletter-widget.php:80 inc/widgets/recent-post-widget.php:114
-#: inc/widgets/social-widget.php:67
-msgid "Title:"
-msgstr ""
-
-#: addons/header/quanto-megamenu.php:54
-#: addons/header/quanto-new-header.php:123
-msgid "Top Level Menu Items"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:130
-#: addons/widgets/quanto-image-box.php:141
-msgid "Type Award Number"
-msgstr ""
-
-#: addons/widgets/quanto-image-box.php:152
-msgid "Type Award Text"
-msgstr ""
-
-#: addons/header/quanto-mobile-menu.php:58
-msgid "Type Url Here"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-box.php:60
-#: addons/widgets/quanto-pricing-table.php:78
-msgid "Type your description here"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:120
-#: addons/widgets/quanto-project-filter.php:130
-#: addons/widgets/quanto-project-filter.php:140
-#: addons/widgets/quanto-project-filter.php:150
-msgid "Type Your Tab Text Here"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:130
-#: addons/widgets/quanto-projects-filter.php:88
-msgid "UI Design"
-msgstr ""
-
-#: inc/widgets/about-me-widget.php:153
-msgid "Upload Image"
-msgstr ""
-
-#. Author of the plugin
-msgid "Mirror"
-msgstr ""
-
-#: addons/widgets/quanto-faq-area.php:72
-#: addons/widgets/quanto-image-box.php:111
-msgid "Video Link"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:92
-msgid "View All Reviews"
-msgstr ""
-
-#: addons/widgets/quanto-project-slider.php:150
-msgid "View Details"
-msgstr ""
-
-#: inc/builder/builder.php:144
-msgid "View Footer"
-msgstr ""
-
-#: inc/builder/builder.php:176
-msgid "View Header"
-msgstr ""
-
-#: inc/builder/builder.php:208
-msgid "View Tab Builder"
-msgstr ""
-
-#: addons/widgets/quanto-pricing-table.php:136
-msgid "VIP Plan"
-msgstr ""
-
-#: addons/widgets/testimonial-slider.php:145
-msgid "Vivi Marian"
-msgstr ""
-
-#: addons/widgets/quanto-project-filter.php:91
-#: addons/widgets/quanto-project-filter.php:163
-#: addons/widgets/quanto-tab-builder.php:103
-msgid "Web Development"
-msgstr ""
-
-#: inc/builder/builder.php:129
-msgid "Welcome To Header And Footer Builder Of This Theme"
-msgstr ""
-
-#: addons/widgets/quanto-testimonial-area.php:74
-msgid "What People’s Say"
-msgstr ""
-
-#: addons/widgets/image.php:138
+#: addons/dynamic-widgets/feature-image.php:166
+#: addons/header/menu.php:354
+#: addons/widgets/animation-image.php:85
+#: addons/widgets/hero.php:335
+#: addons/widgets/project-slider.php:170
+#: addons/widgets/project-slider.php:376
+#: addons/widgets/testimonial.php:337
 msgid "Width"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:195
-msgid "William Benjamin"
+#: addons/dynamic-widgets/feature-image.php:200
+msgid "Max Width"
 msgstr ""
 
-#: addons/widgets/quanto-work-process.php:106
-msgid "Work Description"
+#: addons/dynamic-widgets/feature-image.php:234
+#: addons/header/menu.php:376
+#: addons/widgets/animation-image.php:107
+#: addons/widgets/blog-post.php:172
+#: addons/widgets/project-slider.php:192
+#: addons/widgets/project-slider.php:398
+#: addons/widgets/project.php:196
+msgid "Height"
 msgstr ""
 
-#: addons/widgets/quanto-work-process.php:22
-#: addons/widgets/quanto-work-process.php:39
-#: addons/widgets/quanto-work-process.php:116
-msgid "Work Process"
+#: addons/dynamic-widgets/feature-image.php:264
+msgid "Object Fit"
 msgstr ""
 
-#: addons/widgets/quanto-work-process.php:75
-msgid "Work Process Image"
+#: addons/dynamic-widgets/feature-image.php:270
+#: addons/dynamic-widgets/feature-image.php:291
+msgid "Default"
 msgstr ""
 
-#: addons/widgets/quanto-work-process.php:47
-#: addons/widgets/quanto-work-process.php:136
-msgid "Work Process Style"
+#: addons/dynamic-widgets/feature-image.php:271
+msgid "Fill"
 msgstr ""
 
-#: addons/widgets/quanto-work-process.php:97
-msgid "Work Title"
+#: addons/dynamic-widgets/feature-image.php:272
+msgid "Cover"
 msgstr ""
 
-#: addons/widgets/quanto-counter.php:89
-msgid "Workers"
+#: addons/dynamic-widgets/feature-image.php:273
+msgid "Contain"
 msgstr ""
 
-#: addons/widgets/quanto-project-filter.php:117
-#: addons/widgets/quanto-project-filter.php:127
-#: addons/widgets/quanto-project-filter.php:137
-#: addons/widgets/quanto-project-filter.php:147
-msgid "Write Category"
+#: addons/dynamic-widgets/feature-image.php:285
+msgid "Object position"
 msgstr ""
 
-#: addons/widgets/quanto-image-slider.php:143
-#: addons/widgets/testimonial-slider.php:192 inc/builder/builder.php:76
+#: addons/dynamic-widgets/feature-image.php:292
+msgid "Center Top"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:293
+msgid "Center Center"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:294
+msgid "Center Bottom"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:312
+#: addons/dynamic-widgets/heading.php:236
+#: addons/widgets/process.php:213
+msgid "Normal"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:318
+#: addons/dynamic-widgets/feature-image.php:348
+msgid "Opacity"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:342
+#: addons/widgets/process.php:257
+msgid "Hover"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:372
+msgid "Transition Duration"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:388
+msgid "Hover Animation"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:405
+#: addons/dynamic-widgets/post-navigation.php:235
+#: addons/header/menu.php:405
+#: addons/header/menu.php:552
+#: addons/header/offcanvas.php:163
+#: addons/widgets/blog-post.php:248
+#: addons/widgets/blog-post.php:482
+#: addons/widgets/button.php:205
+#: addons/widgets/career.php:388
+#: addons/widgets/hero.php:762
+#: addons/widgets/pricing.php:406
+#: addons/widgets/pricing.php:495
+#: addons/widgets/process.php:233
+#: addons/widgets/project-slider.php:438
+#: addons/widgets/testimonial.php:397
+msgid "Border Radius"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:427
+msgid "Caption"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:453
+#: addons/dynamic-widgets/heading.php:180
+msgid "Justified"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:466
+#: addons/dynamic-widgets/heading.php:209
+#: addons/header/header-sidebar.php:381
+#: addons/header/header-sidebar.php:553
+msgid "Text Color"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:478
+#: addons/header/header-sidebar.php:354
+#: addons/header/header-sidebar.php:408
+#: addons/header/header-sidebar.php:462
+#: addons/header/menu.php:294
+#: addons/header/menu.php:426
+#: addons/header/menu.php:491
+#: addons/widgets/award.php:176
+#: addons/widgets/blog-post.php:423
+#: addons/widgets/button.php:151
+#: addons/widgets/career.php:125
+#: addons/widgets/career.php:343
+#: addons/widgets/hero.php:706
+#: addons/widgets/pricing.php:372
+#: addons/widgets/pricing.php:462
+#: addons/widgets/project-slider.php:235
+#: addons/widgets/project-slider.php:344
+#: addons/widgets/project.php:239
+#: addons/widgets/scroll-down.php:203
+#: addons/widgets/testimonial.php:368
+#: addons/widgets/testimonial.php:627
+#: addons/widgets/video-box.php:111
+msgid "Background Color"
+msgstr ""
+
+#: addons/dynamic-widgets/feature-image.php:503
+#: addons/widgets/button.php:256
+#: addons/widgets/career.php:409
+#: addons/widgets/pricing.php:276
+msgid "Spacing"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:44
+msgid "Heading"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:99
+#: addons/dynamic-widgets/heading.php:116
+#: addons/dynamic-widgets/heading.php:202
+#: addons/header/header-sidebar.php:188
+#: addons/widgets/award.php:104
+#: addons/widgets/blog-post.php:300
+#: addons/widgets/career.php:159
+#: addons/widgets/faqs.php:53
+#: addons/widgets/hero.php:73
+#: addons/widgets/hero.php:229
+#: addons/widgets/hero.php:283
+#: addons/widgets/pricing.php:47
+#: addons/widgets/pricing.php:143
+#: addons/widgets/process.php:51
+#: addons/widgets/process.php:136
+#: addons/widgets/project-slider.php:259
+#: addons/widgets/project.php:263
+msgid "Title"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:121
+msgid "Enter your title"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:122
+msgid "Add Your Heading Text Here"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:131
+msgid "Link"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:145
+msgid "HTML Tag"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:193
+msgid "View"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:233
+msgid "Blend Mode"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:260
+msgid "Line Style"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:267
+msgid "Enable Line?"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:269
+#: addons/header/header-sidebar.php:140
+#: addons/header/menu.php:63
+#: addons/widgets/animation-image.php:55
+#: addons/widgets/button.php:79
+#: addons/widgets/button.php:90
+#: addons/widgets/career.php:96
+#: addons/widgets/pricing.php:80
+#: addons/widgets/pricing.php:452
+#: addons/widgets/project-slider.php:122
+#: addons/widgets/project.php:143
+#: addons/widgets/testimonial.php:88
+#: inc/builder/builder.php:80
 msgid "Yes"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:270
+#: addons/header/header-sidebar.php:141
+#: addons/header/menu.php:64
+#: addons/widgets/animation-image.php:56
+#: addons/widgets/button.php:80
+#: addons/widgets/button.php:91
+#: addons/widgets/career.php:97
+#: addons/widgets/pricing.php:81
+#: addons/widgets/pricing.php:453
+#: addons/widgets/project-slider.php:123
+#: addons/widgets/project.php:144
+#: addons/widgets/testimonial.php:89
+#: inc/builder/builder.php:81
+msgid "No"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:278
+msgid "Line Color"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:291
+msgid "Line Width"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:316
+msgid "Line height"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:341
+msgid "Shape Y Position"
+msgstr ""
+
+#: addons/dynamic-widgets/heading.php:366
+msgid "Shape X Position"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:48
+#: addons/dynamic-widgets/post-navigation.php:94
+msgid "Post Navigation"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:101
+msgid "Prev Text"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:103
+msgid "Previous Project"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:109
+msgid "Next Text"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:111
+msgid "Next Project"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:117
+msgid "Prev Icon"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:128
+msgid "Next Icon"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:143
+#: addons/header/search.php:55
+#: addons/widgets/button.php:46
+#: addons/widgets/project-slider.php:46
+#: addons/widgets/project.php:46
+#: addons/widgets/scroll-down.php:45
+msgid "Style"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:151
+msgid "Prev Next Text Typography"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:158
+msgid "Prev Next Text Color"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:168
+msgid " Margin"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:185
+#: addons/widgets/pricing.php:253
+#: addons/widgets/testimonial.php:581
+msgid "Icon Size"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:207
+#: addons/widgets/pricing.php:243
+msgid "Icon Color"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:217
+msgid "Icon Background Color"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:228
+#: addons/widgets/blog-post.php:241
+#: addons/widgets/testimonial.php:390
+msgid "Border"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:247
+msgid "Icon gap"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:277
+msgid "Project Titlet Typography"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:284
+msgid "Project Title Color"
+msgstr ""
+
+#: addons/dynamic-widgets/post-navigation.php:294
+msgid "Title Margin"
+msgstr ""
+
+#: addons/header/header-menu.php:20
+#: addons/header/header-menu.php:36
+#: addons/header/main-menu.php:20
+#: addons/header/main-menu.php:36
+msgid "Header Menu"
+msgstr ""
+
+#: addons/header/header-menu.php:44
+msgid "Mobile Logo"
+msgstr ""
+
+#: addons/header/header-menu.php:55
+#: addons/header/main-menu.php:80
+msgid "Menu Background Color"
+msgstr ""
+
+#: addons/header/header-menu.php:65
+#: addons/header/main-menu.php:90
+msgid "Menu Alignment"
+msgstr ""
+
+#: addons/header/header-sidebar.php:20
+#: addons/header/header-sidebar.php:52
+msgid "Header Sidebar"
+msgstr ""
+
+#: addons/header/header-sidebar.php:70
+#: addons/header/header-sidebar.php:340
+msgid "Left Side"
+msgstr ""
+
+#: addons/header/header-sidebar.php:77
+#: addons/header/logo.php:44
+#: addons/header/main-menu.php:43
+#: addons/header/menu.php:111
+msgid "Logo Type"
+msgstr ""
+
+#: addons/header/header-sidebar.php:81
+#: addons/header/logo.php:48
+#: addons/header/main-menu.php:47
+msgid "Dark"
+msgstr ""
+
+#: addons/header/header-sidebar.php:82
+#: addons/header/logo.php:49
+#: addons/header/main-menu.php:48
+msgid "White"
+msgstr ""
+
+#: addons/header/header-sidebar.php:83
+#: addons/header/logo.php:50
+#: addons/header/main-menu.php:49
+msgid "Custom"
+msgstr ""
+
+#: addons/header/header-sidebar.php:90
+#: addons/header/logo.php:58
+#: addons/header/main-menu.php:56
+msgid "Choose logo"
+msgstr ""
+
+#: addons/header/header-sidebar.php:103
+msgid "Rating Point"
+msgstr ""
+
+#: addons/header/header-sidebar.php:105
+msgid "4.8"
+msgstr ""
+
+#: addons/header/header-sidebar.php:112
+msgid "Rating Icon"
+msgstr ""
+
+#: addons/header/header-sidebar.php:119
+msgid "Rating Text"
+msgstr ""
+
+#: addons/header/header-sidebar.php:121
+msgid "2500+ reviews based on client feedback"
+msgstr ""
+
+#: addons/header/header-sidebar.php:131
+msgid "Sidebar Menu"
+msgstr ""
+
+#: addons/header/header-sidebar.php:138
+#: addons/header/menu.php:61
+msgid "Use Main Menu"
+msgstr ""
+
+#: addons/header/header-sidebar.php:181
+#: addons/header/header-sidebar.php:455
+msgid "Right Side"
+msgstr ""
+
+#: addons/header/header-sidebar.php:190
+msgid "Contact"
+msgstr ""
+
+#: addons/header/header-sidebar.php:197
+#: addons/header/menu.php:152
+#: addons/widgets/animation-title.php:46
+#: addons/widgets/animation-title.php:58
+#: addons/widgets/button.php:61
+#: addons/widgets/button.php:118
+#: addons/widgets/career.php:85
+#: addons/widgets/counter-two.php:73
+#: addons/widgets/counter-two.php:160
+#: addons/widgets/counter.php:66
+#: addons/widgets/counter.php:189
+#: addons/widgets/header-status.php:46
+#: addons/widgets/hero.php:117
+#: addons/widgets/hero.php:192
+#: addons/widgets/hero.php:503
+#: addons/widgets/list-icon.php:39
+#: addons/widgets/list-icon.php:62
+#: addons/widgets/list-icon.php:89
+#: addons/widgets/project.php:291
+#: addons/widgets/scroll-down.php:92
+#: addons/widgets/scroll-down.php:130
+#: addons/widgets/testimonial.php:411
+#: addons/widgets/text-slider-two.php:48
+#: addons/widgets/text-slider-two.php:68
+#: addons/widgets/text-slider.php:48
+#: addons/widgets/text-slider.php:83
+msgid "Text"
+msgstr ""
+
+#: addons/header/header-sidebar.php:199
+msgid "740 New South Head Rd, Triple Bay Swfw 3108, New York"
+msgstr ""
+
+#: addons/header/header-sidebar.php:206
+msgid "Mail"
+msgstr ""
+
+#: addons/header/header-sidebar.php:208
+msgid "hello@quanta.agency"
+msgstr ""
+
+#: addons/header/header-sidebar.php:215
+msgid "Mail URL"
+msgstr ""
+
+#: addons/header/header-sidebar.php:217
+msgid "link like this(mailto:) underline comes."
+msgstr ""
+
+#: addons/header/header-sidebar.php:223
+msgid "tel:"
+msgstr ""
+
+#: addons/header/header-sidebar.php:225
+msgid "+1 888 456 7890"
+msgstr ""
+
+#: addons/header/header-sidebar.php:232
+msgid "tel: URL"
+msgstr ""
+
+#: addons/header/header-sidebar.php:242
+msgid "Toggle"
+msgstr ""
+
+#: addons/header/header-sidebar.php:249
+#: addons/header/menu.php:218
+#: addons/header/menu.php:255
+#: addons/header/menu.php:322
+#: addons/header/menu.php:481
+#: addons/header/menu.php:573
+#: addons/header/menu.php:622
+#: addons/header/menu.php:660
+#: addons/header/menu.php:709
+#: addons/header/offcanvas.php:62
+#: addons/widgets/animation-title.php:65
+#: addons/widgets/award.php:111
+#: addons/widgets/award.php:138
+#: addons/widgets/blog-post.php:269
+#: addons/widgets/blog-post.php:307
+#: addons/widgets/blog-post.php:403
+#: addons/widgets/button.php:125
+#: addons/widgets/button.php:274
+#: addons/widgets/career.php:166
+#: addons/widgets/career.php:204
+#: addons/widgets/career.php:231
+#: addons/widgets/career.php:269
+#: addons/widgets/career.php:296
+#: addons/widgets/career.php:323
+#: addons/widgets/career.php:425
+#: addons/widgets/counter-two.php:113
+#: addons/widgets/counter-two.php:140
+#: addons/widgets/counter-two.php:167
+#: addons/widgets/counter.php:142
+#: addons/widgets/counter.php:169
+#: addons/widgets/counter.php:196
+#: addons/widgets/header-status.php:65
+#: addons/widgets/hero.php:290
+#: addons/widgets/hero.php:325
+#: addons/widgets/hero.php:392
+#: addons/widgets/hero.php:510
+#: addons/widgets/hero.php:624
+#: addons/widgets/hero.php:655
+#: addons/widgets/hero.php:686
+#: addons/widgets/hero.php:802
+#: addons/widgets/list-icon.php:96
+#: addons/widgets/pricing.php:150
+#: addons/widgets/pricing.php:188
+#: addons/widgets/pricing.php:226
+#: addons/widgets/pricing.php:313
+#: addons/widgets/pricing.php:352
+#: addons/widgets/process.php:114
+#: addons/widgets/process.php:143
+#: addons/widgets/process.php:183
+#: addons/widgets/project-slider.php:266
+#: addons/widgets/project-slider.php:293
+#: addons/widgets/project-slider.php:334
+#: addons/widgets/project.php:270
+#: addons/widgets/project.php:301
+#: addons/widgets/project.php:339
+#: addons/widgets/scroll-down.php:137
+#: addons/widgets/scroll-down.php:183
+#: addons/widgets/testimonial.php:287
+#: addons/widgets/testimonial.php:418
+#: addons/widgets/testimonial.php:464
+#: addons/widgets/testimonial.php:505
+#: addons/widgets/testimonial.php:548
+#: addons/widgets/testimonial.php:617
+#: addons/widgets/text-slider-two.php:75
+#: addons/widgets/text-slider.php:90
+#: addons/widgets/text-slider.php:128
+#: addons/widgets/video-box.php:89
+msgid "Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:260
+#: addons/header/menu.php:228
+#: addons/header/menu.php:265
+#: addons/header/offcanvas.php:72
+#: addons/widgets/blog-post.php:279
+#: addons/widgets/blog-post.php:317
+#: addons/widgets/button.php:138
+#: addons/widgets/button.php:288
+#: addons/widgets/career.php:333
+#: addons/widgets/career.php:435
+#: addons/widgets/hero.php:696
+#: addons/widgets/hero.php:812
+#: addons/widgets/list-icon.php:106
+#: addons/widgets/pricing.php:362
+#: addons/widgets/scroll-down.php:193
+#: addons/widgets/video-box.php:100
+msgid "Hover Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:364
+msgid "Rating Point Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:401
+#: addons/header/menu.php:22
+#: addons/header/menu.php:54
+#: addons/header/menu.php:211
+msgid "Menu"
+msgstr ""
+
+#: addons/header/header-sidebar.php:418
+msgid "Menu Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:435
+msgid "SubMenu Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:472
+#: addons/header/offcanvas.php:136
+msgid "Close Icon Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:482
+#: addons/header/offcanvas.php:146
+msgid "Close Icon Background Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:536
+msgid "Title Color"
+msgstr ""
+
+#: addons/header/header-sidebar.php:570
+msgid "Linked Text Color"
+msgstr ""
+
+#: addons/header/logo.php:21
+msgid "Quanto Site Logo"
+msgstr ""
+
+#: addons/header/logo.php:37
+#: addons/widgets/blog-post.php:44
+msgid "Layout"
+msgstr ""
+
+#: addons/header/logo.php:84
+msgid "Align"
+msgstr ""
+
+#: addons/header/logo.php:92
+msgid "top"
+msgstr ""
+
+#: addons/header/logo.php:110
+msgid "Image width"
+msgstr ""
+
+#: addons/header/logo.php:128
+#: addons/header/menu.php:639
+#: addons/header/menu.php:688
+#: addons/widgets/award.php:155
+#: addons/widgets/blog-post.php:227
+#: addons/widgets/blog-post.php:336
+#: addons/widgets/counter-two.php:92
+#: addons/widgets/hero.php:532
+#: addons/widgets/hero.php:560
+#: addons/widgets/hero.php:733
+#: addons/widgets/pricing.php:167
+#: addons/widgets/pricing.php:205
+#: addons/widgets/pricing.php:292
+#: addons/widgets/pricing.php:331
+#: addons/widgets/process.php:161
+#: addons/widgets/project-slider.php:224
+#: addons/widgets/project-slider.php:310
+#: addons/widgets/project.php:228
+#: addons/widgets/project.php:318
+#: addons/widgets/project.php:356
+#: addons/widgets/testimonial.php:305
+#: addons/widgets/testimonial.php:316
+#: addons/widgets/testimonial.php:438
+#: addons/widgets/testimonial.php:525
+#: addons/widgets/text-slider.php:162
+msgid "Margin"
+msgstr ""
+
+#: addons/header/menu.php:104
+msgid "Mobile Menu"
+msgstr ""
+
+#: addons/header/menu.php:115
+msgid "Dark Logo"
+msgstr ""
+
+#: addons/header/menu.php:116
+msgid "White Logo"
+msgstr ""
+
+#: addons/header/menu.php:117
+msgid "Custom Logo"
+msgstr ""
+
+#: addons/header/menu.php:124
+msgid "Logo Image"
+msgstr ""
+
+#: addons/header/menu.php:140
+#: addons/widgets/career.php:197
+msgid "Address"
+msgstr ""
+
+#: addons/header/menu.php:142
+msgid "27 Division St, New York,NY 10002, USA"
+msgstr ""
+
+#: addons/header/menu.php:154
+msgid "+1 800 123 654 987 "
+msgstr ""
+
+#: addons/header/menu.php:161
+#: addons/widgets/animation-image.php:64
+#: addons/widgets/button.php:70
+#: addons/widgets/hero.php:95
+#: addons/widgets/hero.php:204
+#: addons/widgets/pricing.php:99
+#: addons/widgets/scroll-down.php:113
+msgid "URL"
+msgstr ""
+
+#: addons/header/menu.php:168
+msgid "Linked Items"
+msgstr ""
+
+#: addons/header/menu.php:178
+msgid "Icon select"
+msgstr ""
+
+#: addons/header/menu.php:189
+#: addons/widgets/text-slider.php:65
+msgid "Icon Url"
+msgstr ""
+
+#: addons/header/menu.php:200
+msgid "Social Icon"
+msgstr ""
+
+#: addons/header/menu.php:248
+msgid "Sub Menu"
+msgstr ""
+
+#: addons/header/menu.php:283
+#: addons/header/menu.php:601
+#: addons/widgets/award.php:196
+#: addons/widgets/blog-post.php:216
+#: addons/widgets/button.php:184
+#: addons/widgets/career.php:135
+#: addons/widgets/career.php:370
+#: addons/widgets/counter.php:223
+#: addons/widgets/hero.php:266
+#: addons/widgets/hero.php:571
+#: addons/widgets/hero.php:744
+#: addons/widgets/pricing.php:506
+#: addons/widgets/process.php:244
+#: addons/widgets/project-slider.php:245
+#: addons/widgets/project-slider.php:420
+#: addons/widgets/project.php:175
+#: addons/widgets/project.php:249
+#: addons/widgets/testimonial.php:378
+msgid "Padding"
+msgstr ""
+
+#: addons/header/menu.php:305
+msgid "Submenu Shadow"
+msgstr ""
+
+#: addons/header/menu.php:315
+msgid "Hamburger"
+msgstr ""
+
+#: addons/header/menu.php:332
+#: addons/header/search.php:82
+#: addons/widgets/blog-post.php:450
+#: addons/widgets/button.php:229
+#: addons/widgets/project-slider.php:354
+#: addons/widgets/scroll-down.php:230
+#: addons/widgets/service.php:232
+#: addons/widgets/testimonial.php:475
+#: addons/widgets/testimonial.php:599
+#: addons/widgets/text-slider.php:139
+msgid "Size"
+msgstr ""
+
+#: addons/header/menu.php:419
+msgid "Mobile"
+msgstr ""
+
+#: addons/header/menu.php:436
+msgid "Logo Width"
+msgstr ""
+
+#: addons/header/menu.php:459
+msgid "Close Icon Size"
+msgstr ""
+
+#: addons/header/menu.php:501
+msgid "Close Icon Width"
+msgstr ""
+
+#: addons/header/menu.php:523
+msgid "Close Icon Height"
+msgstr ""
+
+#: addons/header/menu.php:566
+msgid "mobile Menu"
+msgstr ""
+
+#: addons/header/menu.php:584
+msgid "Active Color"
+msgstr ""
+
+#: addons/header/menu.php:615
+msgid "Mobile Address"
+msgstr ""
+
+#: addons/header/menu.php:653
+msgid "Linked Text"
+msgstr ""
+
+#: addons/header/menu.php:677
+#: addons/widgets/list-icon.php:124
+#: addons/widgets/list-icon.php:152
+#: addons/widgets/text-slider-two.php:92
+#: addons/widgets/text-slider.php:107
+msgid "Gap"
+msgstr ""
+
+#: addons/header/menu.php:702
+msgid "Mobile Social Icon"
+msgstr ""
+
+#: addons/header/offcanvas.php:20
+#: addons/header/offcanvas.php:36
+#: addons/header/offcanvas.php:55
+msgid "Offcanvas"
+msgstr ""
+
+#: addons/header/offcanvas.php:43
+msgid "Select Offcanvas"
+msgstr ""
+
+#: addons/header/offcanvas.php:82
+msgid "Offcanvas Background Color"
+msgstr ""
+
+#: addons/header/offcanvas.php:184
+msgid "Select a Title"
+msgstr ""
+
+#: addons/header/search.php:20
+msgid "Search Form"
+msgstr ""
+
+#: addons/header/search.php:36
+msgid "Header Search And Login"
+msgstr ""
+
+#: addons/header/search.php:43
+msgid "What are you looking for"
+msgstr ""
+
+#: addons/header/search.php:45
+msgid "Search Here..."
+msgstr ""
+
+#: addons/header/search.php:62
+msgid "Search Icon Color"
+msgstr ""
+
+#: addons/header/search.php:72
+msgid "Search Icon Hover Color"
+msgstr ""
+
+#: addons/widgets/animation-image.php:22
+#: addons/widgets/animation-image.php:39
+#: addons/widgets/animation-image.php:78
+msgid "Animation Image"
+msgstr ""
+
+#: addons/widgets/animation-image.php:53
+msgid "Need Link?"
+msgstr ""
+
+#: addons/widgets/animation-title.php:22
+#: addons/widgets/animation-title.php:39
+msgid "Animation Title"
+msgstr ""
+
+#: addons/widgets/animation-title.php:48
+#: addons/widgets/button.php:63
+#: addons/widgets/career.php:87
+#: addons/widgets/hero.php:194
+msgid "Get in touch"
+msgstr ""
+
+#: addons/widgets/award.php:21
+msgid "Quanto Award"
+msgstr ""
+
+#: addons/widgets/award.php:37
+#: addons/widgets/process.php:32
+#: addons/widgets/project-slider.php:217
+#: addons/widgets/project.php:221
+#: addons/widgets/video-box.php:38
+msgid "Content"
+msgstr ""
+
+#: addons/widgets/award.php:47
+msgid "Award Title"
+msgstr ""
+
+#: addons/widgets/award.php:49
+#: addons/widgets/award.php:72
+msgid "Winner - Best eCommerce Websites"
+msgstr ""
+
+#: addons/widgets/award.php:57
+msgid "Awards"
+msgstr ""
+
+#: addons/widgets/award.php:59
+#: addons/widgets/award.php:73
+msgid "Awwwards ─ 2023"
+msgstr ""
+
+#: addons/widgets/award.php:67
+msgid "Award List"
+msgstr ""
+
+#: addons/widgets/award.php:76
+msgid "Awarded - Top Creative Agency in United State"
+msgstr ""
+
+#: addons/widgets/award.php:77
+msgid "Envato Elements ─ 2022"
+msgstr ""
+
+#: addons/widgets/award.php:80
+msgid "Mentioned - Honorable Mentioned"
+msgstr ""
+
+#: addons/widgets/award.php:81
+msgid "Design Community ─ 2022"
+msgstr ""
+
+#: addons/widgets/award.php:84
+msgid "Winner - Behance Portfolio Review"
+msgstr ""
+
+#: addons/widgets/award.php:85
+msgid "Behance ─ 2021"
+msgstr ""
+
+#: addons/widgets/award.php:88
+msgid "Winner - Featured App Design of the Week"
+msgstr ""
+
+#: addons/widgets/award.php:89
+msgid "UI/UX Global Award ─ 2019"
+msgstr ""
+
+#: addons/widgets/award.php:131
+msgid "Year"
+msgstr ""
+
+#: addons/widgets/award.php:169
+#: addons/widgets/blog-post.php:199
+#: addons/widgets/career.php:118
+#: addons/widgets/counter-two.php:85
+#: addons/widgets/counter.php:216
+#: addons/widgets/hero.php:249
+#: addons/widgets/process.php:204
+#: addons/widgets/project-slider.php:134
+#: addons/widgets/project.php:155
+#: addons/widgets/testimonial.php:358
+msgid "Box"
+msgstr ""
+
+#: addons/widgets/award.php:186
+msgid "HoverBackground Color"
+msgstr ""
+
+#: addons/widgets/award.php:214
+msgid "Hover Border Color"
+msgstr ""
+
+#: addons/widgets/blog-post.php:20
+msgid "Blog Post"
+msgstr ""
+
+#: addons/widgets/blog-post.php:37
+msgid "Blog Settings"
+msgstr ""
+
+#: addons/widgets/blog-post.php:48
+#: addons/widgets/button.php:50
+#: addons/widgets/project-slider.php:50
+#: addons/widgets/project.php:50
+#: addons/widgets/scroll-down.php:49
+#: addons/widgets/service.php:44
+msgid "Style 1"
+msgstr ""
+
+#: addons/widgets/blog-post.php:49
+#: addons/widgets/button.php:51
+#: addons/widgets/project-slider.php:51
+#: addons/widgets/project.php:51
+#: addons/widgets/scroll-down.php:50
+#: addons/widgets/service.php:45
+msgid "Style 2"
+msgstr ""
+
+#: addons/widgets/blog-post.php:54
+msgid "Columns per row"
+msgstr ""
+
+#: addons/widgets/blog-post.php:70
+msgid "Numbar Of Post"
+msgstr ""
+
+#: addons/widgets/blog-post.php:79
+#: addons/widgets/project-slider.php:67
+#: addons/widgets/project.php:88
+msgid "Post By:"
+msgstr ""
+
+#: addons/widgets/blog-post.php:84
+#: addons/widgets/project-slider.php:72
+#: addons/widgets/project.php:93
+msgid "Latest Post"
+msgstr ""
+
+#: addons/widgets/blog-post.php:85
+#: addons/widgets/project-slider.php:73
+#: addons/widgets/project.php:94
+msgid "Selected posts"
+msgstr ""
+
+#: addons/widgets/blog-post.php:92
+#: addons/widgets/project-slider.php:82
+#: addons/widgets/project.php:103
+msgid "Post In"
+msgstr ""
+
+#: addons/widgets/blog-post.php:105
+msgid "Order By"
+msgstr ""
+
+#: addons/widgets/blog-post.php:116
+#: addons/widgets/project-slider.php:106
+#: addons/widgets/project.php:127
+msgid "Order"
+msgstr ""
+
+#: addons/widgets/blog-post.php:133
+msgid "Blog Content"
+msgstr ""
+
+#: addons/widgets/blog-post.php:142
+msgid "Read More"
+msgstr ""
+
+#: addons/widgets/blog-post.php:151
+msgid "Show Pagination"
+msgstr ""
+
+#: addons/widgets/blog-post.php:153
+#: addons/widgets/faqs.php:43
+#: addons/widgets/service.php:139
+#: addons/widgets/testimonial.php:193
+#: addons/widgets/testimonial.php:207
+#: addons/widgets/testimonial.php:222
+#: addons/widgets/testimonial.php:233
+msgid "Show"
+msgstr ""
+
+#: addons/widgets/blog-post.php:154
+#: addons/widgets/faqs.php:44
+#: addons/widgets/service.php:140
+#: addons/widgets/testimonial.php:194
+#: addons/widgets/testimonial.php:208
+#: addons/widgets/testimonial.php:223
+#: addons/widgets/testimonial.php:234
+msgid "Hide"
+msgstr ""
+
+#: addons/widgets/blog-post.php:206
+msgid "Box bg Color"
+msgstr ""
+
+#: addons/widgets/blog-post.php:262
+msgid "Meta"
+msgstr ""
+
+#: addons/widgets/blog-post.php:290
+#: addons/widgets/blog-post.php:328
+#: addons/widgets/blog-post.php:383
+#: addons/widgets/testimonial.php:298
+#: addons/widgets/testimonial.php:431
+#: addons/widgets/testimonial.php:518
+#: addons/widgets/testimonial.php:561
+msgid "Typography"
+msgstr ""
+
+#: addons/widgets/blog-post.php:350
+#: addons/widgets/button.php:22
+#: addons/widgets/button.php:39
+#: addons/widgets/hero.php:676
+#: addons/widgets/pricing.php:345
+#: addons/widgets/video-box.php:81
+msgid "Button"
+msgstr ""
+
+#: addons/widgets/blog-post.php:360
+msgid "Button Color"
+msgstr ""
+
+#: addons/widgets/blog-post.php:371
+msgid "Button Color Hover"
+msgstr ""
+
+#: addons/widgets/blog-post.php:393
+msgid "Pagination"
+msgstr ""
+
+#: addons/widgets/blog-post.php:413
+msgid "Hover & Active Color"
+msgstr ""
+
+#: addons/widgets/blog-post.php:433
+#: addons/widgets/scroll-down.php:213
+#: addons/widgets/video-box.php:122
+msgid "Background Hover Color"
+msgstr ""
+
+#: addons/widgets/button.php:52
+#: addons/widgets/scroll-down.php:51
+#: addons/widgets/service.php:46
+msgid "Style 3"
+msgstr ""
+
+#: addons/widgets/button.php:53
+#: addons/widgets/service.php:47
+msgid "Style 4"
+msgstr ""
+
+#: addons/widgets/button.php:54
+#: addons/widgets/service.php:48
+msgid "Style 5"
+msgstr ""
+
+#: addons/widgets/button.php:77
+#: addons/widgets/career.php:94
+msgid "Need Icon?"
+msgstr ""
+
+#: addons/widgets/button.php:88
+msgid "Icon Left?"
+msgstr ""
+
+#: addons/widgets/button.php:164
+#: addons/widgets/career.php:353
+#: addons/widgets/hero.php:716
+#: addons/widgets/pricing.php:382
+#: addons/widgets/pricing.php:472
+msgid "Hover Background Color"
+msgstr ""
+
+#: addons/widgets/button.php:222
+#: addons/widgets/career.php:402
+#: addons/widgets/service.php:75
+#: addons/widgets/service.php:95
+#: addons/widgets/service.php:200
+#: addons/widgets/text-slider.php:57
+#: addons/widgets/text-slider.php:121
+msgid "Icon"
+msgstr ""
+
+#: addons/widgets/career.php:22
+#: addons/widgets/career.php:39
+msgid "Career"
+msgstr ""
+
+#: addons/widgets/career.php:146
+#: addons/widgets/project.php:165
+msgid "Border Color"
+msgstr ""
+
+#: addons/widgets/career.php:183
+#: addons/widgets/career.php:248
+msgid "margin"
+msgstr ""
+
+#: addons/widgets/career.php:224
+msgid "Date"
+msgstr ""
+
+#: addons/widgets/career.php:262
+msgid "Roles Text"
+msgstr ""
+
+#: addons/widgets/career.php:289
+msgid "Roles Number"
+msgstr ""
+
+#: addons/widgets/career.php:316
+#: addons/widgets/pricing.php:90
+#: addons/widgets/service.php:109
+#: addons/widgets/video-box.php:66
+#: inc/widgets/about-us-widget.php:123
+msgid "Button Text"
+msgstr ""
+
+#: addons/widgets/counter-two.php:22
+msgid "Counter Two"
+msgstr ""
+
+#: addons/widgets/counter-two.php:39
+#: addons/widgets/counter.php:22
+#: addons/widgets/counter.php:39
+msgid "Counter"
+msgstr ""
+
+#: addons/widgets/counter-two.php:46
+#: addons/widgets/counter-two.php:106
+msgid "Prefix"
+msgstr ""
+
+#: addons/widgets/counter-two.php:48
+msgid "$"
+msgstr ""
+
+#: addons/widgets/counter-two.php:55
+#: addons/widgets/counter-two.php:133
+#: addons/widgets/counter.php:48
+#: addons/widgets/counter.php:135
+#: addons/widgets/hero.php:156
+#: addons/widgets/process.php:42
+#: addons/widgets/process.php:106
+msgid "Number"
+msgstr ""
+
+#: addons/widgets/counter-two.php:57
+msgid "21"
+msgstr ""
+
+#: addons/widgets/counter-two.php:64
+#: addons/widgets/counter.php:57
+#: addons/widgets/counter.php:162
+msgid "Suffix"
+msgstr ""
+
+#: addons/widgets/counter-two.php:66
+msgid "M"
+msgstr ""
+
+#: addons/widgets/counter-two.php:75
+msgid "We assisted companies is securing over $21M in funding successfully."
+msgstr ""
+
+#: addons/widgets/counter.php:50
+msgid "17"
+msgstr ""
+
+#: addons/widgets/counter.php:59
+msgid "+"
+msgstr ""
+
+#: addons/widgets/counter.php:68
+msgid "Years of agency experience"
+msgstr ""
+
+#: addons/widgets/counter.php:75
+#: addons/widgets/text-slider-two.php:39
+#: addons/widgets/text-slider-two.php:57
+#: addons/widgets/text-slider.php:22
+#: addons/widgets/text-slider.php:39
+#: addons/widgets/text-slider.php:72
+msgid "Text Slider"
+msgstr ""
+
+#: addons/widgets/counter.php:83
+msgid "Row Gap"
+msgstr ""
+
+#: addons/widgets/counter.php:99
+msgid "Column Gap"
+msgstr ""
+
+#: addons/widgets/counter.php:115
+msgid "Columns"
+msgstr ""
+
+#: addons/widgets/counter.php:119
+msgid "1 Column"
+msgstr ""
+
+#: addons/widgets/counter.php:120
+msgid "2 Columns"
+msgstr ""
+
+#: addons/widgets/counter.php:121
+msgid "3 Columns"
+msgstr ""
+
+#: addons/widgets/counter.php:122
+msgid "4 Columns"
+msgstr ""
+
+#: addons/widgets/faqs.php:16
+#: addons/widgets/faqs.php:31
+#: addons/widgets/faqs.php:73
+msgid "FAQs"
+msgstr ""
+
+#: addons/widgets/faqs.php:41
+msgid "Open?"
+msgstr ""
+
+#: addons/widgets/faqs.php:55
+msgid "FAQ Item"
+msgstr ""
+
+#: addons/widgets/faqs.php:63
+#: addons/widgets/process.php:61
+#: addons/widgets/process.php:175
+msgid "Description"
+msgstr ""
+
+#: addons/widgets/faqs.php:65
+msgid "Default description."
+msgstr ""
+
+#: addons/widgets/faqs.php:66
+msgid "Type your description here"
+msgstr ""
+
+#: addons/widgets/header-status.php:22
+#: addons/widgets/header-status.php:39
+msgid "Header Status"
+msgstr ""
+
+#: addons/widgets/header-status.php:48
+msgid "Available for new opportunity"
+msgstr ""
+
+#: addons/widgets/header-status.php:58
+msgid "Status"
+msgstr ""
+
+#: addons/widgets/header-status.php:82
+msgid "Dot Color"
+msgstr ""
+
+#: addons/widgets/hero.php:23
+#: addons/widgets/hero.php:40
+msgid "Hero"
+msgstr ""
+
+#: addons/widgets/hero.php:47
+msgid "Hero Style"
+msgstr ""
+
+#: addons/widgets/hero.php:51
+#: addons/widgets/testimonial.php:49
+msgid "Style One"
+msgstr ""
+
+#: addons/widgets/hero.php:52
+#: addons/widgets/testimonial.php:50
+msgid "Style Two"
+msgstr ""
+
+#: addons/widgets/hero.php:53
+#: addons/widgets/testimonial.php:51
+msgid "Style Three"
+msgstr ""
+
+#: addons/widgets/hero.php:54
+msgid "Style Four"
+msgstr ""
+
+#: addons/widgets/hero.php:55
+msgid "Style Five"
+msgstr ""
+
+#: addons/widgets/hero.php:56
+msgid "Style Six"
+msgstr ""
+
+#: addons/widgets/hero.php:63
+#: addons/widgets/scroll-down.php:120
+msgid "Background Image"
+msgstr ""
+
+#: addons/widgets/hero.php:75
+msgid "Crafting your fantasies with a twist of"
+msgstr ""
+
+#: addons/widgets/hero.php:85
+msgid "Animated Image"
+msgstr ""
+
+#: addons/widgets/hero.php:105
+msgid "Title Two"
+msgstr ""
+
+#: addons/widgets/hero.php:107
+msgid "creativity"
+msgstr ""
+
+#: addons/widgets/hero.php:119
+msgid "As long as your dreams revolve around something like; being the proud owner spectacular website."
+msgstr ""
+
+#: addons/widgets/hero.php:126
+msgid "Add Image"
+msgstr ""
+
+#: addons/widgets/hero.php:136
+msgid "Client Image One"
+msgstr ""
+
+#: addons/widgets/hero.php:146
+msgid "Image Two"
+msgstr ""
+
+#: addons/widgets/hero.php:158
+msgid "2"
+msgstr ""
+
+#: addons/widgets/hero.php:168
+msgid "Counter Text"
+msgstr ""
+
+#: addons/widgets/hero.php:170
+msgid "k+ Clients"
+msgstr ""
+
+#: addons/widgets/hero.php:180
+msgid "Client Title"
+msgstr ""
+
+#: addons/widgets/hero.php:182
+#: addons/widgets/hero.php:231
+msgid "Award winning agency"
+msgstr ""
+
+#: addons/widgets/hero.php:217
+msgid "Hero Slider"
+msgstr ""
+
+#: addons/widgets/hero.php:238
+msgid "Slider Item"
+msgstr ""
+
+#: addons/widgets/hero.php:315
+msgid "Title Shape"
+msgstr ""
+
+#: addons/widgets/hero.php:357
+msgid "height"
+msgstr ""
+
+#: addons/widgets/hero.php:382
+msgid "Short Title"
+msgstr ""
+
+#: addons/widgets/hero.php:413
+#: addons/widgets/hero.php:423
+msgid "Animated Image Size"
+msgstr ""
+
+#: addons/widgets/hero.php:448
+msgid "Animated Image Width"
+msgstr ""
+
+#: addons/widgets/hero.php:474
+msgid "Animated Image Height"
+msgstr ""
+
+#: addons/widgets/hero.php:550
+msgid "Client Part"
+msgstr ""
+
+#: addons/widgets/hero.php:589
+msgid "Client Image Size"
+msgstr ""
+
+#: addons/widgets/hero.php:614
+msgid "Number Title"
+msgstr ""
+
+#: addons/widgets/hero.php:645
+#: addons/widgets/testimonial.php:108
+msgid "Client Text"
+msgstr ""
+
+#: addons/widgets/hero.php:776
+msgid "Button Icon"
+msgstr ""
+
+#: addons/widgets/list-icon.php:22
+msgid "List Icon"
+msgstr ""
+
+#: addons/widgets/list-icon.php:46
+msgid "Enable Flex"
+msgstr ""
+
+#: addons/widgets/list-icon.php:48
+msgid "On"
+msgstr ""
+
+#: addons/widgets/list-icon.php:49
+msgid "Off"
+msgstr ""
+
+#: addons/widgets/list-icon.php:64
+#: addons/widgets/text-slider-two.php:50
+#: addons/widgets/text-slider.php:50
+msgid "Let’s work together"
+msgstr ""
+
+#: addons/widgets/list-icon.php:71
+msgid "Url"
+msgstr ""
+
+#: addons/widgets/list-icon.php:78
+msgid "Icons"
+msgstr ""
+
+#: addons/widgets/pricing.php:23
+msgid "Quanto Pricing"
+msgstr ""
+
+#: addons/widgets/pricing.php:39
+msgid "Pricing"
+msgstr ""
+
+#: addons/widgets/pricing.php:49
+msgid "Standard"
+msgstr ""
+
+#: addons/widgets/pricing.php:57
+msgid "SubTitle"
+msgstr ""
+
+#: addons/widgets/pricing.php:59
+msgid "Ideal for small businesses or startups."
+msgstr ""
+
+#: addons/widgets/pricing.php:66
+msgid "Price"
+msgstr ""
+
+#: addons/widgets/pricing.php:68
+msgid "$990"
+msgstr ""
+
+#: addons/widgets/pricing.php:78
+msgid "Button Icon?"
+msgstr ""
+
+#: addons/widgets/pricing.php:92
+msgid " Go with this plan"
+msgstr ""
+
+#: addons/widgets/pricing.php:123
+msgid "Feature List"
+msgstr ""
+
+#: addons/widgets/pricing.php:125
+msgid "Access to all basic features"
+msgstr ""
+
+#: addons/widgets/pricing.php:181
+msgid "Sub Title"
+msgstr ""
+
+#: addons/widgets/pricing.php:219
+msgid "Feature"
+msgstr ""
+
+#: addons/widgets/pricing.php:306
+msgid "Pricing Rate"
+msgstr ""
+
+#: addons/widgets/pricing.php:417
+msgid "Button Padding"
+msgstr ""
+
+#: addons/widgets/pricing.php:428
+msgid "Button Margin"
+msgstr ""
+
+#: addons/widgets/pricing.php:442
+msgid " Box"
+msgstr ""
+
+#: addons/widgets/pricing.php:450
+msgid "Overly Hover?"
+msgstr ""
+
+#: addons/widgets/pricing.php:482
+msgid "Box Hover Color"
+msgstr ""
+
+#: addons/widgets/process.php:16
+msgid "Quanto Process"
+msgstr ""
+
+#: addons/widgets/process.php:44
+#: addons/widgets/process.php:76
+msgid ".01"
+msgstr ""
+
+#: addons/widgets/process.php:53
+#: addons/widgets/process.php:77
+msgid "Send Email"
+msgstr ""
+
+#: addons/widgets/process.php:63
+#: addons/widgets/process.php:78
+#: addons/widgets/process.php:83
+#: addons/widgets/process.php:88
+#: addons/widgets/process.php:93
+msgid "Listen stories of user understand points and give a estimate about cost and time-frame."
+msgstr ""
+
+#: addons/widgets/process.php:71
+msgid "Process List"
+msgstr ""
+
+#: addons/widgets/process.php:81
+msgid ".02"
+msgstr ""
+
+#: addons/widgets/process.php:82
+msgid "Meet Online"
+msgstr ""
+
+#: addons/widgets/process.php:86
+msgid ".03"
+msgstr ""
+
+#: addons/widgets/process.php:87
+msgid "Price Estimation"
+msgstr ""
+
+#: addons/widgets/process.php:91
+msgid ".04"
+msgstr ""
+
+#: addons/widgets/process.php:92
+msgid "Work Together"
+msgstr ""
+
+#: addons/widgets/process.php:277
+msgid "Hover Text Color"
+msgstr ""
+
+#: addons/widgets/project-slider.php:22
+#: addons/widgets/project-slider.php:39
+msgid "Project Slider"
+msgstr ""
+
+#: addons/widgets/project-slider.php:58
+#: addons/widgets/project.php:79
+msgid "Numbar Of Posts"
+msgstr ""
+
+#: addons/widgets/project-slider.php:95
+#: addons/widgets/project.php:116
+msgid "Filter by Category"
+msgstr ""
+
+#: addons/widgets/project-slider.php:100
+#: addons/widgets/project.php:121
+msgid "Select a category to filter projects."
+msgstr ""
+
+#: addons/widgets/project-slider.php:120
+#: addons/widgets/project.php:141
+msgid "Show Date?"
+msgstr ""
+
+#: addons/widgets/project-slider.php:144
+msgid "Item Gap"
+msgstr ""
+
+#: addons/widgets/project-slider.php:286
+#: addons/widgets/project.php:332
+msgid "Date & Category"
+msgstr ""
+
+#: addons/widgets/project-slider.php:324
+#: addons/widgets/testimonial.php:571
+msgid "Arrow"
+msgstr ""
+
+#: addons/widgets/project-slider.php:475
+#: addons/widgets/project.php:394
+msgid "All Categories"
+msgstr ""
+
+#: addons/widgets/project-slider/layout-1.php:41
+#: addons/widgets/project-slider/layout-2.php:44
+#: addons/widgets/project/layout-1.php:42
+#: addons/widgets/project/layout-2.php:43
+msgid "project-thumb"
+msgstr ""
+
+#: addons/widgets/project.php:22
+#: addons/widgets/project.php:39
+msgid "Project"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:22
+#: addons/widgets/scroll-down.php:38
+msgid "Scroll Down"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:68
+msgid "Map Url"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:80
+msgid "Video Url"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:94
+msgid "Scroll down"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:101
+msgid "Play Text"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:103
+#: addons/widgets/video-box.php:68
+msgid "Play"
+msgstr ""
+
+#: addons/widgets/scroll-down.php:173
+msgid "Play Button"
+msgstr ""
+
+#: addons/widgets/service.php:14
+msgid "Services"
+msgstr ""
+
+#: addons/widgets/service.php:33
+msgid "Service Section"
+msgstr ""
+
+#: addons/widgets/service.php:41
+msgid "Select Style"
+msgstr ""
+
+#: addons/widgets/service.php:49
+msgid "Style 6"
+msgstr ""
+
+#: addons/widgets/service.php:60
+msgid "Select a Post"
+msgstr ""
+
+#: addons/widgets/service.php:71
+msgid "Icon Select"
+msgstr ""
+
+#: addons/widgets/service.php:112
+msgid "View details"
+msgstr ""
+
+#: addons/widgets/service.php:118
+msgid "Discription Text"
+msgstr ""
+
+#: addons/widgets/service.php:121
+msgid "Brand identity design a the have to success whether you breath onfire quanto agency. "
+msgstr ""
+
+#: addons/widgets/service.php:127
+msgid "Service Number"
+msgstr ""
+
+#: addons/widgets/service.php:130
+msgid "01"
+msgstr ""
+
+#: addons/widgets/service.php:137
+msgid "Show Service Feature"
+msgstr ""
+
+#: addons/widgets/service.php:149
+msgid "Feature  List"
+msgstr ""
+
+#: addons/widgets/service.php:161
+msgid "Item Delay"
+msgstr ""
+
+#: addons/widgets/service.php:164
+msgid "Set the delay time in seconds"
+msgstr ""
+
+#: addons/widgets/service.php:171
+msgid "Item Direction"
+msgstr ""
+
+#: addons/widgets/service.php:176
+msgid "Up"
+msgstr ""
+
+#: addons/widgets/service.php:177
+msgid "Down"
+msgstr ""
+
+#: addons/widgets/service.php:180
+msgid "Select the direction for the animation"
+msgstr ""
+
+#: addons/widgets/service.php:188
+msgid "Service Lists"
+msgstr ""
+
+#: addons/widgets/service.php:207
+msgid "Icon Gap"
+msgstr ""
+
+#: addons/widgets/testimonial.php:22
+msgid "Quanto Testimonial"
+msgstr ""
+
+#: addons/widgets/testimonial.php:38
+msgid "Testimonial Slider"
+msgstr ""
+
+#: addons/widgets/testimonial.php:45
+msgid "Testimonial Style"
+msgstr ""
+
+#: addons/widgets/testimonial.php:58
+#: addons/widgets/testimonial.php:277
+msgid "Slider Title"
+msgstr ""
+
+#: addons/widgets/testimonial.php:60
+msgid "Client testimonials"
+msgstr ""
+
+#: addons/widgets/testimonial.php:75
+msgid "Client Image"
+msgstr ""
+
+#: addons/widgets/testimonial.php:86
+msgid "Rating?"
+msgstr ""
+
+#: addons/widgets/testimonial.php:92
+msgid "Rating will be used only Style Two."
+msgstr ""
+
+#: addons/widgets/testimonial.php:98
+msgid "Ratting Icon"
+msgstr ""
+
+#: addons/widgets/testimonial.php:110
+msgid "“ Working with several word press themes and templates the last years, I only can say this is best in every level. I use it for my company and the reviews that I have already are all excellent. Not only the design but the code quality ”"
+msgstr ""
+
+#: addons/widgets/testimonial.php:116
+msgid "Client Name"
+msgstr ""
+
+#: addons/widgets/testimonial.php:118
+msgid "Alexander Cameron"
+msgstr ""
+
+#: addons/widgets/testimonial.php:124
+msgid "Client Designation"
+msgstr ""
+
+#: addons/widgets/testimonial.php:126
+msgid "Lead Developer"
+msgstr ""
+
+#: addons/widgets/testimonial.php:133
+msgid "Slides"
+msgstr ""
+
+#: addons/widgets/testimonial.php:138
+msgid "Jenny Bennett"
+msgstr ""
+
+#: addons/widgets/testimonial.php:139
+msgid "Senior Marketing Manager at Caya"
+msgstr ""
+
+#: addons/widgets/testimonial.php:142
+msgid "Nathan Hallmark"
+msgstr ""
+
+#: addons/widgets/testimonial.php:143
+msgid "Designer Team Head at Qxygen"
+msgstr ""
+
+#: addons/widgets/testimonial.php:146
+msgid "Danny Aronson"
+msgstr ""
+
+#: addons/widgets/testimonial.php:147
+msgid "Senior Brand Design at Goodnotes"
+msgstr ""
+
+#: addons/widgets/testimonial.php:158
+msgid "Slider Settings"
+msgstr ""
+
+#: addons/widgets/testimonial.php:168
+msgid "Slider Items"
+msgstr ""
+
+#: addons/widgets/testimonial.php:191
+msgid "Arrows?"
+msgstr ""
+
+#: addons/widgets/testimonial.php:205
+msgid "Dots?"
+msgstr ""
+
+#: addons/widgets/testimonial.php:220
+msgid "Drag?"
+msgstr ""
+
+#: addons/widgets/testimonial.php:231
+msgid "Auto Play?"
+msgstr ""
+
+#: addons/widgets/testimonial.php:242
+msgid "Autoplay Timeout"
+msgstr ""
+
+#: addons/widgets/testimonial.php:247
+msgid "1 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:248
+msgid "2 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:249
+msgid "3 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:250
+msgid "4 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:251
+msgid "5 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:252
+msgid "6 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:253
+msgid "7 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:254
+msgid "8 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:255
+msgid "9 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:256
+msgid "10 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:257
+msgid "11 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:258
+msgid "12 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:259
+msgid "13 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:260
+msgid "14 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:261
+msgid "15 Second"
+msgstr ""
+
+#: addons/widgets/testimonial.php:454
+msgid "Rating"
+msgstr ""
+
+#: addons/widgets/testimonial.php:498
+msgid "Name"
+msgstr ""
+
+#: addons/widgets/testimonial.php:541
+msgid "Designation"
+msgstr ""
+
+#: addons/widgets/text-slider-two.php:22
+msgid "Text Slider Two"
+msgstr ""
+
+#: addons/widgets/video-box.php:22
+msgid "Video Box"
+msgstr ""
+
+#: addons/widgets/video-box.php:45
+msgid "Select Layout"
+msgstr ""
+
+#: addons/widgets/video-box.php:48
+msgid "Layout 1"
+msgstr ""
+
+#: addons/widgets/video-box.php:49
+msgid "Layout 2"
+msgstr ""
+
+#: addons/widgets/video-box.php:57
+msgid "M4 Video URL"
+msgstr ""
+
+#: inc/builder/builder.php:36
+#: inc/builder/builder.php:45
+msgid "Header Option"
+msgstr ""
+
+#: inc/builder/builder.php:48
+#: inc/builder/builder.php:92
+msgid "Pre Built"
+msgstr ""
+
+#: inc/builder/builder.php:49
+#: inc/builder/builder.php:125
+msgid "Header Builder"
+msgstr ""
+
+#: inc/builder/builder.php:58
+msgid "Header Name"
+msgstr ""
+
+#: inc/builder/builder.php:71
+msgid "Footer Option"
+msgstr ""
+
+#: inc/builder/builder.php:78
+msgid "Enable Footer?"
+msgstr ""
+
+#: inc/builder/builder.php:89
+msgid "Footer Style"
+msgstr ""
+
+#: inc/builder/builder.php:93
+#: inc/builder/builder.php:124
+msgid "Footer Builder"
+msgstr ""
+
+#: inc/builder/builder.php:102
+msgid "Footer Name"
+msgstr ""
+
+#: inc/builder/builder.php:115
+#: inc/builder/builder.php:116
+msgid "Quanto Builder"
+msgstr ""
+
+#: inc/builder/builder.php:126
+#: inc/builder/builder.php:239
+#: inc/builder/builder.php:240
+#: inc/builder/builder.php:242
+msgid "Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:127
+msgid "OFF Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:130
+msgid "Archive Builder"
+msgstr ""
+
+#: inc/builder/builder.php:131
+msgid "Archive Settings"
+msgstr ""
+
+#: inc/builder/builder.php:137
+msgid "Welcome To Header And Footer Builder Of This Theme"
+msgstr ""
+
+#: inc/builder/builder.php:144
+#: inc/builder/builder.php:145
+#: inc/builder/builder.php:147
+msgid "Footer"
+msgstr ""
+
+#: inc/builder/builder.php:146
+msgid "Quanto Footer Builder"
+msgstr ""
+
+#: inc/builder/builder.php:148
+#: inc/builder/builder.php:180
+#: inc/builder/builder.php:213
+#: inc/builder/builder.php:243
+#: inc/builder/builder.php:275
+msgid "Add New"
+msgstr ""
+
+#: inc/builder/builder.php:149
+msgid "Add New Footer"
+msgstr ""
+
+#: inc/builder/builder.php:150
+msgid "New Footer"
+msgstr ""
+
+#: inc/builder/builder.php:151
+msgid "Edit Footer"
+msgstr ""
+
+#: inc/builder/builder.php:152
+msgid "View Footer"
+msgstr ""
+
+#: inc/builder/builder.php:153
+msgid "All Footer"
+msgstr ""
+
+#: inc/builder/builder.php:154
+msgid "Search Footer"
+msgstr ""
+
+#: inc/builder/builder.php:155
+msgid "Parent Footer:"
+msgstr ""
+
+#: inc/builder/builder.php:156
+msgid "No Footer found."
+msgstr ""
+
+#: inc/builder/builder.php:157
+msgid "No Footer found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:176
+#: inc/builder/builder.php:177
+#: inc/builder/builder.php:179
+msgid "Header"
+msgstr ""
+
+#: inc/builder/builder.php:178
+msgid "Quanto Header Builder"
+msgstr ""
+
+#: inc/builder/builder.php:181
+msgid "Add New Header"
+msgstr ""
+
+#: inc/builder/builder.php:182
+msgid "New Header"
+msgstr ""
+
+#: inc/builder/builder.php:183
+msgid "Edit Header"
+msgstr ""
+
+#: inc/builder/builder.php:184
+msgid "View Header"
+msgstr ""
+
+#: inc/builder/builder.php:185
+msgid "All Header"
+msgstr ""
+
+#: inc/builder/builder.php:186
+msgid "Search Header"
+msgstr ""
+
+#: inc/builder/builder.php:187
+msgid "Parent Header:"
+msgstr ""
+
+#: inc/builder/builder.php:188
+msgid "No Header found."
+msgstr ""
+
+#: inc/builder/builder.php:189
+msgid "No Header found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:209
+#: inc/builder/builder.php:210
+#: inc/builder/builder.php:212
+#: inc/builder/templates/archive-template.php:30
+msgid "Archive"
+msgstr ""
+
+#: inc/builder/builder.php:211
+msgid "Quanto Archive Builder"
+msgstr ""
+
+#: inc/builder/builder.php:214
+msgid "Add New Archive"
+msgstr ""
+
+#: inc/builder/builder.php:215
+msgid "New Archive"
+msgstr ""
+
+#: inc/builder/builder.php:216
+msgid "Edit Archive"
+msgstr ""
+
+#: inc/builder/builder.php:217
+msgid "View Archive"
+msgstr ""
+
+#: inc/builder/builder.php:218
+msgid "All Archives"
+msgstr ""
+
+#: inc/builder/builder.php:219
+msgid "Search Archives"
+msgstr ""
+
+#: inc/builder/builder.php:220
+msgid "Parent Archives:"
+msgstr ""
+
+#: inc/builder/builder.php:221
+msgid "No Archive found."
+msgstr ""
+
+#: inc/builder/builder.php:222
+msgid "No Archive found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:241
+msgid "Quanto Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:244
+msgid "Add New Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:245
+msgid "New Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:246
+msgid "Edit Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:247
+msgid "View Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:248
+msgid "All Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:249
+msgid "Search Tab Builder"
+msgstr ""
+
+#: inc/builder/builder.php:250
+msgid "Parent Tab Builder:"
+msgstr ""
+
+#: inc/builder/builder.php:251
+msgid "No Tab Builder found."
+msgstr ""
+
+#: inc/builder/builder.php:252
+msgid "No Tab Builder found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:271
+#: inc/builder/builder.php:272
+#: inc/builder/builder.php:274
+msgid "Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:273
+msgid "Quanto Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:276
+msgid "Add New Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:277
+msgid "New Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:278
+msgid "Edit Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:279
+msgid "View Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:280
+msgid "All Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:281
+msgid "Search Off Canvas Builder"
+msgstr ""
+
+#: inc/builder/builder.php:282
+msgid "Parent Off Canvas Builder:"
+msgstr ""
+
+#: inc/builder/builder.php:283
+msgid "No Off Canvas Builder found."
+msgstr ""
+
+#: inc/builder/builder.php:284
+msgid "No Off Canvas Builder found in Trash."
+msgstr ""
+
+#: inc/builder/builder.php:409
+msgid "Select an Archive Template"
+msgstr ""
+
+#: inc/builder/builder.php:449
+msgid "Archive Template Settings"
+msgstr ""
+
+#: inc/builder/builder.php:450
+msgid "Assign your custom-built archive templates to the corresponding archive pages."
+msgstr ""
+
+#: inc/builder/builder.php:458
+msgid "Blog / Posts Page Archive"
+msgstr ""
+
+#: inc/builder/builder.php:474
+msgid "Category Archive"
+msgstr ""
+
+#: inc/builder/builder.php:490
+msgid "Tag Archive"
+msgstr ""
+
+#: inc/builder/builder.php:506
+msgid "Author Archive"
+msgstr ""
+
+#: inc/builder/builder.php:522
+msgid "Date Archive"
+msgstr ""
+
+#: inc/builder/builder.php:538
+msgid "Save Settings"
+msgstr ""
+
+#: inc/builder/templates/archive-template.php:31
+msgid "No archive template has been assigned."
+msgstr ""
+
+#: inc/custom-post-types.php:34
+msgid "Add New Service"
+msgstr ""
+
+#: inc/custom-post-types.php:35
+msgid "New Service"
+msgstr ""
+
+#: inc/custom-post-types.php:36
+msgid "Edit Service"
+msgstr ""
+
+#: inc/custom-post-types.php:37
+msgid "View Service"
+msgstr ""
+
+#: inc/custom-post-types.php:38
+msgid "All Service"
+msgstr ""
+
+#: inc/custom-post-types.php:39
+msgid "Search Service"
+msgstr ""
+
+#: inc/custom-post-types.php:40
+msgid "Parent Service:"
+msgstr ""
+
+#: inc/custom-post-types.php:41
+msgid "No Service found."
+msgstr ""
+
+#: inc/custom-post-types.php:42
+msgid "No Service found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:47
+#: inc/custom-post-types.php:87
+#: inc/custom-post-types.php:127
+#: inc/custom-post-types.php:201
+msgid "Description."
+msgstr ""
+
+#: inc/custom-post-types.php:74
+msgid "Add New Team"
+msgstr ""
+
+#: inc/custom-post-types.php:75
+msgid "New Team"
+msgstr ""
+
+#: inc/custom-post-types.php:76
+msgid "Edit Team"
+msgstr ""
+
+#: inc/custom-post-types.php:77
+msgid "View Team"
+msgstr ""
+
+#: inc/custom-post-types.php:78
+msgid "All Team"
+msgstr ""
+
+#: inc/custom-post-types.php:79
+msgid "Search Team"
+msgstr ""
+
+#: inc/custom-post-types.php:80
+msgid "Parent Team:"
+msgstr ""
+
+#: inc/custom-post-types.php:81
+msgid "No Team found."
+msgstr ""
+
+#: inc/custom-post-types.php:82
+msgid "No Team found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:114
+msgid "Add New Project"
+msgstr ""
+
+#: inc/custom-post-types.php:115
+msgid "New Project"
+msgstr ""
+
+#: inc/custom-post-types.php:116
+msgid "Edit Project"
+msgstr ""
+
+#: inc/custom-post-types.php:117
+msgid "View Project"
+msgstr ""
+
+#: inc/custom-post-types.php:118
+msgid "All Projects"
+msgstr ""
+
+#: inc/custom-post-types.php:119
+msgid "Search Projects"
+msgstr ""
+
+#: inc/custom-post-types.php:120
+msgid "Parent Projects:"
+msgstr ""
+
+#: inc/custom-post-types.php:121
+msgid "No Projects found."
+msgstr ""
+
+#: inc/custom-post-types.php:122
+msgid "No Projects found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:150
+msgid "Search Categorys"
+msgstr ""
+
+#: inc/custom-post-types.php:151
+msgid "Popular Categorys"
+msgstr ""
+
+#: inc/custom-post-types.php:152
+msgid "All Categorys"
+msgstr ""
+
+#: inc/custom-post-types.php:155
+msgid "Edit Category"
+msgstr ""
+
+#: inc/custom-post-types.php:156
+msgid "Update Category"
+msgstr ""
+
+#: inc/custom-post-types.php:157
+msgid "Add New Category"
+msgstr ""
+
+#: inc/custom-post-types.php:158
+msgid "New Category Name"
+msgstr ""
+
+#: inc/custom-post-types.php:159
+msgid "Separate Categorys with commas"
+msgstr ""
+
+#: inc/custom-post-types.php:160
+msgid "Add or remove Categorys"
+msgstr ""
+
+#: inc/custom-post-types.php:161
+msgid "Choose from the most used Categorys"
+msgstr ""
+
+#: inc/custom-post-types.php:162
+msgid "No Categorys found."
+msgstr ""
+
+#: inc/custom-post-types.php:163
+msgid "Categories"
+msgstr ""
+
+#: inc/custom-post-types.php:188
+msgid "Add New Job"
+msgstr ""
+
+#: inc/custom-post-types.php:189
+msgid "New Job"
+msgstr ""
+
+#: inc/custom-post-types.php:190
+msgid "Edit Job"
+msgstr ""
+
+#: inc/custom-post-types.php:191
+msgid "View Job"
+msgstr ""
+
+#: inc/custom-post-types.php:192
+msgid "All Job"
+msgstr ""
+
+#: inc/custom-post-types.php:193
+msgid "Search Job"
+msgstr ""
+
+#: inc/custom-post-types.php:194
+msgid "Parent Job:"
+msgstr ""
+
+#: inc/custom-post-types.php:195
+msgid "No Job found."
+msgstr ""
+
+#: inc/custom-post-types.php:196
+msgid "No Job found in Trash."
+msgstr ""
+
+#: inc/demo-data/demo-import.php:18
+msgid "Quanto Demo"
+msgstr ""
+
+#: inc/demo-data/demo-import.php:86
+msgid "Quanto Demo Import"
+msgstr ""
+
+#: inc/demo-data/demo-import.php:87
+msgid "Import Demo Data"
+msgstr ""
+
+#: inc/icons-manager.php:13
+msgid "Remix Icons"
+msgstr ""
+
+#: inc/modules/custom-css/custom-css.php:47
+msgid "Custom CSS "
+msgstr ""
+
+#: inc/modules/custom-css/custom-css.php:56
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/modules/custom-css/custom-css.php:74
+msgid "Use \"selector\" keyword to target wrapper element."
 msgstr ""
 
 #: inc/quantoajax.php:39
 msgid "You are not allowed."
 msgstr ""
 
+#: inc/quantoajax.php:51
+msgid "Thank you, you have been added to our mailing list."
+msgstr ""
+
+#: inc/quantoajax.php:54
+msgid "This Email address is already exists."
+msgstr ""
+
+#: inc/quantoajax.php:56
+msgid "Sorry something went wrong."
+msgstr ""
+
+#: inc/quantoajax.php:59
+msgid "Apikey Or Listid Missing."
+msgstr ""
+
+#: inc/quantocore-functions.php:243
+msgid "Select a category"
+msgstr ""
+
+#: inc/quantocore-functions.php:343
+msgid "Responsive Column Order"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:24
+msgid "Quanto :: About Me"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:30
+msgid "Add About Me Widget"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:108
+#: inc/widgets/about-us-widget.php:114
+msgid "Upload Image"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:108
+#: inc/widgets/about-us-widget.php:114
+msgid "Change Image"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:111
+msgid "Author Name:"
+msgstr ""
+
+#: inc/widgets/about-me-widget.php:115
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets/about-us-widget.php:24
+msgid "Quanto :: About Us Widget"
+msgstr ""
+
+#: inc/widgets/about-us-widget.php:29
+msgid "Add About Us Widget"
+msgstr ""
+
+#: inc/widgets/about-us-widget.php:118
+#: inc/widgets/contact-info-widget.php:111
+#: inc/widgets/event-widget.php:111
+#: inc/widgets/footer-map.php:63
+#: inc/widgets/gallery-widget.php:84
+#: inc/widgets/latest-post-slider.php:133
+#: inc/widgets/newsletter-widget.php:80
+#: inc/widgets/recent-post-widget.php:119
+#: inc/widgets/social-widget.php:67
+#: inc/widgets/video-box-widget.php:94
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/about-us-widget.php:127
+msgid "Button URL:"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:21
+msgid "Quanto :: Contact Info"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:24
+msgid "Add Contact Info"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:85
+msgid "Contect Us"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:119
+msgid "Address:"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:127
+msgid "Email :"
+msgstr ""
+
+#: inc/widgets/contact-info-widget.php:135
+msgid "Mobile :"
+msgstr ""
+
+#: inc/widgets/event-widget.php:24
+msgid "Quanto :: Event"
+msgstr ""
+
+#: inc/widgets/event-widget.php:30
+msgid "Add Event Widget"
+msgstr ""
+
+#: inc/widgets/event-widget.php:115
+#: inc/widgets/latest-post-slider.php:137
+#: inc/widgets/recent-post-widget.php:123
+msgid "Number of Posts to show:"
+msgstr ""
+
+#: inc/widgets/footer-map.php:21
+msgid "Quanto :: Map"
+msgstr ""
+
+#: inc/widgets/footer-map.php:24
+msgid "Add Map"
+msgstr ""
+
+#: inc/widgets/footer-map.php:55
+msgid "Get Direction"
+msgstr ""
+
+#: inc/widgets/gallery-widget.php:24
+msgid "Quanto :: Gallery"
+msgstr ""
+
+#: inc/widgets/gallery-widget.php:30
+msgid "Add Gallery Widget"
+msgstr ""
+
+#: inc/widgets/latest-post-slider.php:24
+msgid "Quanto :: Recent Posts Slider"
+msgstr ""
+
+#: inc/widgets/latest-post-slider.php:30
+#: inc/widgets/recent-post-widget.php:30
+msgid "Add Recent Posts Widget"
+msgstr ""
+
+#: inc/widgets/newsletter-widget.php:21
+msgid "Quanto :: Newsletter"
+msgstr ""
+
+#: inc/widgets/newsletter-widget.php:24
+msgid "Add Newsletter"
+msgstr ""
+
+#: inc/widgets/newsletter-widget.php:45
+msgid "Sign Up Now &amp; Get 10% Off."
+msgstr ""
+
+#: inc/widgets/newsletter-widget.php:52
+msgid "Subscribe"
+msgstr ""
+
+#: inc/widgets/newsletter-widget.php:65
+msgid "Subscribe Us"
+msgstr ""
+
 #: inc/widgets/newsletter-widget.php:72
 msgid "Your Email Address"
 msgstr ""
 
-#: addons/widgets/google-map.php:62
-msgid "Zoom"
+#: inc/widgets/newsletter-widget.php:88
+msgid "Placeholder:"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:206
-msgid ""
-"“From its medieval origins to the digital era, learn everything there is to "
-"know about the ubiquitous lorem ipsum passage”"
+#: inc/widgets/recent-post-widget.php:24
+msgid "Quanto :: Recent Posts"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:201
-msgid ""
-"“Globally e-enable installed base potentialities for vertical growth "
-"strategies reintermediate”"
+#: inc/widgets/social-widget.php:21
+msgid "Quanto :: Social Icon"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:211
-msgid ""
-"“Lorem ipsum is placeholder text commonly used in the graphic, print, and "
-"publishing industries for previ ewing layouts and visua"
+#: inc/widgets/social-widget.php:24
+msgid "Add Social Icon"
 msgstr ""
 
-#: addons/widgets/quanto-testimonial-area.php:196
-msgid ""
-"“Until recently, the prevailing view assumed lorem ipsum was born as a "
-"nonsense text. “Its not Latin, though it looks like it, and it says”"
+#: inc/widgets/social-widget.php:57
+msgid "Have Inquiry? Just Call"
+msgstr ""
+
+#: inc/widgets/video-box-widget.php:24
+msgid "Quanto :: Video Box"
+msgstr ""
+
+#: inc/widgets/video-box-widget.php:30
+msgid "Add Video Widget"
 msgstr ""
