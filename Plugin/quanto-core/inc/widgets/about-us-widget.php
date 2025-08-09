@@ -21,7 +21,7 @@ class quanto_aboutus_widget extends WP_Widget {
                 'quanto_aboutus_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: About Us Widget', 'quanto' ),
+                esc_html__( 'Agroland :: About Us Widget', 'quanto' ),
 
                 // Widget description
                 array(

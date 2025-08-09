@@ -21,7 +21,7 @@ class quanto_videobox_widget extends WP_Widget {
                 'quanto_videobox_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Video Box', 'quanto' ),
+                esc_html__( 'Agroland :: Video Box', 'quanto' ),
 
                 // Widget description
                 array(

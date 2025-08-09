@@ -205,7 +205,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 			[
 				'label' 		=> __( 'Mail', 'quanto' ),
 				'type' 			=> Controls_Manager::TEXT,
-				'default'		=> __( 'hello@quanta.agency', 'quanto' ),
+				'default'		=> __( 'hello@agroland.farm', 'quanto' ),
 				'label_block'   => true,
 			]
 		);

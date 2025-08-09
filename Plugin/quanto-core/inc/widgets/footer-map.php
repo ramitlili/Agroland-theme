@@ -18,7 +18,7 @@ class quanto_map_widget extends WP_Widget {
 			// Base ID of your widget
 			'quanto_map_widget',
 			// Widget name will appear in UI
-			esc_html__( 'Quanto :: Map', 'quanto' ),
+			esc_html__( 'Agroland :: Map', 'quanto' ),
 			// Widget description
 			array(
 				'description'	 => esc_html__( 'Add Map', 'quanto' ),

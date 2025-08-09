@@ -21,7 +21,7 @@ class quanto_gallery_widget extends WP_Widget {
                 'quanto_gallery_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Gallery', 'quanto' ),
+                esc_html__( 'Agroland :: Gallery', 'quanto' ),
 
                 // Widget description
                 array(

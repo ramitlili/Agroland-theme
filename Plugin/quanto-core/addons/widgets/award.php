@@ -73,7 +73,7 @@ class Quanto_Award extends Widget_Base {
                         'award_year'  => esc_html__( 'Awwwards ─ 2023', 'quanto' ),
                     ],
                     [
-                        'award_title' => esc_html__( 'Awarded - Top Creative Agency in United State', 'quanto' ),
+                        'award_title' => esc_html__( 'Awarded - Top Agricultural Service in United States', 'quanto' ),
                         'award_year'  => esc_html__( 'Envato Elements ─ 2022', 'quanto' ),
                     ],
                     [
@@ -81,7 +81,7 @@ class Quanto_Award extends Widget_Base {
                         'award_year'  => esc_html__( 'Design Community ─ 2022', 'quanto' ),
                     ],
                     [
-                        'award_title' => esc_html__( 'Winner - Behance Portfolio Review', 'quanto' ),
+                        'award_title' => esc_html__( 'Winner - Sustainable Farming Review', 'quanto' ),
                         'award_year'  => esc_html__( 'Behance ─ 2021', 'quanto' ),
                     ],
                     [

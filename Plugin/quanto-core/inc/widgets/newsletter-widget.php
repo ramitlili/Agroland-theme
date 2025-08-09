@@ -18,7 +18,7 @@ class quanto_newsletter_widget extends WP_Widget {
     		// Base ID of your widget
     		'quanto_newsletter_widget',
     		// Widget name will appear in UI
-    		esc_html__( 'Quanto :: Newsletter', 'quanto' ),
+    		esc_html__( 'Agroland :: Newsletter', 'quanto' ),
     		// Widget description
     		array(
 				'description' 	              => esc_html__( 'Add Newsletter', 'quanto' ),
