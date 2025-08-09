@@ -21,13 +21,13 @@ class quanto_videobox_widget extends WP_Widget {
                 'quanto_videobox_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Video Box', 'quanto' ),
+                esc_html__( 'Agroland :: Video Box', 'agroland' ),
 
                 // Widget description
                 array(
                     'classname'                     => '',
                     'customize_selective_refresh'   => true,
-                    'description'                   => esc_html__( 'Add Video Widget', 'quanto' ),
+                    'description'                   => esc_html__( 'Add farm video widget', 'agroland' ),
                 )
             );
         }
@@ -85,7 +85,7 @@ class quanto_videobox_widget extends WP_Widget {
             if ( isset( $instance[ 'title' ] ) ) {
                 $title = $instance[ 'title' ];
             }else {
-                $title = '';
+                $title = esc_html__( 'Farm Video', 'agroland' );
             }
 
             // Widget admin form

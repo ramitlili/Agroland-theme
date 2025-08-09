@@ -18,10 +18,10 @@ class quanto_newsletter_widget extends WP_Widget {
     		// Base ID of your widget
     		'quanto_newsletter_widget',
     		// Widget name will appear in UI
-    		esc_html__( 'Quanto :: Newsletter', 'quanto' ),
+    		esc_html__( 'Agroland :: Newsletter', 'agroland' ),
     		// Widget description
     		array(
-				'description' 	              => esc_html__( 'Add Newsletter', 'quanto' ),
+				'description' 	              => esc_html__( 'Add farm newsletter', 'agroland' ),
 				'classname'		              => 'widget_newsletter',
                 'customize_selective_refresh' => true,
 			)
@@ -42,7 +42,7 @@ public function widget( $args, $instance ) {
     }
 	
 	echo '<p>';
-		echo esc_html__( 'Sign Up Now &amp; Get 10% Off.', 'quanto' );
+		echo esc_html__( 'Sign up for updates on sustainable farming.', 'agroland' );
 	echo '</p>';
 	
 	echo '<form class="newsletter-form footer-newsletter">';
@@ -62,7 +62,7 @@ public function form( $instance ) {
 	if ( isset( $instance[ 'title' ] ) ) {
 		$title = $instance[ 'title' ];
 	}else {
-		$title = esc_html__( 'Subscribe Us', 'quanto' );
+		$title = esc_html__( 'Join Our Sustainable Newsletter', 'agroland' );
 	}
 
 	// Placeholder Text

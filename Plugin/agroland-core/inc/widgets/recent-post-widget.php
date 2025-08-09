@@ -21,13 +21,13 @@ class quanto_recent_posts_widget extends WP_Widget {
                 'quanto_recent_posts_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Recent Posts', 'quanto' ),
+                esc_html__( 'Agroland :: Farm Posts', 'agroland' ),
 
                 // Widget description
                 array(
                     'classname'                     => '',
                     'customize_selective_refresh'   => true,
-                    'description'                   => esc_html__( 'Add Recent Posts Widget', 'quanto' ),
+                    'description'                   => esc_html__( 'Add recent farm posts widget', 'agroland' ),
                 )
             );
         }
@@ -100,7 +100,7 @@ class quanto_recent_posts_widget extends WP_Widget {
             if ( isset( $instance[ 'title' ] ) ) {
                 $title = $instance[ 'title' ];
             }else {
-                $title = '';
+                $title = esc_html__( 'Latest Farm News', 'agroland' );
             }
 
             //Post Count
