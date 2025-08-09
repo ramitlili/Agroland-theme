@@ -21,13 +21,13 @@ class quanto_gallery_widget extends WP_Widget {
                 'quanto_gallery_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Gallery', 'quanto' ),
+                esc_html__( 'Agroland :: Farm Gallery', 'agroland' ),
 
                 // Widget description
                 array(
                     'classname'                     => '',
                     'customize_selective_refresh'   => true,
-                    'description'                   => esc_html__( 'Add Gallery Widget', 'quanto' ),
+                    'description'                   => esc_html__( 'Add farm gallery widget', 'agroland' ),
                 )
             );
         }
@@ -75,7 +75,7 @@ class quanto_gallery_widget extends WP_Widget {
             if ( isset( $instance[ 'title' ] ) ) {
                 $title = $instance[ 'title' ];
             }else {
-                $title = '';
+                $title = esc_html__( 'Farm Gallery', 'agroland' );
             }
 
             // Widget admin form

@@ -21,12 +21,12 @@ class quanto_aboutus_widget extends WP_Widget {
                 'quanto_aboutus_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: About Us Widget', 'quanto' ),
+                esc_html__( 'Agroland :: About Our Farm', 'agroland' ),
 
                 // Widget description
                 array(
                     'customize_selective_refresh'   => true,
-                    'description'                   => esc_html__( 'Add About Us Widget', 'quanto' ),
+                    'description'                   => esc_html__( 'Add about our farm widget', 'agroland' ),
                     'classname'		                => 'pt-0',
                 )
             );
@@ -72,14 +72,14 @@ class quanto_aboutus_widget extends WP_Widget {
              if ( isset( $instance[ 'title' ] ) ) {
                 $title = $instance[ 'title' ];
             }else {
-                $title = '';
+                $title = esc_html__( 'About Our Farm', 'agroland' );
             }
 
             //Image
             if ( isset( $instance[ 'button_text' ] ) ) {
                 $button_text = $instance[ 'button_text' ];
             }else {
-                $button_text = '';
+                $button_text = esc_html__( 'Learn More', 'agroland' );
             }
 
             //Image Url
@@ -92,7 +92,7 @@ class quanto_aboutus_widget extends WP_Widget {
 			if ( isset( $instance[ 'about_us' ] ) ) {
 				$about_us = $instance[ 'about_us' ];
 			}else {
-				$about_us = '';
+				$about_us = esc_html__( 'We practice sustainable and trustworthy farming.', 'agroland' );
 			}
 
              //Image

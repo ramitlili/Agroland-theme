@@ -18,10 +18,10 @@ class quanto_map_widget extends WP_Widget {
 			// Base ID of your widget
 			'quanto_map_widget',
 			// Widget name will appear in UI
-			esc_html__( 'Quanto :: Map', 'quanto' ),
+			esc_html__( 'Agroland :: Map', 'agroland' ),
 			// Widget description
 			array(
-				'description'	 => esc_html__( 'Add Map', 'quanto' ),
+				'description'	 => esc_html__( 'Add farm map', 'agroland' ),
 				'classname'		 => '',
 			)
 		);
@@ -52,7 +52,7 @@ public function form( $instance ) {
 	if ( isset( $instance[ 'title' ] ) ) {
 		$title = $instance[ 'title' ];
 	}else {
-		$title = esc_html__( 'Get Direction', 'quanto' );
+		$title = esc_html__( 'Find Our Farm', 'agroland' );
 	}
 
 

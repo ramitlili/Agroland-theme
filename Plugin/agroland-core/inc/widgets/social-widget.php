@@ -18,10 +18,10 @@ class quanto_social_widget extends WP_Widget {
 			// Base ID of your widget
 			'quanto_social_widget',
 			// Widget name will appear in UI
-			esc_html__( 'Quanto :: Social Icon', 'quanto' ),
+			esc_html__( 'Agroland :: Farm Social Icons', 'agroland' ),
 			// Widget description
 			array(
-				'description'	 => esc_html__( 'Add Social Icon', 'quanto' ),
+				'description'	 => esc_html__( 'Add farm social icons', 'agroland' ),
 				'classname'		 => 'widget_social_icon pt-0',
 			)
 		);
@@ -54,7 +54,7 @@ public function form( $instance ) {
 	if ( isset( $instance[ 'title' ] ) ) {
 		$title = $instance[ 'title' ];
 	}else {
-		$title = esc_html__( 'Have Inquiry? Just Call', 'quanto' );
+		$title = esc_html__( 'Follow Our Farm', 'agroland' );
 	}
 
     // Social Icon

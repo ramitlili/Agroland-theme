@@ -21,13 +21,13 @@ class quanto_about_me_widget extends WP_Widget {
                 'quanto_about_me_widget', 
             
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: About Me', 'quanto' ),
+                esc_html__( 'Agroland :: Farmer Profile', 'agroland' ),
             
                 // Widget description
                 array( 
                     'classname'   					=> 'widget_admin',
                     'customize_selective_refresh' 	=> true,  
-                    'description' 					=> esc_html__( 'Add About Me Widget', 'quanto' ),   
+                    'description' 					=> esc_html__( 'Add farmer profile widget', 'agroland' ),   
                 )
             );
 
@@ -80,14 +80,14 @@ class quanto_about_me_widget extends WP_Widget {
             if ( isset( $instance[ 'author_name' ] ) ) {
                 $author_name = $instance[ 'author_name' ];
             }else {
-                $author_name = '';
+                $author_name = esc_html__( 'Agroland Farmer', 'agroland' );
             }
 
             // Description
             if ( isset( $instance[ 'desc' ] ) ) {
                 $desc = $instance[ 'desc' ];
             }else {
-                $desc = '';
+                $desc = esc_html__( 'Dedicated to sustainable and trustworthy farming.', 'agroland' );
             }
             
             //Image
