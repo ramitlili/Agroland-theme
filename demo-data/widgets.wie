@@ -1,1 +1,29 @@
-{"quanto-blog-sidebar":{"block-2":{"content":"<!-- wp:search \/-->"},"block-7":{"content":"<!-- wp:widget-group {\"title\":\"Categories\"} -->\n<h2 class=\"widget-title\">Categories<\/h2><div class=\"wp-widget-group__inner-blocks\"><!-- wp:categories {\"showPostCounts\":true} \/--><\/div>\n<!-- \/wp:widget-group -->"},"quanto_recent_posts_widget-2":{"title":"Recent Posts","post_count":"3","show_date":true},"block-9":{"content":"<!-- wp:widget-group {\"title\":\"Tags\"} -->\n<h2 class=\"widget-title\">Tags<\/h2><div class=\"wp-widget-group__inner-blocks\"><!-- wp:tag-cloud \/--><\/div>\n<!-- \/wp:widget-group -->"}},"quanto-page-sidebar":{"block-5":{"content":"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Archives<\/h2><!-- \/wp:heading --><!-- wp:archives \/--><\/div><!-- \/wp:group -->"},"block-6":{"content":"<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Categories<\/h2><!-- \/wp:heading --><!-- wp:categories \/--><\/div><!-- \/wp:group -->"}}}
+{
+  "quanto-blog-sidebar": {
+    "block-2": {
+      "content": "<!-- wp:search /-->"
+    },
+    "block-7": {
+      "content": "<!-- wp:widget-group {\"title\":\"Agriculture Topics\"} -->\n<h2 class=\"widget-title\">Agriculture Topics</h2><div class=\"wp-widget-group__inner-blocks\"><!-- wp:categories {\"showPostCounts\":true} /--></div>\n<!-- /wp:widget-group -->"
+    },
+    "quanto_recent_posts_widget-2": {
+      "title": "Recent Posts",
+      "post_count": "3",
+      "show_date": true
+    },
+    "block-9": {
+      "content": "<!-- wp:widget-group {\"title\":\"Tags\"} -->\n<h2 class=\"widget-title\">Tags</h2><div class=\"wp-widget-group__inner-blocks\"><!-- wp:tag-cloud /--></div>\n<!-- /wp:widget-group -->"
+    },
+    "block-10": {
+      "content": "<!-- wp:list --><ul><li>Farms</li><li>Co-ops</li><li>Agri-services</li><li>Sustainable practices</li></ul><!-- /wp:list -->"
+    }
+  },
+  "quanto-page-sidebar": {
+    "block-5": {
+      "content": "<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Archives</h2><!-- /wp:heading --><!-- wp:archives /--></div><!-- /wp:group -->"
+    },
+    "block-6": {
+      "content": "<!-- wp:group --><div class=\"wp-block-group\"><!-- wp:heading --><h2>Agriculture Topics</h2><!-- /wp:heading --><!-- wp:categories /--></div><!-- /wp:group -->"
+    }
+  }
+}
