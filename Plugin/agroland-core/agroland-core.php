@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Quanto Core
- * Description: This is a helper plugin of quanto theme
+ * Plugin Name: Agroland Core
+ * Description: Helper plugin for the Agroland theme
  * Version:     1.0.1
  * Author:      Mirror
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Domain Path: /languages
- * Text Domain: quanto
+ * Text Domain: agroland
  */
  // Blocking direct access
 if( ! defined( 'ABSPATH' ) ) {
@@ -32,7 +32,7 @@ define( 'QUANTO_CORE_PLUGIN_TEMP', plugin_dir_path( __FILE__ ) .'quanto-template
 // load textdomain
 
 add_action('init', function () {
-    load_plugin_textdomain('quanto', false, dirname(plugin_basename(__FILE__)) . '/languages');
+    load_plugin_textdomain('agroland', false, dirname(plugin_basename(__FILE__)) . '/languages');
 });
 
 //include file.
