@@ -36,10 +36,10 @@ function quanto_register_required_plugins() {
     $plugins = array(
         
         array(
-            'name'                  => esc_html__( 'Quanto Core', 'quanto' ),
-            'slug'                  => 'quanto-core',
+            'name'                  => esc_html__( 'Agroland Core', 'quanto' ),
+            'slug'                  => 'agroland-core',
             'version'               => '1.0',
-            'source'                => 'https://kit.framerpeak.com/plugins/quanto-core.zip',
+            'source'                => 'https://kit.framerpeak.com/plugins/agroland-core.zip',
             'required'              => true,
         ),
         array(
