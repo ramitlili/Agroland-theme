@@ -7,7 +7,7 @@
  *
  */
 
-    // Block direct access
+    // Prevent direct access
     if( ! defined( 'ABSPATH' ) ){
         exit();
     }
@@ -22,7 +22,10 @@
 <!-- Comments -->
 <div class="blog-comments row-margin-top">
     <h4>
-        <?php printf( _nx( '1 Comment ', ' %1$s Comments', get_comments_number(), 'comments title', 'quanto' ), number_format_i18n( get_comments_number() ) ); ?>
+        <?php
+        /* translators: %s: Number of comments */
+        printf( _nx( '%1$s Comment', '%1$s Comments', get_comments_number(), 'comments title', 'quanto' ), number_format_i18n( get_comments_number() ) );
+        ?>
     </h3>
     <ul class="custom-ul">
         <?php
@@ -65,6 +68,7 @@
     	'title_reply_before'    => '<h4>',
         'title_reply_after'     => '</h4>',
         'comment_notes_before'  => '<p class="comment-notes">'.esc_html__('Your email address will not be published. Required fields are marked *','quanto').'</p>',
+        /* translators: 1: Profile URL, 2: User display name, 3: Log out URL */
         'logged_in_as'          => '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>','quanto' ), admin_url( 'profile.php' ), esc_attr( $user_identity ), wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
         'class_submit'          => 'quanto-link-btn btn-pill mt-2',
         'submit_field'          => '<div class="row g-3"><div class="col-12 mt-4">%1$s %2$s</div></div>',

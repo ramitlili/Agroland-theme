@@ -1,4 +1,4 @@
-/* hero slider css */
+/* Hero slider styles */
 .quanto-hero-slider-item::before {
     content: '';
     left: 0;
@@ -11,19 +11,19 @@
     background: rgb(10, 22, 94);
     background: linear-gradient(0deg, rgba(10, 22, 94, 0.85) 60%, rgba(43, 77, 255, 0.85) 100%);
 }
-/* Menu searbar css */
+/* Menu search bar styles */
 .quanto-header-search-section {
     left: 0;
 }
 .search-overlay {
     left: 0;
 }
-/* Footer quick link underline issue fix */
+/* Fix underline for footer quick links */
 .quanto-footer-menu.dark-color ul li a {
     display: inline-block;
 }
 
-/* Post Navagation custom css*/
+/* Post navigation custom styles */
 
 .quanto-post-navigation2 {
     display: inline;

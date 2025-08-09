@@ -74,6 +74,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
 
             $this->field = wp_parse_args ( $this->field, $defaults );
 
+            /* translators: %s: Slide title */
             echo '<div class="redux-slides-accordion" data-new-content-title="' . esc_attr ( sprintf ( esc_html__( 'New %s', 'quanto' ), $this->field[ 'content_title' ] ) ) . '">';
 
             $x = 0;
@@ -314,6 +315,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
                 echo '<li><a href="javascript:void(0);" class="button deletion redux-slides-remove">' . esc_html__( 'Delete', 'quanto' ) . '</a></li>';
                 echo '</ul></div></fieldset></div>';
             }
+            /* translators: %s: Slide title */
             echo '</div><a href="javascript:void(0);" class="button redux-slides-add button-primary" rel-id="' . $this->field[ 'id' ] . '-ul" rel-name="' . $this->field[ 'name' ] . '[title][]' . $this->field['name_suffix'] .'">' . sprintf ( esc_html__( 'Add %s', 'quanto' ), $this->field[ 'content_title' ] ) . '</a><br/>';
         }
 
