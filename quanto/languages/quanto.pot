@@ -872,7 +872,7 @@ msgstr ""
 #. Author of the theme
 #: inc/hooks/hooks-functions.php:328
 #: inc/Quanto-framework/quanto-options/quanto-options.php:1318
-msgid "Mirrortheme"
+msgid "Agroland"
 msgstr ""
 
 #: inc/Quanto-framework/quanto-options/quanto-options.php:439
