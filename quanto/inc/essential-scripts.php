@@ -47,7 +47,7 @@ function quanto_essential_scripts() {
     wp_enqueue_style( 'swiper-bundle-min-style', get_theme_file_uri( '/assets/css/swiper-bundle.min.css' ), array(), '7.0.8' );
 
     // Core Style
-    wp_enqueue_style( 'quanto-core-style', get_theme_file_uri( '/assets/css/core.css' ), array(), '1.0' );
+    wp_enqueue_style( 'agroland-core-style', get_theme_file_uri( '/assets/css/core.css' ), array(), '1.0' );
 
     // quanto app style
     wp_enqueue_style( 'quanto-main-style', get_theme_file_uri('/assets/css/style.css') ,array(), time() );

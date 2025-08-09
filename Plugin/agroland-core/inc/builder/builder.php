@@ -23,9 +23,9 @@
 
 		}
 
-		public function widget_scripts( ) {
-			wp_enqueue_script( 'quanto-core',QUANTO_PLUGDIRURI.'assets/js/quanto-core.js',array( 'jquery' ),'1.0',true );
-		}
+                public function widget_scripts( ) {
+                        wp_enqueue_script( 'agroland-core', QUANTO_PLUGDIRURI . 'assets/js/agroland-core.js', array( 'jquery' ), '1.0', true );
+                }
 
 
         public function quanto_add_elementor_page_settings_controls( \Elementor\Core\DocumentTypes\Page $page ){
