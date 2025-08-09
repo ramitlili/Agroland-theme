@@ -12,10 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Get Redux options or fallback
 if ( class_exists( 'ReduxFramework' ) ) {
-    $quanto404title     = quanto_opt( 'quanto_fof_title' );
-    $quanto404subtitle  = quanto_opt( 'quanto_fof_subtitle' );
-    $quanto404btntext   = quanto_opt( 'quanto_fof_btn_text' );
-    $quanto404btnlink_raw = quanto_opt( 'quanto_fof_btn_link' );
+    $quanto404title     = agroland_opt( 'agroland_fof_title' );
+    $quanto404subtitle  = agroland_opt( 'agroland_fof_subtitle' );
+    $quanto404btntext   = agroland_opt( 'agroland_fof_btn_text' );
+    $quanto404btnlink_raw = agroland_opt( 'agroland_fof_btn_link' );
     $quanto404btnlink = ! empty( $quanto404btnlink_raw ) ? $quanto404btnlink_raw : home_url('/');
 
 } else {
@@ -27,8 +27,8 @@ if ( class_exists( 'ReduxFramework' ) ) {
 
 // Optional 404 image (bottom image)
 $error_img = '';
-if ( ! empty( quanto_opt('quanto_error_bottom_img') ) ) {
-    $img_array = quanto_opt('quanto_error_bottom_img');
+if ( ! empty( agroland_opt('agroland_error_bottom_img') ) ) {
+    $img_array = agroland_opt('agroland_error_bottom_img');
     $error_img = isset($img_array['url']) ? $img_array['url'] : '';
 }
 
@@ -48,8 +48,8 @@ get_header();
                 <div class="error__content text-center">
                     <?php 
                         $error_main_img = '';
-                        if ( ! empty( quanto_opt('quanto_error_img') ) ) {
-                            $main_img_array = quanto_opt('quanto_error_img');
+                        if ( ! empty( agroland_opt('agroland_error_img') ) ) {
+                            $main_img_array = agroland_opt('agroland_error_img');
                             $error_main_img = isset($main_img_array['url']) ? $main_img_array['url'] : '';
                         }
 
@@ -72,7 +72,7 @@ get_header();
 
                     <!-- Dynamic Button -->
                     <?php if ( ! empty( $quanto404btntext ) ) : ?>
-                        <a class="quanto-link-btn btn-pill" href="<?php echo esc_url( $quanto404btnlink ); ?>">
+                        <a class="agroland-link-btn btn-pill" href="<?php echo esc_url( $quanto404btnlink ); ?>">
                             <span>
                                 <i class="fa-solid fa-arrow-left arry1"></i>
                                 <i class="fa-solid fa-arrow-left arry2"></i>

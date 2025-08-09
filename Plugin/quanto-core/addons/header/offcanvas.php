@@ -10,10 +10,10 @@ use \Elementor\Group_Control_Border;
  * Offcanvas Widget .
  *
  */
-class Quanto_Offcanvas extends Widget_Base {
+class Agroland_Offcanvas extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_offcanvas';
+		return 'agroland_offcanvas';
 	}
 
 	public function get_title() {
@@ -25,7 +25,7 @@ class Quanto_Offcanvas extends Widget_Base {
     }
 
 	public function get_categories() {
-		return [ 'quanto_header_elements' ];
+		return [ 'agroland_header_elements' ];
 	}
 
 	protected function register_controls() {
@@ -38,11 +38,11 @@ class Quanto_Offcanvas extends Widget_Base {
 			]
         );
 		$this->add_control(
-			'quanto_Offcanvas_builder',
+			'agroland_Offcanvas_builder',
 			[
 				'label'     => __( 'Select Offcanvas', 'quanto' ),
 				'type'      => Controls_Manager::SELECT,
-				'options'   => $this->quanto_offcanvas_one(),
+				'options'   => $this->agroland_offcanvas_one(),
 				'default'	=> ''
 			]
 		);
@@ -62,7 +62,7 @@ class Quanto_Offcanvas extends Widget_Base {
 				'label' 		=> __( 'Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-large-toggle svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-large-toggle svg path' => 'fill: {{VALUE}}',
                 ],
 			]
         );
@@ -72,7 +72,7 @@ class Quanto_Offcanvas extends Widget_Base {
 				'label' 		=> __( 'Hover Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-large-toggle:hover svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-large-toggle:hover svg path' => 'fill: {{VALUE}}',
                 ],
 			]
         );
@@ -173,22 +173,22 @@ class Quanto_Offcanvas extends Widget_Base {
     }
 
 
-	public function quanto_offcanvas_one(){
+	public function agroland_offcanvas_one(){
 
-		$quanto_post_query = new WP_Query( array(
-			'post_type'				=> 'quanto_off_build',
+		$agroland_post_query = new WP_Query( array(
+			'post_type'				=> 'agroland_off_build',
 			'posts_per_page'	    => -1,
 		) );
 
-		$quanto_tab_builder_title_title = array();
-		$quanto_tab_builder_title_title[''] = __( 'Select a Title','quanto');
+		$agroland_tab_builder_title_title = array();
+		$agroland_tab_builder_title_title[''] = __( 'Select a Title','quanto');
 
-		while( $quanto_post_query->have_posts() ) {
-			$quanto_post_query->the_post();
-			$quanto_tab_builder_title_title[ get_the_ID() ] =  get_the_title();
+		while( $agroland_post_query->have_posts() ) {
+			$agroland_post_query->the_post();
+			$agroland_tab_builder_title_title[ get_the_ID() ] =  get_the_title();
 		}
 		wp_reset_postdata();
-		return $quanto_tab_builder_title_title;
+		return $agroland_tab_builder_title_title;
 	}
 
 	protected function render() {
@@ -197,7 +197,7 @@ class Quanto_Offcanvas extends Widget_Base {
 		
 		?>
 			<!-- Widget Markup -->
-			<button class="quanto-menu-large-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+			<button class="agroland-menu-large-toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
 				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
 					<path d="M24.4444 26V28H0V26H24.4444ZM40 19V21H0V19H40ZM40 12V14H15.5556V12H40Z" fill="white"/>
 				</svg>
@@ -214,7 +214,7 @@ class Quanto_Offcanvas extends Widget_Base {
 					</button>
 				</div>
 				<?php  $elementor = \Elementor\Plugin::instance();
-					echo $elementor->frontend->get_builder_content_for_display($settings['quanto_Offcanvas_builder']); 
+					echo $elementor->frontend->get_builder_content_for_display($settings['agroland_Offcanvas_builder']); 
 				?>
 			</div>
 
@@ -222,5 +222,5 @@ class Quanto_Offcanvas extends Widget_Base {
 
 	}
 }
-$widgets_manager->register( new \Quanto_Offcanvas() );
+$widgets_manager->register( new \Agroland_Offcanvas() );
 

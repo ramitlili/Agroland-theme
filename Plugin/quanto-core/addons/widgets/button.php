@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Button Widget .
  *
  */
-class Quanto_Button extends Widget_Base {
+class Agroland_Button extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_button';
+		return 'agroland_button';
 	}
      
 	public function get_title() {
@@ -125,10 +125,10 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect h1' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -138,10 +138,10 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect:hover h1' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-six:hover a' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn:hover' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -151,10 +151,10 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'background-color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect' => 'background-color: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a' => 'background-color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -164,10 +164,10 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Hover Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect:hover' => 'background-color: {{VALUE}};',
                     '{{WRAPPER}} .footer-six:hover a' => 'background-color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn:hover' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn:hover' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -175,7 +175,7 @@ class Quanto_Button extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'text_typography',
-                'selector' => '{{WRAPPER}} .quanto-link-btn, {{WRAPPER}} .footer-let-connect h1, {{WRAPPER}} .footer-six a',
+                'selector' => '{{WRAPPER}} .agroland-link-btn, {{WRAPPER}} .footer-let-connect h1, {{WRAPPER}} .footer-six a',
             ]
         );
 		$this->add_responsive_control(
@@ -185,10 +185,10 @@ class Quanto_Button extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                     '{{WRAPPER}} .footer-let-connect' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                     '{{WRAPPER}} .footer-six a' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-link-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-link-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -196,7 +196,7 @@ class Quanto_Button extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'text_border',
-                'selector' => '{{WRAPPER}} .quanto-link-btn.btn-pill, {{WRAPPER}} .footer-let-connect, {{WRAPPER}} .footer-six a, {{WRAPPER}} .quanto-link-btn',
+                'selector' => '{{WRAPPER}} .agroland-link-btn.btn-pill, {{WRAPPER}} .footer-let-connect, {{WRAPPER}} .footer-six a, {{WRAPPER}} .agroland-link-btn',
             ]
         );
 		$this->add_responsive_control(
@@ -206,10 +206,10 @@ class Quanto_Button extends Widget_Base {
 				'type'          => Controls_Manager::DIMENSIONS,
 				'size_units'    => [ 'px', '%', 'em' ],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					'{{WRAPPER}} .footer-let-connect' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					'{{WRAPPER}} .footer-six a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-link-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -262,7 +262,7 @@ class Quanto_Button extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
 					'{{WRAPPER}} .footer-let-connect' => 'gap: {{SIZE}}{{UNIT}}',
 					'{{WRAPPER}} .footer-six a' => 'gap: {{SIZE}}{{UNIT}}',
 				],
@@ -274,11 +274,11 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect span svg path' => 'fill: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a svg path' => 'fill: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a i' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn span .arry1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn span .arry1' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -288,11 +288,11 @@ class Quanto_Button extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .footer-let-connect:hover span svg path' => 'fill: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a:hover svg path' => 'fill: {{VALUE}};',
                     '{{WRAPPER}} .footer-six a:hover i' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-link-btn span .arry2' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn span .arry2' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -316,4 +316,4 @@ class Quanto_Button extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Button() );
+$widgets_manager->register( new \Agroland_Button() );

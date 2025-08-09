@@ -1,4 +1,4 @@
-<div class="quanto-video-area style-2 overflow-hidden">
+<div class="agroland-video-area style-2 overflow-hidden">
     <div class="container custom-container position-relative">
         <a href="<?php echo esc_url($settings['button_url']['url']); ?>" class="scroll-down section-link">
             <?php echo esc_html( $settings['button_text'] ) ?>
@@ -9,7 +9,7 @@
         </a>
         <div class="row">
             <div class="col-12">
-                <div class="quanto-hero__thumb text-end">
+                <div class="agroland-hero__thumb text-end">
                     <img
                         src="<?php echo esc_url($settings['animated_image']['url']); ?>"
                         alt="hero-thumb"

@@ -12,13 +12,13 @@
 * Creating Recent Post Widget
 ***************************************/
 
-class quanto_recent_posts_widget extends WP_Widget {
+class agroland_recent_posts_widget extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_recent_posts_widget',
+                'agroland_recent_posts_widget',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: Recent Posts', 'quanto' ),
@@ -80,7 +80,7 @@ class quanto_recent_posts_widget extends WP_Widget {
 
                                     if( $show_date ){
                                         echo '<div class="recent-post-meta">';
-                                            echo '<a href="'.esc_url( quanto_blog_date_permalink() ).'">'.esc_html( get_the_time( 'F d, Y' ) ).'</a>';
+                                            echo '<a href="'.esc_url( agroland_blog_date_permalink() ).'">'.esc_html( get_the_time( 'F d, Y' ) ).'</a>';
                                         echo '</div>';
                                     }
                                 echo '</div>';
@@ -141,11 +141,11 @@ class quanto_recent_posts_widget extends WP_Widget {
 
             return $instance;
         }
-    } // Class quanto_recent_posts_widget ends here
+    } // Class agroland_recent_posts_widget ends here
 
 
     // Register and load the widget
-    function quanto_recent_posts_load_widget() {
-        register_widget( 'quanto_recent_posts_widget' );
+    function agroland_recent_posts_load_widget() {
+        register_widget( 'agroland_recent_posts_widget' );
     }
-    add_action( 'widgets_init', 'quanto_recent_posts_load_widget' );
+    add_action( 'widgets_init', 'agroland_recent_posts_load_widget' );

@@ -10,10 +10,10 @@ use \Elementor\Utils;
  * Button Widget .
  *
  */
-class Quanto_Blog_Post extends Widget_Base {
+class Agroland_Blog_Post extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_blog_post';
+		return 'agroland_blog_post';
 	}
 
 	public function get_title() {
@@ -91,7 +91,7 @@ class Quanto_Blog_Post extends Widget_Base {
             [
                 'label' => __('Post In', 'quanto'),
                 'type' => Controls_Manager::SELECT2,
-                'options' => quanto_get_all_posts('post'),
+                'options' => agroland_get_all_posts('post'),
                 'multiple' => true,
                 'label_block' => true,
                 'condition'   => [
@@ -104,7 +104,7 @@ class Quanto_Blog_Post extends Widget_Base {
             [
                 'label' => __('Order By', 'quanto'),
                 'type' => Controls_Manager::SELECT,
-                'options' => quanto_get_post_orderby_options(),
+                'options' => agroland_get_post_orderby_options(),
                 'default' => 'date',
                 'label_block' => true,
 
@@ -185,7 +185,7 @@ class Quanto_Blog_Post extends Widget_Base {
 					],
 				],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-blog-box .quanto-blog-thumb img' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-blog-box .agroland-blog-thumb img' => 'height: {{SIZE}}{{UNIT}};',
                 ],
 
 			]
@@ -206,7 +206,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Box bg Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-box' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -217,7 +217,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'type' 			=> Controls_Manager::DIMENSIONS,
 				'size_units' 	=> [ 'px', '%', 'em' ],
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-blog-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
 		);
@@ -228,8 +228,8 @@ class Quanto_Blog_Post extends Widget_Base {
 				'type'        => Controls_Manager::DIMENSIONS,
 				'size_units'  => [ 'px', '%', 'em' ],
 				'selectors'   => [
-					'{{WRAPPER}} .quanto-blog-box'   => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',
-					'{{WRAPPER}} .quanto-blog2__row' => 'margin: calc(-1 * {{TOP}}{{UNIT}}) calc(-1 * {{RIGHT}}{{UNIT}}) calc(-1 * {{BOTTOM}}{{UNIT}}) calc(-1 * {{LEFT}}{{UNIT}}) !important;',
+					'{{WRAPPER}} .agroland-blog-box'   => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',
+					'{{WRAPPER}} .agroland-blog2__row' => 'margin: calc(-1 * {{TOP}}{{UNIT}}) calc(-1 * {{RIGHT}}{{UNIT}}) calc(-1 * {{BOTTOM}}{{UNIT}}) calc(-1 * {{LEFT}}{{UNIT}}) !important;',
 					'{{WRAPPER}} .blog-style-one-row' => 'margin: calc(-1 * {{TOP}}{{UNIT}}) calc(-1 * {{RIGHT}}{{UNIT}}) calc(-1 * {{BOTTOM}}{{UNIT}}) calc(-1 * {{LEFT}}{{UNIT}}) !important;',
 				],
 			]
@@ -239,7 +239,7 @@ class Quanto_Blog_Post extends Widget_Base {
 			[
 				'name' 		=> 'box_border',
 				'label' 	=> __( 'Border', 'quanto' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-blog-box',
+                'selector' 	=> '{{WRAPPER}} .agroland-blog-box',
 			]
 		);
 		$this->add_responsive_control(
@@ -249,7 +249,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'type' 			=> Controls_Manager::DIMENSIONS,
 				'size_units' 	=> [ 'px', '%', 'em' ],
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-blog-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
 		);
@@ -269,7 +269,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-content a.blog-meta' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-content a.blog-meta' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -279,7 +279,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Hover Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-content a.blog-meta:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-content a.blog-meta:hover' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -288,7 +288,7 @@ class Quanto_Blog_Post extends Widget_Base {
 			[
 				'name' => 'meta_typography',
 				'label' => __('Typography', 'quanto'),
-				'selector' => '{{WRAPPER}} .quanto-blog-content a.blog-meta',
+				'selector' => '{{WRAPPER}} .agroland-blog-content a.blog-meta',
 			]
 		);
         $this->end_controls_section();
@@ -307,7 +307,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box .quanto-blog-content h5' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-box .agroland-blog-content h5' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -317,7 +317,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Hover Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box .quanto-blog-content h5:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-box .agroland-blog-content h5:hover' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -326,7 +326,7 @@ class Quanto_Blog_Post extends Widget_Base {
 			[
 				'name' => 'title_typography',
 				'label' => __('Typography', 'quanto'),
-				'selector' => '{{WRAPPER}} .quanto-blog-box .quanto-blog-content h5',
+				'selector' => '{{WRAPPER}} .agroland-blog-box .agroland-blog-content h5',
 			]
 		);
 
@@ -337,7 +337,7 @@ class Quanto_Blog_Post extends Widget_Base {
 				'type' 			=> Controls_Manager::DIMENSIONS,
 				'size_units' 	=> [ 'px', '%', 'em' ],
 				'selectors' 	=> [
-					'{{WRAPPER}}  .quanto-blog-box .quanto-blog-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}}  .agroland-blog-box .agroland-blog-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -360,8 +360,8 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Button Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn' => 'color: {{VALUE}} !important; border-color: {{VALUE}} !important;',
-					'{{WRAPPER}} .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn span i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn' => 'color: {{VALUE}} !important; border-color: {{VALUE}} !important;',
+					'{{WRAPPER}} .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn span i' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -371,8 +371,8 @@ class Quanto_Blog_Post extends Widget_Base {
 				'label' 		=> __( 'Button Color Hover', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn:hover' => 'color: {{VALUE}} !important; border-color: {{VALUE}} !important;',
-					'{{WRAPPER}} .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn:hover span i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn:hover' => 'color: {{VALUE}} !important; border-color: {{VALUE}} !important;',
+					'{{WRAPPER}} .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn:hover span i' => 'color: {{VALUE}}',
                 ]
 			]
         );
@@ -381,7 +381,7 @@ class Quanto_Blog_Post extends Widget_Base {
 			[
 				'name' 		=> 'button_typography',
 				'label' 	=> __( 'Typography', 'quanto' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn',
+                'selector' 	=> '{{WRAPPER}} .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn',
 			]
         );
         $this->end_controls_section();
@@ -542,4 +542,4 @@ class Quanto_Blog_Post extends Widget_Base {
 	}
 
 }
-$widgets_manager->register( new \Quanto_Blog_Post() );
+$widgets_manager->register( new \Agroland_Blog_Post() );

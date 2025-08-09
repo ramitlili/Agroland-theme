@@ -596,7 +596,7 @@ class Sticky_Header {
 
 		wp_enqueue_script(
 			'mas-sticky-header',
-			QUANTO_PLUGDIRURI . 'assets/js/sticky-header.js',
+			AGROLAND_PLUGDIRURI . 'assets/js/sticky-header.js',
 			[
 				'jquery',
 			],
@@ -609,7 +609,7 @@ class Sticky_Header {
 		
 		wp_enqueue_style(
 			'mas-sticky-header-style',
-			QUANTO_PLUGDIRURI  . 'assets/css/sticky-header.css',
+			AGROLAND_PLUGDIRURI  . 'assets/css/sticky-header.css',
 			[],
 			'1.0.0',
 			'all'

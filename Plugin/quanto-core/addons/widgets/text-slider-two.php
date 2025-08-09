@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Text Slider Two Widget .
  *
  */
-class Quanto_Text_Slider_Two extends Widget_Base {
+class Agroland_Text_Slider_Two extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_text_slider_two';
+		return 'agroland_text_slider_two';
 	}
      
 	public function get_title() {
@@ -122,4 +122,4 @@ class Quanto_Text_Slider_Two extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Text_Slider_Two() );
+$widgets_manager->register( new \Agroland_Text_Slider_Two() );

@@ -11,10 +11,10 @@ use \Elementor\Repeater;
  * Award Widget .
  *
  */
-class Quanto_Award extends Widget_Base {
+class Agroland_Award extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_award';
+		return 'agroland_award';
 	}
 
 	public function get_title() {
@@ -176,7 +176,7 @@ class Quanto_Award extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-awards-box' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-awards-box' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -186,7 +186,7 @@ class Quanto_Award extends Widget_Base {
                 'label' => __( 'HoverBackground Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-awards-box::before' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-awards-box::before' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -197,7 +197,7 @@ class Quanto_Award extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-awards-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-awards-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -205,7 +205,7 @@ class Quanto_Award extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'box_border',
-                'selector' => '{{WRAPPER}} .quanto-awards-box',
+                'selector' => '{{WRAPPER}} .agroland-awards-box',
             ]
         );
         $this->add_control(
@@ -214,7 +214,7 @@ class Quanto_Award extends Widget_Base {
                 'label' => __( 'Hover Border Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-awards-box:hover' => 'border-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-awards-box:hover' => 'border-color: {{VALUE}};',
                 ],
             ]
         );
@@ -228,7 +228,7 @@ class Quanto_Award extends Widget_Base {
         $settings = $this->get_settings_for_display(); ?>
 
         <?php foreach( $settings['award_list'] as $award_list ) : ?>
-            <div class="quanto-awards-box fade-anim">
+            <div class="agroland-awards-box fade-anim">
                 <?php if ( !empty($award_list['award_title']) ) : ?>
                     <h6 class="awards-title"><?php echo esc_html( $award_list['award_title'] ); ?></h6>
                 <?php endif; ?>
@@ -242,4 +242,4 @@ class Quanto_Award extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Award() );
+$widgets_manager->register( new \Agroland_Award() );

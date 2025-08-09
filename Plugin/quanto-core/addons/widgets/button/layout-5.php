@@ -1,5 +1,5 @@
 <div class="error__content_btn">
-    <a class="quanto-link-btn btn-pill" <?php printf('href="%s" %s %s', $settings['button_url']['url'], $nofollow, $target) ?>>
+    <a class="agroland-link-btn btn-pill" <?php printf('href="%s" %s %s', $settings['button_url']['url'], $nofollow, $target) ?>>
         <?php if ( 'yes' == $settings['button_icon'] ): ?>
             <span>
                 <i class="fa-solid fa-arrow-left arry1"></i>

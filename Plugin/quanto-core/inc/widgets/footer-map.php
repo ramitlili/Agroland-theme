@@ -12,11 +12,11 @@
 *Creating Map Widget
 ***************************************/
 
-class quanto_map_widget extends WP_Widget {
+class agroland_map_widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			// Base ID of your widget
-			'quanto_map_widget',
+			'agroland_map_widget',
 			// Widget name will appear in UI
 			esc_html__( 'Quanto :: Map', 'quanto' ),
 			// Widget description
@@ -37,7 +37,7 @@ public function widget( $args, $instance ) {
 		if ( ! empty( $title ) ){
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-		echo '<div class="quanto-map">';
+		echo '<div class="agroland-map">';
 			echo '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583088354!2d-74.11976389828038!3d40.697663748695746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1612886249367!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
 		echo '</div>';
 
@@ -78,10 +78,10 @@ public function update( $new_instance, $old_instance ) {
 	return $instance;
 }
 }
-// Class quanto_subscribe_widget ends here
+// Class agroland_subscribe_widget ends here
 
 // Register and load the widget
-function quanto_map_load_widget() {
-	register_widget( 'quanto_map_widget' );
+function agroland_map_load_widget() {
+	register_widget( 'agroland_map_widget' );
 }
-add_action( 'widgets_init', 'quanto_map_load_widget' );
+add_action( 'widgets_init', 'agroland_map_load_widget' );

@@ -1,14 +1,14 @@
 .admin-bar .offcanvas {
     margin-top: 32px;
 } 
-.admin-bar .quanto-menu-wrapper .quanto-menu-area {
+.admin-bar .agroland-menu-wrapper .agroland-menu-area {
     margin-top: 32px;
 } 
 @media (max-width: 782px) {
     .admin-bar .offcanvas {
         margin-top: 46px;
     }
-    .admin-bar .quanto-menu-wrapper .quanto-menu-area {
+    .admin-bar .agroland-menu-wrapper .agroland-menu-area {
         margin-top: 46px;
     } 
 }
@@ -16,7 +16,7 @@
     .admin-bar .site-header.sticky-menu {
         margin-top: 0;
     }
-    .admin-bar .quanto-menu-wrapper .quanto-menu-area.sticky {
+    .admin-bar .agroland-menu-wrapper .agroland-menu-area.sticky {
         margin-top: 0;
     } 
 }

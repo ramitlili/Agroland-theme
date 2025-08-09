@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-if ( ! is_active_sidebar( 'quanto-page-sidebar' ) ) {
+if ( ! is_active_sidebar( 'agroland-page-sidebar' ) ) {
     return;
 }
 ?>
@@ -20,7 +20,7 @@ if ( ! is_active_sidebar( 'quanto-page-sidebar' ) ) {
 <div class="col-lg-4">
     <div class="page-sidebar">
     <?php 
-        dynamic_sidebar( 'quanto-page-sidebar' );
+        dynamic_sidebar( 'agroland-page-sidebar' );
     ?>               
     </div>
 </div>

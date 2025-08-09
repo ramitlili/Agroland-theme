@@ -1,9 +1,9 @@
-<div class="quanto_screenfix_right">
-    <div class="swiper quanto-testimonial2__slider h-100">
+<div class="agroland_screenfix_right">
+    <div class="swiper agroland-testimonial2__slider h-100">
         <div class="swiper-wrapper">
             <?php foreach( $settings[ 'slides' ] as $slide ): ?>
             <div class="swiper-slide">
-                <div class="quanto-testimonial2__box bg-color-white">
+                <div class="agroland-testimonial2__box bg-color-white">
                 <div class="testimonial-content mt-0">
                     <div class="stars">
                         <?php if ( isset($slide['rating']) && 'yes' === $slide['rating'] && isset($slide['rating_icon']) ): ?>

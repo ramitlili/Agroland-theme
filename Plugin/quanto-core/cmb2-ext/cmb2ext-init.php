@@ -15,13 +15,13 @@ if( !defined( 'ABSPATH' ) ){
 }
 
 // Cmb 2 Admin Script
-add_action( 'admin_enqueue_scripts', 'quanto_cmb2_admin_scripts' );
-function quanto_cmb2_admin_scripts( $screen ){
+add_action( 'admin_enqueue_scripts', 'agroland_cmb2_admin_scripts' );
+function agroland_cmb2_admin_scripts( $screen ){
 
     // CMB2
 	wp_enqueue_style( 'metafield-style', plugins_url( 'css/custom.metafield.css', __FILE__ ) , array(), '1.0' );
 	
-    wp_enqueue_script('quanto-metafield-switch',plugins_url( 'js/switcher.metafield.js', __FILE__ ) , array('jquery'), '1.0', true );
+    wp_enqueue_script('agroland-metafield-switch',plugins_url( 'js/switcher.metafield.js', __FILE__ ) , array('jquery'), '1.0', true );
     
     wp_enqueue_script( 'metafield-script', plugins_url( 'js/custom.metafield.js', __FILE__ ) , array('jquery'), '1.0', true );
     if( get_current_screen()->post_type == 'page' ) {
@@ -40,5 +40,5 @@ function quanto_cmb2_admin_scripts( $screen ){
 }
 
 // Switch Field 
-require_once ( QUANTO_PLUGIN_CMB2EXT_PATH.'switch_metafield.php');
-require_once ( QUANTO_PLUGIN_CMB2EXT_PATH.'cmb2-fontawesome-picker.php');
+require_once ( AGROLAND_PLUGIN_CMB2EXT_PATH.'switch_metafield.php');
+require_once ( AGROLAND_PLUGIN_CMB2EXT_PATH.'cmb2-fontawesome-picker.php');

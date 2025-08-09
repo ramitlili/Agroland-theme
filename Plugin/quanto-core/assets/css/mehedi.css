@@ -1,5 +1,5 @@
 /* hero slider css */
-.quanto-hero-slider-item::before {
+.agroland-hero-slider-item::before {
     content: '';
     left: 0;
     top: 0;
@@ -12,50 +12,50 @@
     background: linear-gradient(0deg, rgba(10, 22, 94, 0.85) 60%, rgba(43, 77, 255, 0.85) 100%);
 }
 /* Menu searbar css */
-.quanto-header-search-section {
+.agroland-header-search-section {
     left: 0;
 }
 .search-overlay {
     left: 0;
 }
 /* Footer quick link underline issue fix */
-.quanto-footer-menu.dark-color ul li a {
+.agroland-footer-menu.dark-color ul li a {
     display: inline-block;
 }
 
 /* Post Navagation custom css*/
 
-.quanto-post-navigation2 {
+.agroland-post-navigation2 {
     display: inline;
     padding-top: 0;
     border-top: 0;
 }
-.quanto-post-navigation2 .p-nav-previous,
-.quanto-post-navigation2 .p-nav-next {
+.agroland-post-navigation2 .p-nav-previous,
+.agroland-post-navigation2 .p-nav-next {
     align-items: center;
 }
-.quanto-post-navigation2 .nav-links {
+.agroland-post-navigation2 .nav-links {
     display: flex;
     align-items: center;
     padding-top: 40px;
     justify-content: space-between;
     border-top: 1px solid var(--light-color1);
 }
-.quanto-post-data p {
+.agroland-post-data p {
     font-weight: 400;
     margin-bottom: 8px;
     color: var(--body-color);
 }
 
 @media (max-width: 767px) {
-    .quanto-post-navigation2 .nav-links {
+    .agroland-post-navigation2 .nav-links {
         flex-wrap: wrap;
         gap: 24px;
     }
-    .quanto-post-navigation2 .nav-links .nav-next {
+    .agroland-post-navigation2 .nav-links .nav-next {
         width: 100%;
     }
-    .quanto-post-navigation2 .p-nav-next {
+    .agroland-post-navigation2 .p-nav-next {
         justify-content: end;
         width: 100%;
     }
@@ -63,26 +63,26 @@
 /*------------------------------------------------------------------
 Quanto Service Box
 -------------------------------------------------------------------*/
-.quanto-iconbox-data h5 {
+.agroland-iconbox-data h5 {
     transition: all 0.3s ease;
 }
-.quanto-service-box {
+.agroland-service-box {
     transition: all 0.5s ease;
 }
-.quanto-service-box4:hover {
+.agroland-service-box4:hover {
     padding-inline: 25px;
 }
 /*------------------------------------------------------------------
 Quanto Blog Section
 -------------------------------------------------------------------*/
-.quanto-blog-box .quanto-blog-thumb img {
+.agroland-blog-box .agroland-blog-thumb img {
     object-fit: cover;
     object-position: center;
 }
 
-.quanto-blog-box .quanto-blog-content h5 {
+.agroland-blog-box .agroland-blog-content h5 {
     transition: all 0.2s ease;
 }
-.quanto-blog-content a.blog-meta {
+.agroland-blog-content a.blog-meta {
     transition: all 0.2s ease;
 }

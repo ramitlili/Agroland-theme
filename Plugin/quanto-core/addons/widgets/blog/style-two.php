@@ -1,19 +1,19 @@
-<div class="row quanto-blog2__row">
+<div class="row agroland-blog2__row">
     <?php if ($the_query->have_posts()) :
         $delay = 0.30; // Initialize delay
         while ($the_query->have_posts()) :
             $the_query->the_post();
     ?>
         <div <?php echo $this->get_render_attribute_string('blog_gride_classes'); ?>>
-            <div class="quanto-blog-box style-2 border-bottom-style fade-anim" data-delay="<?php echo number_format($delay, 2); ?>" data-direction="right" >
-                <div class="quanto-blog-content">
-                    <a href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')); ?>" class="blog-meta quanto-blog-date">
+            <div class="agroland-blog-box style-2 border-bottom-style fade-anim" data-delay="<?php echo number_format($delay, 2); ?>" data-direction="right" >
+                <div class="agroland-blog-content">
+                    <a href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')); ?>" class="blog-meta agroland-blog-date">
                         <?php echo get_the_time('F j, Y'); ?>
                     </a>
                     <h5 class="line-clamp-3">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </h5>
-                    <a class="quanto-link-btn" href="<?php the_permalink(); ?>">
+                    <a class="agroland-link-btn" href="<?php the_permalink(); ?>">
                         <?php echo esc_html(!empty($settings['button_text']) ? $settings['button_text'] : 'Read More'); ?>
                         <span>
                             <i class="fa-solid fa-arrow-right arry1"></i>
@@ -21,7 +21,7 @@
                         </span>
                     </a>
                 </div>
-                <div class="quanto-blog-thumb">
+                <div class="agroland-blog-thumb">
                     <?php if( has_post_thumbnail() ): ?>
                         <a href="<?php the_permalink(); ?>" class="d-inline-block overflow-hidden">
                             <?php the_post_thumbnail('full');?>

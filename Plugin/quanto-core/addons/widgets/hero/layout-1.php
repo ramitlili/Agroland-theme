@@ -1,8 +1,8 @@
-<section class="quanto-hero-section overflow-hidden">
+<section class="agroland-hero-section overflow-hidden">
     <div class="container custom-container">
         <div class="row">
             <div class="col-12 position-relative">
-                <div class="quanto-hero__content move-anim" data-delay="0.45">
+                <div class="agroland-hero__content move-anim" data-delay="0.45">
                     <h1 class="title">
                         <?php echo esc_html( $settings['hero_title'] ) ?>
                         <span>
@@ -11,7 +11,7 @@
                         </span>
                     </h1>
                 </div>
-                <div class="quanto-hero__info">
+                <div class="agroland-hero__info">
                     <p class="word-anim" data-delay="0.60">
                         <?php echo esc_html( $settings['hero_text'] ) ?>
                     </p>

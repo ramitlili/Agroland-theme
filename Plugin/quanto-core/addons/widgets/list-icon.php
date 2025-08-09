@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * List Icon Widget .
  *
  */
-class Quanto_List_Icon extends Widget_Base {
+class Agroland_List_Icon extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_list_icon';
+		return 'agroland_list_icon';
 	}
      
 	public function get_title() {
@@ -190,4 +190,4 @@ class Quanto_List_Icon extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_List_Icon() );
+$widgets_manager->register( new \Agroland_List_Icon() );

@@ -31,7 +31,7 @@ class Post_Navigation extends \Elementor\Widget_Base
      */
     public function get_name()
     {
-        return 'quanto-post-navigation';
+        return 'agroland-post-navigation';
     }
     /**
      * Get widget title.
@@ -149,7 +149,7 @@ class Post_Navigation extends \Elementor\Widget_Base
             [
                 'name' => 'label_typo',
                 'label' => __('Prev Next Text Typography', 'quanto'),
-                'selector' => '{{WRAPPER}} .quanto-post-data p',
+                'selector' => '{{WRAPPER}} .agroland-post-data p',
             ]
         );
         $this->add_control(
@@ -158,7 +158,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'label' => __('Prev Next Text Color', 'quanto'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-post-data p' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-post-data p' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -169,7 +169,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
-                    '{{WRAPPER}}  .quanto-post-data p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}!important;',
+                    '{{WRAPPER}}  .agroland-post-data p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}!important;',
                 ],
             ]
         );
@@ -197,7 +197,7 @@ class Post_Navigation extends \Elementor\Widget_Base
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-post-icon i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-post-icon i' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
         );
@@ -207,7 +207,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'label' => __('Icon Color', 'quanto'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-post-icon i' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-post-icon i' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -217,7 +217,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'label' => __('Icon Background Color', 'quanto'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-post-icon' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-post-icon' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -226,7 +226,7 @@ class Post_Navigation extends \Elementor\Widget_Base
             [
                 'name' => 'icon_border',
                 'label' => __('Border', 'quanto'),
-                'selector' => '{{WRAPPER}} .quanto-post-icon',
+                'selector' => '{{WRAPPER}} .agroland-post-icon',
             ]
         );
         $this->add_responsive_control(
@@ -237,7 +237,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
                    
-                    '{{WRAPPER}} .quanto-post-icon' => 'border-radius: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-post-icon' => 'border-radius: {{TOP}}{{UNIT}} {{LEFT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{RIGHT}}{{UNIT}};',
                 ],
             ]
         );
@@ -258,8 +258,8 @@ class Post_Navigation extends \Elementor\Widget_Base
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-post-navigation2 .p-nav-previous' => 'gap: {{SIZE}}{{UNIT}}',
-					'{{WRAPPER}} .quanto-post-navigation2 .p-nav-next' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-post-navigation2 .p-nav-previous' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-post-navigation2 .p-nav-next' => 'gap: {{SIZE}}{{UNIT}}',
 					
 				],
 			]
@@ -275,7 +275,7 @@ class Post_Navigation extends \Elementor\Widget_Base
             [
                 'name' => 'project_title_typo',
                 'label' => __('Project Titlet Typography', 'quanto'),
-                'selector' => '{{WRAPPER}} .quanto-post-data h5',
+                'selector' => '{{WRAPPER}} .agroland-post-data h5',
             ]
         );
         $this->add_control(
@@ -284,7 +284,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'label' => __('Project Title Color', 'quanto'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-post-data h5' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-post-data h5' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -295,7 +295,7 @@ class Post_Navigation extends \Elementor\Widget_Base
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
-                    '{{WRAPPER}}  .quanto-post-data h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}!important;',
+                    '{{WRAPPER}}  .agroland-post-data h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}!important;',
                 ],
             ]
         );
@@ -324,21 +324,21 @@ class Post_Navigation extends \Elementor\Widget_Base
         
         the_post_navigation(array(
             'prev_text' => '<a class="p-nav-previous" href="' . get_permalink(get_previous_post()) . '">
-                <div class="quanto-post-icon">' . $prev_icon . '</div>
-                <div class="quanto-post-data">
+                <div class="agroland-post-icon">' . $prev_icon . '</div>
+                <div class="agroland-post-data">
                     <p>' . esc_html($settings['prev_text']) . '</p>
                     <h5>%title</h5>
                 </div>
             </a>',
             'next_text' => '<a class="p-nav-next" href="' . get_permalink(get_next_post()) . '">
-                    <div class="quanto-post-data">
+                    <div class="agroland-post-data">
                         <p>' . esc_html($settings['next_text']) . '</p>
                         <h5>%title</h5>
                     </div>
-                    <div class="quanto-post-icon">' . $next_icon . '</div>
+                    <div class="agroland-post-icon">' . $next_icon . '</div>
                 </a>',
             'in_same_term' => false,
-            'class' => 'quanto-post-navigation2'
+            'class' => 'agroland-post-navigation2'
         ));
     }
 }

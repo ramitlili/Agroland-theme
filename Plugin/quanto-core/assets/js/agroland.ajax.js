@@ -22,11 +22,11 @@ Author : quanto.com
         let $emailAdd = $(this).find('input[type="email"]').val();
         $.ajax({
             type: 'POST',
-            url: quantoajax.action_url,
+            url: agrolandajax.action_url,
             data: {
                 sectsubscribe_email: $emailAdd,
-                security: quantoajax.nonce,
-                action: 'quanto_subscribe_ajax'
+                security: agrolandajax.nonce,
+                action: 'agroland_subscribe_ajax'
             },
 
             success: function (data) {

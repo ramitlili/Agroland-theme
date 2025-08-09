@@ -12,13 +12,13 @@
 * Creating About Us Widget
 ***************************************/
 
-class quanto_aboutus_widget extends WP_Widget {
+class agroland_aboutus_widget extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_aboutus_widget',
+                'agroland_aboutus_widget',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: About Us Widget', 'quanto' ),
@@ -150,11 +150,11 @@ class quanto_aboutus_widget extends WP_Widget {
             $instance['aboutus_bg_img'] 	    = ( ! empty( $new_instance['aboutus_bg_img'] ) ) ? strip_tags( $new_instance['aboutus_bg_img'] ) : '';
 			return $instance;
         }
-    } // Class quanto_aboutus_widget ends here
+    } // Class agroland_aboutus_widget ends here
 
 
     // Register and load the widget
-    function quanto_aboutus_load_widget() {
-        register_widget( 'quanto_aboutus_widget' );
+    function agroland_aboutus_load_widget() {
+        register_widget( 'agroland_aboutus_widget' );
     }
-    add_action( 'widgets_init', 'quanto_aboutus_load_widget' );
+    add_action( 'widgets_init', 'agroland_aboutus_load_widget' );

@@ -6,7 +6,7 @@ use \Elementor\Group_Control_Typography;
 use \Elementor\Group_Control_Background;
 use \Elementor\Group_Control_Border;
 
-class Quanto_Faqs extends Widget_Base {
+class Agroland_Faqs extends Widget_Base {
 
     public function get_name() {
         return 'quantofaqs';
@@ -84,7 +84,7 @@ class Quanto_Faqs extends Widget_Base {
     protected function render() {
         $settings = $this->get_settings_for_display();
         ?>
-        <div class="accordion quanto-faq-accordion" id="quantoFaqAccordion">
+        <div class="accordion agroland-faq-accordion" id="quantoFaqAccordion">
             <?php foreach ($settings['faqs_repeater'] as $index => $item) :
                 $is_open = $item['open_item'] === 'yes' ? 'show' : '';
                 $collapsed = $item['open_item'] === 'yes' ? '' : 'collapsed';
@@ -108,4 +108,4 @@ class Quanto_Faqs extends Widget_Base {
     }
 }
 
-$widgets_manager->register( new \Quanto_Faqs() );
+$widgets_manager->register( new \Agroland_Faqs() );

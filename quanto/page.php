@@ -19,23 +19,23 @@
     * 
     * Hook for Page Start Wrapper
     *
-    * Hook quanto_page_start_wrap
+    * Hook agroland_page_start_wrap
     *
-    * @Hooked quanto_page_start_wrap_cb 10
+    * @Hooked agroland_page_start_wrap_cb 10
     *  
     */
-    do_action( 'quanto_page_start_wrap' );
+    do_action( 'agroland_page_start_wrap' );
 
     /**
     * 
     * Hook for Column Start Wrapper
     *
-    * Hook quanto_page_col_start_wrap
+    * Hook agroland_page_col_start_wrap
     *
-    * @Hooked quanto_page_col_start_wrap_cb 10
+    * @Hooked agroland_page_col_start_wrap_cb 10
     *  
     */
-    do_action( 'quanto_page_col_start_wrap' );
+    do_action( 'agroland_page_col_start_wrap' );
 
     if( have_posts() ){
       while( have_posts() ){
@@ -53,34 +53,34 @@
     * 
     * Hook for Column End Wrapper
     *
-    * Hook quanto_page_col_end_wrap
+    * Hook agroland_page_col_end_wrap
     *
-    * @Hooked quanto_page_col_end_wrap_cb 10
+    * @Hooked agroland_page_col_end_wrap_cb 10
     *  
     */
-    do_action( 'quanto_page_col_end_wrap' );
+    do_action( 'agroland_page_col_end_wrap' );
 
     /**
     * 
     * Hook for Page Sidebar
     *
-    * Hook quanto_page_sidebar
+    * Hook agroland_page_sidebar
     *
-    * @Hooked quanto_page_sidebar_cb 10
+    * @Hooked agroland_page_sidebar_cb 10
     *  
     */
-    do_action( 'quanto_page_sidebar' );
+    do_action( 'agroland_page_sidebar' );
 
     /**
     * 
     * Hook for Page End Wrapper
     *
-    * Hook quanto_page_end_wrap
+    * Hook agroland_page_end_wrap
     *
-    * @Hooked quanto_page_end_wrap_cb 10
+    * @Hooked agroland_page_end_wrap_cb 10
     *  
     */
-    do_action( 'quanto_page_end_wrap' );
+    do_action( 'agroland_page_end_wrap' );
 
     //footer
     get_footer();

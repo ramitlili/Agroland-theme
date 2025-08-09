@@ -15,16 +15,16 @@ if ( ! defined( 'ABSPATH' ) ) {
     *
     * Hook for Footer Content
     *
-    * Hook quanto_footer_content
+    * Hook agroland_footer_content
     *
-    * @Hooked quanto_footer_content_cb 10
+    * @Hooked agroland_footer_content_cb 10
     *
     */
-    do_action( 'quanto_footer_content' );
+    do_action( 'agroland_footer_content' );
 
 
 
-    do_action( 'quanto_after_content' );
+    do_action( 'agroland_after_content' );
     
 
     if( !is_404( ) ) {
@@ -32,12 +32,12 @@ if ( ! defined( 'ABSPATH' ) ) {
         *
         * Hook for Back to Top Button
         *
-        * Hook quanto_back_to_top
+        * Hook agroland_back_to_top
         *
-        * @Hooked quanto_back_to_top_cb 10
+        * @Hooked agroland_back_to_top_cb 10
         *
         */
-        do_action( 'quanto_back_to_top' );
+        do_action( 'agroland_back_to_top' );
     }
 
     wp_footer();

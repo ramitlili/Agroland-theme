@@ -6,10 +6,10 @@ use \Elementor\Group_Control_Border;
 use \Elementor\Group_Control_Background;
 use \Elementor\Repeater;
 
-class Quanto_Process extends Widget_Base {
+class Agroland_Process extends Widget_Base {
 
     public function get_name() {
-        return 'quanto_process';
+        return 'agroland_process';
     }
 
     public function get_title() {
@@ -326,4 +326,4 @@ class Quanto_Process extends Widget_Base {
     }
 }
 
-$widgets_manager->register( new \Quanto_Process() );
+$widgets_manager->register( new \Agroland_Process() );

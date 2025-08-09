@@ -9,7 +9,7 @@
     }
 
     // This is your option name where all the Redux data is stored.
-    $opt_name = "quanto_opt";
+    $opt_name = "agroland_opt";
 
     // This line is only for altering the demo. Can be easily removed.
     $opt_name = apply_filters( 'redux_demo/opt_name', $opt_name );
@@ -221,12 +221,12 @@
 
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Cursor', 'quanto' ),
-        'id'               => 'quanto_cursor',
+        'id'               => 'agroland_cursor',
         'subsection'       => false,
         'icon'             => 'el el-hand-up',
         'fields'           => array(
             array(
-                'id'       => 'quanto_display_cursor',
+                'id'       => 'agroland_display_cursor',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'cursor', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch Enabled to Display cursor.', 'quanto' ),
@@ -239,12 +239,12 @@
 
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Preloader', 'quanto' ),
-        'id'               => 'quanto_preloader',
+        'id'               => 'agroland_preloader',
         'subsection'       => false,
         'icon'             => 'el el-refresh',
         'fields'           => array(
             array(
-                'id'       => 'quanto_display_preloader',
+                'id'       => 'agroland_display_preloader',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Preloader', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch Enabled to Display Preloader.', 'quanto' ),
@@ -266,26 +266,26 @@
     /* Start Color  Fields */
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Brand Color', 'quanto' ),
-        'id'               => 'quanto_brand_color',
+        'id'               => 'agroland_brand_color',
         'customizer_width' => '450px',
         'icon'             => 'el el-brush',
         'fields'           => array(
             array(
-                'id'       => 'quanto_primary',
+                'id'       => 'agroland_primary',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Primary Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Primary Theme Color', 'quanto' ),
                 'default'  => '#0f0f0f',
             ),
             array(
-                'id'       => 'quanto_heading_color',
+                'id'       => 'agroland_heading_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Heading Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Heading Color', 'quanto' ),
                 'default'  => '#0f0f0f',
             ),
             array(
-                'id'       => 'quanto_body_color',
+                'id'       => 'agroland_body_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Body Text Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Body Text Color', 'quanto' ),
@@ -299,7 +299,7 @@
 
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Typography', 'quanto' ),
-        'id'               => 'quanto_typography',
+        'id'               => 'agroland_typography',
         'customizer_width' => '450px',
         'icon'             => 'el el-text-height',
         'fields'           => array(
@@ -337,20 +337,20 @@
     /* Admin Lebel Fields */
     Redux::setSection( $opt_name, array(
         'title'             => esc_html__( 'Admin Label', 'quanto' ),
-        'id'                => 'quanto_admin_label',
+        'id'                => 'agroland_admin_label',
         'customizer_width'  => '450px',
         'subsection'        => true,
         'fields'            => array(
             array(
                 'title'     => esc_html__( 'Admin Login Logo', 'quanto' ),
                 'subtitle'  => esc_html__( 'It belongs to the back-end of your website to log-in to admin panel.', 'quanto' ),
-                'id'        => 'quanto_admin_login_logo',
+                'id'        => 'agroland_admin_login_logo',
                 'type'      => 'media',
             ),
             array(
                 'title'     => esc_html__( 'Custom CSS For admin', 'quanto' ),
                 'subtitle'  => esc_html__( 'Any CSS your write here will run in admin.', 'quanto' ),
-                'id'        => 'quanto_theme_admin_custom_css',
+                'id'        => 'agroland_theme_admin_custom_css',
                 'type'      => 'ace_editor',
                 'mode'      => 'css',
                 'theme'     => 'chrome',
@@ -363,12 +363,12 @@
     // -> START Basic Fields
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Header', 'quanto' ),
-        'id'               => 'quanto_header',
+        'id'               => 'agroland_header',
         'customizer_width' => '400px',
         'icon'             => 'el el-credit-card',
         'fields'           => array(
             array(
-                'id'       => 'quanto_header_options',
+                'id'       => 'agroland_header_options',
                 'type'     => 'button_set',
                 'default'  => '1',
                 'options'  => array(
@@ -379,22 +379,22 @@
                 'subtitle' => esc_html__( 'Select header options.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_header_select_options',
+                'id'       => 'agroland_header_select_options',
                 'type'     => 'select',
                 'data'     => 'posts',
                 'args'     => array(
-                    'post_type'     => 'quanto_header'
+                    'post_type'     => 'agroland_header'
                 ),
                 'title'    => esc_html__( 'Global Header', 'quanto' ),
                 'subtitle' => esc_html__( 'Select header.', 'quanto' ),
-                'required' => array( 'quanto_header_options', 'equals', '2' )
+                'required' => array( 'agroland_header_options', 'equals', '2' )
             ),
             array(
-                'id'       => 'quanto_archive_header_select_options',
+                'id'       => 'agroland_archive_header_select_options',
                 'type'     => 'select',
                 'data'     => 'posts',
                 'args'     => array(
-                    'post_type' => 'quanto_header',
+                    'post_type' => 'agroland_header',
                 ),
                 'title'    => esc_html__( 'Archive Header', 'quanto' ),
                 'subtitle' => esc_html__( 'Select header for archive pages.', 'quanto' ),
@@ -404,7 +404,7 @@
     // -> START Header Logo
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Logo', 'quanto' ),
-        'id'               => 'quanto_header_logo_option',
+        'id'               => 'agroland_header_logo_option',
         'subsection'       => true,
         'fields'           => array(
 
@@ -455,7 +455,7 @@
             ),
 
             array(
-                'id'       => 'quanto_text_title',
+                'id'       => 'agroland_text_title',
                 'type'     => 'text',
                 'validate' => 'html',
                 'title'    => esc_html__( 'Text Logo', 'quanto' ),
@@ -468,12 +468,12 @@
     // -> START Blog Page
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Blog', 'quanto' ),
-        'id'         => 'quanto_blog_page',
+        'id'         => 'agroland_blog_page',
         'icon'  => 'el el-blogger',
         'fields'     => array(
 
             array(
-                'id'       => 'quanto_blog_sidebar',
+                'id'       => 'agroland_blog_sidebar',
                 'type'     => 'image_select',
                 'title'    => esc_html__( 'Layout', 'quanto' ),
                 'subtitle' => esc_html__( 'Choose blog layout from here. If you use this option then you will able to change three type of blog layout ( Default Left Sidebar Layour ). ', 'quanto' ),
@@ -495,7 +495,7 @@
                 'default'  => '3'
             ),
             array(
-                'id'       => 'quanto_blog_grid',
+                'id'       => 'agroland_blog_grid',
                 'type'     => 'image_select',
                 'title'    => esc_html__( 'Post Column', 'quanto' ),
                 'subtitle' => esc_html__( 'Select your blog post column from here. If you use this option then you will able to select three type of blog post layout ( Default Two Column ).', 'quanto' ),
@@ -519,7 +519,7 @@
             ),
 
             array(
-                'id'      => 'quanto_blog_style',
+                'id'      => 'agroland_blog_style',
                 'type'     => 'select',
                 'options'  => array(
                     'blog_style_one' => esc_html__('Blog Style One','quanto'),
@@ -529,7 +529,7 @@
                 'title'   => esc_html__('Blog Style', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_section_title_switcher',
+                'id'       => 'agroland_blog_section_title_switcher',
                 'type'     => 'switch',
                 'default'  => '0',
                 'on'       => esc_html__('Show','quanto'),
@@ -538,14 +538,14 @@
                 'subtitle' => esc_html__('Control blog Section title show / hide. If you use this option then you will able to show / hide your blog page title ( Default Setting Show ).', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_section_custom_title',
+                'id'       => 'agroland_blog_section_custom_title',
                 'type'     => 'text',
                 'title'    => esc_html__('Blog Section Title', 'quanto'),
                 'subtitle' => esc_html__('Set blog Section custom title form here. If you use this option then you will able to set your won title text.', 'quanto'),
-                'required' => array('quanto_blog_section_title_switcher','equals','1')
+                'required' => array('agroland_blog_section_title_switcher','equals','1')
             ),
             array(
-                'id'       => 'quanto_blog_section_custom_title_tag',
+                'id'       => 'agroland_blog_section_custom_title_tag',
                 'type'     => 'select',
                 'options'  => array(
                     'h1'        => esc_html__('H1','quanto'),
@@ -558,18 +558,18 @@
                 'default'  => 'h1',
                 'title'    => esc_html__( 'Section Title Tag', 'quanto' ),
                 'subtitle' => esc_html__( 'Select section title tag. If you use this option then you can able to change title tag H1 - H6 ( Default tag H1 )', 'quanto' ),
-                'required' => array('quanto_blog_section_title_switcher','equals','1')
+                'required' => array('agroland_blog_section_title_switcher','equals','1')
             ),
             array(
-                'id'       => 'quanto_blog_section_title_color',
-                'output'   => array( '.quanto-hero-blog__content h1'),
+                'id'       => 'agroland_blog_section_title_color',
+                'output'   => array( '.agroland-hero-blog__content h1'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Section Title Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Section Title Color.', 'quanto' ),
-                'required' => array('quanto_blog_section_title_switcher','equals','1')
+                'required' => array('agroland_blog_section_title_switcher','equals','1')
             ),
             array(
-                'id'       => 'quanto_blog_page_title_switcher',
+                'id'       => 'agroland_blog_page_title_switcher',
                 'type'     => 'switch',
                 'default'  => 1,
                 'on'       => esc_html__('Show','quanto'),
@@ -578,7 +578,7 @@
                 'subtitle' => esc_html__('Control blog page title show / hide. If you use this option then you will able to show / hide your blog page title ( Default Setting Show ).', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_page_title_setting',
+                'id'       => 'agroland_blog_page_title_setting',
                 'type'     => 'button_set',
                 'title'    => esc_html__('Blog Page Title Setting', 'quanto'),
                 'subtitle' => esc_html__('Control blog page title setting. If you use this option then you can able to show default or custom blog page title ( Default Blog ).', 'quanto'),
@@ -587,17 +587,17 @@
                     "custom"      => esc_html__('Custom','quanto'),
                 ),
                 'default'  => 'predefine',
-                'required' => array("quanto_blog_page_title_switcher","equals","1")
+                'required' => array("agroland_blog_page_title_switcher","equals","1")
             ),
             array(
-                'id'       => 'quanto_blog_page_custom_title',
+                'id'       => 'agroland_blog_page_custom_title',
                 'type'     => 'text',
                 'title'    => esc_html__('Blog Custom Title', 'quanto'),
                 'subtitle' => esc_html__('Set blog page custom title form here. If you use this option then you will able to set your won title text.', 'quanto'),
-                'required' => array('quanto_blog_page_title_setting','equals','custom')
+                'required' => array('agroland_blog_page_title_setting','equals','custom')
             ),
             array(
-                'id'            => 'quanto_blog_postExcerpt',
+                'id'            => 'agroland_blog_postExcerpt',
                 'type'          => 'slider',
                 'title'         => esc_html__('Blog Posts Excerpt', 'quanto'),
                 'subtitle'      => esc_html__('Control the number of characters you want to show in the blog page for each post.. If you use this option then you can able to control your blog post characters from here ( Default show 10 ).', 'quanto'),
@@ -609,7 +609,7 @@
                 'display_value' => 'text',
             ),
             array(
-                'id'       => 'quanto_blog_readmore_setting',
+                'id'       => 'agroland_blog_readmore_setting',
                 'type'     => 'button_set',
                 'title'    => esc_html__( 'Read More Text Setting', 'quanto' ),
                 'subtitle' => esc_html__( 'Control read more text from here.', 'quanto' ),
@@ -620,70 +620,70 @@
                 'default'  => 'default',
             ),
             array(
-                'id'       => 'quanto_blog_custom_readmore',
+                'id'       => 'agroland_blog_custom_readmore',
                 'type'     => 'text',
                 'title'    => esc_html__('Read More Text', 'quanto'),
                 'subtitle' => esc_html__('Set read moer text here. If you use this option then you will able to set your won text.', 'quanto'),
-                'required' => array('quanto_blog_readmore_setting','equals','custom')
+                'required' => array('agroland_blog_readmore_setting','equals','custom')
             ),
             array(
-                'id'       => 'quanto_blog_title_color',
-                'output'   => array( '.quanto-blog-box .quanto-blog-content h5'),
+                'id'       => 'agroland_blog_title_color',
+                'output'   => array( '.agroland-blog-box .agroland-blog-content h5'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Title Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Title Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_blog_title_hover_color',
-                'output'   => array( '.quanto-blog-box .quanto-blog-content h5:hover'),
+                'id'       => 'agroland_blog_title_hover_color',
+                'output'   => array( '.agroland-blog-box .agroland-blog-content h5:hover'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Title Hover Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Title Hover Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_blog_contant_color',
-                'output'   => array( '.quanto-blog-box .quanto-blog-content .blog-text'),
+                'id'       => 'agroland_blog_contant_color',
+                'output'   => array( '.agroland-blog-box .agroland-blog-content .blog-text'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Excerpt / Content Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Excerpt / Content Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_blog_read_more_button_color',
-                'output'   => array( '.quanto-link-btn.btn-pill, .quanto-link-btn.btn-pill span .arry1, .quanto-link-btn.btn-pill span .arry2'),
+                'id'       => 'agroland_blog_read_more_button_color',
+                'output'   => array( '.agroland-link-btn.btn-pill, .agroland-link-btn.btn-pill span .arry1, .agroland-link-btn.btn-pill span .arry2'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Read More Button Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Read More Button Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_blog_read_more_button_bg_color',
+                'id'       => 'agroland_blog_read_more_button_bg_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Button Background Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set button Background Color.', 'quanto' ),
-                'output'   => array( 'background-color' =>'.quanto-link-btn.btn-pill' ),
+                'output'   => array( 'background-color' =>'.agroland-link-btn.btn-pill' ),
             ),
             array(
-                'id'       => 'quanto_blog_pagination_color',
+                'id'       => 'agroland_blog_pagination_color',
                 'output'   => array( '.blog-pagination .pagination .page-item .page-link'),
                 'type'     => 'color',
                 'title'    => esc_html__('Blog Pagination Color', 'quanto'),
                 'subtitle' => esc_html__('Set Blog Pagination Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_pagination_bg_color',
+                'id'       => 'agroland_blog_pagination_bg_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Pagination Background Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Pagination Background Color.', 'quanto' ),
                 'output'   => array( 'background-color' =>'.blog-pagination .pagination .page-item .page-link:not(.next):not(.prev)' ),
             ),
             array(
-                'id'       => 'quanto_blog_pagination_hover_color',
+                'id'       => 'agroland_blog_pagination_hover_color',
                 'output'   => array( '.blog-pagination .pagination .page-item .page-link:hover, .blog-pagination .pagination .page-item .page-link.active'),
                 'type'     => 'color',
                 'title'    => esc_html__('Blog Pagination Hover Color', 'quanto'),
                 'subtitle' => esc_html__('Set Blog Pagination Hover Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_pagination_hover_bg_color',
+                'id'       => 'agroland_blog_pagination_hover_bg_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Pagination Hover Background Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Pagination Hover Background Color.', 'quanto' ),
@@ -694,12 +694,12 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Single Blog Page', 'quanto' ),
-        'id'         => 'quanto_post_detail_styles',
+        'id'         => 'agroland_post_detail_styles',
         'subsection' => true,
         'fields'     => array(
 
             array(
-                'id'       => 'quanto_blog_single_sidebar',
+                'id'       => 'agroland_blog_single_sidebar',
                 'type'     => 'image_select',
                 'title'    => esc_html__( 'Layout', 'quanto' ),
                 'subtitle' => esc_html__( 'Choose blog single page layout from here. If you use this option then you will able to change three type of blog single page layout ( Default Left Sidebar Layour ). ', 'quanto' ),
@@ -721,7 +721,7 @@
                 'default'  => '3'
             ),
             array(
-                'id'       => 'quanto_post_details_title_position',
+                'id'       => 'agroland_post_details_title_position',
                 'type'     => 'button_set',
                 'default'  => 'header',
                 'options'  => array(
@@ -732,14 +732,14 @@
                 'subtitle' => esc_html__('Control blog post title position from here.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_post_details_custom_title',
+                'id'       => 'agroland_post_details_custom_title',
                 'type'     => 'text',
                 'title'    => esc_html__('Blog Details Custom Title', 'quanto'),
                 'subtitle' => esc_html__('This title will show in Breadcrumb title.', 'quanto'),
-                'required' => array('quanto_post_details_title_position','equals','below')
+                'required' => array('agroland_post_details_title_position','equals','below')
             ),
             array(
-                'id'       => 'quanto_blog_details_title_column',
+                'id'       => 'agroland_blog_details_title_column',
                 'type'     => 'select',
                 'title'    => __('Single Blog Column Width', 'your-textdomain'),
                 'subtitle' => __('Choose the column width for the single blog content area.'),
@@ -750,10 +750,10 @@
                     'col-xl-6 col-xxl-6'   => '6 Columns',
                 ),
                 'default'  => 'col-xl-9 col-xxl-9',
-                'required' => array('quanto_post_details_title_position','equals','below')
+                'required' => array('agroland_post_details_title_position','equals','below')
             ),
             array(
-                'id'       => 'quanto_display_post_tags',
+                'id'       => 'agroland_display_post_tags',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Tags', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Tags.', 'quanto' ),
@@ -762,7 +762,7 @@
                 'off'       => esc_html__('Disabled','quanto'),
             ),
             array(
-                'id'       => 'quanto_post_details_share_options',
+                'id'       => 'agroland_post_details_share_options',
                 'type'     => 'switch',
                 'title'    => esc_html__('Share Options', 'quanto'),
                 'subtitle' => esc_html__('Control post share options from here. If you use this option then you will able to show or hide post share options.', 'quanto'),
@@ -771,7 +771,7 @@
                 'default'   => '0',
             ),
             array(
-                'id'       => 'quanto_post_details_related_post',
+                'id'       => 'agroland_post_details_related_post',
                 'type'     => 'switch',
                 'title'    => esc_html__('Related Post', 'quanto'),
                 'subtitle' => esc_html__('Control related post from here. If you use this option then you will able to show or hide related post ( Default setting Show ).', 'quanto'),
@@ -784,32 +784,32 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Meta Data', 'quanto' ),
-        'id'         => 'quanto_common_meta_data',
+        'id'         => 'agroland_common_meta_data',
         'subsection' => true,
         'fields'     => array(
             array(
-                'id'       => 'quanto_blog_meta_before_color',
-                'output'   => array( '.quanto-blog-box .quanto-blog-content .quanto-blog-date::before'),
+                'id'       => 'agroland_blog_meta_before_color',
+                'output'   => array( '.agroland-blog-box .agroland-blog-content .agroland-blog-date::before'),
                 'type'     => 'color',
                 'title'    => esc_html__('Blog Meta before Color', 'quanto'),
                 'subtitle' => esc_html__('Set Blog Meta before Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_blog_meta_text_color',
-                'output'   => array( '.quanto-blog-box .quanto-blog-content span, .blog-item .meta-box ul.meta-info li span a'),
+                'id'       => 'agroland_blog_meta_text_color',
+                'output'   => array( '.agroland-blog-box .agroland-blog-content span, .blog-item .meta-box ul.meta-info li span a'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Meta Text Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Meta Text Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_blog_meta_text_hover_color',
+                'id'       => 'agroland_blog_meta_text_hover_color',
                 'output'   => array( '.blog-item .meta-box ul.meta-info li span a:hover'),
                 'type'     => 'color',
                 'title'    => esc_html__( 'Blog Meta Hover Text Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Blog Meta Hover Text Color.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_display_post_date',
+                'id'       => 'agroland_display_post_date',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Post Date', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Post Date.', 'quanto' ),
@@ -818,7 +818,7 @@
                 'off'       => esc_html__('Disabled','quanto'),
             ),
             array(
-                'id'       => 'quanto_display_post_details_date',
+                'id'       => 'agroland_display_post_details_date',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Post Details Date', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Post Details Date.', 'quanto' ),
@@ -827,7 +827,7 @@
                 'off'       => esc_html__('Disabled','quanto'),
             ),
             array(
-                'id'       => 'quanto_display_post_author',
+                'id'       => 'agroland_display_post_author',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Post Details Author', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Post Details Author.', 'quanto' ),
@@ -836,7 +836,7 @@
                 'off'       => esc_html__( 'Disabled', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_display_post_category',
+                'id'       => 'agroland_display_post_category',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Post Category', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Category.', 'quanto' ),
@@ -845,7 +845,7 @@
                 'off'       => esc_html__('Disabled','quanto'),
             ),
             array(
-                'id'       => 'quanto_display_post_details_category',
+                'id'       => 'agroland_display_post_details_category',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Post Details Category', 'quanto' ),
                 'subtitle' => esc_html__( 'Switch On to Display Category.', 'quanto' ),
@@ -859,17 +859,17 @@
     /* Sidebar Start */
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Sidebar Options', 'quanto' ),
-        'id'         => 'quanto_sidebar_options',
+        'id'         => 'agroland_sidebar_options',
         'subsection' => true,
         'fields'     => array(
             array(
-                'id'      => 'quanto_sidebar_bg_color',
+                'id'      => 'agroland_sidebar_bg_color',
                 'type'    => 'color',
                 'title'   => esc_html__('Widgets Background Color', 'quanto'),
                 'output'  => array('background-color'   => '.blog-sidebar')
             ),
             array(
-                'id'      => 'quanto_sidebar_padding_margin_box_shadow_trigger',
+                'id'      => 'agroland_sidebar_padding_margin_box_shadow_trigger',
                 'type'    => 'switch',
                 'title'   => esc_html__('Widgets Custom Box Shadow/Padding/Margin/border', 'quanto'),
                 'on'      => esc_html__('Show','quanto'),
@@ -884,37 +884,37 @@
                 'output'  => ( '.blog-sidebar .widget' ),
                 'opacity' => true,
                 'rgba'    => true,
-                'required'=> array( 'quanto_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
+                'required'=> array( 'agroland_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
             ),
             array(
-                'id'      => 'quanto_sidebar_widget_margin',
+                'id'      => 'agroland_sidebar_widget_margin',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Widget Margin', 'quanto'),
                 'units'   => array('em', 'px'),
                 'output'  => ( '.blog-sidebar .widget' ),
                 'mode'    => 'margin',
-                'required'=> array( 'quanto_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
+                'required'=> array( 'agroland_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
             ),
             array(
-                'id'      => 'quanto_sidebar_widget_padding',
+                'id'      => 'agroland_sidebar_widget_padding',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Widget Padding', 'quanto'),
                 'units'   => array('em', 'px'),
                 'output'  => ( '.blog-sidebar .widget' ),
                 'mode'    => 'padding',
-                'required'=> array( 'quanto_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
+                'required'=> array( 'agroland_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
             ),
             array(
-                'id'      => 'quanto_sidebar_widget_border',
+                'id'      => 'agroland_sidebar_widget_border',
                 'type'    => 'border',
                 'title'   => esc_html__('Widget Border', 'quanto'),
                 'units'   => array('em', 'px'),
                 'output'  => ( '.blog-sidebar .widget' ),
                 'all'     => false,
-                'required'=> array( 'quanto_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
+                'required'=> array( 'agroland_sidebar_padding_margin_box_shadow_trigger', 'equals' , '1' )
             ),
             array(
-                'id'      => 'quanto_sidebar_widget_title_margin',
+                'id'      => 'agroland_sidebar_widget_title_margin',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Widget Title Margin', 'quanto'),
                 'mode'    => 'margin',
@@ -922,7 +922,7 @@
                 'units'   => array('em', 'px'),
             ),
             array(
-                'id'      => 'quanto_sidebar_widget_title_padding',
+                'id'      => 'agroland_sidebar_widget_title_padding',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Widget Title Padding', 'quanto'),
                 'mode'    => 'padding',
@@ -930,28 +930,28 @@
                 'units'   => array('em', 'px'),
             ),
             array(
-                'id'       => 'quanto_sidebar_widget_title_color',
+                'id'       => 'agroland_sidebar_widget_title_color',
                 'output'   =>  array('.blog-sidebar .widget .widget_title h1,.blog-sidebar .widget .widget_title h2,.blog-sidebar .widget .widget_title h3,.blog-sidebar .widget .widget_title h4,.blog-sidebar .widget .widget_title h5,.blog-sidebar .widget .widget_title h6'),
                 'type'     => 'color',
                 'title'    => esc_html__('Widget Title Color', 'quanto'),
                 'subtitle' => esc_html__('Set Widget Title Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_sidebar_widget_text_color',
+                'id'       => 'agroland_sidebar_widget_text_color',
                 'output'   => array('.blog-sidebar .widget'),
                 'type'     => 'color',
                 'title'    => esc_html__('Widget Text Color', 'quanto'),
                 'subtitle' => esc_html__('Set Widget Text Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_sidebar_widget_anchor_color',
+                'id'       => 'agroland_sidebar_widget_anchor_color',
                 'type'     => 'color',
                 'output'   => array('.blog-sidebar .widget a'),
                 'title'    => esc_html__('Widget Anchor Color', 'quanto'),
                 'subtitle' => esc_html__('Set Widget Anchor Color.', 'quanto'),
             ),
             array(
-                'id'       => 'quanto_sidebar_widget_anchor_hover_color',
+                'id'       => 'agroland_sidebar_widget_anchor_hover_color',
                 'type'     => 'color',
                 'output'   => array('.blog-sidebar .widget a:hover'),
                 'title'    => esc_html__('Widget Hover Color', 'quanto'),
@@ -966,11 +966,11 @@
     // -> START Page Option
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Page', 'quanto' ),
-        'id'         => 'quanto_page_page',
+        'id'         => 'agroland_page_page',
         'icon'  => 'el el-file',
         'fields'     => array(
             array(
-                'id'       => 'quanto_page_sidebar',
+                'id'       => 'agroland_page_sidebar',
                 'type'     => 'image_select',
                 'title'    => esc_html__( 'Select layout', 'quanto' ),
                 'subtitle' => esc_html__( 'Choose your page layout. If you use this option then you will able to choose three type of page layout ( Default no sidebar ). ', 'quanto' ),
@@ -993,7 +993,7 @@
                 'default'  => '1'
             ),
             array(
-                'id'       => 'quanto_page_layoutopt',
+                'id'       => 'agroland_page_layoutopt',
                 'type'     => 'button_set',
                 'title'    => esc_html__('Sidebar Settings', 'quanto'),
                 'subtitle' => esc_html__('Set page sidebar. If you use this option then you will able to set three type of sidebar ( Default no sidebar ).', 'quanto'),
@@ -1003,10 +1003,10 @@
                     '2' => esc_html__( 'Blog Sidebar', 'quanto' )
                  ),
                 'default' => '1',
-                'required'  => array('quanto_page_sidebar','!=','1')
+                'required'  => array('agroland_page_sidebar','!=','1')
             ),
             array(
-                'id'       => 'quanto_page_title_switcher',
+                'id'       => 'agroland_page_title_switcher',
                 'type'     => 'switch',
                 'title'    => esc_html__('Title', 'quanto'),
                 'subtitle' => esc_html__('Switch enabled to display page title. Fot this option you will able to show / hide page title.  Default setting Enabled', 'quanto'),
@@ -1015,7 +1015,7 @@
                 'off'       => esc_html__('Disabled','quanto'),
             ),
             array(
-                'id'       => 'quanto_page_title_tag',
+                'id'       => 'agroland_page_title_tag',
                 'type'     => 'select',
                 'options'  => array(
                     'h1'        => esc_html__('H1','quanto'),
@@ -1028,24 +1028,24 @@
                 'default'  => 'h1',
                 'title'    => esc_html__( 'Title Tag', 'quanto' ),
                 'subtitle' => esc_html__( 'Select page title tag. If you use this option then you can able to change title tag H1 - H6 ( Default tag H1 )', 'quanto' ),
-                'required' => array("quanto_page_title_switcher","equals","1")
+                'required' => array("agroland_page_title_switcher","equals","1")
             ),
             array(
-                'id'       => 'quanto_allHeader_title_color',
+                'id'       => 'agroland_allHeader_title_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Title Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Title Color', 'quanto' ),
                 'output'   => array( 'color' => '.breadcumb-title' ),
             ),
             array(
-                'id'       => 'quanto_allHeader_bg',
+                'id'       => 'agroland_allHeader_bg',
                 'type'     => 'background',
                 'title'    => esc_html__( 'Background', 'quanto' ),
                 'output'   => array('.breadcumb-wrapper'),
                 'subtitle' => esc_html__( 'Setting page header background. If you use this option then you will able to set Background Color, Background Image, Background Repeat, Background Size, Background Attachment, Background Position.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_full_breadcrumb_switcher',
+                'id'       => 'agroland_full_breadcrumb_switcher',
                 'type'     => 'switch',
                 'default'  => 1,  // ON by default
                 'on'       => esc_html__('Show','quanto'),
@@ -1054,7 +1054,7 @@
                 'subtitle' => esc_html__( 'Hide / Show full breadcrumb from all pages and posts.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_enable_breadcrumb',
+                'id'       => 'agroland_enable_breadcrumb',
                 'type'     => 'switch',
                 'title'    => esc_html__( 'Breadcrumb Hide/Show', 'quanto' ),
                 'subtitle' => esc_html__( 'Hide / Show breadcrumb from all pages and posts ( Default settings hide ).', 'quanto' ),
@@ -1063,7 +1063,7 @@
                 'off'      => 'Hide',
             ),
             array(
-                'id'      => 'quanto_breadcrumb_padding',
+                'id'      => 'agroland_breadcrumb_padding',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Breadcrumb Padding', 'quanto'),
                 'units'   => array('em', 'px'),
@@ -1071,7 +1071,7 @@
                 'mode'    => 'padding',
             ),
             array(
-                'id'      => 'quanto_breadcrumb_details_padding',
+                'id'      => 'agroland_breadcrumb_details_padding',
                 'type'    => 'spacing',
                 'title'   => esc_html__('Details Page Breadcrumb Padding', 'quanto'),
                 'units'   => array('em', 'px'),
@@ -1079,23 +1079,23 @@
                 'mode'    => 'padding',
             ),
             array(
-                'id'       => 'quanto_allHeader_breadcrumbtextcolor',
+                'id'       => 'agroland_allHeader_breadcrumbtextcolor',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Breadcrumb Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Choose page header breadcrumb text color here.If you user this option then you will able to set page breadcrumb color.', 'quanto' ),
-                'required' => array("quanto_page_title_switcher","equals","1"),
+                'required' => array("agroland_page_title_switcher","equals","1"),
                 'output'   => array( 'color' => '.breadcumb-menu-wrap .breadcumb-menu ul li a' ),
             ),
             array(
-                'id'       => 'quanto_allHeader_breadcrumbtextactivecolor',
+                'id'       => 'agroland_allHeader_breadcrumbtextactivecolor',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Breadcrumb Active Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Choose page header breadcrumb text active color here.If you user this option then you will able to set page breadcrumb active color.', 'quanto' ),
-                'required' => array( "quanto_page_title_switcher", "equals", "1" ),
+                'required' => array( "agroland_page_title_switcher", "equals", "1" ),
                 'output'   => array( 'color' => '.breadcumb-menu-wrap .breadcumb-menu ul li.active' ),
             ),
             array(
-                'id'       => 'quanto_allHeader_dividercolor',
+                'id'       => 'agroland_allHeader_dividercolor',
                 'type'     => 'color',
                 'output'   => array( 'color'=>'.breadcumb-menu-wrap .breadcumb-menu ul .arrow i' ),
                 'title'    => esc_html__( 'Breadcrumb Divider Color', 'quanto' ),
@@ -1109,44 +1109,44 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( '404 Page', 'quanto' ),
-        'id'         => 'quanto_404_page',
+        'id'         => 'agroland_404_page',
         'icon'       => 'el el-ban-circle',
         'fields'     => array(
             array(
                 'title'     => esc_html__( 'Error Image', 'quanto' ),
                 'subtitle'  => esc_html__( 'Add Your 404 Page Image', 'quanto' ),
-                'id'        => 'quanto_error_img',
+                'id'        => 'agroland_error_img',
                 'type'      => 'media',
             ),
             array(
                 'title'     => esc_html__( 'Bottom Side Image', 'quanto' ),
                 'subtitle'  => esc_html__( 'Add Your 404 Page Bottom Side Image', 'quanto' ),
-                'id'        => 'quanto_error_bottom_img',
+                'id'        => 'agroland_error_bottom_img',
                 'type'      => 'media',
             ),
             array(
-                'id'       => 'quanto_fof_title',
+                'id'       => 'agroland_fof_title',
                 'type'     => 'text',
                 'title'    => esc_html__( 'Page Title', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Page Title', 'quanto' ),
                 'default'  => esc_html__( 'Oops! That page can\'t be found.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_fof_subtitle',
+                'id'       => 'agroland_fof_subtitle',
                 'type'     => 'text',
                 'title'    => esc_html__( 'Page Subtitle', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Page Subtitle ', 'quanto' ),
                 'default'  => esc_html__( 'The page you\'ve requested is not available.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_fof_btn_text',
+                'id'       => 'agroland_fof_btn_text',
                 'type'     => 'text',
                 'title'    => esc_html__( 'Button Text', 'quanto' ),
                 'subtitle' => esc_html__( 'Set Button Text ', 'quanto' ),
                 'default'  => esc_html__( 'Return To Home', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_fof_title_color',
+                'id'       => 'agroland_fof_title_color',
                 'type'     => 'color',
                 'output'   => array( '.error__content .title' ),
                 'title'    => esc_html__( 'Title Color', 'quanto' ),
@@ -1154,7 +1154,7 @@
                 'validate' => 'color'
             ),
             array(
-                'id'       => 'quanto_fof_text_color',
+                'id'       => 'agroland_fof_text_color',
                 'type'     => 'color',
                 'output'   => array( '.error__content p' ),
                 'title'    => esc_html__( 'Text Color', 'quanto' ),
@@ -1162,35 +1162,35 @@
                 'validate' => 'color'
             ),
             array(
-                'id'       => 'quanto_fof_btn_color',
+                'id'       => 'agroland_fof_btn_color',
                 'type'     => 'color',
-                'output'   => array( '.quanto-link-btn.btn-pill, .quanto-link-btn.btn-pill span .arry1' ),
+                'output'   => array( '.agroland-link-btn.btn-pill, .agroland-link-btn.btn-pill span .arry1' ),
                 'title'    => esc_html__('Button Color', 'quanto'),
                 'subtitle' => esc_html__('Pick Button Color', 'quanto'),
                 'validate' => 'color'
             ),
             array(
-                'id'       => 'quanto_fof_btn_color_hover',
+                'id'       => 'agroland_fof_btn_color_hover',
                 'type'     => 'color',
-                'output'   => array( '.quanto-link-btn.btn-pill:hover, .quanto-link-btn.btn-pill span .arry2' ),
+                'output'   => array( '.agroland-link-btn.btn-pill:hover, .agroland-link-btn.btn-pill span .arry2' ),
                 'title'    => esc_html__( 'Button Hover Color', 'quanto'),
                 'subtitle' => esc_html__( 'Pick Button Color', 'quanto'),
                 'validate' => 'color'
             ),
             array(
-                'id'       => 'quanto_fof_btn_bg_color',
+                'id'       => 'agroland_fof_btn_bg_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Button Background Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Pick Button Background Color', 'quanto' ),
-                'output'   => array( 'background-color' => '.quanto-link-btn.btn-pill' ),
+                'output'   => array( 'background-color' => '.agroland-link-btn.btn-pill' ),
                 'validate' => 'color'
             ),
             array(
-                'id'       => 'quanto_fof_btn_hover_bg_color',
+                'id'       => 'agroland_fof_btn_hover_bg_color',
                 'type'     => 'color',
                 'title'    => esc_html__( 'Button Hover Background Color', 'quanto' ),
                 'subtitle' => esc_html__( 'Pick Button Hover Background Color', 'quanto' ),
-                'output'   => array( 'background-color' => '.quanto-link-btn.btn-pill:hover' ),
+                'output'   => array( 'background-color' => '.agroland-link-btn.btn-pill:hover' ),
                 'validate' => 'color'
             ),
         ),
@@ -1202,12 +1202,12 @@
 
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Social', 'quanto' ),
-        'id'         => 'quanto_social_media',
+        'id'         => 'agroland_social_media',
         'icon'      => 'el el-globe',
         'desc'      => esc_html__( 'Social', 'quanto' ),
         'fields'     => array(
             array(
-                'id'          => 'quanto_social_links',
+                'id'          => 'agroland_social_links',
                 'type'        => 'slides',
                 'title'       => esc_html__('Social Profile Links', 'quanto'),
                 'subtitle'    => esc_html__('Add social icon and url.', 'quanto'),
@@ -1237,12 +1237,12 @@
     // -> START Footer Gallery Widget
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Footer Widget', 'quanto' ),
-        'id'         => 'quanto_gallery_media',
+        'id'         => 'agroland_gallery_media',
         'icon'      => 'el el-camera',
         'desc'      => esc_html__( 'Footer Widget', 'quanto' ),
         'fields'     => array(
             array(
-                'id'          => 'quanto_gallery_image_widget',
+                'id'          => 'agroland_gallery_image_widget',
                 'type'        => 'slides',
                 'title'       => esc_html__('Gallery Images', 'quanto'),
                 'show'        => array(
@@ -1266,7 +1266,7 @@
 
     Redux::setSection( $opt_name, array(
         'title'            => esc_html__( 'Video Box', 'quanto' ),
-        'id'               => 'quanto_video_box',
+        'id'               => 'agroland_video_box',
         'subsection'       => true,
         'fields'           => array(
             array(
@@ -1292,7 +1292,7 @@
     // -> START Footer Media
     Redux::setSection( $opt_name , array(
        'title'            => esc_html__( 'Footer', 'quanto' ),
-       'id'               => 'quanto_footer',
+       'id'               => 'agroland_footer',
        'desc'             => esc_html__( 'quanto Footer', 'quanto' ),
        'customizer_width' => '400px',
        'icon'              => 'el el-photo',
@@ -1300,11 +1300,11 @@
 
    Redux::setSection( $opt_name, array(
        'title'      => esc_html__( 'Pre-built Footer / Footer Builder', 'quanto' ),
-       'id'         => 'quanto_footer_section',
+       'id'         => 'agroland_footer_section',
        'subsection' => true,
        'fields'     => array(
             array(
-               'id'       => 'quanto_footer_builder_trigger',
+               'id'       => 'agroland_footer_builder_trigger',
                'type'     => 'button_set',
                'default'  => 'prebuilt',
                'options'  => array(
@@ -1314,12 +1314,12 @@
                'title'    => esc_html__( 'Global Footer Builder', 'quanto' ),
             ),
             array(
-               'id'       => 'quanto_footer_builder_select',
+               'id'       => 'agroland_footer_builder_select',
                'type'     => 'select',
-               'required' => array( 'quanto_footer_builder_trigger','equals','footer_builder'),
+               'required' => array( 'agroland_footer_builder_trigger','equals','footer_builder'),
                'data'     => 'posts',
                'args'     => array(
-                   'post_type'     => 'quanto_footer'
+                   'post_type'     => 'agroland_footer'
                ),
                'on'       => esc_html__( 'Enabled', 'quanto' ),
                'off'      => esc_html__( 'Disable', 'quanto' ),
@@ -1327,61 +1327,61 @@
                'subtitle' => esc_html__( 'First make your footer from footer custom types then select it from here.', 'quanto' ),
             ),
             array(
-                'id'       => 'quanto_archive_footer_select_options',
+                'id'       => 'agroland_archive_footer_select_options',
                 'type'     => 'select',
                 'data'     => 'posts',
                 'args'     => array(
-                    'post_type' => 'quanto_footer',
+                    'post_type' => 'agroland_footer',
                 ),
                 'title'    => esc_html__( 'Archive footer', 'quanto' ),
                 'subtitle' => esc_html__( 'Select footer for archive pages.', 'quanto' ),
             ),
             array(
-               'id'       => 'quanto_disable_footer_bottom',
+               'id'       => 'agroland_disable_footer_bottom',
                'type'     => 'switch',
                'title'    => esc_html__( 'Footer Bottom?', 'quanto' ),
                'default'  => 1,
                'on'       => esc_html__('Enabled','quanto'),
                'off'      => esc_html__('Disable','quanto'),
-               'required' => array('quanto_footer_builder_trigger','equals','prebuilt'),
+               'required' => array('agroland_footer_builder_trigger','equals','prebuilt'),
             ),
             array(
-               'id'       => 'quanto_footer_bottom_background',
+               'id'       => 'agroland_footer_bottom_background',
                'type'     => 'color',
                'title'    => esc_html__( 'Footer Bottom Background Color', 'quanto' ),
-               'required' => array( 'quanto_disable_footer_bottom','=','1' ),
+               'required' => array( 'agroland_disable_footer_bottom','=','1' ),
                'output'   => array( 'background-color'   =>   '.footer-copyright' ),
             ),
             array(
-               'id'       => 'quanto_copyright_text',
+               'id'       => 'agroland_copyright_text',
                'type'     => 'text',
                'title'    => esc_html__( 'Copyright Text', 'quanto' ),
                'subtitle' => esc_html__( 'Add Copyright Text', 'quanto' ),
                'default'  => sprintf( 'Copyright <i class="fal fa-copyright"></i> %s <a  href="%s">%s</a> All Rights Reserved by <a  href="%s">%s</a>',date('Y'),esc_url('#'),__( 'Quanto.','quanto' ),esc_url('#'),__( 'Mirrortheme', 'quanto' ) ),
-               'required' => array( 'quanto_disable_footer_bottom','equals','1' ),
+               'required' => array( 'agroland_disable_footer_bottom','equals','1' ),
             ),
             array(
-               'id'       => 'quanto_footer_copyright_color',
+               'id'       => 'agroland_footer_copyright_color',
                'type'     => 'color',
                'title'    => esc_html__( 'Footer Copyright Text Color', 'quanto' ),
                'subtitle' => esc_html__( 'Set footer copyright text color', 'quanto' ),
-               'required' => array( 'quanto_disable_footer_bottom','equals','1'),
+               'required' => array( 'agroland_disable_footer_bottom','equals','1'),
                'output'   => array( '.footer-copyright p' ),
             ),
             array(
-               'id'       => 'quanto_footer_copyright_acolor',
+               'id'       => 'agroland_footer_copyright_acolor',
                'type'     => 'color',
                'title'    => esc_html__( 'Footer Copyright Ancor Color', 'quanto' ),
                'subtitle' => esc_html__( 'Set footer copyright ancor color', 'quanto' ),
-               'required' => array( 'quanto_disable_footer_bottom','equals','1'),
+               'required' => array( 'agroland_disable_footer_bottom','equals','1'),
                'output'   => array( '.footer-copyright p a' ),
             ),
             array(
-               'id'       => 'quanto_footer_copyright_a_hover_color',
+               'id'       => 'agroland_footer_copyright_a_hover_color',
                'type'     => 'color',
                'title'    => esc_html__( 'Footer Copyright Ancor Hover Color', 'quanto' ),
                'subtitle' => esc_html__( 'Set footer copyright ancor Hover color', 'quanto' ),
-               'required' => array( 'quanto_disable_footer_bottom','equals','1'),
+               'required' => array( 'agroland_disable_footer_bottom','equals','1'),
                'output'   => array( '.footer-copyright p a:hover' ),
             ),
 
@@ -1394,11 +1394,11 @@
     // -> START Custom Css
     Redux::setSection( $opt_name, array(
         'title'      => esc_html__( 'Custom Css', 'quanto' ),
-        'id'         => 'quanto_custom_css_section',
+        'id'         => 'agroland_custom_css_section',
         'icon'  => 'el el-css',
         'fields'     => array(
             array(
-                'id'       => 'quanto_css_editor',
+                'id'       => 'agroland_css_editor',
                 'type'     => 'ace_editor',
                 'title'    => esc_html__('CSS Code', 'quanto'),
                 'subtitle' => esc_html__('Paste your CSS code here.', 'quanto'),

@@ -15,23 +15,23 @@
 
 			add_filter( 'single_template', [ $this, 'load_canvas_template' ] );
 
-            add_action( 'elementor/element/wp-page/document_settings/after_section_end', [ $this,'quanto_add_elementor_page_settings_controls' ],10,2 );
+            add_action( 'elementor/element/wp-page/document_settings/after_section_end', [ $this,'agroland_add_elementor_page_settings_controls' ],10,2 );
 
 			// For Archive
 			add_filter( 'template_include', [ $this, 'template_redirect_archive' ] );
-			add_action( 'admin_init', [ $this, 'quanto_save_archive_settings' ] );
+			add_action( 'admin_init', [ $this, 'agroland_save_archive_settings' ] );
 
 		}
 
 		public function widget_scripts( ) {
-			wp_enqueue_script( 'quanto-core',QUANTO_PLUGDIRURI.'assets/js/quanto-core.js',array( 'jquery' ),'1.0',true );
+			wp_enqueue_script( 'agroland-core',AGROLAND_PLUGDIRURI.'assets/js/agroland-core.js',array( 'jquery' ),'1.0',true );
 		}
 
 
-        public function quanto_add_elementor_page_settings_controls( \Elementor\Core\DocumentTypes\Page $page ){
+        public function agroland_add_elementor_page_settings_controls( \Elementor\Core\DocumentTypes\Page $page ){
 
 			$page->start_controls_section(
-                'quanto_header_option',
+                'agroland_header_option',
                 [
                     'label'     => __( 'Header Option', 'quanto' ),
                     'tab'       => \Elementor\Controls_Manager::TAB_SETTINGS,
@@ -40,7 +40,7 @@
 
 
             $page->add_control(
-                'quanto_header_style',
+                'agroland_header_style',
                 [
                     'label'     => __( 'Header Option', 'quanto' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
@@ -53,12 +53,12 @@
 			);
 
             $page->add_control(
-                'quanto_header_builder_option',
+                'agroland_header_builder_option',
                 [
                     'label'     => __( 'Header Name', 'quanto' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
-                    'options'   => $this->quanto_header_choose_option(),
-                    'condition' => [ 'quanto_header_style' => 'header_builder'],
+                    'options'   => $this->agroland_header_choose_option(),
+                    'condition' => [ 'agroland_header_style' => 'header_builder'],
                     'default'	=> ''
                 ]
             );
@@ -66,14 +66,14 @@
             $page->end_controls_section();
 
             $page->start_controls_section(
-                'quanto_footer_option',
+                'agroland_footer_option',
                 [
                     'label'     => __( 'Footer Option', 'quanto' ),
                     'tab'       => \Elementor\Controls_Manager::TAB_SETTINGS,
                 ]
             );
             $page->add_control(
-    			'quanto_footer_choice',
+    			'agroland_footer_choice',
     			[
     				'label'         => __( 'Enable Footer?', 'quanto' ),
     				'type'          => \Elementor\Controls_Manager::SWITCHER,
@@ -84,7 +84,7 @@
     			]
     		);
             $page->add_control(
-                'quanto_footer_style',
+                'agroland_footer_style',
                 [
                     'label'     => __( 'Footer Style', 'quanto' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
@@ -93,16 +93,16 @@
     					'footer_builder'       => __( 'Footer Builder', 'quanto' ),
     				],
                     'default'   => 'prebuilt',
-                    'condition' => [ 'quanto_footer_choice' => 'yes' ],
+                    'condition' => [ 'agroland_footer_choice' => 'yes' ],
                 ]
             );
             $page->add_control(
-                'quanto_footer_builder_option',
+                'agroland_footer_builder_option',
                 [
                     'label'     => __( 'Footer Name', 'quanto' ),
                     'type'      => \Elementor\Controls_Manager::SELECT,
-                    'options'   => $this->quanto_footer_choose_option(),
-                    'condition' => [ 'quanto_footer_style' => 'footer_builder','quanto_footer_choice' => 'yes' ],
+                    'options'   => $this->agroland_footer_choose_option(),
+                    'condition' => [ 'agroland_footer_style' => 'footer_builder','agroland_footer_choice' => 'yes' ],
                     'default'	=> ''
                 ]
             );
@@ -121,14 +121,14 @@
 				2
 			);
 
-			add_submenu_page('quanto', esc_html__('Footer Builder', 'quanto'), esc_html__('Footer Builder', 'quanto'), 'manage_options', 'edit.php?post_type=quanto_footer');
-			add_submenu_page('quanto', esc_html__('Header Builder', 'quanto'), esc_html__('Header Builder', 'quanto'), 'manage_options', 'edit.php?post_type=quanto_header');
-			add_submenu_page('quanto', esc_html__('Tab Builder', 'quanto'), esc_html__('Tab Builder', 'quanto'), 'manage_options', 'edit.php?post_type=quanto_tab_build');
-			add_submenu_page('quanto', esc_html__('OFF Canvas Builder', 'quanto'), esc_html__('OFF Canvas Builder', 'quanto'), 'manage_options', 'edit.php?post_type=quanto_off_build');
+			add_submenu_page('quanto', esc_html__('Footer Builder', 'quanto'), esc_html__('Footer Builder', 'quanto'), 'manage_options', 'edit.php?post_type=agroland_footer');
+			add_submenu_page('quanto', esc_html__('Header Builder', 'quanto'), esc_html__('Header Builder', 'quanto'), 'manage_options', 'edit.php?post_type=agroland_header');
+			add_submenu_page('quanto', esc_html__('Tab Builder', 'quanto'), esc_html__('Tab Builder', 'quanto'), 'manage_options', 'edit.php?post_type=agroland_tab_build');
+			add_submenu_page('quanto', esc_html__('OFF Canvas Builder', 'quanto'), esc_html__('OFF Canvas Builder', 'quanto'), 'manage_options', 'edit.php?post_type=agroland_off_build');
 
 			// For Archive
-			add_submenu_page('quanto', esc_html__('Archive Builder', 'quanto'), esc_html__('Archive Builder', 'quanto'), 'manage_options', 'edit.php?post_type=quanto_archive');
-			add_submenu_page('quanto', esc_html__('Archive Settings', 'quanto'), esc_html__('Archive Settings', 'quanto'), 'manage_options', 'quanto-archive-settings', [$this, 'quanto_archive_settings_page_html']);
+			add_submenu_page('quanto', esc_html__('Archive Builder', 'quanto'), esc_html__('Archive Builder', 'quanto'), 'manage_options', 'edit.php?post_type=agroland_archive');
+			add_submenu_page('quanto', esc_html__('Archive Settings', 'quanto'), esc_html__('Archive Settings', 'quanto'), 'manage_options', 'agroland-archive-settings', [$this, 'agroland_archive_settings_page_html']);
 		}
 
 		// Callback Function
@@ -170,7 +170,7 @@
 				'supports'            => array( 'title', 'elementor' ),
 			);
 
-			register_post_type( 'quanto_footer', $args );
+			register_post_type( 'agroland_footer', $args );
 
 			$labels = array(
 				'name'               => __( 'Header', 'quanto' ),
@@ -202,7 +202,7 @@
 				'supports'            => array( 'title', 'elementor' ),
 			);
 
-			register_post_type( 'quanto_header', $args );
+			register_post_type( 'agroland_header', $args );
 
 			// For Archive
 			$labels = array(
@@ -233,7 +233,7 @@
 				'hierarchical'        => false,
 				'supports'            => array( 'title', 'elementor' ),
 			);
-			register_post_type( 'quanto_archive', $args );
+			register_post_type( 'agroland_archive', $args );
 
             $labels = array(
 				'name'               => __( 'Tab Builder', 'quanto' ),
@@ -264,7 +264,7 @@
 				'hierarchical'        => false,
 				'supports'            => array( 'title', 'elementor' ),
 			);
-			register_post_type( 'quanto_tab_build', $args );
+			register_post_type( 'agroland_tab_build', $args );
 
 			//Off Canvas builder
             $labels = array(
@@ -296,7 +296,7 @@
 				'hierarchical'        => false,
 				'supports'            => array( 'title', 'elementor' ),
 			);
-			register_post_type( 'quanto_off_build', $args );
+			register_post_type( 'agroland_off_build', $args );
 
 		}
 
@@ -304,9 +304,9 @@
 
 			global $post;
 
-			$builder_types = [ 'quanto_footer', 'quanto_header', 'quanto_tab_build', 'quanto_off_build', 'quanto_archive' ];
+			$builder_types = [ 'agroland_footer', 'agroland_header', 'agroland_tab_build', 'agroland_off_build', 'agroland_archive' ];
 			if ( in_array( $post->post_type, $builder_types ) ) {
-			// if ( 'quanto_footer' == $post->post_type || 'quanto_header' == $post->post_type || 'quanto_tab_build' == $post->post_type || 'quanto_off_build' == $post->post_type  ) {
+			// if ( 'agroland_footer' == $post->post_type || 'agroland_header' == $post->post_type || 'agroland_tab_build' == $post->post_type || 'agroland_off_build' == $post->post_type  ) {
 
 				$elementor_2_0_canvas = ELEMENTOR_PATH . '/modules/page-templates/templates/canvas.php';
 
@@ -320,43 +320,43 @@
 			return $single_template;
 		}
 
-        public function quanto_footer_choose_option(){
+        public function agroland_footer_choose_option(){
 
-			$quanto_post_query = new WP_Query( array(
-				'post_type'			=> 'quanto_footer',
+			$agroland_post_query = new WP_Query( array(
+				'post_type'			=> 'agroland_footer',
 				'posts_per_page'	    => 20,
 			) );
 
-			$quanto_builder_post_title = array();
-			$quanto_builder_post_title[''] = __('Select a Footer','Quanto');
+			$agroland_builder_post_title = array();
+			$agroland_builder_post_title[''] = __('Select a Footer','Quanto');
 
-			while( $quanto_post_query->have_posts() ) {
-				$quanto_post_query->the_post();
-				$quanto_builder_post_title[ get_the_ID() ] =  get_the_title();
+			while( $agroland_post_query->have_posts() ) {
+				$agroland_post_query->the_post();
+				$agroland_builder_post_title[ get_the_ID() ] =  get_the_title();
 			}
 			wp_reset_postdata();
 
-			return $quanto_builder_post_title;
+			return $agroland_builder_post_title;
 
 		}
 
-		public function quanto_header_choose_option(){
+		public function agroland_header_choose_option(){
 
-			$quanto_post_query = new WP_Query( array(
-				'post_type'			=> 'quanto_header',
+			$agroland_post_query = new WP_Query( array(
+				'post_type'			=> 'agroland_header',
 				'posts_per_page'	    => 20,
 			) );
 
-			$quanto_builder_post_title = array();
-			$quanto_builder_post_title[''] = __('Select a Header','Quanto');
+			$agroland_builder_post_title = array();
+			$agroland_builder_post_title[''] = __('Select a Header','Quanto');
 
-			while( $quanto_post_query->have_posts() ) {
-				$quanto_post_query->the_post();
-				$quanto_builder_post_title[ get_the_ID() ] =  get_the_title();
+			while( $agroland_post_query->have_posts() ) {
+				$agroland_post_query->the_post();
+				$agroland_builder_post_title[ get_the_ID() ] =  get_the_title();
 			}
 			wp_reset_postdata();
 
-			return $quanto_builder_post_title;
+			return $agroland_builder_post_title;
 
         }
 
@@ -372,15 +372,15 @@
 			$template_id = false;
 			
 			if ( is_home() ) { // For the main blog posts page
-				$template_id = get_option('quanto_blog_archive_template');
+				$template_id = get_option('agroland_blog_archive_template');
 			} elseif ( is_category() ) {
-				$template_id = get_option('quanto_category_archive_template');
+				$template_id = get_option('agroland_category_archive_template');
 			} elseif ( is_tag() ) {
-				$template_id = get_option('quanto_tag_archive_template');
+				$template_id = get_option('agroland_tag_archive_template');
 			} elseif ( is_author() ) {
-				$template_id = get_option('quanto_author_archive_template');
+				$template_id = get_option('agroland_author_archive_template');
 			} elseif ( is_date() ) {
-				$template_id = get_option('quanto_date_archive_template');
+				$template_id = get_option('agroland_date_archive_template');
 			}
 
 			if ( $template_id && is_numeric($template_id) ) {
@@ -400,38 +400,38 @@
 		/**
 		 * Gets a list of all created archive templates for use in a dropdown.
 		 */
-		public function quanto_archive_choose_option() {
-			$quanto_post_query         = new WP_Query( array(
-				'post_type'      => 'quanto_archive',
+		public function agroland_archive_choose_option() {
+			$agroland_post_query         = new WP_Query( array(
+				'post_type'      => 'agroland_archive',
 				'posts_per_page' => -1,
 			) );
-			$quanto_builder_post_title    = array();
-			$quanto_builder_post_title[''] = __( 'Select an Archive Template', 'quanto' );
-			while ( $quanto_post_query->have_posts() ) {
-				$quanto_post_query->the_post();
-				$quanto_builder_post_title[ get_the_ID() ] = get_the_title();
+			$agroland_builder_post_title    = array();
+			$agroland_builder_post_title[''] = __( 'Select an Archive Template', 'quanto' );
+			while ( $agroland_post_query->have_posts() ) {
+				$agroland_post_query->the_post();
+				$agroland_builder_post_title[ get_the_ID() ] = get_the_title();
 			}
 			wp_reset_postdata();
 
-			return $quanto_builder_post_title;
+			return $agroland_builder_post_title;
 		}
 
 		/**
 		 * Handles saving the data from the Archive Settings page.
 		 */
-		public function quanto_save_archive_settings() {
-			if ( ! isset( $_POST['quanto_archive_settings_nonce'] ) || ! wp_verify_nonce( $_POST['quanto_archive_settings_nonce'], 'quanto_archive_settings_action' ) ) {
+		public function agroland_save_archive_settings() {
+			if ( ! isset( $_POST['agroland_archive_settings_nonce'] ) || ! wp_verify_nonce( $_POST['agroland_archive_settings_nonce'], 'agroland_archive_settings_action' ) ) {
 				return;
 			}
 			if ( ! current_user_can( 'manage_options' ) ) {
 				return;
 			}
 			$options_to_save = [
-				'quanto_blog_archive_template',
-				'quanto_category_archive_template',
-				'quanto_tag_archive_template',
-				'quanto_author_archive_template',
-				'quanto_date_archive_template'
+				'agroland_blog_archive_template',
+				'agroland_category_archive_template',
+				'agroland_tag_archive_template',
+				'agroland_author_archive_template',
+				'agroland_date_archive_template'
 			];
 			foreach($options_to_save as $option_name) {
 				if ( isset( $_POST[$option_name] ) ) {
@@ -443,25 +443,25 @@
 		/**
 		 * Renders the HTML for the Archive Settings page.
 		 */
-		public function quanto_archive_settings_page_html() {
+		public function agroland_archive_settings_page_html() {
 			?>
 			<div class="wrap">
 				<h1><?php echo esc_html__( 'Archive Template Settings', 'quanto' ); ?></h1>
 				<p><?php echo esc_html__( 'Assign your custom-built archive templates to the corresponding archive pages.', 'quanto' ); ?></p>
 				
 				<form method="post" action="">
-					<?php wp_nonce_field( 'quanto_archive_settings_action', 'quanto_archive_settings_nonce' ); ?>
+					<?php wp_nonce_field( 'agroland_archive_settings_action', 'agroland_archive_settings_nonce' ); ?>
 					<table class="form-table">
 						<tbody>
 							<tr>
 								<th scope="row">
-									<label for="quanto_blog_archive_template"><?php esc_html_e( 'Blog / Posts Page Archive', 'quanto' ); ?></label>
+									<label for="agroland_blog_archive_template"><?php esc_html_e( 'Blog / Posts Page Archive', 'quanto' ); ?></label>
 								</th>
 								<td>
-									<select name="quanto_blog_archive_template" id="quanto_blog_archive_template">
+									<select name="agroland_blog_archive_template" id="agroland_blog_archive_template">
 										<?php
-										$options = $this->quanto_archive_choose_option();
-										$selected_option = get_option('quanto_blog_archive_template');
+										$options = $this->agroland_archive_choose_option();
+										$selected_option = get_option('agroland_blog_archive_template');
 										foreach ( $options as $value => $label ) {
 											echo '<option value="' . esc_attr( $value ) . '" ' . selected( $selected_option, $value, false ) . '>' . esc_html( $label ) . '</option>';
 										}
@@ -471,13 +471,13 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="quanto_category_archive_template"><?php esc_html_e( 'Category Archive', 'quanto' ); ?></label>
+									<label for="agroland_category_archive_template"><?php esc_html_e( 'Category Archive', 'quanto' ); ?></label>
 								</th>
 								<td>
-									<select name="quanto_category_archive_template" id="quanto_category_archive_template">
+									<select name="agroland_category_archive_template" id="agroland_category_archive_template">
 										<?php
-										$options = $this->quanto_archive_choose_option();
-										$selected_option = get_option('quanto_category_archive_template');
+										$options = $this->agroland_archive_choose_option();
+										$selected_option = get_option('agroland_category_archive_template');
 										foreach ( $options as $value => $label ) {
 											echo '<option value="' . esc_attr( $value ) . '" ' . selected( $selected_option, $value, false ) . '>' . esc_html( $label ) . '</option>';
 										}
@@ -487,13 +487,13 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="quanto_tag_archive_template"><?php esc_html_e( 'Tag Archive', 'quanto' ); ?></label>
+									<label for="agroland_tag_archive_template"><?php esc_html_e( 'Tag Archive', 'quanto' ); ?></label>
 								</th>
 								<td>
-									<select name="quanto_tag_archive_template" id="quanto_tag_archive_template">
+									<select name="agroland_tag_archive_template" id="agroland_tag_archive_template">
 										<?php
-										$options = $this->quanto_archive_choose_option();
-										$selected_option = get_option('quanto_tag_archive_template');
+										$options = $this->agroland_archive_choose_option();
+										$selected_option = get_option('agroland_tag_archive_template');
 										foreach ( $options as $value => $label ) {
 											echo '<option value="' . esc_attr( $value ) . '" ' . selected( $selected_option, $value, false ) . '>' . esc_html( $label ) . '</option>';
 										}
@@ -503,13 +503,13 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="quanto_author_archive_template"><?php esc_html_e( 'Author Archive', 'quanto' ); ?></label>
+									<label for="agroland_author_archive_template"><?php esc_html_e( 'Author Archive', 'quanto' ); ?></label>
 								</th>
 								<td>
-									<select name="quanto_author_archive_template" id="quanto_author_archive_template">
+									<select name="agroland_author_archive_template" id="agroland_author_archive_template">
 										<?php
-										$options = $this->quanto_archive_choose_option();
-										$selected_option = get_option('quanto_author_archive_template');
+										$options = $this->agroland_archive_choose_option();
+										$selected_option = get_option('agroland_author_archive_template');
 										foreach ( $options as $value => $label ) {
 											echo '<option value="' . esc_attr( $value ) . '" ' . selected( $selected_option, $value, false ) . '>' . esc_html( $label ) . '</option>';
 										}
@@ -519,13 +519,13 @@
 							</tr>
 							<tr>
 								<th scope="row">
-									<label for="quanto_date_archive_template"><?php esc_html_e( 'Date Archive', 'quanto' ); ?></label>
+									<label for="agroland_date_archive_template"><?php esc_html_e( 'Date Archive', 'quanto' ); ?></label>
 								</th>
 								<td>
-									<select name="quanto_date_archive_template" id="quanto_date_archive_template">
+									<select name="agroland_date_archive_template" id="agroland_date_archive_template">
 										<?php
-										$options = $this->quanto_archive_choose_option();
-										$selected_option = get_option('quanto_date_archive_template');
+										$options = $this->agroland_archive_choose_option();
+										$selected_option = get_option('agroland_date_archive_template');
 										foreach ( $options as $value => $label ) {
 											echo '<option value="' . esc_attr( $value ) . '" ' . selected( $selected_option, $value, false ) . '>' . esc_html( $label ) . '</option>';
 										}

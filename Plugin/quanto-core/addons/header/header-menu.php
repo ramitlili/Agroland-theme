@@ -10,7 +10,7 @@ use \Elementor\Group_Control_Border;
  * Mobilemenu Widget .
  *
  */
-class Quanto_Menu extends Widget_Base {
+class Agroland_Menu extends Widget_Base {
 
 	public function get_name() {
 		return 'quantomenu';
@@ -25,7 +25,7 @@ class Quanto_Menu extends Widget_Base {
     }
 
 	public function get_categories() {
-		return [ 'quanto_header_elements' ];
+		return [ 'agroland_header_elements' ];
 	}
 
 	protected function register_controls() {
@@ -94,20 +94,20 @@ class Quanto_Menu extends Widget_Base {
         $settings = $this->get_settings_for_display();
 		if( has_nav_menu( 'primary-menu' ) ){
 		?>
-			<div class="quanto-menu-wrapper">
-				<div class="quanto-menu-area text-center">
-					<div class="quanto-menu-mobile-top">
+			<div class="agroland-menu-wrapper">
+				<div class="agroland-menu-area text-center">
+					<div class="agroland-menu-mobile-top">
 						<div class="mobile-logo">
 							<!-- <a href="blog.html">
 								<img src="assets/images/logo/logo-dark.svg" alt="logo">
 							</a> -->
 						</div>
-						<button class="quanto-menu-toggle mobile">
+						<button class="agroland-menu-toggle mobile">
 							<i class="ri-close-line"></i>
 						</button>
 					</div>
 
-					<div class="quanto-mobile-menu">
+					<div class="agroland-mobile-menu">
 						<?php
 							wp_nav_menu( array(
 								"theme_location"    => 'primary-menu',
@@ -116,9 +116,9 @@ class Quanto_Menu extends Widget_Base {
 							) );
 						?>
 					</div>
-					<div class="quanto-mobile-menu-btn">
-						<a class="quanto-default-btn" href="">contact us</a>
-						<a class="quanto-default-btn" href="">contact us</a>
+					<div class="agroland-mobile-menu-btn">
+						<a class="agroland-default-btn" href="">contact us</a>
+						<a class="agroland-default-btn" href="">contact us</a>
 					</div>
 				</div>
 			</div>
@@ -133,7 +133,7 @@ class Quanto_Menu extends Widget_Base {
                 ?>
             </nav>
 			<!-- mobile menu trigger -->
-			<button class="quanto-menu-toggle">
+			<button class="agroland-menu-toggle">
           <i class="ri-menu-line"></i>
 			</button>
 			<!--/.Mobile Menu Hamburger Ends-->
@@ -141,4 +141,4 @@ class Quanto_Menu extends Widget_Base {
 		}
 	}
 }
-$widgets_manager->register( new \Quanto_Menu() );
+$widgets_manager->register( new \Agroland_Menu() );

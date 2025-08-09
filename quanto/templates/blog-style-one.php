@@ -18,9 +18,9 @@ echo '<!-- Single Post -->';
 <?php
 
     // Blog Post Thumbnail
-    do_action( 'quanto_blog_post_thumb' );
+    do_action( 'agroland_blog_post_thumb' );
     // Blog Post Content
-    do_action( 'quanto_blog_post_content' );
+    do_action( 'agroland_blog_post_content' );
     
     
 echo '</div>';

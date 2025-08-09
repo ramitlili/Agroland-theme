@@ -14,13 +14,13 @@ if( !defined( 'ABSPATH' ) ){
     exit;
 }
 
-if ( ! is_active_sidebar( 'quanto-blog-sidebar' ) ) {
+if ( ! is_active_sidebar( 'agroland-blog-sidebar' ) ) {
     return;
 }
 ?>
 
 <div class="col-lg-4">
     <div class="blog__sidebar">
-    <?php dynamic_sidebar( 'quanto-blog-sidebar' ); ?>
+    <?php dynamic_sidebar( 'agroland-blog-sidebar' ); ?>
     </div>
 </div>

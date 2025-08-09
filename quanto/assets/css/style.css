@@ -736,11 +736,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.quanto_screenfix_right {
+.agroland_screenfix_right {
   margin-right: calc((-100vw + 100%) / 2);
 }
 
-.quanto_screenfix_left {
+.agroland_screenfix_left {
   margin-left: calc((-100vw + 100%) / 2);
 }
 
@@ -840,7 +840,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none;
 }
 
-.quanto-link-btn {
+.agroland-link-btn {
   font-weight: 600;
   font-size: 18px;
   line-height: 144.444%;
@@ -854,7 +854,7 @@ body::-webkit-scrollbar-thumb {
   width: max-content;
 }
 
-.quanto-link-btn span {
+.agroland-link-btn span {
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -868,7 +868,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: inherit;
 }
 
-.quanto-link-btn span .arry1 {
+.agroland-link-btn span .arry1 {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -878,7 +878,7 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(-45deg);
 }
 
-.quanto-link-btn span .arry2 {
+.agroland-link-btn span .arry2 {
   position: absolute;
   bottom: -15px;
   left: -10px;
@@ -888,25 +888,25 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(-45deg);
 }
 
-.quanto-link-btn:hover span .arry1 {
+.agroland-link-btn:hover span .arry1 {
   top: -15px;
   left: 15px;
   color: var(--color-primary);
 }
 
-.quanto-link-btn:hover span .arry2 {
+.agroland-link-btn:hover span .arry2 {
   bottom: -3px;
   left: 0;
   color: var(--color-primary);
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-link-btn {
+  .agroland-link-btn {
     padding-bottom: 0;
   }
 }
 
-.quanto-link-btn.btn-pill {
+.agroland-link-btn.btn-pill {
   background-color: var(--color-primary);
   color: var(--color-white);
   border: none;
@@ -915,35 +915,35 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid var(--color-primary);
 }
 
-.quanto-link-btn.btn-pill span .arry1,
-.quanto-link-btn.btn-pill span .arry2 {
+.agroland-link-btn.btn-pill span .arry1,
+.agroland-link-btn.btn-pill span .arry2 {
   color: var(--color-white);
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-link-btn.btn-pill {
+  .agroland-link-btn.btn-pill {
     padding: 10px 20px;
   }
 }
 
-.quanto-link-btn.btn-pill.btn-light {
+.agroland-link-btn.btn-pill.btn-light {
   background-color: var(--color-white);
   color: var(--color-primary);
   border: 1px solid var(--color-white);
 }
 
-.quanto-link-btn.btn-pill.btn-light span .arry1,
-.quanto-link-btn.btn-pill.btn-light span .arry2 {
+.agroland-link-btn.btn-pill.btn-light span .arry1,
+.agroland-link-btn.btn-pill.btn-light span .arry2 {
   color: var(--color-primary);
 }
 
-.quanto-link-btn.btn-dark {
+.agroland-link-btn.btn-dark {
   border-color: var(--color-white);
   color: var(--color-white);
 }
 
-.quanto-link-btn.btn-dark span .arry1,
-.quanto-link-btn.btn-dark span .arry2 {
+.agroland-link-btn.btn-dark span .arry1,
+.agroland-link-btn.btn-dark span .arry2 {
   color: var(--color-white);
 }
 
@@ -1068,17 +1068,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*header css start*/
-.quanto-header.v6.sticky-menu {
+.agroland-header.v6.sticky-menu {
   background-color: var(--color-white);
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-header.v6 .sticky-wrap {
+  .agroland-header.v6 .sticky-wrap {
     padding-block: 14px;
   }
 }
 
-.quanto-header.v6 .status {
+.agroland-header.v6 .status {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1086,7 +1086,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 
-.quanto-header.v6 .status .status-dot {
+.agroland-header.v6 .status .status-dot {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -1095,8 +1095,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
 }
 
-.quanto-header.v6 .status .status-dot::before,
-.quanto-header.v6 .status .status-dot::after {
+.agroland-header.v6 .status .status-dot::before,
+.agroland-header.v6 .status .status-dot::after {
   content: "";
   position: absolute;
   width: 16px;
@@ -1109,11 +1109,11 @@ body::-webkit-scrollbar-thumb {
   animation: anim-ripple 2s infinite;
 }
 
-.quanto-header.v6 .status .status-dot::after {
+.agroland-header.v6 .status .status-dot::after {
   animation-delay: 1.25s;
 }
 
-.header-six-sidebar .quanto-menu-toggle.large {
+.header-six-sidebar .agroland-menu-toggle.large {
   border: none;
   padding: 0;
   outline: 0;
@@ -1122,31 +1122,31 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-.quanto-header.dark-header {
+.agroland-header.dark-header {
   background-color: transparent;
 }
 
-.quanto-header.dark-header .main-menu a {
+.agroland-header.dark-header .main-menu a {
   color: var(--color-white);
 }
 
-.quanto-header.dark-header.sticky-menu {
+.agroland-header.dark-header.sticky-menu {
   background-color: var(--color-primary);
 }
 
-.quanto-header.dark-header.sticky-menu .main-menu a {
+.agroland-header.dark-header.sticky-menu .main-menu a {
   color: var(--color-white);
 }
 
-.quanto-header.has-border-bottom .container {
+.agroland-header.has-border-bottom .container {
   border-bottom: 1px solid var(--color-4);
 }
 
-.quanto-header.has-border-bottom.sticky-menu .container {
+.agroland-header.has-border-bottom.sticky-menu .container {
   border-bottom: none;
 }
 
-.quanto-header.sticky-menu {
+.agroland-header.sticky-menu {
   animation: slide_down_site 0.35s ease-out;
 }
 
@@ -1376,7 +1376,7 @@ ul.sub-menu li a {
   }
 }
 
-.quanto-menu-large-toggle {
+.agroland-menu-large-toggle {
   border: none;
   padding: unset;
   background: transparent;
@@ -1497,7 +1497,7 @@ ul.sub-menu li a {
 /*================================================
 Mobile Menu Menu CSS
 =================================================*/
-.quanto-menu-wrapper {
+.agroland-menu-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -1511,14 +1511,14 @@ Mobile Menu Menu CSS
   visibility: hidden;
 }
 
-.quanto-menu-wrapper .mobile-logo {
+.agroland-menu-wrapper .mobile-logo {
   display: block;
   text-align: left;
   max-width: 120px;
   background-color: var(--color-white);
 }
 
-.quanto-menu-wrapper .quanto-menu-toggle {
+.agroland-menu-wrapper .agroland-menu-toggle {
   width: 55px;
   height: 55px;
   line-height: 55px;
@@ -1536,11 +1536,11 @@ Mobile Menu Menu CSS
   outline: 0;
 }
 
-.quanto-menu-wrapper .quanto-menu-toggle i {
+.agroland-menu-wrapper .agroland-menu-toggle i {
   color: var(--color-black);
 }
 
-.quanto-menu-wrapper .quanto-menu-area {
+.agroland-menu-wrapper .agroland-menu-area {
   width: 100%;
   max-width: 310px;
   background-color: var(--color-white);
@@ -1554,12 +1554,12 @@ Mobile Menu Menu CSS
   padding: 0;
 }
 
-.quanto-menu-wrapper.quanto-body-visible {
+.agroland-menu-wrapper.agroland-body-visible {
   opacity: 1;
   visibility: visible;
 }
 
-.quanto-menu-wrapper.quanto-body-visible .quanto-menu-area {
+.agroland-menu-wrapper.agroland-body-visible .agroland-menu-area {
   left: 0;
   opacity: 1;
   visibility: visible;
@@ -1567,19 +1567,19 @@ Mobile Menu Menu CSS
 
 /* offcanvas v2 */
 
-.quanto-menu-wrapper.v2 {
+.agroland-menu-wrapper.v2 {
   transition: all ease 0.6s;
   height: 100vh;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area {
+.agroland-menu-wrapper.v2 .agroland-menu-area {
   transition: all ease 0.6s;
   max-width: 100%;
   display: flex;
   left: 110%;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left {
   max-width: 400px;
   width: 100%;
   flex-shrink: 0;
@@ -1593,7 +1593,7 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left {
     max-width: 300px;
     padding-inline: 30px;
     padding-block: 20px 30px;
@@ -1601,19 +1601,19 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left {
     max-width: 250px;
     padding-inline: 20px;
     padding-block: 20px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-logo {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-logo {
   max-width: 176px;
   background-color: transparent;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info {
   max-width: 244px;
   text-align: left;
   display: flex;
@@ -1621,37 +1621,37 @@ Mobile Menu Menu CSS
   gap: 10px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .rating-point {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .rating-point {
   color: var(--color-white);
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .stars {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .stars {
   line-height: 1;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .stars ul {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .stars ul {
   line-height: inherit;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .stars ul li {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .stars ul li {
   line-height: inherit;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .stars ul li i,
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .stars ul li svg {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .stars ul li i,
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .stars ul li svg {
   color: var(--color-white);
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info p {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info p {
   color: var(--color-white);
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center {
   width: 100%;
   background-color: var(--color-primary);
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu {
   min-height: 100%;
   padding-left: 136px;
   padding-block: 100px;
@@ -1659,68 +1659,68 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu {
     padding-left: 80px;
     padding-block: 80px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu {
     padding-left: 40px;
     padding-block: 60px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu {
     padding-block: 40px;
     padding-left: 50px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu::-webkit-scrollbar {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu::-webkit-scrollbar {
   width: 0px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu::-webkit-scrollbar-thumb {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu::-webkit-scrollbar-thumb {
   background-color: transparent;
   border-radius: 0px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu::-webkit-scrollbar-track {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 0px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu scrollbar {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu scrollbar {
   scrollbar-color: transparent;
   scrollbar-width: unset;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li {
   border-bottom: none;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li:not(:first-of-type) {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li:not(:first-of-type) {
   margin-top: 45px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li:not(:first-of-type) {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li:not(:first-of-type) {
     margin-top: 25px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li.quanto-active a {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li.agroland-active a {
   opacity: 1;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li a {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li a {
   opacity: 0.4;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a {
   color: var(--color-white) !important;
   font-size: 130px;
   font-weight: 600;
@@ -1733,30 +1733,30 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a {
     font-size: 95px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a {
     font-size: 75px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a {
     font-size: 70px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a {
     font-size: 65px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a>.quanto-mean-expand {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a>.agroland-mean-expand {
   height: 100%;
   position: absolute;
   inset: 0;
@@ -1765,29 +1765,29 @@ Mobile Menu Menu CSS
   padding: 0;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu>ul>li>a>.quanto-mean-expand::before {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu>ul>li>a>.agroland-mean-expand::before {
   content: unset;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu .sub-menu {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu .sub-menu {
   margin-top: 20px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu {
   margin-top: 40px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu {
     margin-top: 20px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li {
   line-height: 1;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li a {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li a {
   color: var(--color-white) !important;
   padding: 0;
   display: inline-block;
@@ -1795,17 +1795,17 @@ Mobile Menu Menu CSS
   width: 170px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li:not(:last-of-type) {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li:not(:last-of-type) {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li:not(:last-of-type) {
     margin-bottom: 10px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right {
   max-width: 400px;
   width: 100%;
   flex-shrink: 0;
@@ -1818,7 +1818,7 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right {
     max-width: 300px;
     padding-inline: 30px;
     padding-block: 20px 30px;
@@ -1826,14 +1826,14 @@ Mobile Menu Menu CSS
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right {
+  .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right {
     max-width: 250px;
     padding-inline: 20px;
     padding-block: 20px;
   }
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle {
   display: grid;
   place-content: center;
   width: 70px;
@@ -1845,39 +1845,39 @@ Mobile Menu Menu CSS
   transition: all 0.25s ease-in-out;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle i,
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle svg {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle i,
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle svg {
   color: var(--color-white);
   line-height: 1;
   font-size: 30px;
   font-weight: 100;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle:hover {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle:hover {
   transform: rotate(90deg);
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info {
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .title {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .title {
   color: var(--color-white);
   font-weight: 600;
   line-height: 141.667%;
   letter-spacing: -0.24px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .address {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .address {
   color: var(--color-white);
   font-size: 18px;
   line-height: 166.667%;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .contact a {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .contact a {
   color: var(--color-white);
   font-size: 18px;
   font-weight: 400;
@@ -1885,7 +1885,7 @@ Mobile Menu Menu CSS
   display: inline-block;
 }
 
-.quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .contact a[href^="mailto:"] {
+.agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .contact a[href^="mailto:"] {
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: none;
@@ -1894,45 +1894,45 @@ Mobile Menu Menu CSS
   text-underline-position: from-font;
 }
 
-.quanto-menu-wrapper.v2.quanto-body-visible .quanto-menu-area {
+.agroland-menu-wrapper.v2.agroland-body-visible .agroland-menu-area {
   left: 0;
 }
 
-.quanto-mobile-menu {
+.agroland-mobile-menu {
   overflow-y: scroll;
   max-height: calc(100vh - 170px);
   text-align: left;
 }
 
-.quanto-mobile-menu::-webkit-scrollbar-track {
+.agroland-mobile-menu::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 2px rgba(232, 6, 60, 0.2);
   background-color: #000;
 }
 
-.quanto-mobile-menu::-webkit-scrollbar {
+.agroland-mobile-menu::-webkit-scrollbar {
   width: 2px;
   background-color: #000;
 }
 
-.quanto-mobile-menu::-webkit-scrollbar-thumb {
+.agroland-mobile-menu::-webkit-scrollbar-thumb {
   background-color: #0a165e;
 }
 
-.quanto-mobile-menu ul {
+.agroland-mobile-menu ul {
   margin: 0;
   padding: 0 0;
 }
 
-.quanto-mobile-menu ul li {
+.agroland-mobile-menu ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   list-style-type: none;
 }
 
-.quanto-mobile-menu ul li li:first-child {
+.agroland-mobile-menu ul li li:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.quanto-mobile-menu ul li a {
+.agroland-mobile-menu ul li a {
   display: block;
   position: relative;
   padding: 18px;
@@ -1943,25 +1943,25 @@ Mobile Menu Menu CSS
   font-weight: 600;
 }
 
-.quanto-mobile-menu ul li.quanto-active>a {
+.agroland-mobile-menu ul li.agroland-active>a {
   color: #2b4dff;
 }
 
-.quanto-mobile-menu ul li.quanto-active>a:before {
+.agroland-mobile-menu ul li.agroland-active>a:before {
   transform: rotate(90deg);
 }
 
-.quanto-mobile-menu ul li ul li {
+.agroland-mobile-menu ul li ul li {
   padding-left: 10px;
 }
 
-.quanto-menu-wrapper.v2 .quanto-mobile-menu ul .quanto-item-has-children>a .quanto-mean-expand {
+.agroland-menu-wrapper.v2 .agroland-mobile-menu ul .agroland-item-has-children>a .agroland-mean-expand {
   top: -10px;
   background-color: transparent;
   color: #fff;
 }
 
-.quanto-mobile-menu ul .quanto-item-has-children>a .quanto-mean-expand {
+.agroland-mobile-menu ul .agroland-item-has-children>a .agroland-mean-expand {
   position: absolute;
   right: 0;
   top: 3px;
@@ -1980,22 +1980,22 @@ Mobile Menu Menu CSS
   transition: all ease 0.4s;
 }
 
-.quanto-mobile-menu ul .quanto-item-has-children>a .quanto-mean-expand:before {
+.agroland-mobile-menu ul .agroland-item-has-children>a .agroland-mean-expand:before {
   content: "\ea6d";
   display: inline-block;
   transition: all ease 0.3s;
   font-family: "remixicon" !important;
 }
 
-.quanto-mobile-menu ul .quanto-item-has-children.quanto-active>a .quanto-mean-expand:before {
+.agroland-mobile-menu ul .agroland-item-has-children.agroland-active>a .agroland-mean-expand:before {
   transform: rotate(-90deg);
 }
 
-.quanto-mobile-menu>ul>li:first-child {
+.agroland-mobile-menu>ul>li:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.quanto-menu-mobile-top {
+.agroland-menu-mobile-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2003,21 +2003,21 @@ Mobile Menu Menu CSS
 }
 
 @media (max-width: 400px) {
-  .quanto-menu-wrapper .quanto-menu-area {
+  .agroland-menu-wrapper .agroland-menu-area {
     width: 100%;
   }
 }
 
-.quanto-mobile-menu-btn {
+.agroland-mobile-menu-btn {
   text-align: start;
   padding: 20px 15px;
 }
 
-.quanto-mobile-menu-btn .sidebar-wrap {
+.agroland-mobile-menu-btn .sidebar-wrap {
   margin-bottom: 10px;
 }
 
-.quanto-mobile-menu-btn .sidebar-wrap h6 {
+.agroland-mobile-menu-btn .sidebar-wrap h6 {
   font-size: 18px;
   font-weight: 600;
   color: var(--color-primary);
@@ -2025,13 +2025,13 @@ Mobile Menu Menu CSS
   line-height: 22px;
 }
 
-.quanto-mobile-menu-btn .social-btn {
+.agroland-mobile-menu-btn .social-btn {
   display: flex;
   gap: 10px;
   padding-top: 5px;
 }
 
-.quanto-mobile-menu-btn .social-btn a {
+.agroland-mobile-menu-btn .social-btn a {
   height: var(--icon-size, 48px);
   width: var(--icon-size, 48px);
   line-height: 48px;
@@ -2044,17 +2044,17 @@ Mobile Menu Menu CSS
   background: var(--smoke-color);
 }
 
-.quanto-mobile-menu-btn .social-btn a:hover {
+.agroland-mobile-menu-btn .social-btn a:hover {
   background: var(--title-color);
   color: var(--white-color);
   border-color: var(--title-color);
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 {
+.agroland-mobile-menu-btn .social-btn.style3 {
   gap: 20px;
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 .link-effect {
+.agroland-mobile-menu-btn .social-btn.style3 .link-effect {
   height: 25px;
   position: relative;
   overflow: hidden;
@@ -2062,7 +2062,7 @@ Mobile Menu Menu CSS
   line-height: normal;
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 .link-effect .effect-1 {
+.agroland-mobile-menu-btn .social-btn.style3 .link-effect .effect-1 {
   display: block;
   height: 100%;
   position: relative;
@@ -2070,11 +2070,11 @@ Mobile Menu Menu CSS
   transition: 0.3s;
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 .link-effect:hover .effect-1 {
+.agroland-mobile-menu-btn .social-btn.style3 .link-effect:hover .effect-1 {
   top: -100%;
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 a {
+.agroland-mobile-menu-btn .social-btn.style3 a {
   background: transparent;
   width: auto;
   height: auto;
@@ -2085,12 +2085,12 @@ Mobile Menu Menu CSS
   font-size: 20px;
 }
 
-.quanto-mobile-menu-btn .social-btn.style3 a:hover {
+.agroland-mobile-menu-btn .social-btn.style3 a:hover {
   background: transparent;
   color: var(--title-color);
 }
 
-a.quanto-default-btn.sm-size {
+a.agroland-default-btn.sm-size {
   font-size: 16px;
   line-height: 1;
   padding: 17px 15px;
@@ -2119,31 +2119,31 @@ a.quanto-default-btn.sm-size {
 03. Hero css
 =================================================*/
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero__content .title {
+  .agroland-hero__content .title {
     max-width: 90%;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero__content .title {
+  .agroland-hero__content .title {
     font-size: 88px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero__content .title {
+  .agroland-hero__content .title {
     max-width: 100%;
     font-size: 70px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero__content .title {
+  .agroland-hero__content .title {
     font-size: 65px;
   }
 }
 
-.quanto-hero__content .title span {
+.agroland-hero__content .title span {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -2151,44 +2151,44 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero__content .title span {
+  .agroland-hero__content .title span {
     margin-left: 100px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
 
-  .quanto-hero__content .title span svg,
-  .quanto-hero__content .title span img {
+  .agroland-hero__content .title span svg,
+  .agroland-hero__content .title span img {
     width: 80px;
     height: 80px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero__content .title span {
+  .agroland-hero__content .title span {
     gap: 10px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero__content .title span {
+  .agroland-hero__content .title span {
     margin-left: 0;
     display: inline-flex;
   }
 
-  .quanto-hero__content .title span svg,
-  .quanto-hero__content .title span img {
+  .agroland-hero__content .title span svg,
+  .agroland-hero__content .title span img {
     display: none;
   }
 }
 
-.quanto-hero__content .title span svg,
-.quanto-hero__content .title span img {
+.agroland-hero__content .title span svg,
+.agroland-hero__content .title span img {
   animation: spinner 9s linear infinite;
 }
 
-.quanto-hero__info {
+.agroland-hero__info {
   max-width: 380px;
   position: absolute;
   right: 0;
@@ -2196,7 +2196,7 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero__info {
+  .agroland-hero__info {
     position: relative;
     right: auto;
     bottom: auto;
@@ -2206,49 +2206,49 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero__info {
+  .agroland-hero__info {
     max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero__info {
+  .agroland-hero__info {
     max-width: 100%;
     margin-inline: auto;
   }
 }
 
-.quanto-hero__info .client-images {
+.agroland-hero__info .client-images {
   display: flex;
   align-items: center;
   position: relative;
   z-index: 0;
 }
 
-.quanto-hero__info .client-images img {
+.agroland-hero__info .client-images img {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
   border-radius: 100%;
 }
 
-.quanto-hero__info .client-images img:not(:first-child) {
+.agroland-hero__info .client-images img:not(:first-child) {
   margin-left: -8px;
 }
 
-.quanto-hero__info .client-images img:nth-child(1) {
+.agroland-hero__info .client-images img:nth-child(1) {
   z-index: 2;
 }
 
-.quanto-hero__info .client-images img:nth-child(2) {
+.agroland-hero__info .client-images img:nth-child(2) {
   z-index: 1;
 }
 
-.quanto-hero__info .client-images img:nth-child(3) {
+.agroland-hero__info .client-images img:nth-child(3) {
   z-index: 0;
 }
 
-.quanto-hero__info .client-info {
+.agroland-hero__info .client-info {
   margin-top: 28px;
   padding-top: 20px;
   border-top: 1px solid var(--color-1);
@@ -2258,33 +2258,33 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero__info .client-info {
+  .agroland-hero__info .client-info {
     justify-content: center;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-hero__info .client-info {
+  .agroland-hero__info .client-info {
     flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-hero__info .client-data h6 {
+  .agroland-hero__info .client-data h6 {
     justify-content: center;
   }
 }
 
-.quanto-hero__info .client-data>span {
+.agroland-hero__info .client-data>span {
   font-size: 18px;
   line-height: 144.444%;
 }
 
-.quanto-hero__info .client-data em {
+.agroland-hero__info .client-data em {
   font-style: normal;
 }
 
-.quanto-hero__thumb .video-wrapper {
+.agroland-hero__thumb .video-wrapper {
   background-position: top center;
   background-size: cover;
   -o-object-fit: cover;
@@ -2296,18 +2296,18 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero__thumb .video-wrapper {
+  .agroland-hero__thumb .video-wrapper {
     height: 500px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero__thumb .video-wrapper {
+  .agroland-hero__thumb .video-wrapper {
     width: 100%;
   }
 }
 
-.quanto-hero__thumb video {
+.agroland-hero__thumb video {
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -2317,7 +2317,7 @@ a.quanto-default-btn.sm-size {
   object-fit: cover;
 }
 
-.quanto-hero2-section {
+.agroland-hero2-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -2426,7 +2426,7 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.quanto-hero3-section {
+.agroland-hero3-section {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
@@ -2435,7 +2435,7 @@ a.quanto-default-btn.sm-size {
   justify-content: end;
 }
 
-.quanto-hero3__content {
+.agroland-hero3__content {
   position: relative;
   z-index: 2;
   padding-top: 150px;
@@ -2443,111 +2443,111 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-top: 280px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-top: 380px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-top: 450px;
   }
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-bottom: 120px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-bottom: 80px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero3__content {
+  .agroland-hero3__content {
     padding-bottom: 60px;
   }
 }
 
-.quanto-hero3__content .marquee-container {
+.agroland-hero3__content .marquee-container {
   padding: 70px 0;
 }
 
 @media only screen and (min-width: 576px) {
-  .quanto-hero3__content .marquee-container {
+  .agroland-hero3__content .marquee-container {
     padding: 95px 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .quanto-hero3__content .marquee-container {
+  .agroland-hero3__content .marquee-container {
     padding: 115px 0;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-hero3__content .marquee-container {
+  .agroland-hero3__content .marquee-container {
     padding: 150px 0;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero3__content .marquee-container {
+  .agroland-hero3__content .marquee-container {
     padding: 190px 0;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero3__content .marquee-container {
+  .agroland-hero3__content .marquee-container {
     padding: 200px 0;
   }
 }
 
-.quanto-hero3__content .marquee-item h1 {
+.agroland-hero3__content .marquee-item h1 {
   line-height: 100%;
   font-size: 120px;
 }
 
 @media only screen and (min-width: 576px) {
-  .quanto-hero3__content .marquee-item h1 {
+  .agroland-hero3__content .marquee-item h1 {
     font-size: 160px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .quanto-hero3__content .marquee-item h1 {
+  .agroland-hero3__content .marquee-item h1 {
     font-size: 200px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-hero3__content .marquee-item h1 {
+  .agroland-hero3__content .marquee-item h1 {
     font-size: 250px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero3__content .marquee-item h1 {
+  .agroland-hero3__content .marquee-item h1 {
     font-size: 280px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero3__content .marquee-item h1 {
+  .agroland-hero3__content .marquee-item h1 {
     font-size: 320px;
   }
 }
 
-.quanto-hero3__content .content-info {
+.agroland-hero3__content .content-info {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -2555,57 +2555,57 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero3__content .content-info {
+  .agroland-hero3__content .content-info {
     margin-top: 20px;
   }
 }
 
-.quanto-hero3__content .content-info .section-jump {
+.agroland-hero3__content .content-info .section-jump {
   animation: btn-up-down 0.8s linear infinite alternate;
 }
 
-.quanto-hero3__content .content-info p {
+.agroland-hero3__content .content-info p {
   max-width: 652px;
   color: var(--color-white);
   line-height: 142.857%;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-hero3__content .content-info p {
+  .agroland-hero3__content .content-info p {
     font-size: 28px;
   }
 }
 
-.quanto-hero4-section {
+.agroland-hero4-section {
   padding-top: 200px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero4-section {
+  .agroland-hero4-section {
     padding-top: 130px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero4-section {
+  .agroland-hero4-section {
     padding-top: 110px;
   }
 }
 
-.quanto-hero4__content .title br {
+.agroland-hero4__content .title br {
   display: none;
 }
 
 @media only screen and (min-width: 1600px) {
-  .quanto-hero4__content .title br {
+  .agroland-hero4__content .title br {
     display: block;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
 
-  .quanto-hero4__content .title img,
-  .quanto-hero4__content .title svg {
+  .agroland-hero4__content .title img,
+  .agroland-hero4__content .title svg {
     max-height: 60px;
     max-width: 100px;
   }
@@ -2613,90 +2613,90 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (max-width: 767.98px) {
 
-  .quanto-hero4__content .title img,
-  .quanto-hero4__content .title svg {
+  .agroland-hero4__content .title img,
+  .agroland-hero4__content .title svg {
     max-height: 40px;
     max-width: 80px;
   }
 }
 
-.quanto-hero4__content p {
+.agroland-hero4__content p {
   margin-top: 20px;
   max-width: 544px;
 }
 
-.quanto-hero4__info .stars {
+.agroland-hero4__info .stars {
   margin: 6px 0;
 }
 
-.quanto-hero4__info .stars ul li {
+.agroland-hero4__info .stars ul li {
   line-height: 1;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero4__info .stars ul li i {
+  .agroland-hero4__info .stars ul li i {
     font-size: 14px;
   }
 }
 
-.quanto-hero4__info p {
+.agroland-hero4__info p {
   max-width: 244px;
 }
 
-.quanto-hero5-section {
+.agroland-hero5-section {
   padding-top: 320px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero5-section {
+  .agroland-hero5-section {
     padding-top: 280px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero5-section {
+  .agroland-hero5-section {
     padding-top: 200px;
   }
 }
 
-.quanto-hero5__content .title img {
+.agroland-hero5__content .title img {
   margin-bottom: 28px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero5__content .title img {
+  .agroland-hero5__content .title img {
     max-width: 80px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero5__content .title img {
+  .agroland-hero5__content .title img {
     max-width: 60px;
     margin-bottom: 10px;
   }
 }
 
-.quanto-hero5__content .title .text-indent {
+.agroland-hero5__content .title .text-indent {
   text-indent: 244px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero5__content .title .text-indent {
+  .agroland-hero5__content .title .text-indent {
     text-indent: 150px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero5__content .title .text-indent {
+  .agroland-hero5__content .title .text-indent {
     text-indent: 50px;
   }
 }
 
-.quanto-hero5__info {
+.agroland-hero5__info {
   color: var(--color-white);
 }
 
-.quanto-hero5__info .quanto-link-btn {
+.agroland-hero5__info .agroland-link-btn {
   border-color: var(--color-white);
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -2704,172 +2704,172 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero5__info .quanto-link-btn {
+  .agroland-hero5__info .agroland-link-btn {
     margin-top: 30px;
   }
 }
 
-.quanto-hero5__info .quanto-link-btn span .arry1,
-.quanto-hero5__info .quanto-link-btn span .arry2 {
+.agroland-hero5__info .agroland-link-btn span .arry1,
+.agroland-hero5__info .agroland-link-btn span .arry2 {
   color: var(--color-primary);
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero6-section {
+  .agroland-hero6-section {
     padding-block: 180px 80px;
   }
 }
 
-.quanto-hero6__thumb {
+.agroland-hero6__thumb {
   position: relative;
 }
 
-.quanto-hero6__thumb::before,
-.quanto-hero6__thumb::after {
+.agroland-hero6__thumb::before,
+.agroland-hero6__thumb::after {
   position: absolute;
   content: "";
   inset: 0;
 }
 
-.quanto-hero6__thumb::before {
+.agroland-hero6__thumb::before {
   background: linear-gradient(180deg, rgba(var(--color-white-rgb), 0) 60%, var(--color-white) 100%);
 }
 
-.quanto-hero6__thumb::after {
+.agroland-hero6__thumb::after {
   background: linear-gradient(180deg, rgba(var(--color-white-rgb), 0) 50%, var(--color-white) 100%);
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero6__thumb img {
+  .agroland-hero6__thumb img {
     display: none;
   }
 }
 
-.quanto-hero6__content-col {
+.agroland-hero6__content-col {
   position: absolute;
   left: auto;
   bottom: 0px;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero6__content-col {
+  .agroland-hero6__content-col {
     position: relative;
   }
 }
 
-.quanto-hero6__content {
+.agroland-hero6__content {
   padding-bottom: 130px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-hero6__content {
+  .agroland-hero6__content {
     padding-bottom: 65px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero6__content {
+  .agroland-hero6__content {
     padding-bottom: 0px;
   }
 }
 
-.quanto-hero-about-section {
+.agroland-hero-about-section {
   padding-top: 200px;
   padding-bottom: 130px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-hero-about-section {
+  .agroland-hero-about-section {
     padding-top: 130px;
     padding-bottom: 100px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-hero-about-section {
+  .agroland-hero-about-section {
     padding-top: 110px;
     padding-bottom: 65px;
   }
 }
 
-.quanto-hero-about__content .title {
+.agroland-hero-about__content .title {
   max-width: 1332px;
   font-size: 55px;
 }
 
 @media only screen and (min-width: 768px) {
-  .quanto-hero-about__content .title {
+  .agroland-hero-about__content .title {
     font-size: 65px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-hero-about__content .title {
+  .agroland-hero-about__content .title {
     font-size: 85px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-hero-about__content .title {
+  .agroland-hero-about__content .title {
     font-size: 130px;
   }
 }
 
-.quanto-hero-about__info .stars {
+.agroland-hero-about__info .stars {
   margin: 6px 0;
 }
 
-.quanto-hero-about__info .stars ul li {
+.agroland-hero-about__info .stars ul li {
   line-height: 1;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-hero-about__info .stars ul li i {
+  .agroland-hero-about__info .stars ul li i {
     font-size: 14px;
   }
 }
 
-.quanto-hero-pricing-section,
-.quanto-hero-service-section,
-.quanto-hero-team-section,
-.quanto-hero-faq-section,
-.quanto-hero-blog-section,
-.quanto-hero-common-section {
+.agroland-hero-pricing-section,
+.agroland-hero-service-section,
+.agroland-hero-team-section,
+.agroland-hero-faq-section,
+.agroland-hero-blog-section,
+.agroland-hero-common-section {
   padding-top: 200px;
 }
 
 @media only screen and (max-width: 1199.98px) {
 
-  .quanto-hero-pricing-section,
-  .quanto-hero-service-section,
-  .quanto-hero-team-section,
-  .quanto-hero-faq-section,
-  .quanto-hero-blog-section,
-  .quanto-hero-common-section {
+  .agroland-hero-pricing-section,
+  .agroland-hero-service-section,
+  .agroland-hero-team-section,
+  .agroland-hero-faq-section,
+  .agroland-hero-blog-section,
+  .agroland-hero-common-section {
     padding-top: 130px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
 
-  .quanto-hero-pricing-section,
-  .quanto-hero-service-section,
-  .quanto-hero-team-section,
-  .quanto-hero-faq-section,
-  .quanto-hero-blog-section,
-  .quanto-hero-common-section {
+  .agroland-hero-pricing-section,
+  .agroland-hero-service-section,
+  .agroland-hero-team-section,
+  .agroland-hero-faq-section,
+  .agroland-hero-blog-section,
+  .agroland-hero-common-section {
     padding-top: 100px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
 
-  .quanto-hero-pricing-section,
-  .quanto-hero-service-section,
-  .quanto-hero-team-section,
-  .quanto-hero-faq-section,
-  .quanto-hero-blog-section,
-  .quanto-hero-common-section {
+  .agroland-hero-pricing-section,
+  .agroland-hero-service-section,
+  .agroland-hero-team-section,
+  .agroland-hero-faq-section,
+  .agroland-hero-blog-section,
+  .agroland-hero-common-section {
     padding-top: 60px;
   }
 }
@@ -2893,13 +2893,13 @@ a.quanto-default-btn.sm-size {
 /*================================================
 04. About Us css
 =================================================*/
-.quanto-about__content {
+.agroland-about__content {
   max-width: 1088px;
   margin-left: auto;
 }
 
-.quanto-about__content h4,
-.quanto-about-one h4 {
+.agroland-about__content h4,
+.agroland-about-one h4 {
   font-size: 44px;
   line-height: 122.727%;
   font-weight: 600;
@@ -2907,89 +2907,89 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (max-width: 1399.98px) {
 
-  .quanto-about__content h4,
-  .quanto-about-one h4 {
+  .agroland-about__content h4,
+  .agroland-about-one h4 {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
 
-  .quanto-about__content h4,
-  .quanto-about-one h4 {
+  .agroland-about__content h4,
+  .agroland-about-one h4 {
     font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
 
-  .quanto-about__content h4,
-  .quanto-about-one h4 {
+  .agroland-about__content h4,
+  .agroland-about-one h4 {
     font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
 
-  .quanto-about__content h4,
-  .quanto-about-one h4 {
+  .agroland-about__content h4,
+  .agroland-about-one h4 {
     font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
 
-  .quanto-about__content h4,
-  .quanto-about-one h4 {
+  .agroland-about__content h4,
+  .agroland-about-one h4 {
     font-size: 25px;
   }
 }
 
-.quanto-about__content .about-info {
+.agroland-about__content .about-info {
   max-width: 652px;
   margin-left: auto;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-about__content .about-info {
+  .agroland-about__content .about-info {
     max-width: 100%;
   }
 }
 
-.quanto-about__content .about-info .quanto-link-btn {
+.agroland-about__content .about-info .agroland-link-btn {
   margin-top: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-about__content .about-info .quanto-link-btn {
+  .agroland-about__content .about-info .agroland-link-btn {
     margin-top: 20px;
   }
 }
 
-.quanto-about__content.style-2 {
+.agroland-about__content.style-2 {
   border-left: 1px solid var(--color-1);
   height: 100%;
   padding-left: 120px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-about__content.style-2 {
+  .agroland-about__content.style-2 {
     padding-left: 60px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-about__content.style-2 {
+  .agroland-about__content.style-2 {
     padding-left: 20px;
   }
 }
 
-.quanto-about__content.style-2 .quanto-link-btn {
+.agroland-about__content.style-2 .agroland-link-btn {
   margin-top: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-about__content.style-2 .quanto-link-btn {
+  .agroland-about__content.style-2 .agroland-link-btn {
     margin-top: 20px;
   }
 }
@@ -3049,106 +3049,106 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-about-area2 .mt-n100 {
+  .agroland-about-area2 .mt-n100 {
     margin-top: -50px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .quanto-about-area2 .mt-n100 {
+  .agroland-about-area2 .mt-n100 {
     margin-top: -75px;
   }
 }
 
 @media only screen and (min-width: 1700px) {
-  .quanto-about-area2 .mt-n100 {
+  .agroland-about-area2 .mt-n100 {
     margin-top: -85px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-about-area2 .mt-100 {
+  .agroland-about-area2 .mt-100 {
     margin-top: 50px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .quanto-about-area2 .mt-100 {
+  .agroland-about-area2 .mt-100 {
     margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1700px) {
-  .quanto-about-area2 .mt-100 {
+  .agroland-about-area2 .mt-100 {
     margin-top: 100px;
   }
 }
 
-.quanto-about-area2 .section-content p:not(:last-child) {
+.agroland-about-area2 .section-content p:not(:last-child) {
   margin-bottom: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-about-area2 .section-content p:not(:last-child) {
+  .agroland-about-area2 .section-content p:not(:last-child) {
     margin-bottom: 15px;
   }
 }
 
-.quanto-about-area2 .section-content figure {
+.agroland-about-area2 .section-content figure {
   display: block;
   text-align: right;
   margin-top: 110px;
 }
 
 @media only screen and (max-width: 1599.98px) {
-  .quanto-about-area2 .section-content figure {
+  .agroland-about-area2 .section-content figure {
     margin-top: 55px;
   }
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-about-area2 .section-content figure {
+  .agroland-about-area2 .section-content figure {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-about-area2 .section-content figure {
+  .agroland-about-area2 .section-content figure {
     display: none;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-about-area2 .section-content figure {
+  .agroland-about-area2 .section-content figure {
     display: block;
     margin-top: 30px;
   }
 }
 
-.quanto-about2__content .quanto-funfacts__wrapper {
+.agroland-about2__content .agroland-funfacts__wrapper {
   margin-top: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .quanto-about2__content .quanto-funfacts__wrapper {
+  .agroland-about2__content .agroland-funfacts__wrapper {
     margin-top: 50px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-about2__content .quanto-funfacts__wrapper {
+  .agroland-about2__content .agroland-funfacts__wrapper {
     margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-about2__content .quanto-funfacts__wrapper {
+  .agroland-about2__content .agroland-funfacts__wrapper {
     margin-top: 120px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .quanto-about2__content .quanto-funfacts__wrapper {
+  .agroland-about2__content .agroland-funfacts__wrapper {
     margin-top: 165px;
   }
 }
@@ -3156,7 +3156,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 05. Funfacts css
 =================================================*/
-.quanto-funfacts__wrapper {
+.agroland-funfacts__wrapper {
   display: grid;
   align-items: center;
   gap: 20px;
@@ -3164,25 +3164,25 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-funfacts__wrapper {
+  .agroland-funfacts__wrapper {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-funfacts__wrapper {
+  .agroland-funfacts__wrapper {
     padding-left: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-funfacts__wrapper {
+  .agroland-funfacts__wrapper {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
-.quanto-funfacts__wrapper.extend {
+.agroland-funfacts__wrapper.extend {
   display: grid;
   align-items: center;
   gap: 20px;
@@ -3190,84 +3190,84 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-funfacts__wrapper.extend {
+  .agroland-funfacts__wrapper.extend {
     padding-left: 0;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-funfacts__wrapper.extend .quanto-funfact-box {
+  .agroland-funfacts__wrapper.extend .agroland-funfact-box {
     padding-left: 0;
   }
 }
 
-.quanto-funfacts__wrapper .quanto-funfact-box {
+.agroland-funfacts__wrapper .agroland-funfact-box {
   border-left: 1px solid var(--color-1);
   padding-left: 28px;
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-funfacts__wrapper .quanto-funfact-box {
+  .agroland-funfacts__wrapper .agroland-funfact-box {
     padding-left: 0;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-funfacts__wrapper .quanto-funfact-box {
+  .agroland-funfacts__wrapper .agroland-funfact-box {
     border: none;
     text-align: center;
   }
 }
 
-.quanto-funfacts__wrapper .quanto-funfact-box h2 {
+.agroland-funfacts__wrapper .agroland-funfact-box h2 {
   letter-spacing: -2.5px;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-funfacts__wrapper .quanto-funfact-box h2 {
+  .agroland-funfacts__wrapper .agroland-funfact-box h2 {
     font-size: 70px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-funfacts__wrapper .quanto-funfact-box h2 {
+  .agroland-funfacts__wrapper .agroland-funfact-box h2 {
     font-size: 80px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-funfacts__wrapper .quanto-funfact-box h2 {
+  .agroland-funfacts__wrapper .agroland-funfact-box h2 {
     font-size: 100px;
   }
 }
 
-.quanto-funfact-box {
+.agroland-funfact-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-funfact-box {
+  .agroland-funfact-box {
     align-items: center;
   }
 }
 
-.quanto-funfact-box .odometer-auto-theme {
+.agroland-funfact-box .odometer-auto-theme {
   line-height: 1;
   vertical-align: unset;
 }
 
-.quanto-funfact-box .odometer-auto-theme .odometer-digit {
+.agroland-funfact-box .odometer-auto-theme .odometer-digit {
   padding: 0 1px;
 }
 
-.quanto-funfact-box em {
+.agroland-funfact-box em {
   font-style: normal;
 }
 
-.quanto-funfact-box .funfact-info {
+.agroland-funfact-box .funfact-info {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -3277,38 +3277,38 @@ a.quanto-default-btn.sm-size {
 /*================================================
 06. Project css
 =================================================*/
-.quanto-project-section {
+.agroland-project-section {
   overflow: hidden;
 }
 
-.quanto-project-section .quanto__header {
+.agroland-project-section .agroland__header {
   margin-bottom: 90px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-project-section .quanto__header {
+  .agroland-project-section .agroland__header {
     margin-bottom: 80px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-section .quanto__header {
+  .agroland-project-section .agroland__header {
     margin-bottom: 60px;
   }
 }
 
-.quanto-project-section .project-row-gap {
+.agroland-project-section .project-row-gap {
   margin-bottom: 150px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-project-section .project-row-gap {
+  .agroland-project-section .project-row-gap {
     margin-bottom: 80px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-section .project-row-gap {
+  .agroland-project-section .project-row-gap {
     margin-bottom: 60px;
   }
 }
@@ -3341,54 +3341,54 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.project-horizontal-scrolling .quanto-project-box {
+.project-horizontal-scrolling .agroland-project-box {
   max-width: 600px;
   max-height: 750px;
   width: 100%;
   flex-shrink: 0;
 }
 
-.project-horizontal-scrolling .quanto-project-box>a {
+.project-horizontal-scrolling .agroland-project-box>a {
   display: block;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .project-horizontal-scrolling .quanto-project-box {
+  .project-horizontal-scrolling .agroland-project-box {
     max-width: 450px;
     max-height: 600px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .project-horizontal-scrolling .quanto-project-box {
+  .project-horizontal-scrolling .agroland-project-box {
     max-width: 100%;
     max-height: 100%;
   }
 }
 
-.quanto-project-thumb {
+.agroland-project-thumb {
   overflow: hidden;
 }
 
-.quanto-project-thumb img {
+.agroland-project-thumb img {
   transform-origin: left;
 }
 
-.quanto-project-thumb:hover img {
+.agroland-project-thumb:hover img {
   transform: scale(1.1);
 }
 
-.quanto-project-content {
+.agroland-project-content {
   margin-top: 20px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-content {
+  .agroland-project-content {
     margin-top: 10px;
   }
 }
 
-.quanto-project-content .quanto-project-date {
+.agroland-project-content .agroland-project-date {
   display: inline-flex;
   align-items: center;
   font-size: 18px;
@@ -3397,14 +3397,14 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-content .quanto-project-date {
+  .agroland-project-content .agroland-project-date {
     margin-top: 2px;
     font-size: 16px;
   }
 }
 
-.quanto-project__slider-navigation .next-btn,
-.quanto-project__slider-navigation .prev-btn {
+.agroland-project__slider-navigation .next-btn,
+.agroland-project__slider-navigation .prev-btn {
   display: grid;
   place-content: center;
   width: 70px;
@@ -3416,20 +3416,20 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (max-width: 991.98px) {
 
-  .quanto-project__slider-navigation .next-btn,
-  .quanto-project__slider-navigation .prev-btn {
+  .agroland-project__slider-navigation .next-btn,
+  .agroland-project__slider-navigation .prev-btn {
     width: 50px;
     height: 50px;
     font-size: 18px;
   }
 }
 
-.quanto-project-gard-row {
+.agroland-project-gard-row {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.quanto-project-box2 {
+.agroland-project-box2 {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   padding-block: 40px;
@@ -3438,47 +3438,47 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-project-box2 {
+  .agroland-project-box2 {
     padding-block: 30px;
     gap: 20px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-box2 {
+  .agroland-project-box2 {
     padding-block: 20px;
     gap: 10px;
   }
 }
 
-.quanto-project-box2:last-of-type {
+.agroland-project-box2:last-of-type {
   border-bottom: 1px solid var(--color-1);
 }
 
-.quanto-project-box2 .quanto-project-thumb {
+.agroland-project-box2 .agroland-project-thumb {
   grid-column: span 6/span 6;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-project-box2 .quanto-project-thumb {
+  .agroland-project-box2 .agroland-project-thumb {
     grid-column: span 5/span 5;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-project-box2 .quanto-project-thumb {
+  .agroland-project-box2 .agroland-project-thumb {
     grid-column: span 12/span 12;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-project-box2 .quanto-project-thumb img {
+  .agroland-project-box2 .agroland-project-thumb img {
     height: 100%;
     object-fit: cover;
   }
 }
 
-.quanto-project-box2 .quanto-project-content {
+.agroland-project-box2 .agroland-project-content {
   grid-column: span 6/span 6;
   display: flex;
   flex-direction: column;
@@ -3486,34 +3486,34 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-project-box2 .quanto-project-content {
+  .agroland-project-box2 .agroland-project-content {
     grid-column: span 7/span 7;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-project-box2 .quanto-project-content {
+  .agroland-project-box2 .agroland-project-content {
     grid-column: span 12/span 12;
   }
 }
 
-.quanto-project-box2 .quanto-project-content .top-content p {
+.agroland-project-box2 .agroland-project-content .top-content p {
   max-width: 544px;
   margin-top: 16px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-box2 .quanto-project-content .top-content p {
+  .agroland-project-box2 .agroland-project-content .top-content p {
     margin-top: 8px;
   }
 }
 
-.quanto-project-box2 .quanto-project-content .quanto-project-date {
+.agroland-project-box2 .agroland-project-content .agroland-project-date {
   margin-top: 30px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-project-box2 .quanto-project-content .quanto-project-date {
+  .agroland-project-box2 .agroland-project-content .agroland-project-date {
     margin-top: 20px;
   }
 }
@@ -3531,12 +3531,12 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.portfolio-details__content .quanto-link-btn {
+.portfolio-details__content .agroland-link-btn {
   margin-top: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .portfolio-details__content .quanto-link-btn {
+  .portfolio-details__content .agroland-link-btn {
     margin-top: 20px;
   }
 }
@@ -3590,7 +3590,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 08. Service css
 =================================================*/
-.quanto-service-box {
+.agroland-service-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3600,22 +3600,22 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box {
+  .agroland-service-box {
     padding: 35px 30px;
   }
 }
 
-.quanto-service-box .quanto-iconbox-icon {
+.agroland-service-box .agroland-iconbox-icon {
   margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box .quanto-iconbox-icon {
+  .agroland-service-box .agroland-iconbox-icon {
     margin-bottom: 30px;
   }
 }
 
-.quanto-service-box.style-2 {
+.agroland-service-box.style-2 {
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -3624,7 +3624,7 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 768px) {
-  .quanto-service-box.style-2 {
+  .agroland-service-box.style-2 {
     padding-left: 40px;
     padding-right: 0px;
     border-left: 1px solid var(--color-1);
@@ -3632,7 +3632,7 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.quanto-service-box.style-2 .optech-iconbox-data h5 {
+.agroland-service-box.style-2 .optech-iconbox-data h5 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -3656,138 +3656,138 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.optech-iconbox-data .quanto-link-btn {
+.optech-iconbox-data .agroland-link-btn {
   margin-top: 90px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .optech-iconbox-data .quanto-link-btn {
+  .optech-iconbox-data .agroland-link-btn {
     margin-top: 45px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .optech-iconbox-data .quanto-link-btn {
+  .optech-iconbox-data .agroland-link-btn {
     margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .optech-iconbox-data .quanto-link-btn {
+  .optech-iconbox-data .agroland-link-btn {
     margin-top: 20px;
   }
 }
 
-.quanto-service-section {
+.agroland-service-section {
   background-color: var(--color-2);
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-service2-section .quanto__header .title {
+  .agroland-service2-section .agroland__header .title {
     max-width: 516px;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-service2-section .quanto__header .title.extend {
+  .agroland-service2-section .agroland__header .title.extend {
     max-width: 652px;
   }
 }
 
-.quanto-service2__row.g-114,
-.quanto-service2__row.gy-114 {
+.agroland-service2__row.g-114,
+.agroland-service2__row.gy-114 {
   --bs-gutter-y: 45px;
 }
 
 @media only screen and (min-width: 576px) {
 
-  .quanto-service2__row.g-114,
-  .quanto-service2__row.gy-114 {
+  .agroland-service2__row.g-114,
+  .agroland-service2__row.gy-114 {
     --bs-gutter-y: 80px;
   }
 }
 
 @media only screen and (min-width: 768px) {
 
-  .quanto-service2__row.g-114,
-  .quanto-service2__row.gy-114 {
+  .agroland-service2__row.g-114,
+  .agroland-service2__row.gy-114 {
     --bs-gutter-y: 114px;
   }
 }
 
-.quanto-service2__row.g-114,
-.quanto-service2__row.gx-114 {
+.agroland-service2__row.g-114,
+.agroland-service2__row.gx-114 {
   --bs-gutter-x: 12px;
 }
 
 @media only screen and (min-width: 1400px) {
 
-  .quanto-service2__row.g-114,
-  .quanto-service2__row.gx-114 {
+  .agroland-service2__row.g-114,
+  .agroland-service2__row.gx-114 {
     --bs-gutter-x: 114px;
   }
 }
 
-.quanto-service3-section {
+.agroland-service3-section {
   background-color: var(--color-white);
 }
 
-.quanto-service-box3 {
+.agroland-service-box3 {
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 15px;
 }
 
-.quanto-service-box3:not(:first-of-type) {
+.agroland-service-box3:not(:first-of-type) {
   padding-top: 44px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box3:not(:first-of-type) {
+  .agroland-service-box3:not(:first-of-type) {
     padding-top: 40px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box3:not(:first-of-type) {
+  .agroland-service-box3:not(:first-of-type) {
     padding-top: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-service-box3:not(:first-of-type) {
+  .agroland-service-box3:not(:first-of-type) {
     padding-top: 20px;
   }
 }
 
-.quanto-service-box3:not(:last-of-type) {
+.agroland-service-box3:not(:last-of-type) {
   padding-bottom: 48px;
   border-bottom: 1px solid var(--color-1);
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box3:not(:last-of-type) {
+  .agroland-service-box3:not(:last-of-type) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box3:not(:last-of-type) {
+  .agroland-service-box3:not(:last-of-type) {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-service-box3:not(:last-of-type) {
+  .agroland-service-box3:not(:last-of-type) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
 
-.quanto-service-box3 .box-content h4 a {
+.agroland-service-box3 .box-content h4 a {
   position: relative;
   display: inline;
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
@@ -3799,22 +3799,22 @@ a.quanto-default-btn.sm-size {
   color: inherit;
 }
 
-.quanto-service-box3 .box-content h4 a:hover {
+.agroland-service-box3 .box-content h4 a:hover {
   background-size: 100% 2px;
 }
 
-.quanto-service-box3 .box-content p {
+.agroland-service-box3 .box-content p {
   max-width: 555.176px;
   margin-top: 16px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box3 .box-content p {
+  .agroland-service-box3 .box-content p {
     margin-top: 8px;
   }
 }
 
-.quanto-service-box3 .quanto-link-btn {
+.agroland-service-box3 .agroland-link-btn {
   width: 70px;
   height: 70px;
   display: flex;
@@ -3828,38 +3828,38 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box3 .quanto-link-btn {
+  .agroland-service-box3 .agroland-link-btn {
     width: 50px;
     height: 50px;
   }
 }
 
-.quanto-service-box3 .quanto-link-btn span .arry1,
-.quanto-service-box3 .quanto-link-btn span .arry2 {
+.agroland-service-box3 .agroland-link-btn span .arry1,
+.agroland-service-box3 .agroland-link-btn span .arry2 {
   color: var(--color-primary);
 }
 
-.quanto-service-box3 .quanto-link-btn:hover {
+.agroland-service-box3 .agroland-link-btn:hover {
   border-color: var(--color-primary);
   color: var(--color-white);
 }
 
-.quanto-service-box3:hover .box-content h4 a {
+.agroland-service-box3:hover .box-content h4 a {
   background-size: 100% 2px;
 }
 
-.quanto-service-box3:hover .quanto-link-btn {
+.agroland-service-box3:hover .agroland-link-btn {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-white);
 }
 
-.quanto-service-box3:hover .quanto-link-btn span .arry1,
-.quanto-service-box3:hover .quanto-link-btn span .arry2 {
+.agroland-service-box3:hover .agroland-link-btn span .arry1,
+.agroland-service-box3:hover .agroland-link-btn span .arry2 {
   color: var(--color-white);
 }
 
-.quanto-service-box4 {
+.agroland-service-box4 {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -3870,46 +3870,46 @@ a.quanto-default-btn.sm-size {
   overflow: hidden;
 }
 
-.quanto-service-box4:last-child {
+.agroland-service-box4:last-child {
   padding-bottom: 0;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box4 {
+  .agroland-service-box4 {
     flex-direction: column;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-service-box4 {
+  .agroland-service-box4 {
     padding: 55px 0;
   }
 
-  .quanto-service-box4:last-child {
+  .agroland-service-box4:last-child {
     padding-bottom: 0px;
   }
 }
 
-.quanto-service-box4 .service-title {
+.agroland-service-box4 .service-title {
   max-width: 330px;
   width: 100%;
   flex-shrink: 0;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box4 .service-title {
+  .agroland-service-box4 .service-title {
     max-width: 300px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box4 .service-title {
+  .agroland-service-box4 .service-title {
     max-width: 100%;
     order: 1;
   }
 }
 
-.quanto-service-box4 .service-info {
+.agroland-service-box4 .service-info {
   max-width: 680px;
   width: 100%;
   flex-shrink: 0;
@@ -3917,29 +3917,29 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box4 .service-info {
+  .agroland-service-box4 .service-info {
     max-width: 400px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box4 .service-info {
+  .agroland-service-box4 .service-info {
     order: 2;
     max-width: 100%;
   }
 }
 
-.quanto-service-box4 .service-info a {
+.agroland-service-box4 .service-info a {
   margin-top: 20px;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-service-box4 .service-info a {
+  .agroland-service-box4 .service-info a {
     opacity: 1;
   }
 }
 
-.quanto-service-box4 svg {
+.agroland-service-box4 svg {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
@@ -3949,19 +3949,19 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box4 svg {
+  .agroland-service-box4 svg {
     order: 0;
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-service-box4:hover .service-info a {
+  .agroland-service-box4:hover .service-info a {
     opacity: 1;
   }
 }
 
-.quanto-service-box5 {
+.agroland-service-box5 {
   border-left: 1px solid var(--color-1);
   padding-inline: 40px;
   display: flex;
@@ -3970,29 +3970,29 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-service-box5 {
+  .agroland-service-box5 {
     gap: 140px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box5 {
+  .agroland-service-box5 {
     gap: 100px;
     padding-inline: 30px;
   }
 }
 
-.quanto-service-box5 .quanto-content .content-wrapper p {
+.agroland-service-box5 .agroland-content .content-wrapper p {
   margin-top: 16px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box5 .quanto-content .content-wrapper p {
+  .agroland-service-box5 .agroland-content .content-wrapper p {
     margin-top: 10px;
   }
 }
 
-.quanto-service-box5 .service-number {
+.agroland-service-box5 .service-number {
   display: inline-block;
   font-size: 18px;
   font-weight: 600;
@@ -4002,43 +4002,43 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-box5 .service-number {
+  .agroland-service-box5 .service-number {
     margin-top: 30px;
   }
 }
 
-.quanto-service-box6 {
+.agroland-service-box6 {
   padding: 48px 40px;
 }
 
-.quanto-service-box6 .service-content {
+.agroland-service-box6 .service-content {
   margin-top: 60px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box6 .service-content {
+  .agroland-service-box6 .service-content {
     margin-top: 30px;
   }
 }
 
-.quanto-service-box6 .service-list {
+.agroland-service-box6 .service-list {
   margin-top: 48px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box6 .service-list {
+  .agroland-service-box6 .service-list {
     margin-top: 20px;
   }
 }
 
-.quanto-service-box6 .service-list ul li {
+.agroland-service-box6 .service-list ul li {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-box6 {
+  .agroland-service-box6 {
     padding: 40px 30px;
   }
 }
@@ -4046,61 +4046,61 @@ a.quanto-default-btn.sm-size {
 /*================================================
 09. Service Details css
 =================================================*/
-.quanto-service-details-section .service-text {
+.agroland-service-details-section .service-text {
   margin-top: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-details-section .service-text {
+  .agroland-service-details-section .service-text {
     margin-top: 20px;
   }
 }
 
-.quanto-service-details-section .service-benefits {
+.agroland-service-details-section .service-benefits {
   margin-top: 70px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-service-details-section .service-benefits {
+  .agroland-service-details-section .service-benefits {
     margin-top: 50px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-details-section .service-benefits {
+  .agroland-service-details-section .service-benefits {
     margin-top: 30px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-service-details-section .service-benefits h4 {
+  .agroland-service-details-section .service-benefits h4 {
     font-size: 40px;
     line-height: 125%;
     letter-spacing: -0.8px;
   }
 }
 
-.quanto-service-details-section .service-benefits p {
+.agroland-service-details-section .service-benefits p {
   margin-top: 20px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-details-section .service-benefits p {
+  .agroland-service-details-section .service-benefits p {
     margin-top: 10px;
   }
 }
 
-.quanto-service-details-section .service-benefits .benefits-list {
+.agroland-service-details-section .service-benefits .benefits-list {
   margin-top: 30px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-details-section .service-benefits .benefits-list {
+  .agroland-service-details-section .service-benefits .benefits-list {
     margin-top: 20px;
   }
 }
 
-.quanto-service-details-section .service-benefits .benefits-list ul li {
+.agroland-service-details-section .service-benefits .benefits-list ul li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -4111,29 +4111,29 @@ a.quanto-default-btn.sm-size {
   letter-spacing: -0.18px;
 }
 
-.quanto-service-details-section .service-benefits .benefits-list ul li:not(:last-of-type) {
+.agroland-service-details-section .service-benefits .benefits-list ul li:not(:last-of-type) {
   margin-bottom: 12px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-service-details-section .service-benefits .benefits-list ul li {
+  .agroland-service-details-section .service-benefits .benefits-list ul li {
     gap: 5px;
   }
 }
 
-.quanto-service-details-section .service-benefits .benefits-list ul li svg {
+.agroland-service-details-section .service-benefits .benefits-list ul li svg {
   flex-shrink: 0;
 }
 
 /*================================================
 10. Choose-us css
 =================================================*/
-.quanto-choose-us__content h4 {
+.agroland-choose-us__content h4 {
   margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-choose-us__content h4 {
+  .agroland-choose-us__content h4 {
     font-size: 40px;
     line-height: 125%;
     letter-spacing: -0.8px;
@@ -4141,17 +4141,17 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-choose-us__content h4 {
+  .agroland-choose-us__content h4 {
     margin-bottom: 10px;
   }
 }
 
-.quanto-choose-us__content .choose-us-text {
+.agroland-choose-us__content .choose-us-text {
   margin-top: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-choose-us__content .choose-us-text {
+  .agroland-choose-us__content .choose-us-text {
     margin-bottom: 20px;
   }
 }
@@ -4287,65 +4287,65 @@ a.quanto-default-btn.sm-size {
 /*================================================
 12. Career Details css
 =================================================*/
-.quanto-career-details-section {
+.agroland-career-details-section {
   padding-top: 220px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-career-details-section {
+  .agroland-career-details-section {
     padding-top: 150px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-career-details-section {
+  .agroland-career-details-section {
     padding-top: 120px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details-section {
+  .agroland-career-details-section {
     padding-top: 100px;
   }
 }
 
-.quanto-career-details__content .career-details-title {
+.agroland-career-details__content .career-details-title {
   margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__content .career-details-title {
+  .agroland-career-details__content .career-details-title {
     margin-bottom: 30px;
   }
 }
 
-.quanto-career-details__content .career-text {
+.agroland-career-details__content .career-text {
   margin-top: 18px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__content .career-text {
+  .agroland-career-details__content .career-text {
     margin-top: 10px;
   }
 }
 
-.quanto-career-details__content .common-block {
+.agroland-career-details__content .common-block {
   margin-top: 60px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__content .common-block {
+  .agroland-career-details__content .common-block {
     margin-top: 40px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-career-details__content .common-block {
+  .agroland-career-details__content .common-block {
     margin-top: 30px;
   }
 }
 
-.quanto-career-details__content .common-block .title {
+.agroland-career-details__content .common-block .title {
   font-weight: 600;
   line-height: 125%;
   letter-spacing: -0.8px;
@@ -4353,34 +4353,34 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-career-details__content .common-block .title {
+  .agroland-career-details__content .common-block .title {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__content .common-block .title {
+  .agroland-career-details__content .common-block .title {
     margin-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-career-details__content .common-block .title {
+  .agroland-career-details__content .common-block .title {
     margin-bottom: 10px;
   }
 }
 
-.quanto-career-details__content .common-block ul {
+.agroland-career-details__content .common-block ul {
   margin-left: 13px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__content .common-block ul {
+  .agroland-career-details__content .common-block ul {
     margin-left: 6px;
   }
 }
 
-.quanto-career-details__content .common-block ul li {
+.agroland-career-details__content .common-block ul li {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -4388,12 +4388,12 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-career-details__content .common-block ul li {
+  .agroland-career-details__content .common-block ul li {
     font-size: 19px;
   }
 }
 
-.quanto-career-details__content .common-block ul li::before {
+.agroland-career-details__content .common-block ul li::before {
   flex-shrink: 0;
   background-color: var(--color-primary);
   display: inline-block;
@@ -4404,11 +4404,11 @@ a.quanto-default-btn.sm-size {
   font-size: 3px;
 }
 
-.quanto-career-details__content .common-block ul li:not(:last-of-type) {
+.agroland-career-details__content .common-block ul li:not(:last-of-type) {
   margin-bottom: 8px;
 }
 
-.quanto-career-details__sidebar {
+.agroland-career-details__sidebar {
   margin-left: 100px;
   padding-left: 60px;
   border-left: 1px solid var(--color-1);
@@ -4416,25 +4416,25 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-career-details__sidebar {
+  .agroland-career-details__sidebar {
     margin-left: 30px;
     padding-left: 30px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-career-details__sidebar {
+  .agroland-career-details__sidebar {
     margin-left: 0px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-career-details__sidebar {
+  .agroland-career-details__sidebar {
     padding-left: 20px;
   }
 }
 
-.quanto-career-details__sidebar .job-info {
+.agroland-career-details__sidebar .job-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -4442,25 +4442,25 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-career-details__sidebar .job-info {
+  .agroland-career-details__sidebar .job-info {
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-career-details__sidebar .job-info {
+  .agroland-career-details__sidebar .job-info {
     gap: 10px;
   }
 }
 
-.quanto-career-details__sidebar .info-box .title {
+.agroland-career-details__sidebar .info-box .title {
   display: block;
   font-size: 18px;
   font-weight: 400;
   line-height: 144.444%;
 }
 
-.quanto-career-details__sidebar .info-box .short-info {
+.agroland-career-details__sidebar .info-box .short-info {
   display: block;
   font-size: 22px;
   font-weight: 600;
@@ -4471,7 +4471,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 13. Testimonial css
 =================================================*/
-.quanto-testimonial-section .quanto__header .title {
+.agroland-testimonial-section .agroland__header .title {
   text-align: center;
   transform: translateY(calc(100% + 60px));
   position: relative;
@@ -4481,35 +4481,35 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1599.98px) {
-  .quanto-testimonial-section .quanto__header .title {
+  .agroland-testimonial-section .agroland__header .title {
     transform: translateY(calc(100% + 40px));
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-testimonial-section .quanto__header .title {
+  .agroland-testimonial-section .agroland__header .title {
     transform: translateY(calc(100% + 30px));
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-testimonial-section .quanto__header .title {
+  .agroland-testimonial-section .agroland__header .title {
     transform: translateY(0);
     margin-bottom: 30px;
   }
 }
 
-.quanto-testimonial-section.extend .quanto__header {
+.agroland-testimonial-section.extend .agroland__header {
   height: 100%;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-testimonial-section.extend .quanto__header {
+  .agroland-testimonial-section.extend .agroland__header {
     border-right: 1px solid var(--color-1);
   }
 }
 
-.quanto-testimonial-section.extend .quanto__header .title {
+.agroland-testimonial-section.extend .agroland__header .title {
   text-align: left;
   transform: unset;
   position: relative;
@@ -4520,20 +4520,20 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-testimonial-section.extend .quanto__header .title {
+  .agroland-testimonial-section.extend .agroland__header .title {
     max-width: 544px;
   }
 }
 
-.quanto-testimonial-section.extend .testimonial-content {
+.agroland-testimonial-section.extend .testimonial-content {
   margin-top: 0;
 }
 
-.quanto-testimonial__thumb-slider .swiper-slide {
+.agroland-testimonial__thumb-slider .swiper-slide {
   transition: all 0.8s ease !important;
 }
 
-.quanto-testimonial__thumb-slider .testimonial-img {
+.agroland-testimonial__thumb-slider .testimonial-img {
   width: 100%;
   height: 100%;
   background-position: center;
@@ -4546,20 +4546,20 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-testimonial__thumb-slider .testimonial-img {
+  .agroland-testimonial__thumb-slider .testimonial-img {
     min-height: 600px;
     background-position: top left;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-testimonial__thumb-slider .testimonial-img {
+  .agroland-testimonial__thumb-slider .testimonial-img {
     min-height: 400px;
     background-position: center;
   }
 }
 
-.quanto-testimonial__navigation {
+.agroland-testimonial__navigation {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -4567,20 +4567,20 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-testimonial__navigation {
+  .agroland-testimonial__navigation {
     margin-top: 30px;
     gap: 8px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-testimonial__navigation {
+  .agroland-testimonial__navigation {
     margin-top: 15px;
   }
 }
 
-.quanto-testimonial__prev,
-.quanto-testimonial__next {
+.agroland-testimonial__prev,
+.agroland-testimonial__next {
   display: flex;
   width: 70px;
   height: 70px;
@@ -4593,8 +4593,8 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (max-width: 991.98px) {
 
-  .quanto-testimonial__prev,
-  .quanto-testimonial__next {
+  .agroland-testimonial__prev,
+  .agroland-testimonial__next {
     width: 50px;
     height: 50px;
   }
@@ -4602,16 +4602,16 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (max-width: 767.98px) {
 
-  .quanto-testimonial__prev,
-  .quanto-testimonial__next {
+  .agroland-testimonial__prev,
+  .agroland-testimonial__next {
     width: 45px;
     height: 45px;
   }
 
-  .quanto-testimonial__prev i,
-  .quanto-testimonial__prev svg,
-  .quanto-testimonial__next i,
-  .quanto-testimonial__next svg {
+  .agroland-testimonial__prev i,
+  .agroland-testimonial__prev svg,
+  .agroland-testimonial__next i,
+  .agroland-testimonial__next svg {
     font-size: 15px;
   }
 }
@@ -4675,20 +4675,20 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-testimonial3-section .quanto__header {
+  .agroland-testimonial3-section .agroland__header {
     padding-right: 40px;
     border-right: 1px solid var(--color-1);
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .quanto-testimonial3-section .quanto__header {
+  .agroland-testimonial3-section .agroland__header {
     padding-right: 180px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-testimonial3-section .quanto__header {
+  .agroland-testimonial3-section .agroland__header {
     padding-right: 120px;
   }
 }
@@ -4784,139 +4784,139 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.quanto-testimonial2__box {
+.agroland-testimonial2__box {
   height: 100%;
   padding: 60px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-testimonial2__box {
+  .agroland-testimonial2__box {
     padding: 40px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-testimonial2__box {
+  .agroland-testimonial2__box {
     padding: 30px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-testimonial2__box {
+  .agroland-testimonial2__box {
     padding: 20px;
   }
 }
 
-.quanto-testimonial2__box .testimonial-content .revew {
+.agroland-testimonial2__box .testimonial-content .revew {
   margin-top: 25px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-testimonial2__box .testimonial-content .revew {
+  .agroland-testimonial2__box .testimonial-content .revew {
     font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-testimonial2__box .testimonial-content .revew {
+  .agroland-testimonial2__box .testimonial-content .revew {
     font-size: 18px;
   }
 }
 
-.quanto-testimonial2__box .testimonial-author {
+.agroland-testimonial2__box .testimonial-author {
   margin-top: 100px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-testimonial2__box .testimonial-author {
+  .agroland-testimonial2__box .testimonial-author {
     margin-top: 80px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-testimonial2__box .testimonial-author {
+  .agroland-testimonial2__box .testimonial-author {
     margin-top: 70px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-testimonial2__box .testimonial-author {
+  .agroland-testimonial2__box .testimonial-author {
     margin-top: 50px;
   }
 }
 
-.quanto-testimonial2__box .testimonial-author .author-image {
+.agroland-testimonial2__box .testimonial-author .author-image {
   width: 80px;
   height: 80px;
   border-radius: 100%;
   overflow: hidden;
 }
 
-.quanto-testimonial2__box .testimonial-author .author-info {
+.agroland-testimonial2__box .testimonial-author .author-info {
   margin-top: 16px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-testimonial2__box .testimonial-author .author-info {
+  .agroland-testimonial2__box .testimonial-author .author-info {
     margin-top: 10px;
   }
 }
 
-.quanto-testimonial2__box .testimonial-author .author-info .info {
+.agroland-testimonial2__box .testimonial-author .author-info .info {
   margin-top: 4px;
 }
 
 /*================================================
 14. Blog css
 =================================================*/
-.quanto-blog2__row>[class*=col-]:not(:last-child) .style-2 {
+.agroland-blog2__row>[class*=col-]:not(:last-child) .style-2 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--color-1);
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog2__row>[class*=col-]:not(:last-child) .style-2 {
+  .agroland-blog2__row>[class*=col-]:not(:last-child) .style-2 {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-blog2__row>[class*=col-]:not(:last-child) .style-2 {
+  .agroland-blog2__row>[class*=col-]:not(:last-child) .style-2 {
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
 }
 
-.quanto-blog3__row>[class*=col-] .style-2 {
+.agroland-blog3__row>[class*=col-] .style-2 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid var(--color-1);
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog3__row>[class*=col-] .style-2 {
+  .agroland-blog3__row>[class*=col-] .style-2 {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-blog3__row>[class*=col-] .style-2 {
+  .agroland-blog3__row>[class*=col-] .style-2 {
     margin-bottom: 30px;
     padding-bottom: 30px;
   }
 }
 
-.quanto-blog3__row>[class*=col-]:last-child .style-2 {
+.agroland-blog3__row>[class*=col-]:last-child .style-2 {
   margin-bottom: 0px;
   padding-bottom: 0px;
   border: none;
 }
 
 @media only screen and (min-width: 1200px) {
-  .quanto-blog3__row>[class*=col-]:nth-last-child(2) .style-2 {
+  .agroland-blog3__row>[class*=col-]:nth-last-child(2) .style-2 {
     margin-bottom: 0px;
     padding-bottom: 0px;
     border: none;
@@ -4925,18 +4925,18 @@ a.quanto-default-btn.sm-size {
 
 @media only screen and (min-width: 1200px) {
 
-  .quanto-blog3__row.g-xl-6,
-  .quanto-blog3__row.gy-xl-6 {
+  .agroland-blog3__row.g-xl-6,
+  .agroland-blog3__row.gy-xl-6 {
     --bs-gutter-y: 5rem;
   }
 
-  .quanto-blog3__row.g-xl-6,
-  .quanto-blog3__row.gx-xl-6 {
+  .agroland-blog3__row.g-xl-6,
+  .agroland-blog3__row.gx-xl-6 {
     --bs-gutter-x: 5rem;
   }
 }
 
-.quanto-blog-box.style-2 {
+.agroland-blog-box.style-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-flow: dense;
@@ -4947,39 +4947,39 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog-box.style-2 {
+  .agroland-blog-box.style-2 {
     gap: 30px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-blog-box.style-2 {
+  .agroland-blog-box.style-2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
-.quanto-blog-box.style-2 .quanto-blog-content {
+.agroland-blog-box.style-2 .agroland-blog-content {
   margin-top: 0;
   padding-top: 24px;
 }
 
-.quanto-blog-box.style-2 .quanto-blog-content .quanto-blog-date {
+.agroland-blog-box.style-2 .agroland-blog-content .agroland-blog-date {
   padding: 0;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.quanto-blog-box.style-2 .quanto-blog-content .quanto-blog-date::before {
+.agroland-blog-box.style-2 .agroland-blog-content .agroland-blog-date::before {
   content: unset;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog-box.style-2 .quanto-blog-content .quanto-blog-date {
+  .agroland-blog-box.style-2 .agroland-blog-content .agroland-blog-date {
     margin-bottom: 5px;
   }
 }
 
-.quanto-blog-box.style-2 .quanto-blog-content h5 a {
+.agroland-blog-box.style-2 .agroland-blog-content h5 a {
   position: relative;
   display: inline;
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
@@ -4991,37 +4991,37 @@ a.quanto-default-btn.sm-size {
   color: inherit;
 }
 
-.quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn {
+.agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn {
   margin-top: 80px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn {
+  .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn {
     margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-blog-box.style-2 .quanto-blog-content .quanto-link-btn {
+  .agroland-blog-box.style-2 .agroland-blog-content .agroland-link-btn {
     margin-top: 20px;
   }
 }
 
-.quanto-blog-box.style-2:hover .quanto-blog-content h5 a {
+.agroland-blog-box.style-2:hover .agroland-blog-content h5 a {
   background-size: 100% 2px;
 }
 
-.quanto-blog-box.style-3 .quanto-blog-content {
+.agroland-blog-box.style-3 .agroland-blog-content {
   padding: 32px 40px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog-box.style-3 .quanto-blog-content {
+  .agroland-blog-box.style-3 .agroland-blog-content {
     padding: 20px 25px;
   }
 }
 
-.quanto-blog-box.style-3 .quanto-blog-content h5 a {
+.agroland-blog-box.style-3 .agroland-blog-content h5 a {
   position: relative;
   display: inline;
   background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
@@ -5033,67 +5033,67 @@ a.quanto-default-btn.sm-size {
   color: inherit;
 }
 
-.quanto-blog-box.style-3:hover .quanto-blog-content h5 a {
+.agroland-blog-box.style-3:hover .agroland-blog-content h5 a {
   background-size: 100% 2px;
 }
 
-.quanto-blog-box .quanto-blog-thumb img {
+.agroland-blog-box .agroland-blog-thumb img {
   transition: all 0.5s ease;
   width: 100%;
 }
 
-.quanto-blog-box .quanto-blog-thumb:hover img {
+.agroland-blog-box .agroland-blog-thumb:hover img {
   transform: scale(1.1);
 }
 
-.quanto-blog-section .quanto-blog-box .quanto-blog-thumb img {
+.agroland-blog-section .agroland-blog-box .agroland-blog-thumb img {
   height: 400px;
   object-fit: cover;
 }
 
-.quanto-blog-section .quanto-blog-box.style-2 .quanto-blog-thumb img {
+.agroland-blog-section .agroland-blog-box.style-2 .agroland-blog-thumb img {
   height: 285px;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .quanto-blog-section .quanto-blog-box .quanto-blog-thumb img {
+  .agroland-blog-section .agroland-blog-box .agroland-blog-thumb img {
     height: 340px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .quanto-blog-section .quanto-blog-box .quanto-blog-thumb img {
+  .agroland-blog-section .agroland-blog-box .agroland-blog-thumb img {
     height: 300px;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .quanto-blog-section .quanto-blog-box .quanto-blog-thumb img {
+  .agroland-blog-section .agroland-blog-box .agroland-blog-thumb img {
     height: 280px;
   }
 }
 
-.quanto-blog-box .quanto-blog-thumb {
+.agroland-blog-box .agroland-blog-thumb {
   overflow: hidden;
 }
 
-.quanto-blog-box .quanto-blog-thumb+.quanto-blog-content,
-.quanto-blog-box .blog-audio+.quanto-blog-content,
-.quanto-blog-box .blog-video+.quanto-blog-content {
+.agroland-blog-box .agroland-blog-thumb+.agroland-blog-content,
+.agroland-blog-box .blog-audio+.agroland-blog-content,
+.agroland-blog-box .blog-video+.agroland-blog-content {
   margin-top: 24px;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 991.98px) {
 
-  .quanto-blog-box .quanto-blog-thumb+.quanto-blog-content,
-  .quanto-blog-box .blog-audio+.quanto-blog-content,
-  .quanto-blog-box .blog-video+.quanto-blog-content {
+  .agroland-blog-box .agroland-blog-thumb+.agroland-blog-content,
+  .agroland-blog-box .blog-audio+.agroland-blog-content,
+  .agroland-blog-box .blog-video+.agroland-blog-content {
     margin-top: 20px;
   }
 }
 
-.quanto-blog-box .quanto-blog-content .quanto-blog-date {
+.agroland-blog-box .agroland-blog-content .agroland-blog-date {
   font-size: 18px;
   font-weight: 400;
   line-height: 144.444%;
@@ -5102,7 +5102,7 @@ a.quanto-default-btn.sm-size {
   display: block;
 }
 
-.quanto-blog-box .quanto-blog-content li+.quanto-blog-date {
+.agroland-blog-box .agroland-blog-content li+.agroland-blog-date {
   margin-left: 10px;
 }
 
@@ -5110,17 +5110,17 @@ a.quanto-default-btn.sm-size {
   margin-top: 15px;
 }
 
-.quanto-blog-box .quanto-blog-content .blog-meta {
+.agroland-blog-box .agroland-blog-content .blog-meta {
   margin-top: 10px;
   display: flex;
   align-items: center;
 }
 
-.quanto-blog-box .quanto-blog-content .blog-meta .quanto-blog-category {
+.agroland-blog-box .agroland-blog-content .blog-meta .agroland-blog-category {
   margin-right: 10px;
 }
 
-.quanto-blog-box .quanto-blog-content .quanto-blog-date::before {
+.agroland-blog-box .agroland-blog-content .agroland-blog-date::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -5132,7 +5132,7 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-blog-box .quanto-blog-content .quanto-blog-date {
+  .agroland-blog-box .agroland-blog-content .agroland-blog-date {
     font-size: 16px;
   }
 }
@@ -5449,12 +5449,12 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.blog-item .blog-body .quanto-single-thumb {
+.blog-item .blog-body .agroland-single-thumb {
   margin-block: 60px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .blog-item .blog-body .quanto-single-thumb {
+  .blog-item .blog-body .agroland-single-thumb {
     margin-block: 30px;
   }
 }
@@ -5510,7 +5510,7 @@ a.quanto-default-btn.sm-size {
 }
 
 .blog-item .blog-comments .post-comment,
-.quanto-page-section .blog-comments .post-comment,
+.agroland-page-section .blog-comments .post-comment,
 .wp-block-columns.is-layout-flex {
   display: flex;
   gap: 28px;
@@ -5519,13 +5519,13 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 991.98px) {
 
   .blog-item .blog-comments .post-comment,
-  .quanto-page-section .blog-comments .post-comment {
+  .agroland-page-section .blog-comments .post-comment {
     gap: 15px;
   }
 }
 
 .blog-item .blog-comments .post-comment .comment-avater,
-.quanto-page-section .blog-comments .post-comment .comment-avater,
+.agroland-page-section .blog-comments .post-comment .comment-avater,
 .wp-block-avatar {
   width: 110px;
   height: 110px;
@@ -5537,45 +5537,45 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 1199.98px) {
 
   .blog-item .blog-comments .post-comment .comment-avater,
-  .quanto-page-section .blog-comments .post-comment .comment-avater {
+  .agroland-page-section .blog-comments .post-comment .comment-avater {
     width: 70px;
     height: 70px;
   }
 }
 
 .blog-item .blog-comments .post-comment .comment-content .name,
-.quanto-page-section .blog-comments .post-comment .comment-content .name {
+.agroland-page-section .blog-comments .post-comment .comment-content .name {
   font-weight: 600;
   line-height: 141.667%;
   letter-spacing: -0.24px;
 }
 
 .blog-item .blog-comments .post-comment .comment-content .commented-on,
-.quanto-page-section .blog-comments .post-comment .comment-content .commented-on {
+.agroland-page-section .blog-comments .post-comment .comment-content .commented-on {
   font-size: 18px;
   font-weight: 400;
   line-height: 144.444%;
 }
 
 .blog-item .blog-comments .post-comment .comment-content .text,
-.quanto-page-section .blog-comments .post-comment .comment-content .text,
+.agroland-page-section .blog-comments .post-comment .comment-content .text,
 .blog-item .blog-comments .post-comment .comment-content p,
-.quanto-page-section .blog-comments .post-comment .comment-content p {
+.agroland-page-section .blog-comments .post-comment .comment-content p {
   margin-top: 16px;
 }
 
 @media only screen and (max-width: 991.98px) {
 
   .blog-item .blog-comments .post-comment .comment-content .text,
-  .quanto-page-section .blog-comments .post-comment .comment-content .text,
+  .agroland-page-section .blog-comments .post-comment .comment-content .text,
   .blog-item .blog-comments .post-comment .comment-content p,
-  .quanto-page-section .blog-comments .post-comment .comment-content p {
+  .agroland-page-section .blog-comments .post-comment .comment-content p {
     margin-top: 8px;
   }
 }
 
 .blog-item .blog-comments .post-comment .comment-content .reply_and_edit,
-.quanto-page-section .blog-comments .post-comment .comment-content .reply_and_edit {
+.agroland-page-section .blog-comments .post-comment .comment-content .reply_and_edit {
   margin-top: 16px;
   display: flex;
   align-items: center;
@@ -5585,19 +5585,19 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 991.98px) {
 
   .blog-item .blog-comments .post-comment .comment-content .reply_and_edit,
-  .quanto-page-section .blog-comments .post-comment .comment-content .reply_and_edit {
+  .agroland-page-section .blog-comments .post-comment .comment-content .reply_and_edit {
     margin-top: 8px;
   }
 }
 
 .blog-item .blog-comments .post-comment .comment-content .reply_and_edit .comment-edit-link i,
-.quanto-page-section .blog-comments .post-comment .comment-content .reply_and_edit .comment-edit-link i {
+.agroland-page-section .blog-comments .post-comment .comment-content .reply_and_edit .comment-edit-link i {
   font-size: 16px;
   margin-right: 5px;
 }
 
 .blog-item .blog-comments .children,
-.quanto-page-section .blog-comments .children {
+.agroland-page-section .blog-comments .children {
   margin-top: 40px;
   margin-left: 138px;
 }
@@ -5605,7 +5605,7 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 1199.98px) {
 
   .blog-item .blog-comments .children,
-  .quanto-page-section .blog-comments .children {
+  .agroland-page-section .blog-comments .children {
     margin-left: 100px;
   }
 }
@@ -5613,7 +5613,7 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 1199.98px) {
 
   .blog-item .blog-comments .children,
-  .quanto-page-section .blog-comments .children {
+  .agroland-page-section .blog-comments .children {
     margin-left: 60px;
   }
 }
@@ -5621,7 +5621,7 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 991.98px) {
 
   .blog-item .blog-comments .children,
-  .quanto-page-section .blog-comments .children {
+  .agroland-page-section .blog-comments .children {
     margin-left: 40px;
     padding: 0;
   }
@@ -5630,32 +5630,32 @@ a.quanto-default-btn.sm-size {
 @media only screen and (max-width: 479px) {
 
   .blog-item .blog-comments .children,
-  .quanto-page-section .blog-comments .children {
+  .agroland-page-section .blog-comments .children {
     margin-left: 20px;
     padding: 0;
   }
 }
 
 .blog-item .blog-contact-form h4,
-.quanto-page-section .blog-contact-form h4 {
+.agroland-page-section .blog-contact-form h4 {
   margin-bottom: 8px;
 }
 
 .blog-item .blog-contact-form p,
-.quanto-page-section .blog-contact-form p {
+.agroland-page-section .blog-contact-form p {
   margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 991.98px) {
 
   .blog-item .blog-contact-form p,
-  .quanto-page-section .blog-contact-form p {
+  .agroland-page-section .blog-contact-form p {
     margin-bottom: 20px;
   }
 }
 
-.blog-item .blog-contact-form .quanto-cform .form-control,
-.quanto-page-section .blog-contact-form .quanto-cform .form-control {
+.blog-item .blog-contact-form .agroland-cform .form-control,
+.agroland-page-section .blog-contact-form .agroland-cform .form-control {
   padding: 22px 24px;
   border-radius: 8px;
   background: var(--color-2);
@@ -5671,24 +5671,24 @@ a.quanto-default-btn.sm-size {
     box-shadow: none
 }
 @media only screen and (max-width: 991.98px) {
-  .blog-item .blog-contact-form .quanto-cform .form-control {
+  .blog-item .blog-contact-form .agroland-cform .form-control {
     padding: 15px 20px;
   }
 }
 
-.blog-item .blog-contact-form .quanto-cform .form-control::placeholder {
+.blog-item .blog-contact-form .agroland-cform .form-control::placeholder {
   opacity: 1;
   color: #6b6b6b;
 }
 
-.blog-item .blog-contact-form .quanto-cform .quanto-link-btn {
+.blog-item .blog-contact-form .agroland-cform .agroland-link-btn {
   padding-inline: 35px;
 }
 
 /*================================================
 16. Clients css
 =================================================*/
-.clients-area .quanto__header .title {
+.clients-area .agroland__header .title {
   max-width: 240px;
   font-weight: 600;
   line-height: 144.444%;
@@ -5696,26 +5696,26 @@ a.quanto-default-btn.sm-size {
   margin-bottom: 48px;
 }
 
-.clients-area .quanto__header.logo {
+.clients-area .agroland__header.logo {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   place-content: center;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .clients-area .quanto__header.logo {
+  .clients-area .agroland__header.logo {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .clients-area .quanto__header.logo {
+  .clients-area .agroland__header.logo {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .clients-area .quanto__header.logo {
+  .clients-area .agroland__header.logo {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -5944,17 +5944,17 @@ a.quanto-default-btn.sm-size {
 /*================================================
 18. FAQ css
 =================================================*/
-.quanto-faq-accordion .accordion-item {
+.agroland-faq-accordion .accordion-item {
   border-radius: 0 !important;
   border: none;
   border-top: 1px solid var(--color-1);
 }
 
-.quanto-faq-accordion .accordion-item:last-child {
+.agroland-faq-accordion .accordion-item:last-child {
   border-bottom: 1px solid var(--color-1);
 }
 
-.quanto-faq-accordion .accordion-button {
+.agroland-faq-accordion .accordion-button {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
@@ -5964,18 +5964,18 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-faq-accordion .accordion-button {
+  .agroland-faq-accordion .accordion-button {
     padding: 20px 0;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-faq-accordion .accordion-button {
+  .agroland-faq-accordion .accordion-button {
     padding: 15px 0;
   }
 }
 
-.quanto-faq-accordion .accordion-button:not(.collapsed) {
+.agroland-faq-accordion .accordion-button:not(.collapsed) {
   color: initial;
   background-color: initial;
   box-shadow: none !important;
@@ -5983,34 +5983,34 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-faq-accordion .accordion-button:not(.collapsed) {
+  .agroland-faq-accordion .accordion-button:not(.collapsed) {
     padding: 20px 0 10px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-faq-accordion .accordion-button:not(.collapsed) {
+  .agroland-faq-accordion .accordion-button:not(.collapsed) {
     padding: 15px 0 7.5px;
   }
 }
 
-.quanto-faq-accordion .accordion-button:focus {
+.agroland-faq-accordion .accordion-button:focus {
   box-shadow: none !important;
 }
 
-.quanto-faq-accordion .accordion-body {
+.agroland-faq-accordion .accordion-body {
   padding: 0;
   padding-bottom: 32px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-faq-accordion .accordion-body {
+  .agroland-faq-accordion .accordion-body {
     padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-faq-accordion .accordion-body {
+  .agroland-faq-accordion .accordion-body {
     padding-bottom: 15px;
     font-size: 18px;
   }
@@ -6019,7 +6019,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 19. Video css
 =================================================*/
-.quanto-video {
+.agroland-video {
   max-height: 800px;
   width: 100%;
   object-fit: cover;
@@ -6027,15 +6027,15 @@ a.quanto-default-btn.sm-size {
   display: block;
 }
 
-.quanto-video-area.style-2 {
+.agroland-video-area.style-2 {
   position: relative;
 }
 
-.quanto-video-area.style-2 video.pointer {
+.agroland-video-area.style-2 video.pointer {
   cursor: pointer;
 }
 
-.quanto-video-area.style-2 .play-btn {
+.agroland-video-area.style-2 .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6057,28 +6057,28 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-video-area.style-2 .play-btn {
+  .agroland-video-area.style-2 .play-btn {
     width: 120px;
     height: 120px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-video-area.style-2 .play-btn {
+  .agroland-video-area.style-2 .play-btn {
     width: 100px;
     height: 100px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-video-area.style-2 .play-btn {
+  .agroland-video-area.style-2 .play-btn {
     width: 80px;
     height: 80px;
     font-size: 15px;
   }
 }
 
-.quanto-video-area.style-2 .play-btn.disabled {
+.agroland-video-area.style-2 .play-btn.disabled {
   transform: translate(-50%, -50%) scale(0.4);
   visibility: hidden;
   cursor: initial;
@@ -6088,7 +6088,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 20. Pricing css
 =================================================*/
-.quanto-pricing-box {
+.agroland-pricing-box {
   padding: 54px 48px 48px 60px;
   position: relative;
   z-index: 0;
@@ -6096,7 +6096,7 @@ a.quanto-default-btn.sm-size {
   transition: all 0.3s ease-in-out;
 }
 
-.quanto-pricing-box .hover-overlay {
+.agroland-pricing-box .hover-overlay {
   content: "";
   position: absolute;
   width: 100%;
@@ -6109,153 +6109,153 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-pricing-box {
+  .agroland-pricing-box {
     padding: 30px;
   }
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-pricing-box {
+  .agroland-pricing-box {
     padding: 40px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-pricing-box {
+  .agroland-pricing-box {
     padding: 30px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-pricing-box {
+  .agroland-pricing-box {
     padding: 25px;
   }
 }
 
-.quanto-pricing-box .pricing-title {
+.agroland-pricing-box .pricing-title {
   margin-bottom: 6px;
   transition: all 0.3s ease-in-out;
 }
 
-.quanto-pricing-box .pricing-info {
+.agroland-pricing-box .pricing-info {
   margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-pricing-box .pricing-info {
+  .agroland-pricing-box .pricing-info {
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-pricing-box .pricing-info {
+  .agroland-pricing-box .pricing-info {
     margin-bottom: 15px;
   }
 }
 
-.quanto-pricing-box .pricing {
+.agroland-pricing-box .pricing {
   margin-bottom: 32px;
   transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-pricing-box .pricing {
+  .agroland-pricing-box .pricing {
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-pricing-box .pricing {
+  .agroland-pricing-box .pricing {
     margin-bottom: 15px;
   }
 }
 
-.quanto-pricing-box .pricing-list ul li {
+.agroland-pricing-box .pricing-list ul li {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.quanto-pricing-box .pricing-list ul li:not(:last-child) {
+.agroland-pricing-box .pricing-list ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-pricing-box .pricing-list ul li:not(:last-child) {
+  .agroland-pricing-box .pricing-list ul li:not(:last-child) {
     margin-bottom: 5px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-pricing-box .pricing-list ul li:not(:last-child) {
+  .agroland-pricing-box .pricing-list ul li:not(:last-child) {
     line-height: 1.3;
     gap: 6px;
   }
 }
 
 @media only screen and (max-width: 575.98px) {
-  .quanto-pricing-box .pricing-list ul li {
+  .agroland-pricing-box .pricing-list ul li {
     font-size: 18px;
   }
 
-  .quanto-pricing-box .pricing-list ul li img {
+  .agroland-pricing-box .pricing-list ul li img {
     width: 20px;
     height: 20px;
   }
 }
 
-.quanto-pricing-box .quanto-link-btn {
+.agroland-pricing-box .agroland-link-btn {
   width: 100%;
   margin-top: 48px;
   justify-content: center;
 }
 
-.quanto-pricing-box .quanto-link-btn.btn-pill {
+.agroland-pricing-box .agroland-link-btn.btn-pill {
   background-color: var(--color-white);
   color: var(--color-primary);
 }
 
-.quanto-pricing-box .quanto-link-btn.btn-pill span .arry1,
-.quanto-pricing-box .quanto-link-btn.btn-pill span .arry2 {
+.agroland-pricing-box .agroland-link-btn.btn-pill span .arry1,
+.agroland-pricing-box .agroland-link-btn.btn-pill span .arry2 {
   color: var(--color-primary);
 }
 
-.quanto-pricing-box .quanto-link-btn.btn-pill.bg-color-2 {
+.agroland-pricing-box .agroland-link-btn.btn-pill.bg-color-2 {
   background-color: var(--color-2);
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-pricing-box .quanto-link-btn {
+  .agroland-pricing-box .agroland-link-btn {
     margin-top: 30px;
   }
 }
 
-.quanto-pricing-box:hover {
+.agroland-pricing-box:hover {
   color: var(--color-white);
 }
 
-.quanto-pricing-box:hover .pricing-title,
-.quanto-pricing-box:hover .pricing {
+.agroland-pricing-box:hover .pricing-title,
+.agroland-pricing-box:hover .pricing {
   color: var(--color-white);
 }
 
-.quanto-pricing-box .pricing-list ul li svg path {
+.agroland-pricing-box .pricing-list ul li svg path {
   transition: all 0.3s ease-in-out;
 }
 
-.quanto-pricing-box:hover .pricing-list ul li svg path {
+.agroland-pricing-box:hover .pricing-list ul li svg path {
   fill: var(--color-white);
 }
 
 /*================================================
 21. Team css
 =================================================*/
-.quanto-team-box .team-thumb {
+.agroland-team-box .team-thumb {
   overflow: hidden;
   position: relative;
 }
 
-.quanto-team-box .team-thumb img {
+.agroland-team-box .team-thumb img {
   border-radius: 0;
   position: relative;
   display: block;
@@ -6264,7 +6264,7 @@ a.quanto-default-btn.sm-size {
   transition: all 500ms ease;
 }
 
-.quanto-team-box .team-thumb img:first-child {
+.agroland-team-box .team-thumb img:first-child {
   position: absolute;
   left: 0;
   top: 0;
@@ -6276,7 +6276,7 @@ a.quanto-default-btn.sm-size {
   transition: all 0.4s ease-in-out;
 }
 
-.quanto-team-box .team-thumb ul {
+.agroland-team-box .team-thumb ul {
   position: absolute;
   left: auto;
   right: -30px;
@@ -6291,11 +6291,11 @@ a.quanto-default-btn.sm-size {
   z-index: 1;
 }
 
-.quanto-team-box .team-thumb ul li {
+.agroland-team-box .team-thumb ul li {
   display: block;
 }
 
-.quanto-team-box .team-thumb ul li a {
+.agroland-team-box .team-thumb ul li a {
   background: var(--color-primary);
   color: var(--color-white);
   text-align: center;
@@ -6307,26 +6307,26 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-team-box .team-thumb ul li a {
+  .agroland-team-box .team-thumb ul li a {
     padding: 6.5px 15px;
   }
 }
 
-.quanto-team-box .team-thumb ul li a:hover {
+.agroland-team-box .team-thumb ul li a:hover {
   color: var(--color-white);
 }
 
-.quanto-team-box .team-content {
+.agroland-team-box .team-content {
   margin-top: 20px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-team-box .team-content {
+  .agroland-team-box .team-content {
     margin-top: 15px;
   }
 }
 
-.quanto-team-box .team-content .team-member-position {
+.agroland-team-box .team-content .team-member-position {
   margin-top: 2px;
   font-size: 18px;
   line-height: 144.444%;
@@ -6336,29 +6336,29 @@ a.quanto-default-btn.sm-size {
   -webkit-line-clamp: 1;
 }
 
-.quanto-team-box:hover .team-thumb img:first-child {
+.agroland-team-box:hover .team-thumb img:first-child {
   transform: translateX(0) scaleX(1);
   opacity: 1;
   filter: blur(0);
 }
 
-.quanto-team-box:hover .team-thumb img:nth-child(2) {
+.agroland-team-box:hover .team-thumb img:nth-child(2) {
   transform: translateX(-50%) scaleX(2);
   opacity: 0;
   filter: blur(10px);
 }
 
-.quanto-team-box:hover .team-thumb ul {
+.agroland-team-box:hover .team-thumb ul {
   opacity: 1;
   visibility: visible;
 }
 
-.quanto-team-box:hover .team-thumb ul li a {
+.agroland-team-box:hover .team-thumb ul li a {
   transform: translateX(-30px) translateX(0);
   opacity: 1;
 }
 
-.quanto-team-box:hover .team-thumb ul li a:hover {
+.agroland-team-box:hover .team-thumb ul li a:hover {
   transform: translateX(-40px) translateX(0);
 }
 
@@ -6536,7 +6536,7 @@ a.quanto-default-btn.sm-size {
 /*================================================
 23. Awards css
 =================================================*/
-.quanto-awards-box {
+.agroland-awards-box {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -6553,11 +6553,11 @@ a.quanto-default-btn.sm-size {
   z-index: 0;
 }
 
-.quanto-awards-box:not(:first-child) {
+.agroland-awards-box:not(:first-child) {
   border-top: none;
 }
 
-.quanto-awards-box::before {
+.agroland-awards-box::before {
   position: absolute;
   content: "";
   left: 0;
@@ -6587,15 +6587,15 @@ a.quanto-default-btn.sm-size {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-awards-box {
+  .agroland-awards-box {
     padding: 15px 0;
     flex-direction: column;
     gap: 5px;
   }
 }
 
-.quanto-awards-box .awards-title,
-.quanto-awards-box .awards-info {
+.agroland-awards-box .awards-title,
+.agroland-awards-box .awards-info {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -6603,26 +6603,26 @@ a.quanto-default-btn.sm-size {
   transition: all 0.4s ease-in-out;
 }
 
-.quanto-awards-box .awards-title {
+.agroland-awards-box .awards-title {
   text-align: start;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-awards-box .awards-title {
+  .agroland-awards-box .awards-title {
     text-align: center;
   }
 }
 
-.quanto-awards-box .awards-info {
+.agroland-awards-box .awards-info {
   font-size: 18px;
   line-height: 144.444%;
 }
 
-.quanto-awards-box:hover {
+.agroland-awards-box:hover {
   padding-inline: 15px;
 }
 
-.quanto-awards-box:hover::before {
+.agroland-awards-box:hover::before {
   -webkit-transform-origin: bottom;
   -moz-transform-origin: bottom;
   -ms-transform-origin: bottom;
@@ -6633,8 +6633,8 @@ a.quanto-default-btn.sm-size {
   transform: scaleY(1);
 }
 
-.quanto-awards-box:hover .awards-title,
-.quanto-awards-box:hover .awards-info {
+.agroland-awards-box:hover .awards-title,
+.agroland-awards-box:hover .awards-info {
   color: var(--color-white);
 }
 
@@ -6785,102 +6785,102 @@ a.quanto-default-btn.sm-size {
   margin-top: 20px;
 }
 
-.error__content .quanto-link-btn {
+.error__content .agroland-link-btn {
   margin-top: 40px;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .error__content .quanto-link-btn {
+  .error__content .agroland-link-btn {
     margin-top: 20px;
   }
 }
 
-.error__content .quanto-link-btn span .arry1,
-.error__content .quanto-link-btn span .arry2 {
+.error__content .agroland-link-btn span .arry1,
+.error__content .agroland-link-btn span .arry2 {
   transform: rotate(45deg);
 }
 
-.error__content_btn .quanto-link-btn span .arry1,
-.error__content_btn .quanto-link-btn span .arry2 {
+.error__content_btn .agroland-link-btn span .arry1,
+.error__content_btn .agroland-link-btn span .arry2 {
   transform: rotate(45deg);
 }
 
 /*================================================
 26. Contact css
 =================================================*/
-.quanto-map-area iframe {
+.agroland-map-area iframe {
   height: 800px;
 }
 
 @media only screen and (max-width: 1399.98px) {
-  .quanto-map-area iframe {
+  .agroland-map-area iframe {
     height: 650px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-map-area iframe {
+  .agroland-map-area iframe {
     height: 500px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .quanto-map-area iframe {
+  .agroland-map-area iframe {
     height: 400px;
   }
 }
 
-.quanto-contact__content .title {
+.agroland-contact__content .title {
   margin-bottom: 28px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-contact__content .title {
+  .agroland-contact__content .title {
     margin-bottom: 20px;
   }
 }
 
-.quanto-contact__content .address {
+.agroland-contact__content .address {
   margin-top: 48px;
   margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 992px) {
-  .quanto-contact__content .address {
+  .agroland-contact__content .address {
     max-width: 380px;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-contact__content .address {
+  .agroland-contact__content .address {
     margin-top: 30px;
     margin-bottom: 20px;
   }
 }
 
-.quanto-contact__content .address h6 {
+.agroland-contact__content .address h6 {
   margin-bottom: 6px;
 }
 
-.quanto-contact__content .contact-info {
+.agroland-contact__content .contact-info {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.quanto-contact__content .contact-info a[href^="mailto:"] {
+.agroland-contact__content .contact-info a[href^="mailto:"] {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-contact__content .contact-info a[href^="mailto:"] {
+  .agroland-contact__content .contact-info a[href^="mailto:"] {
     text-underline-offset: 2px;
   }
 }
 
-.quanto-contact__form .form-control {
+.agroland-contact__form .form-control {
   border-radius: 8px;
   background: var(--color-2);
   color: #6b6b6b;
@@ -6891,17 +6891,17 @@ a.quanto-default-btn.sm-size {
   border: none;
 }
 
-.quanto-contact__form .form-control:hover,
-.quanto-contact__form .form-control:focus {
+.agroland-contact__form .form-control:hover,
+.agroland-contact__form .form-control:focus {
   box-shadow: none;
 }
 
-.quanto-contact__form .form-control::placeholder {
+.agroland-contact__form .form-control::placeholder {
   opacity: 1;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-contact__form .form-control {
+  .agroland-contact__form .form-control {
     padding: 15px 20px;
   }
 }
@@ -6981,20 +6981,20 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.footer-widgets.info .quanto-link-btn {
+.footer-widgets.info .agroland-link-btn {
   background-color: var(--color-white);
   color: var(--color-primary);
   margin-top: 32px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .footer-widgets.info .quanto-link-btn {
+  .footer-widgets.info .agroland-link-btn {
     margin-top: 25px;
   }
 }
 
-.footer-widgets.info .quanto-link-btn span .arry1,
-.footer-widgets.info .quanto-link-btn span .arry2 {
+.footer-widgets.info .agroland-link-btn span .arry1,
+.footer-widgets.info .agroland-link-btn span .arry2 {
   color: var(--color-primary);
 }
 
@@ -7534,7 +7534,7 @@ a.quanto-default-btn.sm-size {
   animation-delay: 1.25s;
 }
 
-.quanto-hero5-section .hero5-bg {
+.agroland-hero5-section .hero5-bg {
   position: absolute;
   inset: 0;
 }
@@ -7543,7 +7543,7 @@ a.quanto-default-btn.sm-size {
   display: block;
 }
 
-.quanto-blog-content .quanto-link-btn {
+.agroland-blog-content .agroland-link-btn {
   margin-top: 24px;
 }
 
@@ -7646,17 +7646,17 @@ a.quanto-default-btn.sm-size {
   margin: 60px 0;
 }
 
-.blog-item .blog-contact-form .quanto-cform textarea,
-.quanto-page-section .blog-contact-form .quanto-cform textarea {
+.blog-item .blog-contact-form .agroland-cform textarea,
+.agroland-page-section .blog-contact-form .agroland-cform textarea {
   height: 190px;
   margin-bottom: 24px;
 }
 
-.quanto-blog-section .col-lg-12 .blog-pagination .pagination {
+.agroland-blog-section .col-lg-12 .blog-pagination .pagination {
   justify-content: end;
 }
 
-.quanto-blog-section .col-lg-8 .blog-pagination .pagination {
+.agroland-blog-section .col-lg-8 .blog-pagination .pagination {
   justify-content: center;
 }
 
@@ -7670,7 +7670,7 @@ a.quanto-default-btn.sm-size {
   font-size: 17px;
 }
 
-.quanto-hero-blog__content h1 {
+.agroland-hero-blog__content h1 {
   padding-bottom: 5px;
 }
 
@@ -7702,11 +7702,11 @@ a.quanto-default-btn.sm-size {
   }
 }
 
-.quanto-funfacts__wrapper .quanto-funfact-box .odometer-digit:last-child {
+.agroland-funfacts__wrapper .agroland-funfact-box .odometer-digit:last-child {
   padding-right: 6px !important;
 }
 
-.quanto-blog-thumb a {
+.agroland-blog-thumb a {
   width: 100%;
 }
 
@@ -7769,27 +7769,27 @@ p.nof-desc {
   border-radius: 0;
 }
 
-.quanto-blog-content h5 a {
+.agroland-blog-content h5 a {
   word-break: break-all;
 }
 
-.quanto-page-section {
+.agroland-page-section {
   padding: 130px 0;
 }
 
 @media only screen and (max-width: 1199.98px) {
-  .quanto-page-section {
+  .agroland-page-section {
     padding: 80px 0;
   }
 }
 
 @media only screen and (max-width: 991.98px) {
-  .quanto-page-section {
+  .agroland-page-section {
     padding: 65px 0;
   }
 }
 
-.quanto-check.notice input+label {
+.agroland-check.notice input+label {
   margin-left: 5px;
 }
 
@@ -7811,12 +7811,12 @@ p.nof-desc {
   letter-spacing: 0;
 }
 
-.quanto-page-section .blog-comments h4 {
+.agroland-page-section .blog-comments h4 {
   margin-bottom: 40px;
 }
 
 .blog-item .blog-comments ul li+li,
-.quanto-page-section .blog-comments ul li+li {
+.agroland-page-section .blog-comments ul li+li {
   margin-top: 40px;
 }
 

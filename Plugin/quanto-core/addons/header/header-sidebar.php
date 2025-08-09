@@ -10,10 +10,10 @@ use \Elementor\Group_Control_Border;
  * Header Sidebar Widget .
  *
  */
-class Quanto_Header_Sidebar extends Widget_Base {
+class Agroland_Header_Sidebar extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_header_sidebar';
+		return 'agroland_header_sidebar';
 	}
 
 	public function get_title() {
@@ -25,7 +25,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
     }
 
 	public function get_categories() {
-		return [ 'quanto_header_elements' ];
+		return [ 'agroland_header_elements' ];
 	}
 
     private function get_available_menus() {
@@ -249,8 +249,8 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-toggle svg path' => 'fill: {{VALUE}}',
-					'{{WRAPPER}} .quanto-menu-toggle i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-toggle svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-toggle i' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -260,8 +260,8 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Hover Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-toggle:hover svg path' => 'fill: {{VALUE}}',
-					'{{WRAPPER}} .quanto-menu-toggle:hover i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-toggle:hover svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-toggle:hover i' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -283,7 +283,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-menu-toggle i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-menu-toggle i' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -305,7 +305,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-menu-toggle svg' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-menu-toggle svg' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -327,7 +327,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-menu-toggle svg' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-menu-toggle svg' => 'height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -345,7 +345,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'left_side_border',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left',
             ]
         );
 		$this->add_control(
@@ -354,7 +354,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Background Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -364,7 +364,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Rating Point Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .rating-point' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .rating-point' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -372,7 +372,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'rating_point_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info .rating-point',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info .rating-point',
             ]
         );
         $this->add_control(
@@ -381,7 +381,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Text Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info p' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info p' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -389,7 +389,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'rating_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-left .mobile-menu-info p',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-left .mobile-menu-info p',
             ]
         );
         $this->end_controls_section();
@@ -408,7 +408,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Background Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -418,7 +418,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Menu Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu > ul > li > a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu > ul > li > a' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -426,7 +426,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'menu_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu > ul > li > a',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu > ul > li > a',
             ]
         );
         $this->add_control(
@@ -435,7 +435,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'SubMenu Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li a' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -443,7 +443,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'submenu_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-center .quanto-mobile-menu .sub-menu li a',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-center .agroland-mobile-menu .sub-menu li a',
             ]
         );
         $this->end_controls_section();
@@ -462,7 +462,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Background Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -472,7 +472,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Close Icon Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle i' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle i' => 'fill: {{VALUE}}',
                 ],
 			]
         );
@@ -482,7 +482,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Close Icon Background Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -504,7 +504,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle i' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -526,7 +526,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .quanto-menu-toggle' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .agroland-menu-toggle' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -536,7 +536,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Title Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .title' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -544,7 +544,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'right_side_title_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .title',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .title',
             ]
         );
         $this->add_control(
@@ -553,7 +553,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Text Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .address' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .address' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -561,7 +561,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'right_side_text_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .address',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .address',
             ]
         );
         $this->add_control(
@@ -570,7 +570,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
 				'label' 		=> __( 'Linked Text Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .contact a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .contact a' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -578,7 +578,7 @@ class Quanto_Header_Sidebar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'linked_text_typography',
-                'selector' => '{{WRAPPER}} .quanto-menu-wrapper.v2 .quanto-menu-area .quanto-mobile-menu-right .contact-info .contact a',
+                'selector' => '{{WRAPPER}} .agroland-menu-wrapper.v2 .agroland-menu-area .agroland-mobile-menu-right .contact-info .contact a',
             ]
         );
         $this->end_controls_section();
@@ -590,10 +590,10 @@ class Quanto_Header_Sidebar extends Widget_Base {
      *  quanto get logo  
      * 
      */
-    public function quanto_get_site_logo( $logo_type = 'dark'  )
+    public function agroland_get_site_logo( $logo_type = 'dark'  )
     {
         $logo = '';
-        $quanto = get_option('quanto_opt');
+        $quanto = get_option('agroland_opt');
         $logo_url = '';
         if ( 'dark' ==  $logo_type && isset( $quanto['dark_logo']['url'] ) ) {
             $logo_url = esc_url($quanto['dark_logo']['url']);
@@ -638,22 +638,22 @@ class Quanto_Header_Sidebar extends Widget_Base {
 		?>
             <div class="header-six-sidebar">
                 <!-- Button -->
-                <button class="quanto-menu-toggle large">
+                <button class="agroland-menu-toggle large">
                     <?php \Elementor\Icons_Manager::render_icon( $settings['toggle_icon'], [ 'aria-hidden' => 'true' ] ); ?>
                 </button>
             </div>
 
             <!-- Sidebar -->
-            <div class="quanto-menu-wrapper v2 d-none d-lg-block">
-                <div class="quanto-menu-area text-center">
-                    <div class="quanto-mobile-menu-left">
+            <div class="agroland-menu-wrapper v2 d-none d-lg-block">
+                <div class="agroland-menu-area text-center">
+                    <div class="agroland-mobile-menu-left">
                         <div class="mobile-logo">
                             <a href="<?php echo home_url(); ?>">
                                 <?php
                                 if ( 'custom' == $settings['logo_type'] && $settings['image']['url']) {
                                     echo Group_Control_Image_Size::get_attachment_image_html($settings, 'thumbnail', 'image');
                                 } else {
-                                    echo $this->quanto_get_site_logo( $settings['logo_type'] );
+                                    echo $this->agroland_get_site_logo( $settings['logo_type'] );
                                 }
                                 ?>
                             </a>
@@ -668,15 +668,15 @@ class Quanto_Header_Sidebar extends Widget_Base {
                         <p><?php echo esc_html( $settings['rating_text'] ) ?></p>
                     </div>
                 </div>
-                    <div class="quanto-mobile-menu-center">
-                        <div class="quanto-mobile-menu">
+                    <div class="agroland-mobile-menu-center">
+                        <div class="agroland-mobile-menu">
                             <?php wp_nav_menu( $args );?>
                         </div>
-                        <div class="quanto-mobile-menu-btn">
+                        <div class="agroland-mobile-menu-btn">
                         </div>
                     </div>
-                    <div class="quanto-mobile-menu-right">
-                        <button class="quanto-menu-toggle mobile">
+                    <div class="agroland-mobile-menu-right">
+                        <button class="agroland-menu-toggle mobile">
                             <i class="ri-close-line"></i>
                         </button>
                         <div class="contact-info">
@@ -702,5 +702,5 @@ class Quanto_Header_Sidebar extends Widget_Base {
 
 	}
 }
-$widgets_manager->register( new \Quanto_Header_Sidebar() );
+$widgets_manager->register( new \Agroland_Header_Sidebar() );
 

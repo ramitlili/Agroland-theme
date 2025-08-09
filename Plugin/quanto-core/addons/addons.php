@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-final class Quanto_Extension {
+final class Agroland_Extension {
 
 	/**
 	 * Plugin Version
@@ -85,8 +85,8 @@ final class Quanto_Extension {
 		
 
 		//Defined Constants
-		if (!defined('QUANTO_ADDONS_BADGE')) {
-            define('QUANTO_ADDONS_BADGE', '<span class="quanto-badge"></span>');
+		if (!defined('AGROLAND_ADDONS_BADGE')) {
+            define('AGROLAND_ADDONS_BADGE', '<span class="agroland-badge"></span>');
         }
 		add_action( 'plugins_loaded', [ $this, 'init' ] );
 
@@ -137,7 +137,7 @@ final class Quanto_Extension {
 		add_action( 'elementor/editor/after_enqueue_scripts', [$this, 'editor_scripts'], 100 );
 
         // category register
-		add_action( 'elementor/elements/categories_registered',[ $this, 'quanto_elementor_widget_categories' ] );
+		add_action( 'elementor/elements/categories_registered',[ $this, 'agroland_elementor_widget_categories' ] );
 
 	}
 
@@ -228,58 +228,58 @@ final class Quanto_Extension {
 
 		$widgets_manager = \Elementor\Plugin::instance()->widgets_manager;
 		// All Header Widget Start
-		require_once( QUANTO_ADDONS . '/header/menu.php' );
-		require_once( QUANTO_ADDONS . '/header/logo.php' );
-		// require_once( QUANTO_ADDONS . '/header/search.php' );
-		require_once( QUANTO_ADDONS . '/header/offcanvas.php' );
-		require_once( QUANTO_ADDONS . '/header/header-sidebar.php' );
+		require_once( AGROLAND_ADDONS . '/header/menu.php' );
+		require_once( AGROLAND_ADDONS . '/header/logo.php' );
+		// require_once( AGROLAND_ADDONS . '/header/search.php' );
+		require_once( AGROLAND_ADDONS . '/header/offcanvas.php' );
+		require_once( AGROLAND_ADDONS . '/header/header-sidebar.php' );
 
 
 		// All Dynamic Widgets
-		require_once( QUANTO_ADDONS . '/dynamic-widgets/feature-image.php' );
-		require_once( QUANTO_ADDONS . '/dynamic-widgets/heading.php' );
-		require_once( QUANTO_ADDONS . '/dynamic-widgets/post-navigation.php' );
+		require_once( AGROLAND_ADDONS . '/dynamic-widgets/feature-image.php' );
+		require_once( AGROLAND_ADDONS . '/dynamic-widgets/heading.php' );
+		require_once( AGROLAND_ADDONS . '/dynamic-widgets/post-navigation.php' );
 
 
 		// All Custom Post Widget
-		require_once( QUANTO_ADDONS . '/widgets/service.php' );
-		require_once( QUANTO_ADDONS . '/widgets/team.php' );
-		// require_once( QUANTO_ADDONS . '/widgets/project.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/service.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/team.php' );
+		// require_once( AGROLAND_ADDONS . '/widgets/project.php' );
 
 	
  
 		// All Widget Start
-		require_once( QUANTO_ADDONS . '/widgets/button.php' );
-		require_once( QUANTO_ADDONS . '/widgets/award.php' );
-		require_once( QUANTO_ADDONS . '/widgets/pricing.php' );
-		require_once( QUANTO_ADDONS . '/widgets/testimonial.php' );
-		require_once( QUANTO_ADDONS . '/widgets/video-box.php' );
-		require_once( QUANTO_ADDONS . '/widgets/process.php' );
-		require_once( QUANTO_ADDONS . '/widgets/header-status.php' );
-		require_once( QUANTO_ADDONS . '/widgets/text-slider.php' );
-		require_once( QUANTO_ADDONS . '/widgets/list-icon.php' );
-		require_once( QUANTO_ADDONS . '/widgets/hero.php' );
-		require_once( QUANTO_ADDONS . '/widgets/animation-title.php' );
-		require_once( QUANTO_ADDONS . '/widgets/counter.php' );
-		require_once( QUANTO_ADDONS . '/widgets/animation-image.php' );
-		require_once( QUANTO_ADDONS . '/widgets/project-slider.php' );
-		require_once( QUANTO_ADDONS . '/widgets/project.php' );
-		require_once( QUANTO_ADDONS . '/widgets/faqs.php' );
-		require_once( QUANTO_ADDONS . '/widgets/counter-two.php' );
-		require_once( QUANTO_ADDONS . '/widgets/text-slider-two.php' );
-		require_once( QUANTO_ADDONS . '/widgets/scroll-down.php' );
-		require_once( QUANTO_ADDONS . '/widgets/career.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/button.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/award.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/pricing.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/testimonial.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/video-box.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/process.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/header-status.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/text-slider.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/list-icon.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/hero.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/animation-title.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/counter.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/animation-image.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/project-slider.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/project.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/faqs.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/counter-two.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/text-slider-two.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/scroll-down.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/career.php' );
 
 		// All blog widget 
-		require_once( QUANTO_ADDONS . '/widgets/blog-post.php' );
+		require_once( AGROLAND_ADDONS . '/widgets/blog-post.php' );
 	}
 
 
 	// editor script 
     public function editor_scripts() {
 		wp_enqueue_script(
-            'quanto-addons-editor',
-            QUANTO_PLUGDIRURI . 'assets/js/editor.js',
+            'agroland-addons-editor',
+            AGROLAND_PLUGDIRURI . 'assets/js/editor.js',
             array('jquery'),
             false,
             true
@@ -290,24 +290,24 @@ final class Quanto_Extension {
     public function widget_scripts() {
 
         wp_enqueue_script(
-            'quanto-addon-script',
-            QUANTO_PLUGDIRURI . 'assets/js/quanto-addon.js',
+            'agroland-addon-script',
+            AGROLAND_PLUGDIRURI . 'assets/js/agroland-addon.js',
             array('jquery'),
             time(),
             true 
 		);
 
         wp_enqueue_script(
-            'quanto-slick-animation',
-            QUANTO_PLUGDIRURI . 'assets/js/slick-animation.js',
+            'agroland-slick-animation',
+            AGROLAND_PLUGDIRURI . 'assets/js/slick-animation.js',
             array('jquery'),
             time(),
             true 
 		);
 
         wp_enqueue_script(
-            'quanto-hello-animai',
-            QUANTO_PLUGDIRURI . 'assets/js/hello-animai.js',
+            'agroland-hello-animai',
+            AGROLAND_PLUGDIRURI . 'assets/js/hello-animai.js',
             array('jquery'),
             time(),
             true 
@@ -315,30 +315,30 @@ final class Quanto_Extension {
 
         //  style 
 		wp_enqueue_style(
-            'quanto-helping-style',
-            QUANTO_PLUGDIRURI . 'assets/css/helping.css',
+            'agroland-helping-style',
+            AGROLAND_PLUGDIRURI . 'assets/css/helping.css',
 			microtime()
 		);
         //  style 
 		wp_enqueue_style(
-            'quanto-animate',
-            QUANTO_PLUGDIRURI . 'assets/css/animate.css',
+            'agroland-animate',
+            AGROLAND_PLUGDIRURI . 'assets/css/animate.css',
 			microtime()
 		);
 
 		wp_enqueue_style(
-            'quanto-widget-style',
-            QUANTO_PLUGDIRURI . 'assets/css/style.css',
+            'agroland-widget-style',
+            AGROLAND_PLUGDIRURI . 'assets/css/style.css',
 			microtime()
 		);
 
 		wp_enqueue_style(
-            'quanto-mehdi-css',
-            QUANTO_PLUGDIRURI . 'assets/css/mehedi.css',
+            'agroland-mehdi-css',
+            AGROLAND_PLUGDIRURI . 'assets/css/mehedi.css',
 			microtime()
 		);
 	}
-    function quanto_elementor_widget_categories( $elements_manager ) {
+    function agroland_elementor_widget_categories( $elements_manager ) {
         $elements_manager->add_category(
             'quanto',
             [
@@ -347,14 +347,14 @@ final class Quanto_Extension {
             ]
         );
         $elements_manager->add_category(
-            'quanto_footer_elements',
+            'agroland_footer_elements',
             [
                 'title' => __( 'Quanto Footer Elements', 'quanto' ),
                 'icon' 	=> 'fa fa-plug',
             ]
 		);
 		$elements_manager->add_category(
-            'quanto_header_elements',
+            'agroland_header_elements',
             [
                 'title' => __( 'Quanto Header Elements', 'quanto' ),
                 'icon' 	=> 'fa fa-plug',
@@ -363,4 +363,4 @@ final class Quanto_Extension {
 
 	}
 }
-Quanto_Extension::instance();
+Agroland_Extension::instance();

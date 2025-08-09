@@ -13,10 +13,10 @@ use \Elementor\Icons_Manager;
  * Pricing Widget .
  *
  */
-class Quanto_Pricing extends Widget_Base {
+class Agroland_Pricing extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_pricing';
+		return 'agroland_pricing';
 	}
 
 	public function get_title() {
@@ -226,7 +226,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .pricing-list ul li' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .pricing-list ul li' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -234,7 +234,7 @@ class Quanto_Pricing extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'feature_typography',
-				'selector' => '{{WRAPPER}} .quanto-pricing-box .pricing-list ul li',
+				'selector' => '{{WRAPPER}} .agroland-pricing-box .pricing-list ul li',
 			]
 		);
         $this->add_control(
@@ -243,7 +243,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Icon Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .pricing-list ul li svg path' => 'fill: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .pricing-list ul li svg path' => 'fill: {{VALUE}}',
                 ],
             ]
         );
@@ -265,8 +265,8 @@ class Quanto_Pricing extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-pricing-box .pricing-list ul li svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-pricing-box .pricing-list ul li i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-pricing-box .pricing-list ul li svg' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-pricing-box .pricing-list ul li i' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -282,7 +282,7 @@ class Quanto_Pricing extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-pricing-box .pricing-list ul li' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-pricing-box .pricing-list ul li' => 'gap: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -293,7 +293,7 @@ class Quanto_Pricing extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .pricing-list ul li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-pricing-box .pricing-list ul li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ], 
             ]
         );
@@ -352,7 +352,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill, .quanto-pricing-box .quanto-link-btn.btn-pill span .arry1' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill, .agroland-pricing-box .agroland-link-btn.btn-pill span .arry1' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -362,7 +362,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill:hover, .quanto-pricing-box .quanto-link-btn.btn-pill span .arry2' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill:hover, .agroland-pricing-box .agroland-link-btn.btn-pill span .arry2' => 'color: {{VALUE}}',
                 ],
             ]
         );
@@ -372,7 +372,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -382,7 +382,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Hover Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill:hover' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill:hover' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -390,14 +390,14 @@ class Quanto_Pricing extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'btn_typography',
-				'selector' => '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill',
+				'selector' => '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill',
 			]
 		);
         $this->add_group_control(
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'btn_border',
-				'selector' => '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill',
+				'selector' => '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill',
 			]
 		);
         $this->add_responsive_control(
@@ -407,7 +407,7 @@ class Quanto_Pricing extends Widget_Base {
 				'type'          => Controls_Manager::DIMENSIONS,
 				'size_units'    => [ 'px', '%', 'em' ],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -418,7 +418,7 @@ class Quanto_Pricing extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -429,7 +429,7 @@ class Quanto_Pricing extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .quanto-link-btn.btn-pill' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-pricing-box .agroland-link-btn.btn-pill' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -462,7 +462,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box' => 'background-color: {{VALUE}} !important',
+                    '{{WRAPPER}} .agroland-pricing-box' => 'background-color: {{VALUE}} !important',
                 ],
             ]
         );
@@ -472,7 +472,7 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Hover Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box .hover-overlay' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box .hover-overlay' => 'background-color: {{VALUE}}',
                 ],
             ]
         );
@@ -482,10 +482,10 @@ class Quanto_Pricing extends Widget_Base {
                 'label' => __( 'Box Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box:hover' => 'color: {{VALUE}}',
-                    '{{WRAPPER}} .quanto-pricing-box:hover .pricing-title' => 'color: {{VALUE}}',
-                    '{{WRAPPER}} .quanto-pricing-box:hover .pricing' => 'color: {{VALUE}}',
-                    '{{WRAPPER}} .quanto-pricing-box:hover .pricing-list ul li svg path' => 'fill: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box:hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box:hover .pricing-title' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box:hover .pricing' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-pricing-box:hover .pricing-list ul li svg path' => 'fill: {{VALUE}}',
                 ],
             ]
         );
@@ -496,7 +496,7 @@ class Quanto_Pricing extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-pricing-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -507,7 +507,7 @@ class Quanto_Pricing extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-pricing-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-pricing-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -529,7 +529,7 @@ class Quanto_Pricing extends Widget_Base {
 
         
         
-        <div class="quanto-pricing-box <?php echo esc_attr( $overly ); ?>  bg-white" data-direction="right">
+        <div class="agroland-pricing-box <?php echo esc_attr( $overly ); ?>  bg-white" data-direction="right">
 
             <?php if ( ! empty( $settings['title_text'] ) ) : ?>
                 <h5 class="pricing-title">
@@ -567,7 +567,7 @@ class Quanto_Pricing extends Widget_Base {
             <?php endif; ?>
 
             <?php if ( ! empty( $settings['btn_text'] ) && ! empty( $settings['btn_link']['url'] ) ) : ?>
-                <a href="<?php echo esc_url( $settings['btn_link']['url'] ); ?>" class="quanto-link-btn btn-pill"
+                <a href="<?php echo esc_url( $settings['btn_link']['url'] ); ?>" class="agroland-link-btn btn-pill"
                     <?php echo $settings['btn_link']['is_external'] ? 'target="_blank"' : ''; ?>
                     <?php echo $settings['btn_link']['nofollow'] ? 'rel="nofollow"' : 'rel="noopener noreferrer"'; ?>>
                     <?php echo esc_html( $settings['btn_text'] ); ?>
@@ -586,4 +586,4 @@ class Quanto_Pricing extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Pricing() );
+$widgets_manager->register( new \Agroland_Pricing() );

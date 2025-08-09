@@ -4,10 +4,10 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Quanto_Team_Member extends \Elementor\Widget_Base {
+class Agroland_Team_Member extends \Elementor\Widget_Base {
 
 	public function get_name() {
-		return 'quanto_team_member';
+		return 'agroland_team_member';
 	}
 
 	public function get_title() {
@@ -229,7 +229,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'title_typography',
-				'selector' => '{{WRAPPER}} .quanto-team-box .team-content  h6.team-member-name',
+				'selector' => '{{WRAPPER}} .agroland-team-box .team-content  h6.team-member-name',
 			]
 		);
 		$this->add_control(
@@ -238,7 +238,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content  h6.team-member-name' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-content  h6.team-member-name' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -249,7 +249,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content  h6.team-member-name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content  h6.team-member-name' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -260,7 +260,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content  h6.team-member-name' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content  h6.team-member-name' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -278,7 +278,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content  h6.team-member-name:hover a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-content  h6.team-member-name:hover a' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -308,8 +308,8 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-thumb img:first-child' => 'width: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-team-box .team-thumb img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-thumb img:first-child' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-team-box .team-thumb img' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -327,7 +327,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'designation_typography',
-				'selector' => '{{WRAPPER}} .quanto-team-box .team-content .team-member-position',
+				'selector' => '{{WRAPPER}} .agroland-team-box .team-content .team-member-position',
 			]
 		);
 		$this->add_control(
@@ -336,7 +336,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content .team-member-position' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-content .team-member-position' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -347,7 +347,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content .team-member-position' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content .team-member-position' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -367,7 +367,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 					'label'     => __('Background Color', 'optech'),
 					'type'      => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-							'{{WRAPPER}} .quanto-team-box' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-team-box' => 'background-color: {{VALUE}}',
 					],
 			]
 		);
@@ -378,7 +378,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -399,7 +399,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 					'label'     => __('Background Color', 'optech'),
 					'type'      => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-							'{{WRAPPER}} .quanto-team-box .team-content' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-team-box .team-content' => 'background-color: {{VALUE}}',
 					],
 			]
 		);
@@ -410,7 +410,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -421,7 +421,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -430,7 +430,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 			[
 				'name' => 'box_hover_shadow',
 				'label' => esc_html__( 'Box Shadow', 'optech' ),
-				'selector' => '{{WRAPPER}} .quanto-team-box .team-content',
+				'selector' => '{{WRAPPER}} .agroland-team-box .team-content',
 			]
 		);
         $this->add_group_control(
@@ -438,7 +438,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 			[
 				'name' 		=> 'team_box_border',
 				'label' 	=> __( 'Border', 'optech' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-team-box .team-content',
+                'selector' 	=> '{{WRAPPER}} .agroland-team-box .team-content',
 			]
 		);
         $this->add_responsive_control(
@@ -448,7 +448,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-content' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-content' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
 		);
@@ -469,7 +469,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' 		=> __( 'Icon Color', 'optech' ),
 				'type' 			=> \Elementor\Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -479,7 +479,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' 		=> __( 'Icon Color Hover', 'optech' ),
 				'type' 			=> \Elementor\Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a:hover' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -489,7 +489,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' 		=> __( 'Background Color', 'optech' ),
 				'type' 			=> \Elementor\Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -499,7 +499,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'label' 		=> __( 'Background Hover Color', 'optech' ),
 				'type' 			=> \Elementor\Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a:hover' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a:hover' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -517,8 +517,8 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a i' => 'font-size: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a svg' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a svg' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -536,7 +536,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -547,7 +547,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-team-box .team-thumb ul li a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-team-box .team-thumb ul li a' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
 		);
@@ -561,7 +561,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
     public function get_all_members() {
 
         $wp_query = get_posts([
-            'post_type' => 'quanto_team',
+            'post_type' => 'agroland_team',
             'orderby' => 'date',
             'posts_per_page' => -1,
         ]);
@@ -597,7 +597,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
         <div <?php echo $this->get_render_attribute_string('team_version'); ?>>
             <?php  foreach( $team_lists as $item ):
                 $args = new \WP_Query(array(
-                    'post_type' => 'quanto_team',
+                    'post_type' => 'agroland_team',
                     'post_status' => 'publish',
                     'post__in' => [
                         $item['select_post']
@@ -606,7 +606,7 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
             ?>
             <?php while ($args->have_posts()) : $args->the_post(); ?>
             <div <?php echo $this->get_render_attribute_string('team_gride_classes'); ?>>
-                <div class="quanto-team-box fade-anim" data-delay="<?php echo esc_html( $item['item_delay'] ); ?>" data-direction="<?php echo esc_html( $item['item_direction'] ); ?>" >
+                <div class="agroland-team-box fade-anim" data-delay="<?php echo esc_html( $item['item_delay'] ); ?>" data-direction="<?php echo esc_html( $item['item_direction'] ); ?>" >
                     <?php if( has_post_thumbnail() ): ?>
                     <figure class="team-thumb">  
                         <?php the_post_thumbnail('full');?>
@@ -664,4 +664,4 @@ class Quanto_Team_Member extends \Elementor\Widget_Base {
 
 }
 
-$widgets_manager->register( new \Quanto_Team_Member() );
+$widgets_manager->register( new \Agroland_Team_Member() );

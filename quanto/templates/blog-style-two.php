@@ -15,9 +15,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 echo '<!-- Single Post -->';
 
     // Excerpt And Read More Button
-    do_action( 'quanto_blog_post_content' );
+    do_action( 'agroland_blog_post_content' );
 
     // Blog Post Content
-    do_action( 'quanto_blog_post_thumb' );
+    do_action( 'agroland_blog_post_thumb' );
 
 echo '<!-- End Single Post -->';

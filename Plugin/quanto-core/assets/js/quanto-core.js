@@ -14,7 +14,7 @@ Author : vecurosoft.com
         // console.log( elementorFrontend);
         if (typeof elementor != "undefined" && typeof elementor.settings.page != "undefined") {
 
-            elementor.settings.page.addChangeCallback('quanto_header_style', function (newValue) {
+            elementor.settings.page.addChangeCallback('agroland_header_style', function (newValue) {
                 if (newValue == 'prebuilt') {
                     elementor.saver.update({
                         onSuccess: function () {
@@ -28,7 +28,7 @@ Author : vecurosoft.com
             });
 
 
-            elementor.settings.page.addChangeCallback('quanto_header_builder_option', function (newValue) {
+            elementor.settings.page.addChangeCallback('agroland_header_builder_option', function (newValue) {
                 elementor.saver.update({
                     onSuccess: function () {
                         elementor.reloadPreview();
@@ -39,7 +39,7 @@ Author : vecurosoft.com
                 });
             });
 
-            elementor.settings.page.addChangeCallback('quanto_footer_style', quantoFooterStyle);
+            elementor.settings.page.addChangeCallback('agroland_footer_style', quantoFooterStyle);
             function quantoFooterStyle(newValue) {
                 elementor.saver.update({
                     onSuccess: function () {
@@ -50,7 +50,7 @@ Author : vecurosoft.com
                     }
                 });
             }
-            elementor.settings.page.addChangeCallback('quanto_footer_choice', quantoFooterChoice);
+            elementor.settings.page.addChangeCallback('agroland_footer_choice', quantoFooterChoice);
             function quantoFooterChoice(newValue) {
                 elementor.saver.update({
                     onSuccess: function () {

@@ -18,55 +18,55 @@
  * @param  bool  $default On/Off (true/false)
  * @return mixed          Returns true or '', the blank default
  */
-function quanto_set_checkbox_default_for_new_post( $default ) {
+function agroland_set_checkbox_default_for_new_post( $default ) {
 	return isset( $_GET['post'] ) ? '' : ( $default ? (string) $default : '' );
 }
 
-add_action( 'cmb2_admin_init', 'quanto_register_metabox' );
+add_action( 'cmb2_admin_init', 'agroland_register_metabox' );
 
 /**
  * Hook in and add a demo metabox. Can only happen on the 'cmb2_admin_init' or 'cmb2_init' hook.
  */
 
-function quanto_register_metabox() {
+function agroland_register_metabox() {
 
-	$prefix = '_quanto_';
+	$prefix = '_agroland_';
 
 	$prefixpage = '_quantopage_';
 
-	$quanto_post_meta = new_cmb2_box( array(
+	$agroland_post_meta = new_cmb2_box( array(
 		'id'            => $prefixpage . 'blog_post_control',
 		'title'         => esc_html__( 'Post Thumb Controller', 'quanto' ),
 		'object_types'  => array( 'post' ), // Post type
 		'closed'        => true
 	) );
-	$quanto_post_meta->add_field( array(
+	$agroland_post_meta->add_field( array(
 		'name' => esc_html__( 'Post Format Video', 'quanto' ),
 		'desc' => esc_html__( 'Use This Field When Post Format Video', 'quanto' ),
 		'id'   => $prefix . 'post_format_video',
         'type' => 'text_url',
     ) );
-	$quanto_post_meta->add_field( array(
+	$agroland_post_meta->add_field( array(
 		'name' => esc_html__( 'Post Format Audio', 'quanto' ),
 		'desc' => esc_html__( 'Use This Field When Post Format Audio', 'quanto' ),
 		'id'   => $prefix . 'post_format_audio',
         'type' => 'oembed',
     ) );
-	$quanto_post_meta->add_field( array(
+	$agroland_post_meta->add_field( array(
 		'name' => esc_html__( 'Post Thumbnail For Slider', 'quanto' ),
 		'desc' => esc_html__( 'Use This Field When You Want A Slider In Post Thumbnail', 'quanto' ),
 		'id'   => $prefix . 'post_format_slider',
         'type' => 'file_list',
     ) );
 
-	$quanto_page_meta = new_cmb2_box( array(
+	$agroland_page_meta = new_cmb2_box( array(
 		'id'            => $prefixpage . 'page_meta_section',
 		'title'         => esc_html__( 'Page Meta', 'quanto' ),
 		'object_types'  => array( 'page' ), // Post type
         'closed'        => true
     ) );
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Page Breadcrumb Area', 'quanto' ),
 		'desc' => esc_html__( 'check to display page breadcrumb area.', 'quanto' ),
 		'id'   => $prefix . 'page_breadcrumb_area',
@@ -79,7 +79,7 @@ function quanto_register_metabox() {
     ) );
 
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Page Breadcrumb Settings', 'quanto' ),
 		'id'   => $prefix . 'page_breadcrumb_settings',
         'type' => 'select',
@@ -90,7 +90,7 @@ function quanto_register_metabox() {
         )
 	) );
 
-	$quanto_page_meta->add_field( array(
+	$agroland_page_meta->add_field( array(
 	    'name'    => esc_html__( 'Breadcumb Image', 'quanto' ),
 	    'desc'    => esc_html__( 'Upload an image or enter an URL.', 'quanto' ),
 	    'id'      => $prefix . 'breadcumb_image',
@@ -105,7 +105,7 @@ function quanto_register_metabox() {
 	    'preview_size' => 'large', // Image size to use when previewing in the admin.
 	) );
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Page Title', 'quanto' ),
 		'desc' => esc_html__( 'check to display Page Title.', 'quanto' ),
 		'id'   => $prefix . 'page_title',
@@ -117,7 +117,7 @@ function quanto_register_metabox() {
         )
 	) );
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Page Title Settings', 'quanto' ),
 		'id'   => $prefix . 'page_title_settings',
         'type' => 'select',
@@ -128,21 +128,21 @@ function quanto_register_metabox() {
         'default'   => 'default'
     ) );
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Custom Page Title', 'quanto' ),
 		'id'   => $prefix . 'custom_page_title',
         'type' => 'text'
     ) );
 
-    $quanto_page_meta->add_field( array(
+    $agroland_page_meta->add_field( array(
 		'name' => esc_html__( 'Breadcrumb', 'quanto' ),
 		'desc' => esc_html__( 'Select Show to display breadcrumb area', 'quanto' ),
 		'id'   => $prefix . 'page_breadcrumb_trigger',
         'type' => 'switch_btn',
-        'default' => quanto_set_checkbox_default_for_new_post( true ),
+        'default' => agroland_set_checkbox_default_for_new_post( true ),
     ) );
 
-    $quanto_layout_meta = new_cmb2_box( array(
+    $agroland_layout_meta = new_cmb2_box( array(
 		'id'            => $prefixpage . 'page_layout_section',
 		'title'         => esc_html__( 'Page Layout', 'quanto' ),
         'context' 		=> 'side',
@@ -151,7 +151,7 @@ function quanto_register_metabox() {
         'closed'        => true
 	) );
 
-	$quanto_layout_meta->add_field( array(
+	$agroland_layout_meta->add_field( array(
 		'desc'       => esc_html__( 'Set page layout container,container fluid,fullwidth or both. It\'s work only in template builder page.', 'quanto' ),
 		'id'         => $prefix . 'custom_page_layout',
 		'type'       => 'radio',
@@ -162,7 +162,7 @@ function quanto_register_metabox() {
         ),
 	) );
 
-	$quanto_product_meta = new_cmb2_box( array(
+	$agroland_product_meta = new_cmb2_box( array(
 		'id'            => $prefixpage . 'product_meta_section',
 		'title'         => esc_html__( 'Swap Image', 'quanto' ),
 		'object_types'  => array( 'product' ), // Post type
@@ -171,7 +171,7 @@ function quanto_register_metabox() {
 		'priority'		=> 'default'
 	) );
 
-	$quanto_product_meta->add_field( array(
+	$agroland_product_meta->add_field( array(
 		'name' 		=> esc_html__( 'Product Swap Image', 'quanto' ),
 		'desc' 		=> esc_html__( 'Set Product Swap Image', 'quanto' ),
 		'id'   		=> $prefix.'product_swap_image',
@@ -186,29 +186,29 @@ function quanto_register_metabox() {
 	) );
 }
 
-add_action( 'cmb2_admin_init', 'quanto_register_taxonomy_metabox' );
+add_action( 'cmb2_admin_init', 'agroland_register_taxonomy_metabox' );
 /**
  * Hook in and add a metabox to add fields to taxonomy terms
  */
-function quanto_register_taxonomy_metabox() {
+function agroland_register_taxonomy_metabox() {
 
-    $prefix = '_quanto_';
+    $prefix = '_agroland_';
 	/**
 	 * Metabox to add fields to categories and tags
 	 */
-	$quanto_term_meta = new_cmb2_box( array(
+	$agroland_term_meta = new_cmb2_box( array(
 		'id'               => $prefix.'term_edit',
 		'title'            => esc_html__( 'Category Metabox', 'quanto' ),
 		'object_types'     => array( 'term' ),
 		'taxonomies'       => array( 'category'),
 	) );
-	$quanto_term_meta->add_field( array(
+	$agroland_term_meta->add_field( array(
 		'name'     => esc_html__( 'Extra Info', 'quanto' ),
 		'id'       => $prefix.'term_extra_info',
 		'type'     => 'title',
 		'on_front' => false,
 	) );
-	$quanto_term_meta->add_field( array(
+	$agroland_term_meta->add_field( array(
 		'name' => esc_html__( 'Category Image', 'quanto' ),
 		'desc' => esc_html__( 'Set Category Image', 'quanto' ),
 		'id'   => $prefix.'term_avatar',
@@ -223,29 +223,29 @@ function quanto_register_taxonomy_metabox() {
 	/**
 	 * Metabox to add fields to events
 	 */
-	$quanto_term_events = new_cmb2_box( array(
+	$agroland_term_events = new_cmb2_box( array(
 		'id'               => $prefix.'events',
 		'title'            => esc_html__( 'Events Metabox', 'quanto' ),
-		'object_types'     => array( 'quanto_event' ),
+		'object_types'     => array( 'agroland_event' ),
 	) );
-	$quanto_term_events->add_field( array(
+	$agroland_term_events->add_field( array(
 		'name'     => esc_html__( 'Event Date', 'quanto' ),
 		'id'       => $prefix.'event_date',
 		'type'     => 'text_date_timestamp',
 	) );
-	$quanto_term_events->add_field( array(
+	$agroland_term_events->add_field( array(
 		'name'     => esc_html__( 'Event Time', 'quanto' ),
 		'id'       => $prefix.'event_time',
 		'type'     => 'text',
 		'default'  => esc_html__( '8:00 AM - 5:00 PM','quanto' ),
 	) );
-	$quanto_term_events->add_field( array(
+	$agroland_term_events->add_field( array(
 		'name'     => esc_html__( 'Event Type', 'quanto' ),
 		'id'       => $prefix.'event_type',
 		'type'     => 'text',
 		'default'  => esc_html__( 'Online','quanto' ),
 	) );
-	$quanto_term_events->add_field( array(
+	$agroland_term_events->add_field( array(
 		'name'     => esc_html__( 'Event Speaker', 'quanto' ),
 		'id'       => $prefix.'event_speaker',
 		'type'     => 'text',
@@ -258,13 +258,13 @@ function quanto_register_taxonomy_metabox() {
 	 * Metabox to add fields to class widget
 	 */
 	
-	 $quanto_term_class = new_cmb2_box( array(
+	 $agroland_term_class = new_cmb2_box( array(
 		'id'               => $prefix.'class',
 		'title'            => esc_html__( 'class Metabox', 'quanto' ),
-		'object_types'     => array( 'quanto_class' ),
+		'object_types'     => array( 'agroland_class' ),
 	) );
 
-	$quanto_term_class->add_field( array(
+	$agroland_term_class->add_field( array(
 		'name'     => esc_html__( 'Class Info', 'quanto' ),
 		'id'       => $prefix.'class_list',
 		'type'     => 'wysiwyg',
@@ -272,14 +272,14 @@ function quanto_register_taxonomy_metabox() {
 	) );
 
 
-	$quanto_term_class->add_field( array(
+	$agroland_term_class->add_field( array(
 		'name'     => esc_html__( 'Price', 'quanto' ),
 		'id'       => $prefix.'class_price',
 		'type'     => 'text',
 		'default'  => esc_html__( '$29','quanto' ),
 	) );
 	
-	$quanto_term_class->add_field( array(
+	$agroland_term_class->add_field( array(
 		'name'     => esc_html__( 'Duration', 'quanto' ),
 		'id'       => $prefix.'class_duration',
 		'type'     => 'text',
@@ -291,27 +291,27 @@ function quanto_register_taxonomy_metabox() {
 	 * Metabox to add fields to Teachers widget
 	 */
 	
-	 $quanto_term_teachers = new_cmb2_box( array(
+	 $agroland_term_teachers = new_cmb2_box( array(
 		'id'               => $prefix.'teachers',
 		'title'            => esc_html__( 'Teachers Metabox', 'quanto' ),
-		'object_types'     => array( 'quanto_teacher' ),
+		'object_types'     => array( 'agroland_teacher' ),
 	) );
 
-	$quanto_term_teachers->add_field( array(
+	$agroland_term_teachers->add_field( array(
 		'name'     => esc_html__( 'Designation', 'quanto' ),
 		'id'       => $prefix.'teachers_designation',
 		'type'     => 'text',
 		'default'  => esc_html__( 'Principal and Manager','quanto' ),
 	) );
 
-	$quanto_term_teachers->add_field( array(
+	$agroland_term_teachers->add_field( array(
 		'name'     => esc_html__( 'Phone Number', 'quanto' ),
 		'id'       => $prefix.'teachers_number',
 		'type'     => 'text',
 		'default'  => esc_html__( '+44 (0) 207 689 7888','quanto' ),
 	) );
 
-	$profiles_group = $quanto_term_teachers->add_field( array(
+	$profiles_group = $agroland_term_teachers->add_field( array(
         'id'          => $prefix . 'profiles',
         'type'        => 'group',
         'description' => __( 'Add social profiles', 'quanto' ),
@@ -324,13 +324,13 @@ function quanto_register_taxonomy_metabox() {
     ) );
 
     // Add fields to the repeatable group
-    $quanto_term_teachers->add_group_field( $profiles_group, array(
+    $agroland_term_teachers->add_group_field( $profiles_group, array(
         'name' => __( 'Social Network', 'quanto' ),
         'id'   => 'network',
         'type' => 'text',
     ) );
 
-    $quanto_term_teachers->add_group_field( $profiles_group, array(
+    $agroland_term_teachers->add_group_field( $profiles_group, array(
         'name' => __( 'Profile URL', 'quanto' ),
         'id'   => 'url',
         'type' => 'text_url',

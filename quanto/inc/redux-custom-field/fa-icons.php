@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-function quanto_fa_icons( $html = '' ){
+function agroland_fa_icons( $html = '' ){
   $icons = array(
 	'fa-glass'=>'&#xf000;  fa-glass',
 	'fa-music'=>'&#xf001;  fa-music',
@@ -710,17 +710,17 @@ function quanto_fa_icons( $html = '' ){
   
 }
 
-// the opt_name is set to quanto_opt.  Please replace it if change your opt_name name.
-add_action( 'redux/page/quanto_opt/enqueue', 'quanto_faIconFont' );
-function quanto_faIconFont() {
+// the opt_name is set to agroland_opt.  Please replace it if change your opt_name name.
+add_action( 'redux/page/agroland_opt/enqueue', 'agroland_faIconFont' );
+function agroland_faIconFont() {
 	
   //  Font awesome enqueue
-  wp_enqueue_style( 'font-awesome', QUANTO_DIR_CSS_URI.'font-awesome.min.css', array(), '4.7.0', 'all' );
+  wp_enqueue_style( 'font-awesome', AGROLAND_DIR_CSS_URI.'font-awesome.min.css', array(), '4.7.0', 'all' );
   
   // Redux admin css enqueue
-  wp_enqueue_style( 'quanto-redux-admin', QUANTO_DIR_URI.'inc/redux-custom-field/assets/quanto.redux.admin.css', array(), '1.0' );
+  wp_enqueue_style( 'agroland-redux-admin', AGROLAND_DIR_URI.'inc/redux-custom-field/assets/quanto.redux.admin.css', array(), '1.0' );
   
   // Redux admin js enqueue
-  wp_enqueue_script( 'quanto-redux-admin', QUANTO_DIR_URI.'inc/redux-custom-field/assets/quanto.redux.admin.js', array( 'jquery' ), '1.0', true );
+  wp_enqueue_script( 'agroland-redux-admin', AGROLAND_DIR_URI.'inc/redux-custom-field/assets/quanto.redux.admin.js', array( 'jquery' ), '1.0', true );
     
 }

@@ -15,12 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Enqueue scripts and styles.
  */
-function quanto_essential_scripts() {
+function agroland_essential_scripts() {
 
-	wp_enqueue_style( 'quanto-style', get_stylesheet_uri() ,array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'agroland-style', get_stylesheet_uri() ,array(), wp_get_theme()->get( 'Version' ) );
 
     // google font
-    wp_enqueue_style( 'quanto-fonts', quanto_google_fonts() ,array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'agroland-fonts', agroland_google_fonts() ,array(), wp_get_theme()->get( 'Version' ) );
 
     // Bootstrap Style
     wp_enqueue_style( 'bootstrap-style', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), '5.3.3' );
@@ -47,11 +47,11 @@ function quanto_essential_scripts() {
     wp_enqueue_style( 'swiper-bundle-min-style', get_theme_file_uri( '/assets/css/swiper-bundle.min.css' ), array(), '7.0.8' );
 
     // Core Style
-    wp_enqueue_style( 'quanto-core-style', get_theme_file_uri( '/assets/css/core.css' ), array(), '1.0' );
+    wp_enqueue_style( 'agroland-core-style', get_theme_file_uri( '/assets/css/core.css' ), array(), '1.0' );
 
     // quanto app style
-    wp_enqueue_style( 'quanto-main-style', get_theme_file_uri('/assets/css/style.css') ,array(), time() );
-    wp_enqueue_style( 'quanto-blog-style', get_theme_file_uri('/assets/css/blog-default.css') ,array(), time() );
+    wp_enqueue_style( 'agroland-main-style', get_theme_file_uri('/assets/css/style.css') ,array(), time() );
+    wp_enqueue_style( 'agroland-blog-style', get_theme_file_uri('/assets/css/blog-default.css') ,array(), time() );
 
 
 
@@ -84,24 +84,24 @@ function quanto_essential_scripts() {
     wp_enqueue_script( 'gsap-split-text-script', get_theme_file_uri( '/assets/js/gsap-split-text.js' ), array( 'jquery' ), '3.11.2', true );
 
     // main script
-    wp_enqueue_script( 'quanto-main-script', get_theme_file_uri( '/assets/js/main.js' ), array('jquery'), time(), true );
+    wp_enqueue_script( 'agroland-main-script', get_theme_file_uri( '/assets/js/main.js' ), array('jquery'), time(), true );
     
     // comment reply
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'quanto_essential_scripts',99 );
+add_action( 'wp_enqueue_scripts', 'agroland_essential_scripts',99 );
 
 
-function quanto_block_editor_assets( ) {
+function agroland_block_editor_assets( ) {
     // Add custom fonts.
-	wp_enqueue_style( 'quanto-editor-fonts', quanto_google_fonts(), array(), null );
+	wp_enqueue_style( 'agroland-editor-fonts', agroland_google_fonts(), array(), null );
 }
 
-add_action( 'enqueue_block_editor_assets', 'quanto_block_editor_assets' );
+add_action( 'enqueue_block_editor_assets', 'agroland_block_editor_assets' );
  
-function quanto_google_fonts() {
+function agroland_google_fonts() {
     $font_families = array(
         'Instrument Sans:400,500,600,700','800','900',
     );

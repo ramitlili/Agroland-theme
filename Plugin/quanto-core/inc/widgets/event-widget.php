@@ -12,13 +12,13 @@
 * Creating Event Widget
 ***************************************/
 
-class quanto_event_widget extends WP_Widget {
+class agroland_event_widget extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_event_widget',
+                'agroland_event_widget',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: Event', 'quanto' ),
@@ -51,7 +51,7 @@ class quanto_event_widget extends WP_Widget {
             }
 
             $query_args = array(
-                "post_type"         => "quanto_event",
+                "post_type"         => "agroland_event",
                 "posts_per_page"    => esc_attr( $post_count ),
                 "post_status"       => "publish",
                 "ignore_sticky_posts"   => true
@@ -65,7 +65,7 @@ class quanto_event_widget extends WP_Widget {
                         while( $eventpost->have_posts(  ) ) {
                             $eventpost->the_post();
 
-                            $date = quanto_meta( 'event_date' );
+                            $date = agroland_meta( 'event_date' );
                             echo '<div class="recent-event">';
                                 if( ! empty( $date) ){
                                     echo '<a href="'.esc_url( get_the_permalink() ).'" class="event-date">
@@ -128,11 +128,11 @@ class quanto_event_widget extends WP_Widget {
 
             return $instance;
         }
-    } // Class quanto_event_widget ends here
+    } // Class agroland_event_widget ends here
 
 
     // Register and load the widget
-    function quanto_event_load_widget() {
-        register_widget( 'quanto_event_widget' );
+    function agroland_event_load_widget() {
+        register_widget( 'agroland_event_widget' );
     }
-    add_action( 'widgets_init', 'quanto_event_load_widget' );
+    add_action( 'widgets_init', 'agroland_event_load_widget' );

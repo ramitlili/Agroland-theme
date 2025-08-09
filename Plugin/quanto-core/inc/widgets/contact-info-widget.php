@@ -12,11 +12,11 @@
 *Creating Contact Information Widget
 ***************************************/
 
-class quanto_contact_info_widget extends WP_Widget {
+class agroland_contact_info_widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			// Base ID of your widget
-			'quanto_contact_info_widget',
+			'agroland_contact_info_widget',
 			// Widget name will appear in UI
 			esc_html__( 'Quanto :: Contact Info', 'quanto' ),
 			// Widget description
@@ -156,10 +156,10 @@ public function update( $new_instance, $old_instance ) {
 	return $instance;
 }
 }
-// Class quanto_subscribe_widget ends here
+// Class agroland_subscribe_widget ends here
 
 // Register and load the widget
-function quanto_contact_info_load_widget() {
-	register_widget( 'quanto_contact_info_widget' );
+function agroland_contact_info_load_widget() {
+	register_widget( 'agroland_contact_info_widget' );
 }
-add_action( 'widgets_init', 'quanto_contact_info_load_widget' );
+add_action( 'widgets_init', 'agroland_contact_info_load_widget' );

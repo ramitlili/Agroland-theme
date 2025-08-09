@@ -13,10 +13,10 @@ use \Elementor\Repeater;
  * Hero Widget .
  *
  */
-class Quanto_Hero extends Widget_Base {
+class Agroland_Hero extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_hero';
+		return 'agroland_hero';
 	}
      
 	public function get_title() {
@@ -257,7 +257,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'box_background',
-                'selector' => '{{WRAPPER}} .quanto-hero2-section, {{WRAPPER}} .quanto-hero3-section, {{WRAPPER}} .quanto-hero4-section, {{WRAPPER}} .quanto-hero5-section',
+                'selector' => '{{WRAPPER}} .agroland-hero2-section, {{WRAPPER}} .agroland-hero3-section, {{WRAPPER}} .agroland-hero4-section, {{WRAPPER}} .agroland-hero5-section',
             ]
         );
         $this->add_responsive_control(
@@ -267,10 +267,10 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero2-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-hero3__content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-hero4-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-hero5-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero2-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero3__content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero4-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero5-section' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -290,12 +290,12 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__content h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero__content h1' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .hero2-content h1' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero3__content .marquee-item h1' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero4__content h1' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero5__content h1' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero6__content h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero3__content .marquee-item h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero4__content h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero5__content h1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero6__content h1' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -303,7 +303,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'title_typography',
-                'selector' => '{{WRAPPER}} .quanto-hero__content h1, {{WRAPPER}} .hero2-content h1, {{WRAPPER}} .quanto-hero3__content .marquee-item h1, {{WRAPPER}} .quanto-hero4__content h1, {{WRAPPER}} .quanto-hero5__content h1, {{WRAPPER}} .quanto-hero6__content h1',
+                'selector' => '{{WRAPPER}} .agroland-hero__content h1, {{WRAPPER}} .hero2-content h1, {{WRAPPER}} .agroland-hero3__content .marquee-item h1, {{WRAPPER}} .agroland-hero4__content h1, {{WRAPPER}} .agroland-hero5__content h1, {{WRAPPER}} .agroland-hero6__content h1',
             ]
         );
 		$this->end_controls_section();
@@ -392,8 +392,8 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__content h1 span' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero__content h1 .text-indent' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero__content h1 span' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero__content h1 .text-indent' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -401,7 +401,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'short_title_typography',
-                'selector' => '{{WRAPPER}} .quanto-hero__content h1 span, {{WRAPPER}} .quanto-hero__content h1 .text-indent',
+                'selector' => '{{WRAPPER}} .agroland-hero__content h1 span, {{WRAPPER}} .agroland-hero__content h1 .text-indent',
             ]
         );
 		$this->end_controls_section();
@@ -435,7 +435,7 @@ class Quanto_Hero extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-hero__content .title span img' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero__content .title span img' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				],
                 'condition' => [
 					'hero_style' => 'layout-1',
@@ -460,8 +460,8 @@ class Quanto_Hero extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-hero4__content h1 span img' => 'width: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-hero5__content h1 img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero4__content h1 span img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero5__content h1 img' => 'width: {{SIZE}}{{UNIT}};',
 				],
                 'condition' => [
 					'hero_style' => ['layout-4', 'layout-5'],
@@ -486,8 +486,8 @@ class Quanto_Hero extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-hero4__content h1 span img' => 'height: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-hero5__content h1 img' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero4__content h1 span img' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero5__content h1 img' => 'height: {{SIZE}}{{UNIT}};',
 				],
                 'condition' => [
 					'hero_style' => ['layout-4', 'layout-5'],
@@ -510,12 +510,12 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__info p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero__info p' => 'color: {{VALUE}};',
                     '{{WRAPPER}} .hero2-content p' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero3__content .content-info p' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero4__content p' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero5__info p' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero6__content p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero3__content .content-info p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero4__content p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero5__info p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero6__content p' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -523,7 +523,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'text_typography',
-                'selector' => '{{WRAPPER}} .quanto-hero__info p, {{WRAPPER}} .hero2-content p, {{WRAPPER}} .quanto-hero3__content .content-info p, {{WRAPPER}} .quanto-hero4__content p, {{WRAPPER}} .quanto-hero5__info p, {{WRAPPER}} .quanto-hero6__content p',
+                'selector' => '{{WRAPPER}} .agroland-hero__info p, {{WRAPPER}} .hero2-content p, {{WRAPPER}} .agroland-hero3__content .content-info p, {{WRAPPER}} .agroland-hero4__content p, {{WRAPPER}} .agroland-hero5__info p, {{WRAPPER}} .agroland-hero6__content p',
             ]
         );
         $this->add_responsive_control(
@@ -534,7 +534,7 @@ class Quanto_Hero extends Widget_Base {
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
                     '{{WRAPPER}} .hero2-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-hero4__content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero4__content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
                 'condition' => [
 					'hero_style' => ['layout-2', 'layout-4'],
@@ -561,7 +561,7 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__info .client-info' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero__info .client-info' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -572,7 +572,7 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__info .client-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero__info .client-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -580,7 +580,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'client_part_border',
-                'selector' => '{{WRAPPER}} .quanto-hero__info .client-info',
+                'selector' => '{{WRAPPER}} .agroland-hero__info .client-info',
             ]
         );
         $this->add_responsive_control(
@@ -601,7 +601,7 @@ class Quanto_Hero extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-hero__info .client-images img' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-hero__info .client-images img' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -625,7 +625,7 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .client-data h6' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero4__info h4' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero4__info h4' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -633,7 +633,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'client_title_typography',
-                'selector' => '{{WRAPPER}} .client-data h6, {{WRAPPER}} .quanto-hero4__info h4',
+                'selector' => '{{WRAPPER}} .client-data h6, {{WRAPPER}} .agroland-hero4__info h4',
             ]
         );
 		$this->end_controls_section();
@@ -655,8 +655,8 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero__info .client-data > span' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-hero4__info p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero__info .client-data > span' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero4__info p' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -664,7 +664,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'client_text_typography',
-                'selector' => '{{WRAPPER}} .quanto-hero__info .client-data > span, {{WRAPPER}} .quanto-hero4__info p',
+                'selector' => '{{WRAPPER}} .agroland-hero__info .client-data > span, {{WRAPPER}} .agroland-hero4__info p',
             ]
         );
 		$this->end_controls_section();
@@ -686,7 +686,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero5__info .quanto-link-btn' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero5__info .agroland-link-btn' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -696,7 +696,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -706,7 +706,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero5__info .quanto-link-btn' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-hero5__info .agroland-link-btn' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -716,7 +716,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Hover Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -724,7 +724,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'btn_text_typography',
-                'selector' => '{{WRAPPER}} .quanto-link-btn',
+                'selector' => '{{WRAPPER}} .agroland-link-btn',
             ]
         );
         $this->add_responsive_control(
@@ -734,7 +734,7 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-hero5__info .quanto-link-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-hero5__info .agroland-link-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -745,7 +745,7 @@ class Quanto_Hero extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -753,7 +753,7 @@ class Quanto_Hero extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'btn_text_border',
-                'selector' => '{{WRAPPER}} .quanto-hero5__info .quanto-link-btn',
+                'selector' => '{{WRAPPER}} .agroland-hero5__info .agroland-link-btn',
             ]
         );
 		$this->add_responsive_control(
@@ -763,7 +763,7 @@ class Quanto_Hero extends Widget_Base {
 				'type'          => Controls_Manager::DIMENSIONS,
 				'size_units'    => [ 'px', '%', 'em' ],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -792,7 +792,7 @@ class Quanto_Hero extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -802,7 +802,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -812,7 +812,7 @@ class Quanto_Hero extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -834,4 +834,4 @@ class Quanto_Hero extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Hero() );
+$widgets_manager->register( new \Agroland_Hero() );

@@ -12,11 +12,11 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
-if ( ! function_exists( 'quanto_setup' ) ){
-    function quanto_setup() {
+if ( ! function_exists( 'agroland_setup' ) ){
+    function agroland_setup() {
 
         // content width
-        $GLOBALS['content_width'] = apply_filters( 'quanto_content_width', 751 );
+        $GLOBALS['content_width'] = apply_filters( 'agroland_content_width', 751 );
 
         // language file
 		load_theme_textdomain( 'quanto', get_template_directory() . '/languages' );	
@@ -75,4 +75,4 @@ if ( ! function_exists( 'quanto_setup' ) ){
 
 	}
 }
-add_action( 'after_setup_theme', 'quanto_setup' );
+add_action( 'after_setup_theme', 'agroland_setup' );

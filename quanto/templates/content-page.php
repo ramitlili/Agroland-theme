@@ -18,12 +18,12 @@ if (!defined('ABSPATH')) {
 	/**
 	 * page content 
 	 * Comments Template
-	 * @Hook  quanto_page_content
+	 * @Hook  agroland_page_content
 	 *
-	 * @Hooked quanto_page_content_cb
+	 * @Hooked agroland_page_content_cb
 	 * 
 	 *
 	 */
-	do_action( 'quanto_page_content' );
+	do_action( 'agroland_page_content' );
 	?>
 </div>

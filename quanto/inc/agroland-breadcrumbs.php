@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  */
 
-if ( ! function_exists( 'quanto_breadcrumbs' ) ) {
-    function quanto_breadcrumbs( $args = array() ) {
+if ( ! function_exists( 'agroland_breadcrumbs' ) ) {
+    function agroland_breadcrumbs( $args = array() ) {
         if ( is_front_page() ) {
             return;
         }
@@ -26,7 +26,7 @@ if ( ! function_exists( 'quanto_breadcrumbs' ) ) {
             'breadcrumbs_classes' => esc_html( 'breadcrumb' ),
             'home_title'          => esc_html__( 'Home', 'quanto' )
         );
-        $args    = apply_filters( 'quanto_breadcrumbs_args', wp_parse_args( $args, $defaults ) );
+        $args    = apply_filters( 'agroland_breadcrumbs_args', wp_parse_args( $args, $defaults ) );
 
         $args_el = array();
 
@@ -176,7 +176,7 @@ if ( ! function_exists( 'quanto_breadcrumbs' ) ) {
         $html .= '</ul>';
         $html .= '</div>';
 
-        echo apply_filters( 'quanto_breadcrumbs_filter', $html );
+        echo apply_filters( 'agroland_breadcrumbs_filter', $html );
 
     }
 }

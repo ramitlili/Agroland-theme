@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Animation Image Widget .
  *
  */
-class Quanto_Animation_Image extends Widget_Base {
+class Agroland_Animation_Image extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_animation_image';
+		return 'agroland_animation_image';
 	}
      
 	public function get_title() {
@@ -97,7 +97,7 @@ class Quanto_Animation_Image extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project-thumb img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project-thumb img' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -119,7 +119,7 @@ class Quanto_Animation_Image extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project-thumb img' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project-thumb img' => 'height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);			
@@ -134,7 +134,7 @@ class Quanto_Animation_Image extends Widget_Base {
 		?>
 			<?php if ( 'yes' == $settings['need_link'] ): ?>
 				<a href="<?php echo esc_url($settings['img_url']['url']); ?>">
-					<div class="quanto-project-thumb overflow-hidden">
+					<div class="agroland-project-thumb overflow-hidden">
 						<img
 							src="<?php echo esc_url($settings['animation_img']['url']); ?>"
 							alt="project-thumb"
@@ -143,7 +143,7 @@ class Quanto_Animation_Image extends Widget_Base {
 					</div>
 				</a>
 			<?php else: ?>
-				<div class="quanto-project-thumb overflow-hidden">
+				<div class="agroland-project-thumb overflow-hidden">
 					<img
 						src="<?php echo esc_url($settings['animation_img']['url']); ?>"
 						alt="project-thumb"
@@ -154,4 +154,4 @@ class Quanto_Animation_Image extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Animation_Image() );
+$widgets_manager->register( new \Agroland_Animation_Image() );

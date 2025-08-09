@@ -177,7 +177,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
 						$disnone = 'style="display:none"';
                     }
 					// font awesome icon
-					$icons = quanto_fa_icons();
+					$icons = agroland_fa_icons();
 					$showicon = '';
 					foreach( $icons as $key => $value ){
 						$showicon .= '<span class="seticon" data-icon="'.$key.'">'.$value.'</span>';
@@ -273,7 +273,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
                 }
 				
 				// font awesome icon
-				$icons = quanto_fa_icons();
+				$icons = agroland_fa_icons();
 				$showicon = '';
 				foreach( $icons as $key=>$value ){
 					$showicon .= '<span class="seticon" data-icon="'.$key.'">'.$value.'</span>';

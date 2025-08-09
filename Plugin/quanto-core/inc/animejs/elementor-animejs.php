@@ -27,15 +27,15 @@ class Elementor_AnimeJS_Addon {
 
     // Enqueue frontend scripts and styles
     public function animejs_enqueue_scripts() {
-        wp_enqueue_script( 'animejs-main', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs.min.js', [], '3.2.1', true );
-        wp_enqueue_script( 'animejs-scrollmagic', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs-scrollmagic.min.js', [], '3.2.1', true );
-        wp_enqueue_script( 'animejs-data-attr-helper', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs-data-attr-helper.js', [ 'jquery', 'animejs-main' ], '1.0.0', true );
-        wp_enqueue_script( 'animejs-helper', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs-helper.js', [ 'jquery', 'animejs-main' ], '1.0.0', true );
+        wp_enqueue_script( 'animejs-main', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs.min.js', [], '3.2.1', true );
+        wp_enqueue_script( 'animejs-scrollmagic', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs-scrollmagic.min.js', [], '3.2.1', true );
+        wp_enqueue_script( 'animejs-data-attr-helper', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs-data-attr-helper.js', [ 'jquery', 'animejs-main' ], '1.0.0', true );
+        wp_enqueue_script( 'animejs-helper', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs-helper.js', [ 'jquery', 'animejs-main' ], '1.0.0', true );
     }
 
     public function animejs_enqueue_editor_scripts() {
-        wp_enqueue_script( 'animejs-elementor-editor', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs-editor.js', ['jquery', 'elementor-editor', 'animejs-main'], '1.0.0', true );
-        wp_enqueue_script( 'animejs-elementor-context-menu', QUANTO_PLUGDIRURI . 'inc/animejs/js/animejs-context-menu.js', [ 'jquery', 'elementor-editor' ], '1.0.0', true );
+        wp_enqueue_script( 'animejs-elementor-editor', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs-editor.js', ['jquery', 'elementor-editor', 'animejs-main'], '1.0.0', true );
+        wp_enqueue_script( 'animejs-elementor-context-menu', AGROLAND_PLUGDIRURI . 'inc/animejs/js/animejs-context-menu.js', [ 'jquery', 'elementor-editor' ], '1.0.0', true );
     }
 
     public function animejs_register_controls( $element, $section_id, $args ) {

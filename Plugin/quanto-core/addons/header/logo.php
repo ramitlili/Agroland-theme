@@ -11,7 +11,7 @@ use \Elementor\Group_Control_Image_Size;
  * New Header Widget .
  *
  */
-class Quanto_Site_Logo extends Widget_Base {
+class Agroland_Site_Logo extends Widget_Base {
 
 	public function get_name() {
 		return 'quantologo';
@@ -26,7 +26,7 @@ class Quanto_Site_Logo extends Widget_Base {
     }
 
 	public function get_categories() {
-		return [ 'quanto_header_elements' ];
+		return [ 'agroland_header_elements' ];
 	}
 
 	protected function register_controls() {
@@ -145,7 +145,7 @@ class Quanto_Site_Logo extends Widget_Base {
 					if ( 'custom' == $settings['logo_type'] && $settings['image']['url']) {
 						echo Group_Control_Image_Size::get_attachment_image_html($settings, 'thumbnail', 'image');
 					} else {
-						echo $this->quanto_get_site_logo( $settings['logo_type'] );
+						echo $this->agroland_get_site_logo( $settings['logo_type'] );
 					}
 					?>
 				</a>
@@ -158,10 +158,10 @@ class Quanto_Site_Logo extends Widget_Base {
      *  quanto get logo  
      * 
      */
-    public function quanto_get_site_logo( $logo_type = 'dark'  )
+    public function agroland_get_site_logo( $logo_type = 'dark'  )
     {
         $logo = '';
-        $quanto = get_option('quanto_opt');
+        $quanto = get_option('agroland_opt');
         $logo_url = '';
         if ( 'dark' ==  $logo_type && isset( $quanto['dark_logo']['url'] ) ) {
             $logo_url = esc_url($quanto['dark_logo']['url']);
@@ -182,4 +182,4 @@ class Quanto_Site_Logo extends Widget_Base {
         return $logo;
     }
 }
-$widgets_manager->register( new \Quanto_Site_Logo() );
+$widgets_manager->register( new \Agroland_Site_Logo() );

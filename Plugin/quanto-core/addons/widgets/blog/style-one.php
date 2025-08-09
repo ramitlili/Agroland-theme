@@ -8,17 +8,17 @@
         $direction_attr = ($count % 3 === 0) ? '' : ' data-direction="right"';
     ?>
     <div <?php echo $this->get_render_attribute_string('blog_gride_classes'); ?>>
-        <div class="quanto-blog-box fade-anim" data-delay="<?php echo number_format($delay, 2); ?>" <?php echo $direction_attr; ?>>
-            <div class="quanto-blog-thumb">
+        <div class="agroland-blog-box fade-anim" data-delay="<?php echo number_format($delay, 2); ?>" <?php echo $direction_attr; ?>>
+            <div class="agroland-blog-thumb">
                 <?php if( has_post_thumbnail() ): ?>
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail('full');?>
                     </a>
                 <?php endif; ?>
             </div>
-            <div class="quanto-blog-content">
+            <div class="agroland-blog-content">
                 <h5 class="line-clamp-2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                <a href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')); ?>" class="blog-meta quanto-blog-date">
+                <a href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d')); ?>" class="blog-meta agroland-blog-date">
                     <?php echo get_the_time('F j, Y'); ?>
                 </a>
             </div>

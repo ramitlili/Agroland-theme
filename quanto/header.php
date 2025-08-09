@@ -15,47 +15,47 @@
     *
     * Cursor
     *
-    * Hook quanto_cursor_wrap
+    * Hook agroland_cursor_wrap
     *
-    * @Hooked quanto_cursor_wrap_cb 10
+    * @Hooked agroland_cursor_wrap_cb 10
     *
     */
-    do_action( 'quanto_cursor_wrap' );
+    do_action( 'agroland_cursor_wrap' );
 
     /**
     *
     * Preloader
     *
-    * Hook quanto_preloader_wrap
+    * Hook agroland_preloader_wrap
     *
-    * @Hooked quanto_preloader_wrap_cb 10
+    * @Hooked agroland_preloader_wrap_cb 10
     *
     */
-    do_action( 'quanto_preloader_wrap' );
+    do_action( 'agroland_preloader_wrap' );
 
     /**
     *
     * quanto header
     *
-    * Hook quanto_header
+    * Hook agroland_header
     *
-    * @Hooked quanto_header_cb 10
+    * @Hooked agroland_header_cb 10
     *
     */
-    do_action( 'quanto_header' );
+    do_action( 'agroland_header' );
 
 
 
-    do_action( 'quanto_before_content' );
+    do_action( 'agroland_before_content' );
 
 
     /**
     *
     * quanto breadcrumb
     *
-    * Hook quanto_breadcrumb
+    * Hook agroland_breadcrumb
     *
-    * @Hooked quanto_breadcrumb_cb 10
+    * @Hooked agroland_breadcrumb_cb 10
     *
     */
-    do_action( 'quanto_breadcrumb' );
+    do_action( 'agroland_breadcrumb' );

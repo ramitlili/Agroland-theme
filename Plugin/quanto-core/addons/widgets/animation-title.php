@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Animation Title Widget .
  *
  */
-class Quanto_Animation_Title extends Widget_Base {
+class Agroland_Animation_Title extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_animation_title';
+		return 'agroland_animation_title';
 	}
      
 	public function get_title() {
@@ -65,7 +65,7 @@ class Quanto_Animation_Title extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-about-one h4' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-about-one h4' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -73,7 +73,7 @@ class Quanto_Animation_Title extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'text_typography',
-                'selector' => '{{WRAPPER}} .quanto-about-one h4',
+                'selector' => '{{WRAPPER}} .agroland-about-one h4',
             ]
         );
 		$this->end_controls_section();
@@ -86,7 +86,7 @@ class Quanto_Animation_Title extends Widget_Base {
         $settings = $this->get_settings_for_display();
 		
 		?>
-            <div class="quanto-about-one">
+            <div class="agroland-about-one">
                 <h4 class="move-anim text_invert">
                     <?php echo esc_html($settings['animation_title_text']); ?>
                 </h4>
@@ -94,4 +94,4 @@ class Quanto_Animation_Title extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Animation_Title() );
+$widgets_manager->register( new \Agroland_Animation_Title() );

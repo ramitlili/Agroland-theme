@@ -12,7 +12,7 @@
         exit();
     }
 
-    if( !empty( quanto_pagination() ) ) :
+    if( !empty( agroland_pagination() ) ) :
 ?>
 <!-- Post Pagination -->
 <div class="row row-padding-top">
@@ -36,7 +36,7 @@
                     <?php endif; ?>
 
                     <?php 
-                        echo quanto_pagination();
+                        echo agroland_pagination();
                     ?>
 
                     <!-- Next -->

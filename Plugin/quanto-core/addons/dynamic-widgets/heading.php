@@ -28,7 +28,7 @@ class Heading extends Widget_Base {
      * @return string Widget name.
      */
     public function get_name() {
-        return 'quanto-heading';
+        return 'agroland-heading';
     }
     /**
      * Get widget title.
@@ -209,7 +209,7 @@ class Heading extends Widget_Base {
                 'label'     => __( 'Text Color', 'quanto' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-heading-title' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-heading-title' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -217,14 +217,14 @@ class Heading extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'typography',
-                'selector' => '{{WRAPPER}} .quanto-heading-title',
+                'selector' => '{{WRAPPER}} .agroland-heading-title',
             ]
         );
         $this->add_group_control(
             Group_Control_Text_Shadow::get_type(),
             [
                 'name'     => 'text_shadow',
-                'selector' => '{{WRAPPER}} .quanto-heading-title',
+                'selector' => '{{WRAPPER}} .agroland-heading-title',
             ]
         );
         $this->add_control(
@@ -248,7 +248,7 @@ class Heading extends Widget_Base {
                     'luminosity'  => 'Luminosity',
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-heading-title' => 'mix-blend-mode: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-heading-title' => 'mix-blend-mode: {{VALUE}}',
                 ],
                 'separator' => 'none',
             ]
@@ -278,7 +278,7 @@ class Heading extends Widget_Base {
                 'label'     => __( 'Line Color', 'quanto' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-heading-title:after' => 'background-color: {{VALUE}}',
+                    '{{WRAPPER}} .agroland-heading-title:after' => 'background-color: {{VALUE}}',
                 ],
                 'condition' => [
                     'enable_line' => 'yes',
@@ -303,7 +303,7 @@ class Heading extends Widget_Base {
                 ],
                 'devices'    => ['desktop', 'tablet', 'mobile'],
                 'selectors'  => [
-                    '{{WRAPPER}} .quanto-heading-title:after' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-heading-title:after' => 'width: {{SIZE}}{{UNIT}};',
                 ],
                 'condition'  => [
                     'enable_line' => 'yes',
@@ -328,7 +328,7 @@ class Heading extends Widget_Base {
                 ],
                 'devices'    => ['desktop', 'tablet', 'mobile'],
                 'selectors'  => [
-                    '{{WRAPPER}} .quanto-heading-title:after' => 'height: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-heading-title:after' => 'height: {{SIZE}}{{UNIT}};',
                 ],
                 'condition'  => [
                     'enable_line' => 'yes',
@@ -353,7 +353,7 @@ class Heading extends Widget_Base {
                 ],
                 'devices'    => ['desktop', 'tablet', 'mobile'],
                 'selectors'  => [
-                    '{{WRAPPER}} .quanto-heading-title:after' => 'top: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-heading-title:after' => 'top: {{SIZE}}{{UNIT}};',
                 ],
                 'condition'  => [
                     'enable_line' => 'yes',
@@ -378,8 +378,8 @@ class Heading extends Widget_Base {
                 ],
                 'devices'    => ['desktop', 'tablet', 'mobile'],
                 'selectors'  => [
-                    '{{WRAPPER}} .quanto-heading-title:after'          => 'left: {{SIZE}}{{UNIT}};',
-                    'body.rtl {{WRAPPER}} .quanto-heading-title:after' => 'right: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-heading-title:after'          => 'left: {{SIZE}}{{UNIT}};',
+                    'body.rtl {{WRAPPER}} .agroland-heading-title:after' => 'right: {{SIZE}}{{UNIT}};',
                 ],
                 'condition'  => [
                     'enable_line' => 'yes',
@@ -406,7 +406,7 @@ class Heading extends Widget_Base {
         } else {
             $title = $settings['title'];
         }
-        $this->add_render_attribute( 'title', 'class', 'quanto-heading-title' );
+        $this->add_render_attribute( 'title', 'class', 'agroland-heading-title' );
         $this->add_render_attribute( 'title', 'class', 'show-line-' . $settings['enable_line'] );
         // $this->add_inline_editing_attributes( 'title' );
         if ( !empty( $settings['link']['url'] ) ) {

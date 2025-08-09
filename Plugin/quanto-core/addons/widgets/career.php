@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Career Widget .
  *
  */
-class Quanto_Career extends Widget_Base {
+class Agroland_Career extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_career';
+		return 'agroland_career';
 	}
      
 	public function get_title() {
@@ -323,7 +323,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -333,7 +333,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -343,7 +343,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -353,7 +353,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Hover Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill:hover' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -361,7 +361,7 @@ class Quanto_Career extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'button_text_typography',
-                'selector' => '{{WRAPPER}} .quanto-link-btn',
+                'selector' => '{{WRAPPER}} .agroland-link-btn',
             ]
         );
 		$this->add_responsive_control(
@@ -371,7 +371,7 @@ class Quanto_Career extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -379,7 +379,7 @@ class Quanto_Career extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'button_text_border',
-                'selector' => '{{WRAPPER}} .quanto-link-btn.btn-pill',
+                'selector' => '{{WRAPPER}} .agroland-link-btn.btn-pill',
             ]
         );
 		$this->add_responsive_control(
@@ -389,7 +389,7 @@ class Quanto_Career extends Widget_Base {
 				'type'          => Controls_Manager::DIMENSIONS,
 				'size_units'    => [ 'px', '%', 'em' ],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn.btn-pill' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -415,7 +415,7 @@ class Quanto_Career extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .agroland-link-btn' => 'gap: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -425,7 +425,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry1' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -435,7 +435,7 @@ class Quanto_Career extends Widget_Base {
                 'label' => __( 'Hover Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-link-btn.btn-pill span .arry2' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -447,7 +447,7 @@ class Quanto_Career extends Widget_Base {
     public function get_all_jobs() {
 
         $wp_query = get_posts([
-            'post_type' => 'quanto_job',
+            'post_type' => 'agroland_job',
             'orderby' => 'date',
             'posts_per_page' => -1,
         ]);
@@ -469,7 +469,7 @@ class Quanto_Career extends Widget_Base {
 		?>
             <?php  foreach( $job_list as $item ):
                 $args = new \WP_Query(array(
-                    'post_type' => 'quanto_job',
+                    'post_type' => 'agroland_job',
                     'post_status' => 'publish',
                     'post__in' => [
                         $item['select_post']
@@ -494,7 +494,7 @@ class Quanto_Career extends Widget_Base {
                             </p>
                         </div>
                         <div class="career-right">
-                            <a class="quanto-link-btn btn-pill" href="<?php the_permalink(); ?>">
+                            <a class="agroland-link-btn btn-pill" href="<?php the_permalink(); ?>">
                                 <?php echo esc_html( $item['button_text'] ) ?>
                                 <?php if ( 'yes' == $item['button_icon'] ): ?>
                                     <span>
@@ -510,4 +510,4 @@ class Quanto_Career extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Career() );
+$widgets_manager->register( new \Agroland_Career() );

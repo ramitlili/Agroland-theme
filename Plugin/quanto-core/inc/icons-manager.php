@@ -11,13 +11,13 @@ class QuantoIcons_Manager {
         $tabs['remix-icons'] = [
             'name' => 'remix-icons',
             'label' => __( 'Remix Icons', 'quanto' ),
-            'url' => QUANTO_PLUGDIRURI . 'assets/fonts/remix-icon/remixicon.min.css',
-            'enqueue' => [ QUANTO_PLUGDIRURI . 'assets/fonts/remix-icon/remixicon.min.css' ],
+            'url' => AGROLAND_PLUGDIRURI . 'assets/fonts/remix-icon/remixicon.min.css',
+            'enqueue' => [ AGROLAND_PLUGDIRURI . 'assets/fonts/remix-icon/remixicon.min.css' ],
             'prefix' => 'ri-',
             'displayPrefix' => 'remixicon',
             'labelIcon' => 'remixicon ri-remixicon-fill exad-font-manager',
             'ver' => '1.1',
-            'fetchJson' => QUANTO_PLUGDIRURI . 'assets/fonts/remix-icon/remix-icon.js?v=' . '1.1',
+            'fetchJson' => AGROLAND_PLUGDIRURI . 'assets/fonts/remix-icon/remix-icon.js?v=' . '1.1',
             'native' => false,
         ];
         return $tabs;

@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Header Status Widget .
  *
  */
-class Quanto_Header_Status extends Widget_Base {
+class Agroland_Header_Status extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_header_status';
+		return 'agroland_header_status';
 	}
      
 	public function get_title() {
@@ -104,4 +104,4 @@ class Quanto_Header_Status extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Header_Status() );
+$widgets_manager->register( new \Agroland_Header_Status() );

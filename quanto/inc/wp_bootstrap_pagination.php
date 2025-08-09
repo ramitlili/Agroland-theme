@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  */
 
-function quanto_pagination( $args = array() ) {
+function agroland_pagination( $args = array() ) {
     $allowhtml = array(
     	'p'         => array(
     		'class'     => array()
@@ -45,7 +45,7 @@ function quanto_pagination( $args = array() ) {
 
     $args = wp_parse_args(
         $args,
-        apply_filters( 'quanto_pagination_defaults', $defaults )
+        apply_filters( 'agroland_pagination_defaults', $defaults )
     );
 
     $args['range'] = (int) $args['range'] - 1;

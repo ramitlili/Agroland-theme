@@ -12,13 +12,13 @@
 * Creating Gallery Widget
 ***************************************/
 
-class quanto_gallery_widget extends WP_Widget {
+class agroland_gallery_widget extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_gallery_widget',
+                'agroland_gallery_widget',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: Gallery', 'quanto' ),
@@ -46,13 +46,13 @@ class quanto_gallery_widget extends WP_Widget {
                         echo esc_html( $title );
                     echo $args['after_title'];
                 }
-				$quanto_gallery_image = quanto_opt( 'quanto_gallery_image_widget' );
+				$agroland_gallery_image = agroland_opt( 'agroland_gallery_image_widget' );
 				
-				if( !empty( $quanto_gallery_image ) && isset( $quanto_gallery_image ) ){
+				if( !empty( $agroland_gallery_image ) && isset( $agroland_gallery_image ) ){
 					echo '<div class="sidebar-gallery">';
-                        foreach( $quanto_gallery_image as $single_image ){
+                        foreach( $agroland_gallery_image as $single_image ){
                             echo '<div class="gallery-thumb">';
-                                echo quanto_img_tag( array(
+                                echo agroland_img_tag( array(
                                     'url'	=> esc_url( $single_image['image'] ),
                                     'class' => 'w-100',
                                 ) );
@@ -98,11 +98,11 @@ class quanto_gallery_widget extends WP_Widget {
 
             return $instance;
         }
-    } // Class quanto_gallery_widget ends here
+    } // Class agroland_gallery_widget ends here
 
 
     // Register and load the widget
-    function quanto_gallery_widget() {
-        register_widget( 'quanto_gallery_widget' );
+    function agroland_gallery_widget() {
+        register_widget( 'agroland_gallery_widget' );
     }
-    add_action( 'widgets_init', 'quanto_gallery_widget' );
+    add_action( 'widgets_init', 'agroland_gallery_widget' );

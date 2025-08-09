@@ -12,11 +12,11 @@
 *Creating Contact Information Widget
 ***************************************/
 
-class quanto_social_widget extends WP_Widget {
+class agroland_social_widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			// Base ID of your widget
-			'quanto_social_widget',
+			'agroland_social_widget',
 			// Widget name will appear in UI
 			esc_html__( 'Quanto :: Social Icon', 'quanto' ),
 			// Widget description
@@ -41,7 +41,7 @@ public function widget( $args, $instance ) {
 		}
         if( $social_icon ){
             echo '<div class="footer-social d-inline-block">';
-                quanto_social_icon();
+                agroland_social_icon();
             echo '</div>';
         }
 
@@ -89,10 +89,10 @@ public function update( $new_instance, $old_instance ) {
 	return $instance;
 }
 }
-// Class quanto_subscribe_widget ends here
+// Class agroland_subscribe_widget ends here
 
 // Register and load the widget
-function quanto_social_load_widget() {
-	register_widget( 'quanto_social_widget' );
+function agroland_social_load_widget() {
+	register_widget( 'agroland_social_widget' );
 }
-add_action( 'widgets_init', 'quanto_social_load_widget' );
+add_action( 'widgets_init', 'agroland_social_load_widget' );

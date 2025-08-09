@@ -8,22 +8,22 @@ class QuantoCustomPosts{
     function __construct()
 	{   
         /*----------  Service ----------*/
-        add_action('init', array($this, 'quanto_service'));
+        add_action('init', array($this, 'agroland_service'));
 
 
         /*----------  Team ----------*/
-        add_action('init', array($this, 'quanto_team'));
+        add_action('init', array($this, 'agroland_team'));
 
         /*----------  Project ----------*/
-        add_action('init', array($this, 'quanto_project'));
-        add_action('init', array($this, 'quanto_project_category'));
+        add_action('init', array($this, 'agroland_project'));
+        add_action('init', array($this, 'agroland_project_category'));
 
         /*----------  Job ----------*/
-        add_action('init', array($this, 'quanto_job'));
+        add_action('init', array($this, 'agroland_job'));
     }
 
     /*----------  Service ----------*/   
-    public function quanto_service() 
+    public function agroland_service() 
     {
         $labels = array(
             'name'               => esc_html__( 'Services', 'Service general name', 'quanto' ),
@@ -58,12 +58,12 @@ class QuantoCustomPosts{
             'supports'           => array( 'title','thumbnail','editor','excerpt','elementor' ),
             'rewrite'            => array( 'slug' => 'services' ),
         );
-        register_post_type( 'quanto_service', $args );
+        register_post_type( 'agroland_service', $args );
     }
 
 
     /*----------  Team ----------*/   
-    public function quanto_team() 
+    public function agroland_team() 
     {
         $labels = array(
             'name'               => esc_html__( 'Teams', 'Team general name', 'quanto' ),
@@ -98,12 +98,12 @@ class QuantoCustomPosts{
             'supports'           => array( 'title','thumbnail','editor','elementor' ),
             'rewrite'            => array( 'slug' => 'teams' ),
         );
-        register_post_type( 'quanto_team', $args );
+        register_post_type( 'agroland_team', $args );
     }
 
 
     /*----------  Project ----------*/   
-    public function quanto_project() 
+    public function agroland_project() 
     {
         $labels = array(
             'name'               => esc_html__( 'Projects', 'Project general name', 'quanto' ),
@@ -138,11 +138,11 @@ class QuantoCustomPosts{
             'supports'           => array( 'title','thumbnail','editor','excerpt','elementor' ),
             'rewrite'            => array( 'slug' => 'projects' ),
         );
-        register_post_type( 'quanto_project', $args );
+        register_post_type( 'agroland_project', $args );
     }
 
     // Project Category
-    public function quanto_project_category() {
+    public function agroland_project_category() {
 
         $labels = array(
             'name'                       => esc_html__( 'Categories', 'taxonomy general name', 'quanto' ),
@@ -173,12 +173,12 @@ class QuantoCustomPosts{
             'show_in_rest'          => true,
             'rewrite'               => array( 'slug' => 'project-cat' ),
         );
-        register_taxonomy( 'project_category', 'quanto_project', $args );
+        register_taxonomy( 'project_category', 'agroland_project', $args );
     }
 
 
     /*----------  Job ----------*/   
-    public function quanto_job() {
+    public function agroland_job() {
         $labels = array(
             'name'               => esc_html__( 'Job', 'Job general name', 'quanto' ),
             'singular_name'      => esc_html__( 'Job', 'Job singular name', 'quanto' ),
@@ -212,9 +212,9 @@ class QuantoCustomPosts{
             'supports'           => array( 'title','thumbnail','editor','excerpt','elementor' ),
             'rewrite'            => array( 'slug' => 'job' ),
         );
-        register_post_type( 'quanto_job', $args );
+        register_post_type( 'agroland_job', $args );
     }
     
 }
-$Quanto_StydyInstance = new QuantoCustomPosts;
+$Agroland_StydyInstance = new QuantoCustomPosts;
 

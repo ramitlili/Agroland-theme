@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Testimonial Slider Widget .
  *
  */
-class Quanto_Testimonial extends Widget_Base{
+class Agroland_Testimonial extends Widget_Base{
 
 	public function get_name() {
-		return 'quanto_testimonial';
+		return 'agroland_testimonial';
 	}
 
 	public function get_title() {
@@ -287,7 +287,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'label' 		=> __( 'Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-testimonial-section .quanto__header .title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-testimonial-section .agroland__header .title' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -296,7 +296,7 @@ class Quanto_Testimonial extends Widget_Base{
 			[
 				'name' 		=> 'slider_title_typography',
 				'label' 	=> __( 'Typography', 'quanto' ),
-				'selector' 	=> '{{WRAPPER}} .quanto-testimonial-section .quanto__header .title',
+				'selector' 	=> '{{WRAPPER}} .agroland-testimonial-section .agroland__header .title',
 			]
         );
 		$this->add_responsive_control(
@@ -306,7 +306,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'type'         => Controls_Manager::DIMENSIONS,
 				'size_units'   => [ 'px', '%', 'em' ],
 				'selectors'    => [
-					'{{WRAPPER}} .quanto-testimonial-section .quanto__header .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-testimonial-section .agroland__header .title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -317,7 +317,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'type'         => Controls_Manager::DIMENSIONS,
 				'size_units'   => [ 'px', '%', 'em' ],
 				'selectors'    => [
-					'{{WRAPPER}} .quanto-testimonial-section .quanto__header .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-testimonial-section .agroland__header .title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -344,7 +344,7 @@ class Quanto_Testimonial extends Widget_Base{
 					]
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-testimonial__thumb-slider .testimonial-img' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-testimonial__thumb-slider .testimonial-img' => 'width: {{SIZE}}{{UNIT}};',
 					'{{WRAPPER}} .testimonial-author .author-image img' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
@@ -368,7 +368,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'label' 		=> __( 'Background Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-testimonial2__box' => 'background-color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-testimonial2__box' => 'background-color: {{VALUE}}',
                 ],
 			]
         );
@@ -379,7 +379,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'type' 			=> Controls_Manager::DIMENSIONS,
 				'size_units' 	=> [ 'px', '%', 'em' ],
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-testimonial2__box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-testimonial2__box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ]
 			]
 		);
@@ -388,7 +388,7 @@ class Quanto_Testimonial extends Widget_Base{
 			[
 				'name' 		=> 'box_border',
 				'label' 	=> __( 'Border', 'quanto' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-testimonial2__box',
+                'selector' 	=> '{{WRAPPER}} .agroland-testimonial2__box',
 			]
 		);
 		$this->add_responsive_control(
@@ -398,7 +398,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'type' 			=> Controls_Manager::DIMENSIONS,
 				'size_units' 	=> [ 'px', '%', 'em' ],
 				'selectors' 	=> [
-					'{{WRAPPER}} .quanto-testimonial2__box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-testimonial2__box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ]
 			]
 		);
@@ -420,7 +420,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'selectors' 	=> [
 					'{{WRAPPER}} .testimonial-content p' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .testimonial3-content p' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-testimonial2__box .testimonial-content .revew' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-testimonial2__box .testimonial-content .revew' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -429,7 +429,7 @@ class Quanto_Testimonial extends Widget_Base{
 			[
 				'name' 		=> 'text_typography',
 				'label' 	=> __( 'Typography', 'quanto' ),
-				'selector' 	=> '{{WRAPPER}} .testimonial-content p, {{WRAPPER}} .testimonial3-content p, {{WRAPPER}} .quanto-testimonial2__box .testimonial-content .revew',
+				'selector' 	=> '{{WRAPPER}} .testimonial-content p, {{WRAPPER}} .testimonial3-content p, {{WRAPPER}} .agroland-testimonial2__box .testimonial-content .revew',
 			]
         );
 		$this->add_responsive_control(
@@ -441,7 +441,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'selectors'    => [
 					'{{WRAPPER}} .testimonial-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 					'{{WRAPPER}} .testimonial3-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-testimonial2__box .testimonial-content .revew' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
+					'{{WRAPPER}} .agroland-testimonial2__box .testimonial-content .revew' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};'
 				]
 			]
 		);
@@ -550,7 +550,7 @@ class Quanto_Testimonial extends Widget_Base{
 				'selectors' 	=> [
 					'{{WRAPPER}} .testimonial-content .author-designation' => 'color: {{VALUE}}',
 					'{{WRAPPER}} .testimonial3-content .client-designation' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-testimonial2__box .testimonial-author .author-info .info' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-testimonial2__box .testimonial-author .author-info .info' => 'color: {{VALUE}}',
                 ],
 			]
         );
@@ -559,7 +559,7 @@ class Quanto_Testimonial extends Widget_Base{
 			[
 				'name' 		=> 'designation_typography',
 				'label' 	=> __( 'Typography', 'quanto' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-t-author span, {{WRAPPER}} .quanto-t-data2 span',
+                'selector' 	=> '{{WRAPPER}} .agroland-t-author span, {{WRAPPER}} .agroland-t-data2 span',
 			]
         );
 		$this->end_controls_section();
@@ -667,4 +667,4 @@ class Quanto_Testimonial extends Widget_Base{
 		<?php 
 	}
 }
-$widgets_manager->register( new \Quanto_Testimonial() );
+$widgets_manager->register( new \Agroland_Testimonial() );

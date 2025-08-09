@@ -1,4 +1,4 @@
-<div class="quanto-map-area style-2 overflow-hidden">
+<div class="agroland-map-area style-2 overflow-hidden">
     <div class="container custom-container position-relative">
         <a href="<?php echo esc_url($settings['button_url']['url']); ?>" class="scroll-down section-link">
             <?php echo esc_html( $settings['button_text'] ) ?>

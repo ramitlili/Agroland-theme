@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 
 } // Exit if accessed directly.
 
-class Quanto_Positioning {
+class Agroland_Positioning {
 
     /*
 
@@ -24,11 +24,11 @@ class Quanto_Positioning {
 
         // Add new controls to advanced tab globally
 
-        add_action("elementor/element/after_section_end", array($this, 'quanto_add_position_controls_section'), 10, 3);
+        add_action("elementor/element/after_section_end", array($this, 'agroland_add_position_controls_section'), 10, 3);
 
     }
 
-    public function quanto_add_position_controls_section($widget, $section_id, $args) {
+    public function agroland_add_position_controls_section($widget, $section_id, $args) {
 
         //Link to sections
 
@@ -50,11 +50,11 @@ class Quanto_Positioning {
 
         $widget->start_controls_section(
 
-            'quanto_section_advanced_position',
+            'agroland_section_advanced_position',
 
             array(
 
-                'label' => QUANTO_BADGE . __('Positioning', 'mas-addons'),
+                'label' => AGROLAND_BADGE . __('Positioning', 'mas-addons'),
 
                 'tab'   => Controls_Manager::TAB_ADVANCED,
 
@@ -64,7 +64,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_type',
+            'agroland_position_type',
 
             array(
 
@@ -100,7 +100,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_top',
+            'agroland_position_top',
 
             array(
 
@@ -152,7 +152,7 @@ class Quanto_Positioning {
 
                 'condition'  => array(
 
-                    'quanto_position_type' => array('relative', 'absolute'),
+                    'agroland_position_type' => array('relative', 'absolute'),
 
                 ),
 
@@ -162,7 +162,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_right',
+            'agroland_position_right',
 
             array(
 
@@ -214,7 +214,7 @@ class Quanto_Positioning {
 
                 'condition'    => array(
 
-                    'quanto_position_type' => array('relative', 'absolute'),
+                    'agroland_position_type' => array('relative', 'absolute'),
 
                 ),
 
@@ -226,7 +226,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_bottom',
+            'agroland_position_bottom',
 
             array(
 
@@ -278,7 +278,7 @@ class Quanto_Positioning {
 
                 'condition'  => array(
 
-                    'quanto_position_type' => array('relative', 'absolute'),
+                    'agroland_position_type' => array('relative', 'absolute'),
 
                 ),
 
@@ -288,7 +288,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_left',
+            'agroland_position_left',
 
             array(
 
@@ -340,7 +340,7 @@ class Quanto_Positioning {
 
                 'condition'  => array(
 
-                    'quanto_position_type' => array('relative', 'absolute'),
+                    'agroland_position_type' => array('relative', 'absolute'),
 
                 ),
 
@@ -350,7 +350,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_from_center',
+            'agroland_position_from_center',
 
             array(
 
@@ -404,7 +404,7 @@ class Quanto_Positioning {
 
                 'condition'   => array(
 
-                    'quanto_position_type' => array('relative', 'absolute'),
+                    'agroland_position_type' => array('relative', 'absolute'),
 
                 ),
 
@@ -414,7 +414,7 @@ class Quanto_Positioning {
 
         $widget->add_responsive_control(
 
-            'quanto_position_zindex',
+            'agroland_position_zindex',
 
             array(
 
@@ -452,4 +452,4 @@ class Quanto_Positioning {
 
 }
 
-Quanto_Positioning::get_instance();
+Agroland_Positioning::get_instance();

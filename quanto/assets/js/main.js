@@ -25,14 +25,14 @@
         
         $.fn.vsmobilemenu = function (options) {
             var opt = $.extend({
-                menuToggleBtn: ".quanto-menu-toggle",
-                bodyToggleClass: "quanto-body-visible",
-                subMenuClass: "quanto-submenu",
-                subMenuParent: "quanto-item-has-children",
-                subMenuParentToggle: "quanto-active",
-                meanExpandClass: "quanto-mean-expand",
-                appendElement: '<span class="quanto-mean-expand"></span>',
-                subMenuToggleClass: "quanto-open",
+                menuToggleBtn: ".agroland-menu-toggle",
+                bodyToggleClass: "agroland-body-visible",
+                subMenuClass: "agroland-submenu",
+                subMenuParent: "agroland-item-has-children",
+                subMenuParentToggle: "agroland-active",
+                meanExpandClass: "agroland-mean-expand",
+                appendElement: '<span class="agroland-mean-expand"></span>',
+                subMenuToggleClass: "agroland-open",
                 toggleSpeed: 400,
               },
               options
@@ -115,7 +115,7 @@
                 });
             });
         };
-        $(".quanto-menu-wrapper").vsmobilemenu();
+        $(".agroland-menu-wrapper").vsmobilemenu();
     }
 
     /**************************************
@@ -134,9 +134,9 @@
     $(window).on('scroll', function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 20) {
-            $('.quanto-menu-area').addClass('sticky');
+            $('.agroland-menu-area').addClass('sticky');
         } else {
-            $('.quanto-menu-area').removeClass('sticky');
+            $('.agroland-menu-area').removeClass('sticky');
         }
     });
     // Sticky Menu End
@@ -166,7 +166,7 @@
 
 
     // Check if thumbnail slider exists
-    var thumbSliderElement = document.querySelector('.quanto-testimonial__thumb-slider');
+    var thumbSliderElement = document.querySelector('.agroland-testimonial__thumb-slider');
 
     // Initialize content slider configuration
     var contentSliderConfig = {
@@ -175,14 +175,14 @@
         loop: true,
         speed: 800,
         navigation: {
-            nextEl: '.quanto-testimonial__next',
-            prevEl: '.quanto-testimonial__prev',
+            nextEl: '.agroland-testimonial__next',
+            prevEl: '.agroland-testimonial__prev',
         },
     };
 
     // If thumbnail slider exists, initialize it and connect to content slider
     if (thumbSliderElement) {
-        var thumbSlider = new Swiper('.quanto-testimonial__thumb-slider', {
+        var thumbSlider = new Swiper('.agroland-testimonial__thumb-slider', {
             fadeEffect: { crossFade: true },
             effect: 'fade',
             loop: true,
@@ -198,7 +198,7 @@
     }
 
     // Initialize the content slider with the appropriate configuration
-    var testimonialInfo = new Swiper('.quanto-testimonial__content-slider', contentSliderConfig);
+    var testimonialInfo = new Swiper('.agroland-testimonial__content-slider', contentSliderConfig);
 
 
     // Register GSAP Plugins
@@ -245,12 +245,12 @@
 
     let sp = gsap.matchMedia();
     sp.add('(min-width: 1200px)', () => {
-        if ($('.quanto-service2-section').length > 0) {
+        if ($('.agroland-service2-section').length > 0) {
             ScrollTrigger.create({
-                trigger: '.quanto-service2-section',
+                trigger: '.agroland-service2-section',
                 start: 'top -1%',
                 end: 'bottom 110.5%',
-                pin: '.quanto-service2-section .quanto__header',
+                pin: '.agroland-service2-section .agroland__header',
                 pinSpacing: true,
             });
         }

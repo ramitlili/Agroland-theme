@@ -12,7 +12,7 @@
                 return;
             }
             var model = context.model,
-                customCSS = model.get('settings').get('quanto_custom_css');
+                customCSS = model.get('settings').get('agroland_custom_css');
 
             var selector = '.elementor-element.elementor-element-' + model.get('id');
 

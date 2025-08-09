@@ -3,8 +3,8 @@
 // Replace {$redux_opt_name} with your opt_name.
 // Also be sure to change this function name!
 
-if(!function_exists('quanto_redux_register_custom_extension_loader')) :
-    function quanto_redux_register_custom_extension_loader($ReduxFramework) {
+if(!function_exists('agroland_redux_register_custom_extension_loader')) :
+    function agroland_redux_register_custom_extension_loader($ReduxFramework) {
         $path    = dirname( __FILE__ ) . '/extensions/';
             $folders = scandir( $path, 1 );
             foreach ( $folders as $folder ) {
@@ -26,5 +26,5 @@ if(!function_exists('quanto_redux_register_custom_extension_loader')) :
             }
     }
     // Modify {$redux_opt_name} to match your opt_name
-    add_action("redux/extensions/quanto_opt/before", 'quanto_redux_register_custom_extension_loader', 0);
+    add_action("redux/extensions/agroland_opt/before", 'agroland_redux_register_custom_extension_loader', 0);
 endif;

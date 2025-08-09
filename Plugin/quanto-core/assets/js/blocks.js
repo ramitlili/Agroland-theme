@@ -11,7 +11,7 @@ jQuery(function ($) {
         $(".about_me_img_show").css({ "margin": "0 auto", "display": "block", "max-width": "80%" });
         $(document).on('widget-updated', function (event, widget) {
             var widget_id = $(widget).attr('id');
-            if (widget_id.indexOf('quanto_aboutus_widget') != -1) {
+            if (widget_id.indexOf('agroland_aboutus_widget') != -1) {
                 $imgval = $(".about_me_img_val").val();
                 $(".about_me_img_show").attr("src", $imgval);
                 $(".about_me_img_show").css({ "margin": "0 auto", "display": "block", "max-width": "80%" });

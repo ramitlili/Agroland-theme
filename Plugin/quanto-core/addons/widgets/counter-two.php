@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Counter Two Widget .
  *
  */
-class Quanto_Counter_Two extends Widget_Base {
+class Agroland_Counter_Two extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_counter_two';
+		return 'agroland_counter_two';
 	}
      
 	public function get_title() {
@@ -202,4 +202,4 @@ class Quanto_Counter_Two extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Counter_Two() );
+$widgets_manager->register( new \Agroland_Counter_Two() );

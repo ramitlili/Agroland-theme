@@ -1,4 +1,4 @@
-<div class="quanto-video-area style-2 overflow-hidden">
+<div class="agroland-video-area style-2 overflow-hidden">
     <div class="container custom-container position-relative">
         <a href="<?php echo esc_url($settings['button_url']['url']); ?>" class="scroll-down section-link">
             <?php echo esc_html( $settings['button_text'] ) ?>
@@ -14,8 +14,8 @@
                     autoplay
                     loop
                     src="<?php echo esc_html( $settings['video_url'] ) ?>"
-                    class="quanto-video"
-                    id="quanto-video-2"
+                    class="agroland-video"
+                    id="agroland-video-2"
                     data-speed="0.8"
                 ></video>
                 <button class="play-btn"><?php echo esc_html( $settings['play_text'] ) ?></button>

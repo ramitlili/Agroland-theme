@@ -14,8 +14,8 @@ if( !defined( 'ABSPATH' ) ){
 }
 
 // image default alt
-if( !function_exists( 'quanto_img_default_alt' ) ){
-	function quanto_img_default_alt( $url = '' ){
+if( !function_exists( 'agroland_img_default_alt' ) ){
+	function agroland_img_default_alt( $url = '' ){
 
 		if( $url != '' ){
 			// attachment id by URL
@@ -42,8 +42,8 @@ if( !function_exists( 'quanto_img_default_alt' ) ){
 
 
 // Image Tag
-if( !function_exists( 'quanto_img_tag' ) ){
-	function quanto_img_tag( array $args ){
+if( !function_exists( 'agroland_img_tag' ) ){
+	function agroland_img_tag( array $args ){
 
 		$default = array(
 			'url' 	 	  => '',
@@ -67,7 +67,7 @@ if( !function_exists( 'quanto_img_tag' ) ){
 		if( !empty( $args['alt'] ) ){
 			$alt = $args['alt'];
 		}else{
-			$alt = quanto_img_default_alt( $url );
+			$alt = agroland_img_default_alt( $url );
 		}
 
 		/**
@@ -114,8 +114,8 @@ if( !function_exists( 'quanto_img_tag' ) ){
 }
 
 // Anchor Tag
-if( !function_exists( 'quanto_anchor_tag' ) ){
-	function quanto_anchor_tag( array $args ){
+if( !function_exists( 'agroland_anchor_tag' ) ){
+	function agroland_anchor_tag( array $args ){
 
 		$default = array(
 			'url' 	 		=> '',
@@ -187,8 +187,8 @@ if( !function_exists( 'quanto_anchor_tag' ) ){
 }
 
 // Heading Tag
-if( !function_exists( 'quanto_heading_tag' ) ){
-	function quanto_heading_tag( array $args ){
+if( !function_exists( 'agroland_heading_tag' ) ){
+	function agroland_heading_tag( array $args ){
 
 		$default = array(
 			'tag' 	 	  => 'h1',
@@ -251,8 +251,8 @@ if( !function_exists( 'quanto_heading_tag' ) ){
 }
 
 // Paragraph Tag
-if( !function_exists( 'quanto_paragraph_tag' ) ){
-	function quanto_paragraph_tag( array $args ){
+if( !function_exists( 'agroland_paragraph_tag' ) ){
+	function agroland_paragraph_tag( array $args ){
 
 		$default = array(
 			'text' 	 	  => 'Write Something',
@@ -309,8 +309,8 @@ if( !function_exists( 'quanto_paragraph_tag' ) ){
 }
 
 // Other Tag
-if( !function_exists( 'quanto_span_tag' ) ){
-	function quanto_span_tag( array $args ){
+if( !function_exists( 'agroland_span_tag' ) ){
+	function agroland_span_tag( array $args ){
 
 		$default = array(
 			'tag' 	 	  => 'span',

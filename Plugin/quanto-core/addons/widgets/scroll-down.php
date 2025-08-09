@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Scroll Down Widget .
  *
  */
-class Quanto_Scroll_Down extends Widget_Base {
+class Agroland_Scroll_Down extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_scroll_down';
+		return 'agroland_scroll_down';
 	}
      
 	public function get_title() {
@@ -183,7 +183,7 @@ class Quanto_Scroll_Down extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-video-area.style-2 .play-btn' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-video-area.style-2 .play-btn' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -203,7 +203,7 @@ class Quanto_Scroll_Down extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-video-area.style-2 .play-btn' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-video-area.style-2 .play-btn' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -221,7 +221,7 @@ class Quanto_Scroll_Down extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'play_btn_typography',
-                'selector' => '{{WRAPPER}} .quanto-video-area.style-2 .play-btn',
+                'selector' => '{{WRAPPER}} .agroland-video-area.style-2 .play-btn',
             ]
         );
 		$this->add_responsive_control(
@@ -242,7 +242,7 @@ class Quanto_Scroll_Down extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-video-area.style-2 .play-btn' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-video-area.style-2 .play-btn' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -264,4 +264,4 @@ class Quanto_Scroll_Down extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Scroll_Down() );
+$widgets_manager->register( new \Agroland_Scroll_Down() );

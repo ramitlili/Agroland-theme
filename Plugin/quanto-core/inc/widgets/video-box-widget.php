@@ -12,13 +12,13 @@
 * Creating Video Widget
 ***************************************/
 
-class quanto_videobox_widget extends WP_Widget {
+class agroland_videobox_widget extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_videobox_widget',
+                'agroland_videobox_widget',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: Video Box', 'quanto' ),
@@ -45,15 +45,15 @@ class quanto_videobox_widget extends WP_Widget {
                             echo esc_html( $title );
                         echo $args['after_title'];
                     }
-                    $video_image  = quanto_opt( 'video_image' );
-                    $video_url    = quanto_opt( 'video_url' );
-                    $video_title  = quanto_opt( 'video_title' );
+                    $video_image  = agroland_opt( 'video_image' );
+                    $video_url    = agroland_opt( 'video_url' );
+                    $video_title  = agroland_opt( 'video_title' );
                     ?>
                     <?php if(!empty( $video_image )): ?>
                         <div class="vs-video-widget">
                             <div class="video-thumb mega-hover">
                                 <?php 
-                                    echo quanto_img_tag( array(
+                                    echo agroland_img_tag( array(
                                         'url'	=> esc_url( $video_image['url'] ),
                                         'class' => 'w-100',
                                         'alt'   => 'Video Thumb',
@@ -108,11 +108,11 @@ class quanto_videobox_widget extends WP_Widget {
 
             return $instance;
         }
-    } // Class quanto_videobox_widget ends here
+    } // Class agroland_videobox_widget ends here
 
 
     // Register and load the widget
-    function quanto_videobox_widget() {
-        register_widget( 'quanto_videobox_widget' );
+    function agroland_videobox_widget() {
+        register_widget( 'agroland_videobox_widget' );
     }
-    add_action( 'widgets_init', 'quanto_videobox_widget' );
+    add_action( 'widgets_init', 'agroland_videobox_widget' );

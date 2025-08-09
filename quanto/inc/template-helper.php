@@ -8,7 +8,7 @@
  */
 // WP kses allowed tags
 // ----------------------------------------------------------------------------------------
-function quanto_kses($raw){
+function agroland_kses($raw){
 
    $allowed_tags = array(
       'a'                         => array(

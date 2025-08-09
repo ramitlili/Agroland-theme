@@ -4,10 +4,10 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Quanto_Service extends \Elementor\Widget_Base {
+class Agroland_Service extends \Elementor\Widget_Base {
 
     public function get_name() {
-        return 'quanto_services';
+        return 'agroland_services';
     }
 
     public function get_title() {
@@ -19,7 +19,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return ['quanto-addons'];
+        return ['agroland-addons'];
     }
 
     public function get_keywords() {
@@ -71,33 +71,33 @@ class Quanto_Service extends \Elementor\Widget_Base {
                 'label' => esc_html__('Icon Select', 'quanto'),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    'quanto_service_image' => esc_html__('Image', 'quanto'),
-                    'quanto_service_icon' => esc_html__('Icon', 'quanto'),
+                    'agroland_service_image' => esc_html__('Image', 'quanto'),
+                    'agroland_service_icon' => esc_html__('Icon', 'quanto'),
                 ],
-                'default' => 'quanto_service_image',
+                'default' => 'agroland_service_image',
             ]
         );
 
         $repeater->add_control(
-            'quanto_service_image',
+            'agroland_service_image',
             [
                 'label' => esc_html__('Image', 'quanto'),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'condition' => [
-                    'service_icon_select' => 'quanto_service_image'
+                    'service_icon_select' => 'agroland_service_image'
                 ]
             ]
         );
 
         $repeater->add_control(
-            'quanto_service_icon',
+            'agroland_service_icon',
             [
                 'label' => __('Icon', 'quanto'),
                 'type' => \Elementor\Controls_Manager::ICONS,
                 'label_block' => true,
                 'separator' => 'after',
                 'condition' => [
-                    'service_icon_select' => 'quanto_service_icon'
+                    'service_icon_select' => 'agroland_service_icon'
                 ]
             ]
         );
@@ -215,12 +215,12 @@ class Quanto_Service extends \Elementor\Widget_Base {
                     ],
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-service-box .quanto-iconbox-icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box5 ' => 'gap: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box4 img' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box4 svg' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box6 .service-icon img' => 'margin-bottom: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box6 .service-icon svg' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box .agroland-iconbox-icon' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box5 ' => 'gap: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box4 img' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box4 svg' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box6 .service-icon img' => 'margin-bottom: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box6 .service-icon svg' => 'margin-bottom: {{SIZE}}{{UNIT}};',
                 ],
 
             ]
@@ -240,10 +240,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
                     ],
                 ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-iconbox-icon svg' => 'width: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-iconbox-icon img' => 'width: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box6 .service-icon svg' => 'width: {{SIZE}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-service-box6 .service-icon img' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-iconbox-icon svg' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-iconbox-icon img' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box6 .service-icon svg' => 'width: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-service-box6 .service-icon img' => 'width: {{SIZE}}{{UNIT}};',
                 ],
 
             ]
@@ -255,9 +255,9 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::COLOR,
                 'description' => esc_html__( 'Color will be enabled for icons') , 'quanto',
 				'selectors' => [
-					'{{WRAPPER}} .quanto-iconbox-icon svg path' => 'fill: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box4 svg path' => 'fill: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box6 .service-icon svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-iconbox-icon svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box4 svg path' => 'fill: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box6 .service-icon svg path' => 'fill: {{VALUE}}',
 				],
 			]
 		);
@@ -284,11 +284,11 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'title_typography',
-				'selector' => '{{WRAPPER}} .quanto-iconbox-data h5',
-				'selector' => '{{WRAPPER}} .quanto-service-box5 .quanto-content h5',
-				'selector' => '{{WRAPPER}} .quanto-service-box4 .service-title',
-				'selector' => '{{WRAPPER}} .quanto-service-box6 .service-content h5',
-				'selector' => '{{WRAPPER}} .quanto-service-box3 .box-content h4',
+				'selector' => '{{WRAPPER}} .agroland-iconbox-data h5',
+				'selector' => '{{WRAPPER}} .agroland-service-box5 .agroland-content h5',
+				'selector' => '{{WRAPPER}} .agroland-service-box4 .service-title',
+				'selector' => '{{WRAPPER}} .agroland-service-box6 .service-content h5',
+				'selector' => '{{WRAPPER}} .agroland-service-box3 .box-content h4',
 			]
 		);
 		$this->add_control(
@@ -297,11 +297,11 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-iconbox-data h5' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content h5' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box4 .service-title' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box6 .service-content h5' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box3 .box-content h4' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-iconbox-data h5' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content h5' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box4 .service-title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box6 .service-content h5' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box3 .box-content h4' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -312,11 +312,11 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-iconbox-data h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4 .service-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6 .service-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3 .box-content h4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-iconbox-data h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4 .service-title' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6 .service-content h5' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3 .box-content h4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -327,11 +327,11 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-iconbox-data h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4 .service-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6 .service-content h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3 .box-content h4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-iconbox-data h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4 .service-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6 .service-content h5' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3 .box-content h4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -349,11 +349,11 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-iconbox-data h5:hover' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content h5:hover' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box4 .service-title:hover' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box6 .service-content h5:hover' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box3 .service-content h4:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-iconbox-data h5:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content h5:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box4 .service-title:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box6 .service-content h5:hover' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box3 .service-content h4:hover' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -372,10 +372,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'designation_typography',
-				'selector' => '{{WRAPPER}} .quanto-service-box5 .quanto-content p',
-				'selector' => '{{WRAPPER}} .quanto-service-box4 .service-info p',
-				'selector' => '{{WRAPPER}} .quanto-service-box6 .service-content p',
-				'selector' => '{{WRAPPER}} .quanto-service-box3 .box-content p',
+				'selector' => '{{WRAPPER}} .agroland-service-box5 .agroland-content p',
+				'selector' => '{{WRAPPER}} .agroland-service-box4 .service-info p',
+				'selector' => '{{WRAPPER}} .agroland-service-box6 .service-content p',
+				'selector' => '{{WRAPPER}} .agroland-service-box3 .box-content p',
 			]
 		);
 		$this->add_control(
@@ -384,10 +384,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content p' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box4 .service-info p' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box6 .service-content p' => 'color: {{VALUE}}',
-					'{{WRAPPER}} .quanto-service-box3 .box-content p' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content p' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box4 .service-info p' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box6 .service-content p' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box3 .box-content p' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -398,10 +398,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box5 .quanto-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4 .service-info p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6 .service-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3 .box-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box5 .agroland-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4 .service-info p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6 .service-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3 .box-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -423,8 +423,8 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'button_typography',
-				'selector' => '{{WRAPPER}} .quanto-link-btn',
-				'selector' => '{{WRAPPER}} .quanto-link-btn',
+				'selector' => '{{WRAPPER}} .agroland-link-btn',
+				'selector' => '{{WRAPPER}} .agroland-link-btn',
                 
 			]
 		);
@@ -434,9 +434,9 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-                    '{{WRAPPER}} a.quanto-link-btn' => 'color: {{VALUE}} !important;',
-                    '{{WRAPPER}} .quanto-link-btn span i' => 'color: {{VALUE}} !important;',
-                    // '{{WRAPPER}} .quanto-link-btn' => 'border-color: {{VALUE}} !important;',
+                    '{{WRAPPER}} a.agroland-link-btn' => 'color: {{VALUE}} !important;',
+                    '{{WRAPPER}} .agroland-link-btn span i' => 'color: {{VALUE}} !important;',
+                    // '{{WRAPPER}} .agroland-link-btn' => 'border-color: {{VALUE}} !important;',
                 ],
 
 			]
@@ -447,7 +447,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
                 'label' => esc_html__( 'Hover Color', 'optech' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-service-box3:hover a.quanto-link-btn span i' => 'color: {{VALUE}} !important;',
+                    '{{WRAPPER}} .agroland-service-box3:hover a.agroland-link-btn span i' => 'color: {{VALUE}} !important;',
                 ],
                 'condition' => [
                     'service_layout' => '5',
@@ -460,7 +460,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
                 'label'     => __('Background Color', 'optech'),
                 'type'      => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                        '{{WRAPPER}} .quanto-link-btn' => 'background-color: {{VALUE}}',
+                        '{{WRAPPER}} .agroland-link-btn' => 'background-color: {{VALUE}}',
                 ],
                 'condition' => [
                 'service_layout' => '5',
@@ -474,7 +474,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 					'label'     => __('Background Hover Color', 'optech'),
 					'type'      => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-							'{{WRAPPER}} .quanto-service-box3:hover a.quanto-link-btn' => 'background-color: {{VALUE}}; border-color: {{VALUE}} !important;',
+							'{{WRAPPER}} .agroland-service-box3:hover a.agroland-link-btn' => 'background-color: {{VALUE}}; border-color: {{VALUE}} !important;',
 					],
                     'condition' => [
                     'service_layout' => '5',
@@ -489,7 +489,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-link-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -500,7 +500,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-link-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-link-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -521,7 +521,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'feature_list_typography',
-				'selector' => '{{WRAPPER}} .quanto-service-box6 .service-list ul li',
+				'selector' => '{{WRAPPER}} .agroland-service-box6 .service-list ul li',
 			]
 		);
 		$this->add_control(
@@ -530,7 +530,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Color', 'optech' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box6 .service-list ul li' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-service-box6 .service-list ul li' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -541,7 +541,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box6 .service-list ul li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6 .service-list ul li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -561,10 +561,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 					'label'     => __('Background Color', 'optech'),
 					'type'      => \Elementor\Controls_Manager::COLOR,
 					'selectors' => [
-							'{{WRAPPER}} .quanto-service-box' => 'background-color: {{VALUE}}',
-							'{{WRAPPER}} .quanto-service-box4' => 'background-color: {{VALUE}}',
-							'{{WRAPPER}} .quanto-service-box6' => 'background-color: {{VALUE}}',
-							'{{WRAPPER}} .quanto-service-box3' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-service-box' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-service-box4' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-service-box6' => 'background-color: {{VALUE}}',
+							'{{WRAPPER}} .agroland-service-box3' => 'background-color: {{VALUE}}',
 					],
 			]
 		);
@@ -575,10 +575,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -589,10 +589,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				]
 			]
 		);
@@ -601,9 +601,9 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			[
 				'name' => 'box_hover_shadow',
 				'label' => esc_html__( 'Box Hover Shadow', 'optech' ),
-				'selector' => '{{WRAPPER}} .quanto-service-box:hover',
-				'selector' => '{{WRAPPER}} .quanto-service-box4:hover',
-				'selector' => '{{WRAPPER}} .quanto-service-box3:hover',
+				'selector' => '{{WRAPPER}} .agroland-service-box:hover',
+				'selector' => '{{WRAPPER}} .agroland-service-box4:hover',
+				'selector' => '{{WRAPPER}} .agroland-service-box3:hover',
 			]
 		);
         $this->add_group_control(
@@ -611,10 +611,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 			[
 				'name' 		=> 'box_border',
 				'label' 	=> __( 'Border', 'optech' ),
-                'selector' 	=> '{{WRAPPER}} .quanto-service-box',
-                'selector' 	=> '{{WRAPPER}} .quanto-service-box4',
-                'selector' 	=> '{{WRAPPER}} .quanto-service-box6',
-                'selector' 	=> '{{WRAPPER}} .quanto-service-box3',
+                'selector' 	=> '{{WRAPPER}} .agroland-service-box',
+                'selector' 	=> '{{WRAPPER}} .agroland-service-box4',
+                'selector' 	=> '{{WRAPPER}} .agroland-service-box6',
+                'selector' 	=> '{{WRAPPER}} .agroland-service-box3',
 			]
 		);
         $this->add_responsive_control(
@@ -624,10 +624,10 @@ class Quanto_Service extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-service-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box4' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box6' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-					'{{WRAPPER}} .quanto-service-box3' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box4' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box6' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-service-box3' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
 		);
@@ -648,8 +648,8 @@ class Quanto_Service extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Typography::get_type(),
             [
                 'name' => 'number_typography',
-                'selector' => '{{WRAPPER}} .quanto-service-box5 .service-number',
-                'selector' => '{{WRAPPER}} .quanto-service-box4 .service-title span',
+                'selector' => '{{WRAPPER}} .agroland-service-box5 .service-number',
+                'selector' => '{{WRAPPER}} .agroland-service-box4 .service-title span',
                 
             ]
         );
@@ -659,8 +659,8 @@ class Quanto_Service extends \Elementor\Widget_Base {
                 'label' => esc_html__( 'Color', 'optech' ),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}}  .quanto-service-box5 .service-number' => 'color: {{VALUE}} !important;',
-                    '{{WRAPPER}}  .quanto-service-box4 .service-title span' => 'color: {{VALUE}} !important;',
+                    '{{WRAPPER}}  .agroland-service-box5 .service-number' => 'color: {{VALUE}} !important;',
+                    '{{WRAPPER}}  .agroland-service-box4 .service-title span' => 'color: {{VALUE}} !important;',
                 ],
 
             ]
@@ -674,7 +674,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
 
     public function get_all_services() {
         $wp_query = get_posts([
-            'post_type' => 'quanto_service',
+            'post_type' => 'agroland_service',
             'orderby' => 'date',
             'posts_per_page' => -1,
         ]);
@@ -695,7 +695,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
         if( 1 == $service_layout || 6 == $service_layout || 5 == $service_layout){
             $this->add_render_attribute('service_version', 'class', ['row g-4']);
         }elseif(2 == $service_layout){
-            $this->add_render_attribute('service_version', 'class', ['row g-114 quanto-service2__row']);
+            $this->add_render_attribute('service_version', 'class', ['row g-114 agroland-service2__row']);
         }elseif(3 == $service_layout){
             $this->add_render_attribute('service_version', 'class', ['row gx-4 gy-5']);
         }else{
@@ -715,4 +715,4 @@ class Quanto_Service extends \Elementor\Widget_Base {
     }
 }
 
-$widgets_manager->register(new \Quanto_Service());
+$widgets_manager->register(new \Agroland_Service());

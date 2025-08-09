@@ -15,20 +15,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 // Container or wrapper div
-$quanto_layout = quanto_meta( 'custom_page_layout' );
+$agroland_layout = agroland_meta( 'custom_page_layout' );
 
-if( $quanto_layout == '1' ){
-	echo '<div class="quanto-main-wrapper">';
+if( $agroland_layout == '1' ){
+	echo '<div class="agroland-main-wrapper">';
 		echo '<div class="container">';
 			echo '<div class="row">';
 				echo '<div class="col-sm-12">';
-}elseif( $quanto_layout == '2' ){
-    echo '<div class="quanto-main-wrapper">';
+}elseif( $agroland_layout == '2' ){
+    echo '<div class="agroland-main-wrapper">';
 		echo '<div class="container-fluid">';
 			echo '<div class="row">';
 				echo '<div class="col-sm-12">';
 }else{
-	echo '<div class="quanto-fluid">';
+	echo '<div class="agroland-fluid">';
 }
 	echo '<div class="builder-page-wrapper">';
 	// Query
@@ -41,12 +41,12 @@ if( $quanto_layout == '1' ){
 	}
 
 	echo '</div>';
-if( $quanto_layout == '1' ){
+if( $agroland_layout == '1' ){
 				echo '</div>';
 			echo '</div>';
 		echo '</div>';
 	echo '</div>';
-}elseif( $quanto_layout == '2' ){
+}elseif( $agroland_layout == '2' ){
 				echo '</div>';
 			echo '</div>';
 		echo '</div>';

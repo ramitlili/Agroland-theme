@@ -12,7 +12,7 @@
         exit();
     }
 
-    quanto_setPostViews( get_the_ID() );
+    agroland_setPostViews( get_the_ID() );
 
     ?>
     <?php echo '<div class="blog-item-wrapper">'; ?>
@@ -20,9 +20,9 @@
             <div <?php post_class(); ?> >
                 <?php
                 if( class_exists('ReduxFramework') ) {
-                    $quanto_post_details_title_position = quanto_opt('quanto_post_details_title_position');
+                    $agroland_post_details_title_position = agroland_opt('agroland_post_details_title_position');
                 } else {
-                    $quanto_post_details_title_position = 'header';
+                    $agroland_post_details_title_position = 'header';
                 }
 
                 $allowhtml = array(
@@ -43,20 +43,20 @@
 
                 echo '<div class="row justify-content-center row-padding-bottom">';
                     if ( class_exists('ReduxFramework') ) {
-                        $column_class = quanto_opt('quanto_blog_details_title_column');
+                        $column_class = agroland_opt('agroland_blog_details_title_column');
                         if ( empty($column_class) ) {
                             $column_class = 'col-xl-9 col-xxl-9';
                         }
                         echo '<div class="' . esc_attr($column_class) . '">';
                     } else {
-                        if ( is_active_sidebar('quanto-blog-sidebar') ) {
+                        if ( is_active_sidebar('agroland-blog-sidebar') ) {
                             echo '<div class="col-xl-12 col-xxl-12">';
                         } else {
                             echo '<div class="col-xl-9 col-xxl-9">';
                         }
                     }
 
-                        if( $quanto_post_details_title_position != 'header' ) {
+                        if( $agroland_post_details_title_position != 'header' ) {
                             echo '<div class="title-box blog-title move-anim" data-delay="0.45">';
                                 //title
                                 echo '<h2>'.wp_kses( get_the_title(), $allowhtml ).'</h2>';
@@ -64,46 +64,46 @@
                         }
 
                         // Blog Post Meta
-                        do_action( 'quanto_blog_details_post_meta' );
+                        do_action( 'agroland_blog_details_post_meta' );
                     echo '</div>';
                 echo '</div>';
 
 
                 // Blog Post Thumbnail
-                do_action( 'quanto_blog_post_thumb' );
+                do_action( 'agroland_blog_post_thumb' );
                 
 
                 echo '<div class="content-box">';
 
                     // Share Links
                     if( class_exists('ReduxFramework') ) {
-                        $quanto_post_details_share_options = quanto_opt('quanto_post_details_share_options');
+                        $agroland_post_details_share_options = agroland_opt('agroland_post_details_share_options');
                     } else {
-                        $quanto_post_details_share_options = false;
+                        $agroland_post_details_share_options = false;
                     }
 
-                    if( function_exists( 'quanto_social_sharing_buttons' ) && $quanto_post_details_share_options ){
+                    if( function_exists( 'agroland_social_sharing_buttons' ) && $agroland_post_details_share_options ){
                         echo '<div class="social-links">';
                             /**
                             *
                             * Hook for Blog Details Share Options
                             *
-                            * Hook quanto_blog_details_share_options
+                            * Hook agroland_blog_details_share_options
                             *
-                            * @Hooked quanto_blog_details_share_options_cb 10
+                            * @Hooked agroland_blog_details_share_options_cb 10
                             *
                             */
-                            do_action( 'quanto_blog_details_share_options' );
+                            do_action( 'agroland_blog_details_share_options' );
                         echo '</div>';
                     }
 
                     echo '<div class="row justify-content-center social-links-scroll position-relative">';
                         if( class_exists('ReduxFramework') ) {
-                            $quanto_post_details_share_options = quanto_opt('quanto_post_details_share_options');
+                            $agroland_post_details_share_options = agroland_opt('agroland_post_details_share_options');
                         } else {
-                            $quanto_post_details_share_options = false;
+                            $agroland_post_details_share_options = false;
                         }
-                        if( function_exists( 'quanto_social_sharing_buttons' ) && $quanto_post_details_share_options ) {
+                        if( function_exists( 'agroland_social_sharing_buttons' ) && $agroland_post_details_share_options ) {
                             echo '<div class="col-xl-9 col-xxl-8">';
                         } else {
                             echo '<div class="col-xl-12 col-xxl-12">';
@@ -115,11 +115,11 @@
                             echo '</div>';
 
                             // Tags
-                            $quanto_post_tag = get_the_tags();
-                            if( is_array( $quanto_post_tag ) && ! empty( $quanto_post_tag ) ){
+                            $agroland_post_tag = get_the_tags();
+                            if( is_array( $agroland_post_tag ) && ! empty( $agroland_post_tag ) ){
                                 echo '<div class="blog-tags">';
                                     echo '<ul class="custom-ul">';
-                                        foreach( $quanto_post_tag as $tags ){
+                                        foreach( $agroland_post_tag as $tags ){
                                             echo '<li><a href="'.esc_url( get_tag_link( $tags->term_id ) ).'">'.esc_html( $tags->name ).'</a></li>';
                                         }
                                     echo '</ul>';
@@ -130,12 +130,12 @@
                             *
                             * Hook for Blog Details Comments
                             *
-                            * Hook quanto_blog_details_comments
+                            * Hook agroland_blog_details_comments
                             *
-                            * @Hooked quanto_blog_details_comments_cb 10
+                            * @Hooked agroland_blog_details_comments_cb 10
                             *
                             */
-                            do_action( 'quanto_blog_details_comments' );
+                            do_action( 'agroland_blog_details_comments' );
 
                         echo '</div>';
                     echo '</div>';

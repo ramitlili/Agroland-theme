@@ -2,17 +2,17 @@
     <?php foreach ($service_lists as $item): ?>
     <?php
     $query = new WP_Query([
-        'post_type' => 'quanto_service',
+        'post_type' => 'agroland_service',
         'post__in' => [$item['select_post']],
         'post_status' => 'publish',
     ]);
     while ($query->have_posts()): $query->the_post();
     ?>
-    <div class="quanto-service-box4 fade-anim">
+    <div class="agroland-service-box4 fade-anim">
         <h5 class="service-title"><span><?php echo esc_html(!empty($item['service_number']) ? $item['service_number'] : '01'); ?></span> ─ <?php the_title(); ?></h5>
         <div class="service-info">
             <p><?php echo esc_html(!empty($item['service_discription_text']) ? $item['service_discription_text'] : ''); ?></p>
-            <a class="quanto-link-btn" href="<?php the_permalink(); ?>">
+            <a class="agroland-link-btn" href="<?php the_permalink(); ?>">
                 <?php echo esc_html(!empty($item['service_btn_text']) ? $item['service_btn_text'] : 'View details'); ?>
                 <span>
                 <i class="fa-solid fa-arrow-right arry1"></i>
@@ -20,11 +20,11 @@
                 </span>
             </a>
         </div>
-        <div class="quanto-iconbox-icon">
-            <?php if (!empty($item['service_icon_select']) && $item['service_icon_select'] === 'quanto_service_image' && !empty($item['quanto_service_image']['url'])): ?>
-                    <img src="<?php echo esc_url($item['quanto_service_image']['url']); ?>" alt="service-icon">
-            <?php elseif (!empty($item['quanto_service_icon'])): ?>
-                    <?php \Elementor\Icons_Manager::render_icon($item['quanto_service_icon'], ['aria-hidden' => 'true']); ?>
+        <div class="agroland-iconbox-icon">
+            <?php if (!empty($item['service_icon_select']) && $item['service_icon_select'] === 'agroland_service_image' && !empty($item['agroland_service_image']['url'])): ?>
+                    <img src="<?php echo esc_url($item['agroland_service_image']['url']); ?>" alt="service-icon">
+            <?php elseif (!empty($item['agroland_service_icon'])): ?>
+                    <?php \Elementor\Icons_Manager::render_icon($item['agroland_service_icon'], ['aria-hidden' => 'true']); ?>
             <?php endif; ?>
         </div>
     </div>

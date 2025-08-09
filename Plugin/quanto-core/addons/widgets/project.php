@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Project Widget .
  *
  */
-class Quanto_Project extends Widget_Base {
+class Agroland_Project extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_project';
+		return 'agroland_project';
 	}
      
 	public function get_title() {
@@ -165,7 +165,7 @@ class Quanto_Project extends Widget_Base {
                 'label' => __( 'Border Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-box2' => 'border-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-box2' => 'border-color: {{VALUE}};',
                 ],
             ]
         );
@@ -176,7 +176,7 @@ class Quanto_Project extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-box2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',
+                    '{{WRAPPER}} .agroland-project-box2' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}} !important;',
                 ],
             ]
         );
@@ -208,7 +208,7 @@ class Quanto_Project extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project-thumb img' => 'height: {{SIZE}}{{UNIT}} !important;',
+					'{{WRAPPER}} .agroland-project-thumb img' => 'height: {{SIZE}}{{UNIT}} !important;',
 				],
 			]
 		);
@@ -229,7 +229,7 @@ class Quanto_Project extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -239,7 +239,7 @@ class Quanto_Project extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -250,7 +250,7 @@ class Quanto_Project extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -270,8 +270,8 @@ class Quanto_Project extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content h5' => 'color: {{VALUE}};',
-                    '{{WRAPPER}} .quanto-project-content h4' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content h5' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content h4' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -279,7 +279,7 @@ class Quanto_Project extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'title_typography',
-                'selector' => '{{WRAPPER}} .quanto-project-content h5, {{WRAPPER}} .quanto-project-content h4',
+                'selector' => '{{WRAPPER}} .agroland-project-content h5, {{WRAPPER}} .agroland-project-content h4',
             ]
         );
 		$this->end_controls_section();
@@ -301,7 +301,7 @@ class Quanto_Project extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-box2 .quanto-project-content .top-content p' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-box2 .agroland-project-content .top-content p' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -309,7 +309,7 @@ class Quanto_Project extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'text_typography',
-                'selector' => '{{WRAPPER}} .quanto-project-box2 .quanto-project-content .top-content p',
+                'selector' => '{{WRAPPER}} .agroland-project-box2 .agroland-project-content .top-content p',
             ]
         );
         $this->add_responsive_control(
@@ -319,7 +319,7 @@ class Quanto_Project extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-box2 .quanto-project-content .top-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-box2 .agroland-project-content .top-content p' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -339,7 +339,7 @@ class Quanto_Project extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content .quanto-project-date' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content .agroland-project-date' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -347,7 +347,7 @@ class Quanto_Project extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'meta_typography',
-                'selector' => '{{WRAPPER}} .quanto-project-content .quanto-project-date',
+                'selector' => '{{WRAPPER}} .agroland-project-content .agroland-project-date',
             ]
         );
         $this->add_responsive_control(
@@ -357,8 +357,8 @@ class Quanto_Project extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content .quanto-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-                    '{{WRAPPER}} .quanto-project-box2 .quanto-project-content .quanto-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content .agroland-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-box2 .agroland-project-content .agroland-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -371,7 +371,7 @@ class Quanto_Project extends Widget_Base {
     {
 
         $wp_query = get_posts([
-            'post_type' => 'quanto_project',
+            'post_type' => 'agroland_project',
             'orderby' => 'date',
             'posts_per_page' => -1,
         ]);
@@ -425,4 +425,4 @@ class Quanto_Project extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Project() );
+$widgets_manager->register( new \Agroland_Project() );

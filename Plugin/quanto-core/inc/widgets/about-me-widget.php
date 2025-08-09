@@ -12,13 +12,13 @@
 * Creating About Me Widget
 ***************************************/
 
-class quanto_about_me_widget extends WP_Widget {
+class agroland_about_me_widget extends WP_Widget {
 
         function __construct() {
         
             parent::__construct(
                 // Base ID of your widget
-                'quanto_about_me_widget', 
+                'agroland_about_me_widget', 
             
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: About Me', 'quanto' ),
@@ -47,21 +47,21 @@ class quanto_about_me_widget extends WP_Widget {
                     if( !empty( $about_img ) ) {
                         echo '<!-- Author Image -->';
                         echo '<div class="admin-img">';
-                            echo quanto_img_tag( array(
+                            echo agroland_img_tag( array(
                                 "url"   => esc_url( $about_img ),
                             ) );
                         echo '</div>';
                         echo '<!-- End of Author Image -->';
                     }
                     if( !empty( $author_name ) ) {
-                        echo quanto_heading_tag( array(
+                        echo agroland_heading_tag( array(
                             "text"  => esc_html( $author_name ),
 							"class"	=> "widget_title",
 							"tag"	=> "h3",
                         ) );
                     }
 					if( !empty( $instance['desc'] ) ) {
-						echo quanto_paragraph_tag( array(
+						echo agroland_paragraph_tag( array(
 							'text'	=> wp_kses_post( $instance['desc'] ),
 							'class' => 'admin-text',
 						) );
@@ -130,11 +130,11 @@ class quanto_about_me_widget extends WP_Widget {
             $instance['about_img'] 	    = ( ! empty( $new_instance['about_img'] ) ) ? strip_tags( $new_instance['about_img'] ) : '';
             return $instance;
         }
-    } // Class quanto_about_me_widget ends here
+    } // Class agroland_about_me_widget ends here
     
 
     // Register and load the widget
-    function quanto_about_me_load_widget() {
-        register_widget( 'quanto_about_me_widget' );
+    function agroland_about_me_load_widget() {
+        register_widget( 'agroland_about_me_widget' );
     }
-    add_action( 'widgets_init', 'quanto_about_me_load_widget' );
+    add_action( 'widgets_init', 'agroland_about_me_load_widget' );

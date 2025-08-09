@@ -11,27 +11,27 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
  
 // demo import file
-function quanto_import_files() {
+function agroland_import_files() {
 
     return array(
         array(
             'import_file_name'             => esc_html__('Quanto Demo','quanto'),
-            'local_import_file'            =>  QUANTO_DEMO_DIR_PATH  . 'quanto-demo.xml',
-            'local_import_widget_file'     =>  QUANTO_DEMO_DIR_PATH  . 'widgets.wie',
-            'local_import_customizer_file' =>  QUANTO_DEMO_DIR_PATH  . 'customizer.dat',
+            'local_import_file'            =>  AGROLAND_DEMO_DIR_PATH  . 'agroland-demo.xml',
+            'local_import_widget_file'     =>  AGROLAND_DEMO_DIR_PATH  . 'widgets.wie',
+            'local_import_customizer_file' =>  AGROLAND_DEMO_DIR_PATH  . 'customizer.dat',
             'local_import_redux'           => array(
                 array(
-                    'file_path'   =>  QUANTO_DEMO_DIR_PATH . 'redux_options_demo.json',
-                    'option_name' => 'quanto_opt',
+                    'file_path'   =>  AGROLAND_DEMO_DIR_PATH . 'redux_options_demo.json',
+                    'option_name' => 'agroland_opt',
                 ),
             ),
         ),
     );
 }
-add_filter( 'pt-ocdi/import_files', 'quanto_import_files' );
+add_filter( 'pt-ocdi/import_files', 'agroland_import_files' );
 
 // demo import setup
-function quanto_after_import_setup() {
+function agroland_after_import_setup() {
 	// Assign menus to their locations.
 	$main_menu   = get_term_by( 'name', 'Header Menu', 'nav_menu' );
 
@@ -74,29 +74,29 @@ function quanto_after_import_setup() {
     }
     
 }
-add_action( 'pt-ocdi/after_import', 'quanto_after_import_setup' );
+add_action( 'pt-ocdi/after_import', 'agroland_after_import_setup' );
 
 
 //disable the branding notice after successful demo import
 add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
 
 //change the location, title and other parameters of the plugin page
-function quanto_import_plugin_page_setup( $default_settings ) {
+function agroland_import_plugin_page_setup( $default_settings ) {
 	$default_settings['parent_slug'] = 'themes.php';
 	$default_settings['page_title']  = esc_html__( 'Quanto Demo Import' , 'quanto' );
 	$default_settings['menu_title']  = esc_html__( 'Import Demo Data' , 'quanto' );
 	$default_settings['capability']  = 'import';
-	$default_settings['menu_slug']   = 'quanto-demo-import';
+	$default_settings['menu_slug']   = 'agroland-demo-import';
 
 	return $default_settings;
 }
-add_filter( 'pt-ocdi/plugin_page_setup', 'quanto_import_plugin_page_setup' );
+add_filter( 'pt-ocdi/plugin_page_setup', 'agroland_import_plugin_page_setup' );
  
 // Enqueue scripts
-function quanto_demo_import_custom_scripts(){
-	if( isset( $_GET['page'] ) && $_GET['page'] == 'quanto-demo-import' ){
+function agroland_demo_import_custom_scripts(){
+	if( isset( $_GET['page'] ) && $_GET['page'] == 'agroland-demo-import' ){
 		// style
-		wp_enqueue_style( 'quanto-demo-import', QUANTO_DEMO_DIR_URI.'css/quanto.demo.import.css', array(), '1.0', false );
+		wp_enqueue_style( 'agroland-demo-import', AGROLAND_DEMO_DIR_URI.'css/quanto.demo.import.css', array(), '1.0', false );
 	}
 }
-add_action( 'admin_enqueue_scripts', 'quanto_demo_import_custom_scripts' );
+add_action( 'admin_enqueue_scripts', 'agroland_demo_import_custom_scripts' );

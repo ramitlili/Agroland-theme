@@ -23,10 +23,10 @@
 /**
  * Include the TGM_Plugin_Activation class.
  */
-require_once QUANTO_DIR_PATH_INC . 'Quanto-framework/plugins-activation/class-tgm-plugin-activation.php';
+require_once AGROLAND_DIR_PATH_INC . 'agroland-framework/plugins-activation/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'quanto_register_required_plugins' );
-function quanto_register_required_plugins() {
+add_action( 'tgmpa_register', 'agroland_register_required_plugins' );
+function agroland_register_required_plugins() {
 
     /*
     * Array of plugin arrays. Required keys are name and slug.
@@ -37,9 +37,9 @@ function quanto_register_required_plugins() {
         
         array(
             'name'                  => esc_html__( 'Quanto Core', 'quanto' ),
-            'slug'                  => 'quanto-core',
+            'slug'                  => 'agroland-core',
             'version'               => '1.0',
-            'source'                => 'https://kit.framerpeak.com/plugins/quanto-core.zip',
+            'source'                => 'https://kit.framerpeak.com/plugins/agroland-core.zip',
             'required'              => true,
         ),
         array(

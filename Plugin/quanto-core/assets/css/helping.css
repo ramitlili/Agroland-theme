@@ -130,7 +130,7 @@
 }
 
 /* social link s */
-.quanto-social-icon-box ul li a {
+.agroland-social-icon-box ul li a {
     position: relative;
     overflow: hidden;
 }
@@ -143,9 +143,9 @@
 .socail-hide {
     transform: translateY(35px);
 }
-.quanto-social-icon-box ul li a:hover .socail-hide {
+.agroland-social-icon-box ul li a:hover .socail-hide {
     transform: translateY(0px);
 }
-.quanto-social-icon-box ul li a:hover .socail-show {
+.agroland-social-icon-box ul li a:hover .socail-show {
     transform: translateY(-35px);
 }

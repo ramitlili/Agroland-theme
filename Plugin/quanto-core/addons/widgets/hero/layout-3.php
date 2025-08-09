@@ -1,8 +1,8 @@
-<section class="quanto-hero3-section">
+<section class="agroland-hero3-section">
     <div class="container-fluid px-0 overflow-hidden">
         <div class="row">
             <div class="col-12 position-relative">
-                <div class="quanto-hero3__content">
+                <div class="agroland-hero3__content">
                     <div class="marquee-container fade-anim">
                         <div class="marquee">
                             <?php foreach ($settings['slider_item'] as $list_item) : ?>

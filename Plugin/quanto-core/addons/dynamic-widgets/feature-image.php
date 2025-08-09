@@ -30,7 +30,7 @@ class Featured_Image extends Widget_Base {
      * @return string Widget name.
      */
     public function get_name() {
-        return 'quanto-feature-image';
+        return 'agroland-feature-image';
     }
     /**
      * Get widget title.

@@ -12,10 +12,10 @@ use \Elementor\Repeater;
  * Project Slider Widget .
  *
  */
-class Quanto_Project_Slider extends Widget_Base {
+class Agroland_Project_Slider extends Widget_Base {
 
 	public function get_name() {
-		return 'quanto_project_slider';
+		return 'agroland_project_slider';
 	}
      
 	public function get_title() {
@@ -182,7 +182,7 @@ class Quanto_Project_Slider extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project-thumb img' => 'width: {{SIZE}}{{UNIT}} !important;',
+					'{{WRAPPER}} .agroland-project-thumb img' => 'width: {{SIZE}}{{UNIT}} !important;',
 				],
 			]
 		);
@@ -204,7 +204,7 @@ class Quanto_Project_Slider extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project-thumb img' => 'height: {{SIZE}}{{UNIT}} !important;',
+					'{{WRAPPER}} .agroland-project-thumb img' => 'height: {{SIZE}}{{UNIT}} !important;',
 				],
 			]
 		);
@@ -225,7 +225,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -235,7 +235,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -246,7 +246,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -266,7 +266,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content h5' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content h5' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -274,7 +274,7 @@ class Quanto_Project_Slider extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'title_typography',
-                'selector' => '{{WRAPPER}} .quanto-project-content h5',
+                'selector' => '{{WRAPPER}} .agroland-project-content h5',
             ]
         );
 		$this->end_controls_section();
@@ -293,7 +293,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content .quanto-project-date' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project-content .agroland-project-date' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -301,7 +301,7 @@ class Quanto_Project_Slider extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'meta_typography',
-                'selector' => '{{WRAPPER}} .quanto-project-content .quanto-project-date',
+                'selector' => '{{WRAPPER}} .agroland-project-content .agroland-project-date',
             ]
         );
         $this->add_responsive_control(
@@ -311,7 +311,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project-content .quanto-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project-content .agroland-project-date' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -334,7 +334,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'label' => __( 'Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -344,7 +344,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'label' => __( 'Background Color', 'quanto' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -366,7 +366,7 @@ class Quanto_Project_Slider extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -388,7 +388,7 @@ class Quanto_Project_Slider extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -410,7 +410,7 @@ class Quanto_Project_Slider extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'height: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'height: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -421,7 +421,7 @@ class Quanto_Project_Slider extends Widget_Base {
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -429,7 +429,7 @@ class Quanto_Project_Slider extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name' => 'arrow_border',
-                'selector' => '{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn',
+                'selector' => '{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn',
             ]
         );
 		$this->add_responsive_control(
@@ -439,7 +439,7 @@ class Quanto_Project_Slider extends Widget_Base {
 				'type'          => Controls_Manager::DIMENSIONS,
 				'size_units'    => [ 'px', '%', 'em' ],
 				'selectors'     => [
-					'{{WRAPPER}} .quanto-project__slider-navigation .next-btn, .quanto-project__slider-navigation .prev-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-project__slider-navigation .next-btn, .agroland-project__slider-navigation .prev-btn' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
 			]
         );
@@ -452,7 +452,7 @@ class Quanto_Project_Slider extends Widget_Base {
     {
 
         $wp_query = get_posts([
-            'post_type' => 'quanto_project',
+            'post_type' => 'agroland_project',
             'orderby' => 'date',
             'posts_per_page' => -1,
         ]);
@@ -495,4 +495,4 @@ class Quanto_Project_Slider extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Project_Slider() );
+$widgets_manager->register( new \Agroland_Project_Slider() );

@@ -15,29 +15,29 @@
 /**
  * Single Template
  */
-add_filter( 'single_template', 'quanto_core_template_redirect' );
+add_filter( 'single_template', 'agroland_core_template_redirect' );
 
-if( ! function_exists( 'quanto_core_template_redirect' ) ){
-    function quanto_core_template_redirect( $single_template ){
+if( ! function_exists( 'agroland_core_template_redirect' ) ){
+    function agroland_core_template_redirect( $single_template ){
 
         global $post;
 
         // teacher Single Page
         if( $post ){
-            if( $post->post_type == 'quanto_teacher' ){
-                $single_template = QUANTO_CORE_PLUGIN_TEMP . 'single-quanto_teacher.php';
+            if( $post->post_type == 'agroland_teacher' ){
+                $single_template = AGROLAND_CORE_PLUGIN_TEMP . 'single-agroland_teacher.php';
             }
         }
 
         if( $post ){
-            if( $post->post_type == 'quanto_class' ){
-                $single_template = QUANTO_CORE_PLUGIN_TEMP . 'single-quanto_class.php';
+            if( $post->post_type == 'agroland_class' ){
+                $single_template = AGROLAND_CORE_PLUGIN_TEMP . 'single-agroland_class.php';
             }
         }
 
         if( $post ){
-            if( $post->post_type == 'quanto_event' ){
-                $single_template = QUANTO_CORE_PLUGIN_TEMP . 'single-quanto_event.php';
+            if( $post->post_type == 'agroland_event' ){
+                $single_template = AGROLAND_CORE_PLUGIN_TEMP . 'single-agroland_event.php';
             }
         }
 
@@ -49,17 +49,17 @@ if( ! function_exists( 'quanto_core_template_redirect' ) ){
 /**
  * Archive Template
  */
-add_filter( 'archive_template', 'quanto_core_template_archive' );
+add_filter( 'archive_template', 'agroland_core_template_archive' );
 
-if( ! function_exists( 'quanto_core_template_archive' ) ){
-    function quanto_core_template_archive( $archive_template ){
+if( ! function_exists( 'agroland_core_template_archive' ) ){
+    function agroland_core_template_archive( $archive_template ){
 
         global $post;
 
         // Service Archive Template
         if( $post ){
-            if( $post->post_type == 'quanto_class' ){
-                $archive_template = QUANTO_CORE_PLUGIN_TEMP . 'archive-quanto_class.php';
+            if( $post->post_type == 'agroland_class' ){
+                $archive_template = AGROLAND_CORE_PLUGIN_TEMP . 'archive-agroland_class.php';
             }
         }
 
@@ -75,14 +75,14 @@ if( ! function_exists( 'quanto_core_template_archive' ) ){
  *
  * @return array
  */
-if ( ! function_exists( 'quanto_get_meta' ) ) {
-  function quanto_get_meta( $data ) {
+if ( ! function_exists( 'agroland_get_meta' ) ) {
+  function agroland_get_meta( $data ) {
       global $wp_embed;
-      $quanto_content = $wp_embed->autoembed( $data );
-      $quanto_content = $wp_embed->run_shortcode( $quanto_content );
-      $quanto_content = do_shortcode( $quanto_content );
-      $quanto_content = wpautop( $quanto_content );
-      return $quanto_content;
+      $agroland_content = $wp_embed->autoembed( $data );
+      $agroland_content = $wp_embed->run_shortcode( $agroland_content );
+      $agroland_content = do_shortcode( $agroland_content );
+      $agroland_content = wpautop( $agroland_content );
+      return $agroland_content;
   }
 }
 
@@ -90,32 +90,32 @@ if ( ! function_exists( 'quanto_get_meta' ) ) {
 /**
  * Admin Custom Login Logo
  */
-function quanto_custom_login_logo() {
-  $logo = ! empty( quanto_opt( 'quanto_admin_login_logo', 'url' ) ) ? quanto_opt( 'quanto_admin_login_logo', 'url' ) : '' ;
+function agroland_custom_login_logo() {
+  $logo = ! empty( agroland_opt( 'agroland_admin_login_logo', 'url' ) ) ? agroland_opt( 'agroland_admin_login_logo', 'url' ) : '' ;
   if( isset( $logo ) && !empty( $logo ) )
       echo '<style type="text/css">body.login div#login h1 a { background-image:url('.esc_url( $logo ).'); }</style>';
 }
-add_action( 'login_enqueue_scripts', 'quanto_custom_login_logo' );
+add_action( 'login_enqueue_scripts', 'agroland_custom_login_logo' );
 
 /**
 * Admin Custom css
 */
-add_action( 'admin_enqueue_scripts', 'quanto_admin_styles' );
+add_action( 'admin_enqueue_scripts', 'agroland_admin_styles' );
 
-function quanto_admin_styles() {
-  // $quanto_admin_custom_css = ! empty( quanto_opt( 'quanto_theme_admin_custom_css' ) ) ? quanto_opt( 'quanto_theme_admin_custom_css' ) : '';
-  if ( ! empty( $quanto_admin_custom_css ) ) {
-      $quanto_admin_custom_css = str_replace(array("\r\n", "\r", "\n", "\t", '    '), '', $quanto_admin_custom_css);
-      echo '<style rel="stylesheet" id="quanto-admin-custom-css" >';
-              echo esc_html( $quanto_admin_custom_css );
+function agroland_admin_styles() {
+  // $agroland_admin_custom_css = ! empty( agroland_opt( 'agroland_theme_admin_custom_css' ) ) ? agroland_opt( 'agroland_theme_admin_custom_css' ) : '';
+  if ( ! empty( $agroland_admin_custom_css ) ) {
+      $agroland_admin_custom_css = str_replace(array("\r\n", "\r", "\n", "\t", '    '), '', $agroland_admin_custom_css);
+      echo '<style rel="stylesheet" id="agroland-admin-custom-css" >';
+              echo esc_html( $agroland_admin_custom_css );
       echo '</style>';
   }
 }
 
 
 // Social Icons
-if ( ! function_exists( 'quanto_icon_list_options' ) ) {
-    function quanto_icon_list_options() {
+if ( ! function_exists( 'agroland_icon_list_options' ) ) {
+    function agroland_icon_list_options() {
         $socialIcons = array(
             'facebook' => 'Facebook',
             'twitter' => 'Twitter',
@@ -135,7 +135,7 @@ if ( ! function_exists( 'quanto_icon_list_options' ) ) {
 
 
  // share button code
- function quanto_social_sharing_buttons( ) {
+ function agroland_social_sharing_buttons( ) {
 
   // Get page URL
   $URL = get_permalink();
@@ -168,16 +168,16 @@ $content = '';
 };
 
 //add SVG to allowed file uploads
-function quanto_mime_types( $mimes ) {
+function agroland_mime_types( $mimes ) {
   $mimes['svg'] = 'image/svg+xml';
   $mimes['svgz'] = 'image/svgz+xml';
   $mimes['exe'] = 'program/exe';
   $mimes['dwg'] = 'image/vnd.dwg';
   return $mimes;
 }
-add_filter('upload_mimes', 'quanto_mime_types');
+add_filter('upload_mimes', 'agroland_mime_types');
 
-function quanto_wp_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
+function agroland_wp_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
     $wp_filetype = wp_check_filetype( $filename, $mimes );
     $ext         = $wp_filetype['ext'];
     $type        = $wp_filetype['type'];
@@ -185,10 +185,10 @@ function quanto_wp_check_filetype_and_ext( $data, $file, $filename, $mimes ) {
 
     return compact( 'ext', 'type', 'proper_filename' );
 }
-add_filter('wp_check_filetype_and_ext','quanto_wp_check_filetype_and_ext',10,4);
+add_filter('wp_check_filetype_and_ext','agroland_wp_check_filetype_and_ext',10,4);
 
-if( ! function_exists('quanto_get_user_role_name') ){
-    function quanto_get_user_role_name( $user_ID ){
+if( ! function_exists('agroland_get_user_role_name') ){
+    function agroland_get_user_role_name( $user_ID ){
         global $wp_roles;
 
         $user_data      = get_userdata( $user_ID );
@@ -205,16 +205,16 @@ add_filter('wpcf7_autop_or_not', '__return_false');
 // add_image_size( 'home-slider-blog-image-three',387,250,true );
 // add_image_size( 'home-slider-blog-image-four',314,228,true );
 // add_image_size( 'home-slider-blog-image-five',370,424,true );
-// add_image_size( 'quanto-related-post-size',270,314,true );
-// add_image_size( 'quanto-class-post',360,306,true );
-// add_image_size( 'quanto-class-post-two',230,230,true );
+// add_image_size( 'agroland-related-post-size',270,314,true );
+// add_image_size( 'agroland-class-post',360,306,true );
+// add_image_size( 'agroland-class-post-two',230,230,true );
 
 
 
 /**
 * Enqueue block editor JavaScript and CSS
 */
-function quanto_widget_editor_scripts() {
+function agroland_widget_editor_scripts() {
 
   // Make paths variables so we don't write em twice 
   // $blockPath = '../assets/js/blocks.js';
@@ -222,14 +222,14 @@ function quanto_widget_editor_scripts() {
   
   // Enqueue the bundled block JS file
   wp_enqueue_script(
-      'quanto-blocks-js', QUANTO_PLUGDIRURI . 'assets/js/blocks.js',
+      'agroland-blocks-js', AGROLAND_PLUGDIRURI . 'assets/js/blocks.js',
       [  'wp-blocks', 'wp-element', 'wp-components', 'wp-i18n' ],
       '1.00',
       true
   );
 }
 // Hook scripts function into block editor hook
-add_action( 'enqueue_block_editor_assets', 'quanto_widget_editor_scripts' );
+add_action( 'enqueue_block_editor_assets', 'agroland_widget_editor_scripts' );
 
 
 
@@ -237,8 +237,8 @@ add_action( 'enqueue_block_editor_assets', 'quanto_widget_editor_scripts' );
 /**
  * Post Category
  */
-if( ! function_exists( 'quanto_events_category' ) ){
-  function quanto_events_category(){
+if( ! function_exists( 'agroland_events_category' ) ){
+  function agroland_events_category(){
       $cat_array = array();
       $cat_array[] = esc_html__( 'Select a category','quanto' );
       $terms = get_terms( array(
@@ -257,7 +257,7 @@ if( ! function_exists( 'quanto_events_category' ) ){
 /**
  * Post orderby list
  */
-function quanto_get_post_orderby_options()
+function agroland_get_post_orderby_options()
 {
     $orderby = array(
         'ID' => 'Post ID',
@@ -270,7 +270,7 @@ function quanto_get_post_orderby_options()
         'comment_count' => 'Comment Count',
         'menu_order' => 'Menu Order',
     );
-    $orderby = apply_filters('quanto_post_orderby', $orderby);
+    $orderby = apply_filters('agroland_post_orderby', $orderby);
     return $orderby;
 }
 
@@ -281,8 +281,8 @@ function quanto_get_post_orderby_options()
  *
  * @return array
  */
-if ( ! function_exists( 'quanto_get_all_posts' ) ) {
-    function quanto_get_all_posts($posttype)
+if ( ! function_exists( 'agroland_get_all_posts' ) ) {
+    function agroland_get_all_posts($posttype)
     {
         $args = array( 
             'post_type' => $posttype,
@@ -302,7 +302,7 @@ if ( ! function_exists( 'quanto_get_all_posts' ) ) {
 
 // if( ! function_exists('hello_pagination') ) {
 //     function hello_pagination( ) {
-//         if( ! empty( quanto_pagination() ) ) {
+//         if( ! empty( agroland_pagination() ) ) {
 //             echo '<div class="row">';
 //                 echo '<div class="col-12">';
 //                     echo '<div class="vs-pagination pt-20 pb-30">';
@@ -315,7 +315,7 @@ if ( ! function_exists( 'quanto_get_all_posts' ) ) {
 //                                 previous_posts_link( $prev );
 //                                 echo '</li>';
 //                             }
-//                             echo quanto_pagination();
+//                             echo agroland_pagination();
 //                             // next
 //                             if( get_next_posts_link() ){
 //                                 echo '<li>';
@@ -336,7 +336,7 @@ if ( ! function_exists( 'quanto_get_all_posts' ) ) {
  * Responsive Column Order
  *
  */
-function quanto_add_responsive_column_order( $element, $args ) {
+function agroland_add_responsive_column_order( $element, $args ) {
 	$element->add_responsive_control(
 		'responsive_column_order',
 		[
@@ -349,4 +349,4 @@ function quanto_add_responsive_column_order( $element, $args ) {
 		]
 	);
 }
-add_action( 'elementor/element/column/layout/before_section_end', 'quanto_add_responsive_column_order', 10, 2 );
+add_action( 'elementor/element/column/layout/before_section_end', 'agroland_add_responsive_column_order', 10, 2 );

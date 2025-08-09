@@ -12,7 +12,7 @@ use \Elementor\Group_Control_Box_Shadow;
  * Video Box Widget .
  *
  */
-class Quanto_Video_Box extends Widget_Base {
+class Agroland_Video_Box extends Widget_Base {
 
 	public function get_name() {
 		return 'video_box';
@@ -179,7 +179,7 @@ class Quanto_Video_Box extends Widget_Base {
 
         <?php if ('layout-1' == $layout): ?>
             <?php if (!empty($settings['video_url'])): ?>
-                <div class="quanto-hero__thumb section-margin-top">
+                <div class="agroland-hero__thumb section-margin-top">
                     <div class="video-wrapper">
                         <video loop muted autoplay playsinline>
                             <source src="<?php echo esc_url($settings['video_url']); ?>" type="video/mp4" />
@@ -189,14 +189,14 @@ class Quanto_Video_Box extends Widget_Base {
             <?php endif; ?>
         <?php elseif ('layout-2' == $layout): ?>
             <?php if (!empty($settings['video_url'])): ?>
-                <div class="quanto-video-area style-2 overflow-hidden">
+                <div class="agroland-video-area style-2 overflow-hidden">
                     <video
                         muted
                         autoplay
                         loop
                         src="<?php echo esc_url($settings['video_url']); ?>"
-                        class="quanto-video"
-                        id="quanto-video-2"
+                        class="agroland-video"
+                        id="agroland-video-2"
                     ></video>
                     <?php if (!empty($settings['btn_text'])): ?>
                         <button class="play-btn">
@@ -211,4 +211,4 @@ class Quanto_Video_Box extends Widget_Base {
 		<?php
 	}
 }
-$widgets_manager->register( new \Quanto_Video_Box() );
+$widgets_manager->register( new \Agroland_Video_Box() );

@@ -12,13 +12,13 @@
 * Creating Recent Post Widget
 ***************************************/
 
-class quanto_recent_posts_widget_slider extends WP_Widget {
+class agroland_recent_posts_widget_slider extends WP_Widget {
 
         function __construct() {
 
             parent::__construct(
                 // Base ID of your widget
-                'quanto_recent_posts_widget_slider',
+                'agroland_recent_posts_widget_slider',
 
                 // Widget name will appear in UI
                 esc_html__( 'Quanto :: Recent Posts Slider', 'quanto' ),
@@ -75,7 +75,7 @@ class quanto_recent_posts_widget_slider extends WP_Widget {
 	                                        the_post_thumbnail( );
 										echo '</a>';
 	                                    if( $show_date ){
-	                                        echo '<span class="post-date text-white"><i class="fal fa-calendar-alt"></i><a href="'.esc_url( quanto_blog_date_permalink() ).'">'.esc_html( get_the_time( 'd F Y' ) ).'</a></span>';
+	                                        echo '<span class="post-date text-white"><i class="fal fa-calendar-alt"></i><a href="'.esc_url( agroland_blog_date_permalink() ).'">'.esc_html( get_the_time( 'd F Y' ) ).'</a></span>';
 	                                    }
 	                            	echo '</div>';
 								}
@@ -95,7 +95,7 @@ class quanto_recent_posts_widget_slider extends WP_Widget {
                                         echo '<h4 class="recent-post-title h6 mb-0"><a href="'.esc_url( get_the_permalink() ).'">'.wp_kses_post( wp_trim_words( get_the_title(), 3, '' ) ).'</a></h4>';
 									}
 									if( $show_date ){
-                                        echo '<span class="text-theme text-xs"><a href="'.esc_url( quanto_blog_date_permalink() ).'">'.esc_html( get_the_time( 'd F, Y' ) ).'</a></span>';
+                                        echo '<span class="text-theme text-xs"><a href="'.esc_url( agroland_blog_date_permalink() ).'">'.esc_html( get_the_time( 'd F, Y' ) ).'</a></span>';
                                     }
                                 echo '</div>';
                         	echo '</div>';
@@ -155,11 +155,11 @@ class quanto_recent_posts_widget_slider extends WP_Widget {
 
             return $instance;
         }
-    } // Class quanto_recent_posts_widget_slider ends here
+    } // Class agroland_recent_posts_widget_slider ends here
 
 
     // Register and load the widget
-    function quanto_recent_posts_widget_slider() {
-        register_widget( 'quanto_recent_posts_widget_slider' );
+    function agroland_recent_posts_widget_slider() {
+        register_widget( 'agroland_recent_posts_widget_slider' );
     }
-    add_action( 'widgets_init', 'quanto_recent_posts_widget_slider' );
+    add_action( 'widgets_init', 'agroland_recent_posts_widget_slider' );

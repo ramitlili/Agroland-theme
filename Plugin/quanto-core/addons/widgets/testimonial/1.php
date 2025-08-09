@@ -1,9 +1,9 @@
 <!-- Testimonial section Start -->
-<section class="quanto-testimonial-section overflow-hidden">
+<section class="agroland-testimonial-section overflow-hidden">
 
     <div class="row">
         <div class="col-12">
-            <div class="quanto__header">
+            <div class="agroland__header">
                 <h3
                 class="title fade-anim"
                 data-delay="0.30"
@@ -18,7 +18,7 @@
         <div class="col-12 col-lg-6 col-xl-5">
         <!-- Thumbnail Swiper -->
         <div
-            class="swiper quanto-testimonial__thumb-slider h-100 fade-anim"
+            class="swiper agroland-testimonial__thumb-slider h-100 fade-anim"
             data-delay="0.30"
             data-direction="right"
         >
@@ -38,7 +38,7 @@
         </div>
         </div>
         <div class="col-12 col-lg-6 col-xl-6">
-        <div class="swiper quanto-testimonial__content-slider">
+        <div class="swiper agroland-testimonial__content-slider">
             <div class="swiper-wrapper">
                 <?php foreach( $settings[ 'slides' ] as $slide ): ?>
                 <div class="swiper-slide">
@@ -59,11 +59,11 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="quanto-testimonial__navigation">
-            <div class="quanto-testimonial__prev prev-slide">
+        <div class="agroland-testimonial__navigation">
+            <div class="agroland-testimonial__prev prev-slide">
             <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <div class="quanto-testimonial__next next-slide">
+            <div class="agroland-testimonial__next next-slide">
             <i class="fa-solid fa-arrow-right"></i>
             </div>
         </div>

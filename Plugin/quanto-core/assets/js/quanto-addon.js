@@ -216,14 +216,14 @@
     var Mobile_Menu_js = function ($scope) {
         $.fn.vsmobilemenu = function (options) {
             var opt = $.extend({
-                menuToggleBtn: ".quanto-menu-toggle",
-                bodyToggleClass: "quanto-body-visible",
-                subMenuClass: "quanto-submenu",
-                subMenuParent: "quanto-item-has-children",
-                subMenuParentToggle: "quanto-active",
-                meanExpandClass: "quanto-mean-expand",
-                appendElement: '<span class="quanto-mean-expand"></span>',
-                subMenuToggleClass: "quanto-open",
+                menuToggleBtn: ".agroland-menu-toggle",
+                bodyToggleClass: "agroland-body-visible",
+                subMenuClass: "agroland-submenu",
+                subMenuParent: "agroland-item-has-children",
+                subMenuParentToggle: "agroland-active",
+                meanExpandClass: "agroland-mean-expand",
+                appendElement: '<span class="agroland-mean-expand"></span>',
+                subMenuToggleClass: "agroland-open",
                 toggleSpeed: 400,
               },
               options
@@ -306,7 +306,7 @@
                 });
             });
         };
-        $(".quanto-menu-wrapper").vsmobilemenu();
+        $(".agroland-menu-wrapper").vsmobilemenu();
 
     };
 
@@ -507,9 +507,9 @@
         }
 
         // Project Slider Two
-        const quantoProjectSlider = document.querySelector(".quanto-project__slider");
+        const quantoProjectSlider = document.querySelector(".agroland-project__slider");
         const quantoProjectSliderNavigation = document.querySelector(
-            ".quanto-project__slider-navigation"
+            ".agroland-project__slider-navigation"
         );
 
         if (quantoProjectSlider && quantoProjectSliderNavigation) {
@@ -604,7 +604,7 @@
 
     // Scroll Video js
     var Scroll_Video_js = function ($scope) {
-        const $video = $("#quanto-video-2");
+        const $video = $("#agroland-video-2");
         const $playBtn = $(".play-btn");
         if ($video.length && $playBtn.length) {
             $video[0].pause();
@@ -697,7 +697,7 @@
             }
 
             // ========================== Testimonial2 Slider ===========================
-            const $testimonial2Element = $('.quanto-testimonial2__slider');
+            const $testimonial2Element = $('.agroland-testimonial2__slider');
 
             if ($testimonial2Element.length) {
                 const testimonial2Slider = new Swiper($testimonial2Element[0], {
@@ -729,7 +729,7 @@
 
     // ========================== Video Box =========================== //
     var QuantoVideo = function () {
-        const $video = $("#quanto-video-2");
+        const $video = $("#agroland-video-2");
         const $playBtn = $(".play-btn");
         if ($video.length && $playBtn.length) {
             $video[0].pause();
@@ -748,7 +748,7 @@
         };
 
         // Hero Video Animation (jQuery)
-        const $heroThumb = $(".quanto-hero__thumb");
+        const $heroThumb = $(".agroland-hero__thumb");
         if ($heroThumb.length) {
             let mm = gsap.matchMedia();
                 mm.add("(min-width: 768px)", () => {
@@ -803,16 +803,16 @@
     $(window).on('elementor/frontend/init', function () {
         elementorFrontend.hooks.addAction("frontend/element_ready/global", QuantoGlobal);
         elementorFrontend.hooks.addAction("frontend/element_ready/widget", QuantoAnimi);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_menu.default', Mobile_Menu_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_hero.default', Hero_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_project_slider.default', Project_Slider_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_animation_title.default', Animation_Title_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_scroll_down.default', Scroll_Video_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_project.default', Project_js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_animation_image.default', Animation_Image_Js);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_testimonial.default', QuantoTestimonial);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_menu.default', Mobile_Menu_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_hero.default', Hero_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_project_slider.default', Project_Slider_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_animation_title.default', Animation_Title_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_scroll_down.default', Scroll_Video_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_project.default', Project_js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_animation_image.default', Animation_Image_Js);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_testimonial.default', QuantoTestimonial);
         elementorFrontend.hooks.addAction('frontend/element_ready/video_box.default', QuantoVideo);
-        elementorFrontend.hooks.addAction('frontend/element_ready/quanto_process.default', QuantoProcess);
+        elementorFrontend.hooks.addAction('frontend/element_ready/agroland_process.default', QuantoProcess);
 
     });
 })(jQuery);

@@ -1,4 +1,4 @@
-<section class="quanto-hero2-section bg-color-primary section-padding-bottom">
+<section class="agroland-hero2-section bg-color-primary section-padding-bottom">
     <div class="container custom-container">
         <div class="row align-items-end">
             <div class="col-lg-10">

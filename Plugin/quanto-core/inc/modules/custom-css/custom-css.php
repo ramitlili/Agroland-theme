@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 	exit;
 } // Exit if accessed directly.
 
-class Quanto_Custom_CSS
+class Agroland_Custom_CSS
 {
 
 	/*
@@ -23,17 +23,17 @@ class Quanto_Custom_CSS
 	{
 
 		// Add new controls to advanced tab globally
-		add_action("elementor/element/after_section_end", array($this, 'quanto_add_section_custom_css_controls'), 25, 3);
+		add_action("elementor/element/after_section_end", array($this, 'agroland_add_section_custom_css_controls'), 25, 3);
 
 		// Render the custom CSS
 		if (!defined('ELEMENTOR_PRO_VERSION')) {
-			add_action('elementor/element/parse_css', array($this, 'quanto_add_post_css'), 10, 2);
+			add_action('elementor/element/parse_css', array($this, 'agroland_add_post_css'), 10, 2);
 		}
 	}
 
 
 
-	public function quanto_add_section_custom_css_controls($widget, $section_id, $args)
+	public function agroland_add_section_custom_css_controls($widget, $section_id, $args)
 	{
 
 		if ('section_custom_css_pro' !== $section_id ) {
@@ -42,15 +42,15 @@ class Quanto_Custom_CSS
 		if (!defined('ELEMENTOR_PRO_VERSION')) {
 
 			$widget->start_controls_section(
-				'quanto_custom_css_section',
+				'agroland_custom_css_section',
 				array(
-					'label'     => QUANTO_BADGE . __('Custom CSS ', 'quanto'),
+					'label'     => AGROLAND_BADGE . __('Custom CSS ', 'quanto'),
 					'tab'       => Controls_Manager::TAB_ADVANCED
 				)
 			);
 
 			$widget->add_control(
-				'quanto_custom_css',
+				'agroland_custom_css',
 				array(
 					'type'        => Controls_Manager::CODE,
 					'label'       => __('Custom CSS', 'quanto'),
@@ -69,7 +69,7 @@ selector .child-element{ margin: 10px; }
 			$output = ob_get_clean();
 
 			$widget->add_control(
-				'quanto_custom_css_description',
+				'agroland_custom_css_description',
 				array(
 					'raw'             => __('Use "selector" keyword to target wrapper element.', 'quanto') . $output,
 					'type'            => Controls_Manager::RAW_HTML,
@@ -84,15 +84,15 @@ selector .child-element{ margin: 10px; }
 
 
 
-	public function quanto_add_post_css($post_css, $element)
+	public function agroland_add_post_css($post_css, $element)
 	{
 		$element_settings = $element->get_settings();
 
-		if (empty($element_settings['quanto_custom_css'])) {
+		if (empty($element_settings['agroland_custom_css'])) {
 			return;
 		}
 
-		$css = trim($element_settings['quanto_custom_css']);
+		$css = trim($element_settings['agroland_custom_css']);
 
 		if (empty($css)) {
 			return;
@@ -116,4 +116,4 @@ selector .child-element{ margin: 10px; }
 	}
 }
 
-Quanto_Custom_CSS::get_instance();
+Agroland_Custom_CSS::get_instance();

@@ -10,7 +10,7 @@ use \Elementor\Group_Control_Border;
  * Header Widget .
  *
  */
-class Quanto_Search extends Widget_Base {
+class Agroland_Search extends Widget_Base {
 
 	public function get_name() {
 		return 'quantosearch';
@@ -25,7 +25,7 @@ class Quanto_Search extends Widget_Base {
     }
 
 	public function get_categories() {
-		return [ 'quanto_header_elements' ];
+		return [ 'agroland_header_elements' ];
 	}
 
 	protected function register_controls() {
@@ -62,7 +62,7 @@ class Quanto_Search extends Widget_Base {
 				'label' 		=> __( 'Search Icon Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-header-search i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-header-search i' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -72,7 +72,7 @@ class Quanto_Search extends Widget_Base {
 				'label' 		=> __( 'Search Icon Hover Color', 'quanto' ),
 				'type' 			=> Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .quanto-header-search:hover i' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .agroland-header-search:hover i' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -90,7 +90,7 @@ class Quanto_Search extends Widget_Base {
 					],
 				],
 				'selectors' => [
-					'{{WRAPPER}} .quanto-header-search i' => 'font-size: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .agroland-header-search i' => 'font-size: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -104,14 +104,14 @@ class Quanto_Search extends Widget_Base {
         $settings = $this->get_settings_for_display();
 
 		?>
-			<div class="quanto-header-search">
+			<div class="agroland-header-search">
 				<i class="ri-search-line"></i>
 			</div>
 
 			<!-- popup -->
-			<div class="quanto-header-search-section">
+			<div class="agroland-header-search-section">
 				<div class="container">
-					<div class="quanto-header-search-box">
+					<div class="agroland-header-search-box">
 						<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 							<input type="search" name="s" placeholder="<?php echo esc_attr__( 'Search Here...', 'construz' ); ?>">
 							<button id="header-search" type="button"><i class="ri-search-line"></i></button>
@@ -119,7 +119,7 @@ class Quanto_Search extends Widget_Base {
 						</form>
 					</div>
 				</div>
-				<div class="quanto-header-search-close">
+				<div class="agroland-header-search-close">
 					<i class="ri-close-line"></i>
 				</div>
 			</div>
@@ -129,4 +129,4 @@ class Quanto_Search extends Widget_Base {
 
 	}
 }
-$widgets_manager->register( new \Quanto_Search() );
+$widgets_manager->register( new \Agroland_Search() );
