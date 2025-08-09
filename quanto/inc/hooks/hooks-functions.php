@@ -344,7 +344,13 @@
                 // Elementor or Redux not active, fallback footer
                 echo '<div class="footer-copyright text-center bg-black py-3 link-inherit z-index-common">';
                     echo '<div class="container">';
-                        echo '<p class="mb-0 text-white">'.sprintf( 'Copyright © %s <a href="%s">%s</a> All Rights Reserved by <a href="%s">%s</a>',date('Y'),esc_url('#'),__( 'Quanto.','quanto' ),esc_url('#'),__( 'Mirrortheme', 'quanto' ) ).'</p>';
+                        $default_credit = sprintf(
+                            esc_html__( 'Copyright © %1$s %2$s All Rights Reserved by %3$s', 'quanto' ),
+                            date('Y'),
+                            '<a href="' . esc_url('#') . '">' . esc_html__( 'Quanto.', 'quanto' ) . '</a>',
+                            '<a href="' . esc_url('#') . '">' . esc_html__( 'Agroland', 'quanto' ) . '</a>'
+                        );
+                        echo '<p class="mb-0 text-white">' . wp_kses_post( $default_credit ) . '</p>';
                     echo '</div>';
                 echo '</div>';
             }

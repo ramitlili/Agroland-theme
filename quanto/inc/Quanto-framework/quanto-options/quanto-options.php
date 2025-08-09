@@ -1357,9 +1357,16 @@
                'type'     => 'text',
                'title'    => esc_html__( 'Copyright Text', 'quanto' ),
                'subtitle' => esc_html__( 'Add Copyright Text', 'quanto' ),
-               'default'  => sprintf( 'Copyright <i class="fal fa-copyright"></i> %s <a  href="%s">%s</a> All Rights Reserved by <a  href="%s">%s</a>',date('Y'),esc_url('#'),__( 'Quanto.','quanto' ),esc_url('#'),__( 'Mirrortheme', 'quanto' ) ),
+               'default'  => sprintf(
+                   wp_kses_post( __( 'Copyright <i class="fal fa-copyright"></i> %1$s <a href="%2$s">%3$s</a> All Rights Reserved by <a href="%4$s">%5$s</a>', 'quanto' ) ),
+                   date('Y'),
+                   esc_url('#'),
+                   esc_html__( 'Quanto.', 'quanto' ),
+                   esc_url('#'),
+                   esc_html__( 'Agroland', 'quanto' )
+               ),
                'required' => array( 'quanto_disable_footer_bottom','equals','1' ),
-            ),
+           ),
             array(
                'id'       => 'quanto_footer_copyright_color',
                'type'     => 'color',
