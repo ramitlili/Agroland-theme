@@ -1,4 +1,4 @@
-=== Quanto Base ===
+=== Agroland Base ===
 Contributors: Mirrortheme
 Tags: blog, custom-logo, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, footer-widgets, left-sidebar, right-sidebar
 Requires at least: 5.5
@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Description ==
-Quanto is a smart, fast & fully customized WordPress theme, built for blog, business website, personal website and ecommmerce store. Quanto fully responsive layouts display beautifully across desktop, mobile, and all devices. Easy installation and demo imports allows you to build a complete website immediately after the activation. Currently Quanto has pre-made demos for minimal blog website, Plumber website, yoga trainer website, solar website. We are consistently updating Quanto with new demos every two weeks.
+Agroland is a smart, fast, and fully customizable WordPress theme built for farms, produce markets, and agricultural businesses. Its responsive layouts adapt to desktop and mobile devices. The theme includes options for crop listings, equipment showcases, and sustainability messaging. Easy installation and demo imports allow you to build a complete site immediately after activation. Agroland provides sample layouts for organic farms, farm equipment suppliers, and agro-technology services. We regularly release updates with new agricultural demos.
 
 
 == Installation ==
@@ -22,13 +22,19 @@ Quanto is a smart, fast & fully customized WordPress theme, built for blog, busi
 Or
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Search Quanto in search bar right side of the screen.
-3. After found Quanto install and then activate and enjoy.
+2. Search Agroland in search bar right side of the screen.
+3. After found Agroland install and then activate and enjoy.
+
+== Agricultural Customization ==
+
+* Crop listings: Use the crop listing template to show produce with images, descriptions, and availability.
+* Equipment showcases: Use the equipment widget to present machinery or tools with photographs and specifications.
+* Sustainability messaging: Use the theme options to add sections that describe environmental practices and certifications.
 
 
 == Copyright ==
-Quanto WordPress theme, Copyright 2025 redth
-Quanto is distributed under the terms of the GNU GPLv2 or later
+Agroland WordPress theme, Copyright 2025 redth
+Agroland is distributed under the terms of the GNU GPLv2 or later
 
 
 == Resources ==
