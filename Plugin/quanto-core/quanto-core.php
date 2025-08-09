@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Quanto Core
- * Description: This is a helper plugin of quanto theme
+ * Plugin Name: Agroland Core
+ * Description: This is a helper plugin of Agroland theme
  * Version:     1.0.1
  * Author:      Mirror
  * License:     GPL2

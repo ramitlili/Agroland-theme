@@ -18,7 +18,7 @@ class quanto_contact_info_widget extends WP_Widget {
 			// Base ID of your widget
 			'quanto_contact_info_widget',
 			// Widget name will appear in UI
-			esc_html__( 'Quanto :: Contact Info', 'quanto' ),
+			esc_html__( 'Agroland :: Contact Info', 'quanto' ),
 			// Widget description
 			array(
 				'description'	 => esc_html__( 'Add Contact Info', 'quanto' ),

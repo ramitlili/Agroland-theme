@@ -15,7 +15,7 @@ function quanto_import_files() {
 
     return array(
         array(
-            'import_file_name'             => esc_html__('Quanto Demo','quanto'),
+            'import_file_name'             => esc_html__('Agroland Demo','quanto'),
             'local_import_file'            =>  QUANTO_DEMO_DIR_PATH  . 'quanto-demo.xml',
             'local_import_widget_file'     =>  QUANTO_DEMO_DIR_PATH  . 'widgets.wie',
             'local_import_customizer_file' =>  QUANTO_DEMO_DIR_PATH  . 'customizer.dat',
@@ -42,7 +42,7 @@ function quanto_after_import_setup() {
 	);
 
 	// Assign front page and posts page (blog page).
-	$front_page_id 	= get_page_by_title( 'Digital Agency' );
+	$front_page_id 	= get_page_by_title( esc_html__( 'Farm Home', 'quanto' ) );
 	$blog_page_id  	= get_page_by_title( 'Blog Grid' );
 
 	update_option( 'show_on_front', 'page' );
@@ -83,7 +83,7 @@ add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
 //change the location, title and other parameters of the plugin page
 function quanto_import_plugin_page_setup( $default_settings ) {
 	$default_settings['parent_slug'] = 'themes.php';
-	$default_settings['page_title']  = esc_html__( 'Quanto Demo Import' , 'quanto' );
+	$default_settings['page_title']  = esc_html__( 'Agroland Demo Import' , 'quanto' );
 	$default_settings['menu_title']  = esc_html__( 'Import Demo Data' , 'quanto' );
 	$default_settings['capability']  = 'import';
 	$default_settings['menu_slug']   = 'quanto-demo-import';

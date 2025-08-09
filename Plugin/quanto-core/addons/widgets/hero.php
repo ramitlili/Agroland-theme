@@ -179,7 +179,7 @@ class Quanto_Hero extends Widget_Base {
 			[
 				'label' 		=> __( 'Client Title', 'quanto' ),
 				'type' 			=> Controls_Manager::TEXT,
-				'default'		=> __( 'Award winning agency', 'quanto' ),
+				'default'		=> __( 'Award-winning farm', 'quanto' ),
 				'label_block'   => true,
                 'condition' => [
 					'hero_style' => 'layout-1',
@@ -228,7 +228,7 @@ class Quanto_Hero extends Widget_Base {
 			[
 				'label' 		=> __( 'Title', 'quanto' ),
 				'type' 			=> Controls_Manager::TEXT,
-				'default'		=> __( 'Award winning agency', 'quanto' ),
+				'default'		=> __( 'Award-winning farm', 'quanto' ),
 				'label_block'   => true,
 			]
 		);

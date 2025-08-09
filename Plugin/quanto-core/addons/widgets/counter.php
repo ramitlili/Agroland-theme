@@ -65,7 +65,7 @@ class Quanto_Counter extends Widget_Base {
 			[
 				'label' 		=> __( 'Text', 'quanto' ),
 				'type' 			=> Controls_Manager::TEXT,
-				'default'		=> __( 'Years of agency experience', 'quanto' ),
+				'default'		=> __( 'Years of farming experience', 'quanto' ),
 				'label_block'   => true,
 			]
 		);

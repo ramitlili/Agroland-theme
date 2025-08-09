@@ -21,7 +21,7 @@ class quanto_recent_posts_widget extends WP_Widget {
                 'quanto_recent_posts_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Recent Posts', 'quanto' ),
+                esc_html__( 'Agroland :: Recent Posts', 'quanto' ),
 
                 // Widget description
                 array(

@@ -118,7 +118,7 @@ class Quanto_Service extends \Elementor\Widget_Base {
                 'label' => esc_html__('Discription Text', 'quanto'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
                 'label_block' => true,
-                'default' => esc_html__('Brand identity design a the have to success whether you breath onfire quanto agency. ', 'quanto'),
+                'default' => esc_html__('Innovative agricultural services that help your farm thrive.', 'quanto'),
             ]
         );
         $repeater->add_control(

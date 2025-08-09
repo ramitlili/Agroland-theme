@@ -21,7 +21,7 @@ class quanto_event_widget extends WP_Widget {
                 'quanto_event_widget',
 
                 // Widget name will appear in UI
-                esc_html__( 'Quanto :: Event', 'quanto' ),
+                esc_html__( 'Agroland :: Event', 'quanto' ),
 
                 // Widget description
                 array(

@@ -18,7 +18,7 @@ class quanto_social_widget extends WP_Widget {
 			// Base ID of your widget
 			'quanto_social_widget',
 			// Widget name will appear in UI
-			esc_html__( 'Quanto :: Social Icon', 'quanto' ),
+			esc_html__( 'Agroland :: Social Icon', 'quanto' ),
 			// Widget description
 			array(
 				'description'	 => esc_html__( 'Add Social Icon', 'quanto' ),
