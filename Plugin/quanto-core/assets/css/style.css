@@ -1,0 +1,68 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*------------------------------------------------------------------
+
+Sticky Header Effects Style
+
+-------------------------------------------------------------------*/
+.mas-sticky-header {
+    box-sizing: border-box;
+}
+/* MAIN HEADER */
+.mas-sticky-yes,
+.mas-sticky-yes.e-con,
+.mas-sticky-header {
+    z-index: 999;
+    margin: 0 auto;
+    box-sizing: border-box;
+    top: 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.e-con.mas-sticky-header:not(.elementor-sticky) {
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.headerup {
+    -ms-transform: translateY(-110vh) !important;
+    -o-transition: transform 0.4s ease-in-out !important;
+    -webkit-transform: translateY(-110vh) !important;
+    -webkit-transition: transform 0.4s ease-in-out !important;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out !important;
+    transform: translateY(-110vh) !important;
+    transition: transform 0.4s ease-in-out !important;
+}
+
+/* ADMIN BAR OFFSET */
+@media screen and (min-width: 768px) {
+    .admin-bar .mas-sticky-header:not(.elementor-sticky) {
+        top: 32px !important;
+    }
+    .mas-sticky-header:not(.elementor-sticky) {
+        top: 0px !important;
+    }
+}
+
+/* end sticky-header css */
+
+.page--content ul > li:after,
+.blog-content ul > li:after,
+.comment-content ul > li::after {
+    position: absolute;
+    content: '\f111';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    color: var(--heading-color);
+    font-size: 8px;
+}
+
+

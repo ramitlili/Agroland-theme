@@ -1,0 +1,151 @@
+:root {
+    --heading-color: #0a165e;
+    --body-color: #585b6f;
+    --accent-color: #2b4dff;
+    --white-color: #ffffff;
+    --light-color1: #e3e3ec;
+    --light-color2: #ced0df;
+    --dark-bg: #040d43;
+    --dark-bg2: #1e2656;
+    --dark-bg3: #0a165e;
+    --white-bg: #ffffff;
+    --accent-bg: #2b4dff;
+    --light-bg1: #f5f6f7;
+    --light-bg2: #e2e3ec;
+    --light-bg3: #eef1ff;
+}
+
+@media only screen and (min-width: 1350px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 1604px;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .e-con {
+        --container-max-width: 1604px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .elementor-section.elementor-section-boxed > .elementor-container {
+        max-width: 900px !important;
+    }
+
+    .e-con {
+        --container-max-width: 900px !important;
+    }
+}
+
+/* Menu Css Start*/
+.header-logo {
+    max-width: 270px;
+    padding: 15px 0;
+}
+
+/* Animi Css for test */
+[data-anime],
+[data-anime] .e-con {
+    transition: 0s !important;
+}
+
+/* custom css */
+.cta-custom {
+    background-size: 100% 100% !important;
+    position: relative;
+}
+
+.cta-custom::after {
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 0;
+    position: absolute;
+}
+.cta-custom::before {
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    border-radius: 0;
+    position: absolute;
+}
+@media (max-width: 1399px) {
+    .cta-custom {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cta-custom {
+        background-color: var(--accent-bg);
+    }
+    .cta-custom::after {
+        border-bottom: 60px solid #fff;
+        border-left: 60px solid transparent;
+    }
+    .cta-custom::before {
+        border-top: 60px solid #fff;
+        border-right: 60px solid transparent;
+    }
+}
+
+/* animate css for slider */
+
+.animated {
+    transition: all 0.5s ease;
+}
+[data-animation-in] {
+    opacity: 0;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+@-webkit-keyframes zoomInImage {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+@keyframes zoomInImage {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+.zoomInImage {
+    -webkit-animation-name: zoomInImage;
+    animation-name: zoomInImage;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* social link s */
+.quanto-social-icon-box ul li a {
+    position: relative;
+    overflow: hidden;
+}
+.socail-show,
+.socail-hide {
+    position: absolute;
+    transition: transform 0.2s;
+    display: flex;
+}
+.socail-hide {
+    transform: translateY(35px);
+}
+.quanto-social-icon-box ul li a:hover .socail-hide {
+    transform: translateY(0px);
+}
+.quanto-social-icon-box ul li a:hover .socail-show {
+    transform: translateY(-35px);
+}

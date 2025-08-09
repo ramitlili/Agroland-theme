@@ -1,0 +1,49 @@
+/*------------------------------------------------------------------
+
+Sticky Header Effects Style
+
+-------------------------------------------------------------------*/
+.mas-sticky-header {
+  box-sizing: border-box; 
+}
+/* MAIN HEADER */
+.header,
+.mas-sticky-yes,
+.mas-sticky-yes.e-con,
+.mas-sticky-header {
+  z-index: 9999;
+  margin: 0 auto;
+  box-sizing: border-box;
+  top: 0px;
+}
+
+.e-con.mas-sticky-header:not(.elementor-sticky) {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.headerup {
+  -ms-transform: translateY(-110vh) !important;
+  -o-transition: transform 0.4s ease-in-out !important;
+  -webkit-transform: translateY(-110vh) !important;
+  -webkit-transition: transform 0.4s ease-in-out !important;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out !important;
+  transform: translateY(-110vh) !important;
+  transition: transform 0.4s ease-in-out !important;
+}
+
+
+
+/* ADMIN BAR OFFSET */
+@media screen and (min-width: 783px) {
+  .admin-bar .mas-sticky-header:not(.elementor-sticky) {
+    top: 32px !important;
+  }
+  .mas-sticky-header:not(.elementor-sticky) {
+    top: 0px !important;
+  }
+}
